@@ -132,7 +132,7 @@ function TalentHub() {
         When it comes to recruitment, we don't just deliver candidates we deliver confidence.
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
-        <div className="border border-black p-10 w-[#294px] h-[#255px]  text-left">
+        <div className="border border-black p-10 w-[#390px] h-[#255px]  text-left">
           <img src={"./Tailored.svg"} className="w-10 h-10 mb-4" />{/* Replace with actual icon, e.g., from react-icons */}
           <h3 className="text-lg font-bold mb-2">
             Tailored Approach
