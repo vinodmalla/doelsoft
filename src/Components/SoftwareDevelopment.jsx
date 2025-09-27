@@ -43,18 +43,18 @@ const SoftwareDevelopment = () => {
       </section>
 
       {/* Description Section */}
-      <section className=" mx-auto px-6 md:px-24 mt-4 py-20 bg-[#F4F6FB] grid md:grid-cols-2 gap-10 items-center">
+      <section className=" mx-auto px-16 md:px-24 mt-4 py-20 bg-[#F4F6FB] grid md:grid-cols-2 gap-10 items-center">
         <div className="space-y-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-black">
-            Custom Software Development Crafted Around Your Business Needs
+          <h2 className="text-2xl md:text-4xl  font-extralight text-black"> 
+            Custom Software Development <br/> Crafted Around Your Business Needs
           </h2>
-          <p className="text-gray-600 leading-relaxed">
+          <p className="text-black text-lg leading-relaxed">
             At Doelsoft, we believe every business is unique, and so should be
             its software solutions. Our custom software development services
             focus entirely on creating applications tailored precisely to your
             company’s goals, challenges, and target audience.
           </p>
-          <p className="text-gray-600 leading-relaxed">
+          <p className="text-black text-lg leading-relaxed">
             Our expert team works closely with you throughout the process from
             initial consultation to final delivery ensuring the solution we
             build not only meets your technical requirements but also drives
@@ -176,6 +176,7 @@ const SoftwareDevelopment = () => {
           </button>
         </div>
       </section>
+      
     </div>
   );
 };

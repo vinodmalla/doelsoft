@@ -9,6 +9,7 @@ import Contract from './Components/Contract';
 import Choose from './Components/Choose';
 
 import SoftwareDevelopment from './Components/SoftwareDevelopment';
+import MobileDevelopment from './Components/MobileDevelopment';
 
 function App() {
   return (
@@ -18,8 +19,9 @@ function App() {
    <TalentHub /> 
    <ITStaffing /> 
    <Contract /> 
-   <Choose /> */}
-   <SoftwareDevelopment />
+   <Choose /> 
+   <SoftwareDevelopment /> */}
+   <MobileDevelopment />
    <Footer />
     </>
    
