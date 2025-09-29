@@ -218,7 +218,7 @@ useEffect(()=>{
 
     
   return (
-    <div className='w-full h-full'>
+    <div className='w-fullss h-full'>
       {/* Hero Section - Responsive with equal spacing */}
       <section className="w-full min-h-screen flex flex-col lg:flex-row justify-center items-center bg-white px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16 gap-6 lg:gap-12">
         <div className="w-full lg:w-1/2 flex flex-col gap-6 lg:gap-8">
@@ -276,7 +276,6 @@ useEffect(()=>{
           ))}
         </div>
 
-        {/* Right Content - Image and Testimonials */}
         <div className="w-full lg:w-1/2 relative flex flex-col items-center justify-center gap-4 lg:gap-0 mt-8 lg:mt-0">
           <img
             src={mask}
@@ -345,12 +344,12 @@ useEffect(()=>{
       </section>
 
       {/* Industries Section - Responsive grid */}
-      <section className="w-full h-2/3 bg-black px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
-        <h1 className="text-white text-xl sm:text-2xl font-bold pl-0 sm:pl-4 pt-4 sm:pt-6 mb-8">
+      <section className="w-full  bg-black px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+        <h1 className="text-white text-xl  sm:text-2xl font-bold ml-14 pl-0 sm:pl-4 pt-4 sm:pt-6 mb-8">
           Industries We Serve
         </h1>
-        <div className="text-center mb-8 sm:mb-12">
-          <h2 className="text-white text-2xl sm:text-3xl lg:text-4xl font-semibold">
+        <div className="flex flex-row gap-80 ml-14 mb-8 sm:mb-12">
+          <h2 className="text-white pl-4 text-4xl  font-light">
             AI for Every Industry
           </h2>
           <p className="text-white text-base sm:text-lg mt-4 px-4">
@@ -380,12 +379,16 @@ useEffect(()=>{
       <section className='w-full bg-white px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20'>
         <div className='flex flex-col lg:flex-row gap-8 lg:gap-12 max-w-7xl mx-auto'>
           <div className='flex-1 space-y-6 lg:space-y-8'>
-            <h1 className='font-bold text-2xl sm:text-3xl lg:text-4xl leading-tight'>DoelSoft<br/>Core Services</h1>
+            <h1 className='font-extralight text-4xl sm:text-3xl lg:text-4xl leading-tight'>DoelSoft<br/>Core Services</h1>
             <p className='text-lg leading-relaxed'>We Combine AI,Cloud & Data to design,build and <br className="hidden lg:block"/> scale secure digital products aligned to measurable outcomes.</p>
             <img src="Robot2.svg" alt='robot2' className='w-full max-w-sm sm:max-w-md lg:w-96 h-auto animate-moveOnce mx-auto lg:mx-0'/>
-            <button className='bg-red-600 hover:bg-gray-600 text-white px-8 sm:px-16 py-4 font-medium text-lg rounded transition block mx-auto lg:mx-0 w-full sm:w-auto'>
-              Explore AI Strategy ↗
-            </button>
+           <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-light px-32 py-4 text-lg shadow-lg transition  mx-10">
+                  Explor AI Strategy{" "}
+                  <ArrowUpRight
+                    className=" border border-white rounded-full text-center"
+                    size={24}
+                  />
+                </button>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8">
@@ -619,8 +622,11 @@ useEffect(()=>{
               Practical playbooks from the field AI, Cloud & Data patterns that ship results.
             </p>
           </div>
-          <button className="flex items-center gap-2 bg-red-600 text-white font-semibold px-6 py-3  hover:bg-gray-600 transition w-full lg:w-auto justify-center">
-            View all Insights <ArrowUpRight size={18} />
+          <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-light px-6 sm:px-8 py-4 text-base sm:text-lg shadow-lg transition justify-center mx-auto">
+            View all Insights {" "} <ArrowUpRight
+                    className="border border-white rounded-full text-center"
+                    size={24}
+                  />
           </button>
         </div>
 
@@ -640,7 +646,10 @@ useEffect(()=>{
                 <h3 className="text-base sm:text-lg font-semibold mt-1">{item.title}</h3>
                 <p className="text-xs sm:text-sm text-gray-300 mt-1 leading-relaxed">{item.desc}</p>
                 <button className="mt-3 p-2 rounded-full bg-white/10 hover:bg-white/20 transition">
-                  <ArrowUpRight size={16} />
+                  <ArrowUpRight
+                    className="border border-white rounded-full text-center"
+                    size={24}
+                  />
                 </button>
               </div>
             </div>
@@ -649,20 +658,51 @@ useEffect(()=>{
       </section>
 
       {/* Featured Solutions Section */}
-      <section className="px-4 sm:px-6 lg:px-12 py-12 sm:py-16 bg-white">
-        <div className="mb-12 max-w-6xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">Featured Solutions</h2>
-          <p className="text-gray-600 text-base sm:text-lg max-w-2xl">
-            Opinionated, production-ready solutions that turn AI, Cloud & Data into outcomes fast.
+      <section className=" bg-white py-12">
+        <div className='flex flex-row justify-evenly ml-0'>
+          <div className="py-8">
+          <h2 className="text-4xl font-extralight font-kumbh text-gray-900 mb-2">Featured Solutions</h2>
+          <p className="text-gray-600 text-base mt-14 sm:text-lg max-w-2xl">
+            Opinionated, production-ready solutions that turn <br/> AI, Cloud & Data into outcomes fast.
           </p>
+           {
+              solutions.slice(0,1).map((item, i) => (<div
+                key={i}
+                className={`p-10 max-w-96 h-56 mt-10  shadow-sm transition hover:shadow-md ${
+                  item.type === "bg"
+                    ? "bg-gray-100"
+                    : "border border-red-500 bg-white"
+                }`}
+              >
+                <img src={item.icon} alt={item.title} className="h-10 w-10 mb-4 object-contain" />
+                <h3 className="font-semibold text-base sm:text-lg text-gray-900 mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
         </div>
+        <div className="flex justify-center lg:justify-end">
+            <img
+              src="/Solution.svg" 
+              alt="Solution Graphic"
+              className="w-full  lg:max-w-2xl object-contain"
+            />
+          </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 max-w-7xl mx-auto items-start">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
-            {solutions.map((item, i) => (
+        </div>
+        
+
+   
+          <div className="grid grid-cols-1 ml-36  sm:grid-cols-3 gap-10">
+           
+              
+          
+            
+            { solutions.slice(1).map((item, i) => (
               <div
                 key={i}
-                className={`p-6  shadow-sm transition hover:shadow-md ${
+                className={`p-10 max-w-96 h-56 mt-10  shadow-sm transition hover:shadow-md ${
                   item.type === "bg"
                     ? "bg-gray-100"
                     : "border border-red-500 bg-white"
@@ -676,7 +716,7 @@ useEffect(()=>{
               </div>
             ))}
 
-            <div className="p-6  bg-red-600 hover:bg-gray-600 text-white flex flex-col  justify-between sm:col-span-2 lg:col-span-1">
+            <div className=" bg-red-600 hover:bg-gray-600 text-white flex flex-col p-10 max-w-96 h-56 mt-10 justify-between sm:col-span-2 lg:col-span-1">
               <h3 className="font-semibold text-base sm:text-lg mb-4">Talk to an Expert</h3>
               <button className="self-end w-10 h-10 flex items-center justify-center rounded-full  border border-white hover:bg-white hover:text-red-600 transition">
                 <ArrowUpRight size={18} />
@@ -684,37 +724,43 @@ useEffect(()=>{
             </div>
           </div>
 
-          <div className="flex justify-center lg:justify-end">
-            <img
-              src="/Solution.svg" 
-              alt="Solution Graphic"
-              className="w-full max-w-md lg:max-w-lg rounded-lg shadow-md object-contain"
-            />
-          </div>
-        </div>
+        
+   
       </section>
 
       {/* Final CTA Section */}
-      <section
-        className="relative bg-cover bg-center text-center py-16 sm:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
-        style={{
-          backgroundImage: "url('/Background2.svg')",
-        }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/70 to-red-900/60"></div>
-        <div className="relative max-w-3xl mx-auto text-white z-10 space-y-6 sm:space-y-8">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-extrabold leading-tight">
-            Let’s Build the Future Together
-          </h2>
-          <p className="text-base sm:text-lg lg:text-xl text-gray-200 leading-relaxed">
-            Tell us your goals. We’ll design the runway then deliver it with AI,
-            Cloud & Data.
-          </p>
-          <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-semibold px-6 sm:px-8 py-4  text-base sm:text-lg shadow-lg transition justify-center mx-auto">
-            Talk to an Expert <ArrowUpRight size={20} />
-          </button>
-        </div>
-      </section>
+    
+       <section
+              className="relative bg-cover bg-center text-center  sm:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
+              style={{ backgroundImage: "url('/Background2.svg')" }}
+      
+            >
+              <div>
+                  <img src="/vectors.svg" alt="" className="absolute left-14 top-10 h-32 w-32 object-cover object-top opacity-70 z-30" />
+              </div>
+              <div>
+                  <img src="/left.svg" alt="" className="absolute left-20 top-72   w-4 object-cover object-left opacity-70 z-30" />
+              </div>
+              <div>
+                  <img src="/right.svg" alt="" className="absolute right-96 top-12  w-20 object-cover object-right opacity-70 z-30" />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/80 to-black/90"></div>
+              <div className="relative max-w-3xl mx-auto text-white z-10 space-y-6 sm:space-y-8">
+                <h2 className="text-2xl  font-kumbh  md:text-4xl font-extralight leading-tight">
+                Let’s Build the Future Together
+                </h2>
+                <p className="text-base sm:text-lg lg:text-xl text-gray-200 leading-relaxed">
+                 👉 Partner with Doelsoft – Your trusted iOS & Android app development company in the USA & India.
+                </p>
+                <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-light px-6 sm:px-8 py-4 text-base sm:text-lg shadow-lg transition justify-center mx-auto">
+                  Talk to an Expert{" "}
+                  <ArrowUpRight
+                    className="border border-white rounded-full text-center"
+                    size={24}
+                  />
+                </button>
+              </div>
+            </section>
     </div>
   )
 }

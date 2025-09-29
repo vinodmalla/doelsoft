@@ -10,18 +10,22 @@ import Choose from './Components/Choose';
 
 import SoftwareDevelopment from './Components/SoftwareDevelopment';
 import MobileDevelopment from './Components/MobileDevelopment';
+import Accessibility from './Components/Accessibility';
 
 function App() {
   return (
     <>
     <Header />
-   {/*<Home /> 
+   
+   {/*
+    <Home /> 
    <TalentHub /> 
    <ITStaffing /> 
    <Contract /> 
    <Choose /> 
-   <SoftwareDevelopment /> */}
-   <MobileDevelopment />
+   <SoftwareDevelopment /> 
+   <MobileDevelopment /> */}
+   <Accessibility />
    <Footer />
     </>
    
