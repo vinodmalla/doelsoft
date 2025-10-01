@@ -110,21 +110,18 @@ function Accessibility() {
            
         </section>
         <section className="relative w-full flex justify-center items-center py-10 bg-white">
-         
-           
-             <div className="absolute  right-48 top-11">
+         <div className="absolute  right-48 top-11">
+              
           <img
-            src="/logo4.svg" // replace with your arrow asset
+            src="/logo4.svg" 
             alt="logo"
             className="w-20 h-auto"
           />
-         
-
-          </div>
-          
+      </div>
+            
       
             
-      <div className="relative bg-[#464B51] mt-16  text-white flex items-center w-[90%] md:w-[80%]  overflow-hidden">
+      <div className="relative bg-[#464B51] mt-16 py-1  text-white flex items-center w-[90%] md:w-[80%]  overflow-hidden">
        
         <div>
               {/* Left Image */}
@@ -147,15 +144,10 @@ function Accessibility() {
         {/* Arrow Graphic (Top Right) */}
       
       </div>
-       <div className='absolute w-full'>
-           
-            <img
-            src="/Accessibility_target.svg" // replace with your image (hands + target)
-            alt="Target"
-            className="w-full h-full absolute z-30"
-          />
-        
-          </div>
+    
+      <div className='absolute left-44 w-64  z-30 '>
+          <img src="/Accessibility_target.svg" alt='Accessibility' className='  h-[#300px] mb-[#35px] ' />
+      </div>    
         
     </section>
      <section className="w-full bg-white py-12">

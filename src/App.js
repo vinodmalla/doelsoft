@@ -11,6 +11,7 @@ import Choose from './Components/Choose';
 import SoftwareDevelopment from './Components/SoftwareDevelopment';
 import MobileDevelopment from './Components/MobileDevelopment';
 import Accessibility from './Components/Accessibility';
+import Insights from './Components/Insights';
 
 function App() {
   return (
@@ -24,8 +25,11 @@ function App() {
    <Contract /> 
    <Choose /> 
    <SoftwareDevelopment /> 
-   <MobileDevelopment /> */}
-   <Accessibility />
+   <MobileDevelopment />  
+
+   <Accessibility />   */}
+   <Insights />
+  
    <Footer />
     </>
    
