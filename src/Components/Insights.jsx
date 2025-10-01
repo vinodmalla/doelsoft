@@ -10,7 +10,7 @@ function Insights() {
     desc: "What matters now and how leaders can build durable advantage.",
   },
   {
-    img: "/Client2.svg",
+    img: "/client2.svg",
     client: "Client Name",
     title: "AI-Powered Software Development",
     desc: "From scaffolds to scale: patterns for shipping smarter, faster.",
@@ -21,7 +21,7 @@ function Insights() {
     desc: "What matters now and how leaders can build durable advantage.",
   },
   {
-    img: "/Client2.svg",
+    img: "/client2.svg",
     client: "Client Name",
     title: "AI-Powered Software Development",
     desc: "From scaffolds to scale: patterns for shipping smarter, faster.",
@@ -32,7 +32,7 @@ function Insights() {
     desc: "What matters now and how leaders can build durable advantage.",
   },
   {
-    img: "/Client2.svg",
+    img: "/client2.svg",
     client: "Client Name",
     title: "AI-Powered Software Development",
     desc: "From scaffolds to scale: patterns for shipping smarter, faster.",
@@ -43,7 +43,7 @@ function Insights() {
     desc: "What matters now and how leaders can build durable advantage.",
   },
   {
-    img: "/Client2.svg",
+    img: "/client2.svg",
     client: "Client Name",
     title: "AI-Powered Software Development",
     desc: "From scaffolds to scale: patterns for shipping smarter, faster.",
@@ -54,7 +54,7 @@ function Insights() {
     desc: "What matters now and how leaders can build durable advantage.",
   },
   {
-    img: "/Client2.svg",
+    img: "/client2.svg",
     client: "Client Name",
     title: "AI-Powered Software Development",
     desc: "From scaffolds to scale: patterns for shipping smarter, faster.",
@@ -65,7 +65,7 @@ function Insights() {
     desc: "What matters now and how leaders can build durable advantage.",
   },
   {
-    img: "/Client2.svg",
+    img: "/client2.svg",
     client: "Client Name",
     title: "AI-Powered Software Development",
     desc: "From scaffolds to scale: patterns for shipping smarter, faster.",
@@ -136,7 +136,7 @@ function Insights() {
       
             >
               <div>
-                  <img src="/vectors.svg" alt="" className="absolute left-14 top-10 h-32 w-32 object-cover object-top opacity-70 z-30" />
+                  <img src="/Vectors.svg" alt="" className="absolute left-14 top-10 h-32 w-32 object-cover object-top opacity-70 z-30" />
               </div>
               <div>
                   <img src="/left.svg" alt="" className="absolute left-20 top-72   w-4 object-cover object-left opacity-70 z-30" />
