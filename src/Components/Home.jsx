@@ -218,10 +218,10 @@ useEffect(()=>{
 
     
   return (
-    <div className='w-fullss h-full'>
+    <div className='w-full h-full'>
       {/* Hero Section - Responsive with equal spacing */}
-      <section className="w-full min-h-screen flex flex-col lg:flex-row justify-center items-center bg-white px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16 gap-6 lg:gap-12">
-        <div className="w-full lg:w-1/2 flex flex-col gap-6 lg:gap-8">
+      <section className="w-full min-h-screen max-w-[80vw]  mx-auto  flex flex-col md:flex-row justify-center items-center bg-white px-4 sm:px-6 lg:px-8 py-4 gap-6 lg:gap-12">
+        <div className="w-full lg:w-1/2 space-y-6 flex flex-col gap-6 lg:gap-8">
           {CursolDetails.map((details, index) => (
             <div
               key={index}
@@ -229,7 +229,7 @@ useEffect(()=>{
                 cursol === index ? "opacity-100 relative" : "opacity-0 absolute"
               } w-full`}
             >
-              <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight">
+              <h1 className="text-5xl font-bold leading-tight">
                 {details.h11}
                 <br />
                 <span className="text-red-600 block mt-2 text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold">
@@ -237,7 +237,7 @@ useEffect(()=>{
                 </span>
               </h1>
 
-              <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
+              <p className="text-gray-600 text-base py-4 sm:text-lg leading-relaxed">
                 {details.p}
               </p>
 

@@ -12,6 +12,7 @@ import SoftwareDevelopment from './Components/SoftwareDevelopment';
 import MobileDevelopment from './Components/MobileDevelopment';
 import Accessibility from './Components/Accessibility';
 import Insights from './Components/Insights';
+import Carrers from './Components/Carrers';
 
 function App() {
   return (
@@ -27,8 +28,10 @@ function App() {
    <SoftwareDevelopment /> 
    <MobileDevelopment />  
 
-   <Accessibility />   */}
-   <Insights />
+   <Accessibility />  
+   <Insights /> 
+    <Home />  */}
+    <Carrers />
   
    <Footer />
     </>
