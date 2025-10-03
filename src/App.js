@@ -13,6 +13,7 @@ import MobileDevelopment from './Components/MobileDevelopment';
 import Accessibility from './Components/Accessibility';
 import Insights from './Components/Insights';
 import Carrers from './Components/Carrers';
+import ContactUs from './Components/ContactUs';
 
 function App() {
   return (
@@ -30,9 +31,9 @@ function App() {
 
    <Accessibility />  
    <Insights /> 
-    <Home />  */}
-    <Carrers />
-  
+    <Home />  *
+    <Carrers /> */}
+    <ContactUs />
    <Footer />
     </>
    
