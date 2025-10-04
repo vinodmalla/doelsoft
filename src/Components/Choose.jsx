@@ -68,28 +68,36 @@ const coreValues = [
 ];
 return (
     <div className="w-full min-h-screen font-kumbh space-y-6 mt-16 flex flex-col justify-end">
-        <section className="relative w-full flex-1 flex items-end overflow-hidden py-20">
+        
+        
+          <section
+            className="relative w-full h-auto min-h-[550px] flex flex-col md:flex-row items-end overflow-hidden py-10"
+            style={{
+                backgroundImage: "url('/worldmap.svg')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+            }}
+        > 
             {/* Content Left */}
-            <div className="relative z-10 flex-1 flex flex-col justify-end pl-28 pb-16">
-                <h2 className="text-6xl font-bold text-red-600 mb-8">Why Choose<br />DoelSoft</h2>
-                <button className="mt-6 px-6 py-2 border border-black text-black hover:bg-gray-200 w-max">
+            <div className="relative z-10 flex-1 flex flex-col justify-end pl-28 bottom-48">
+                <h2 className="text-6xl gap-6 font-semibold text-red-600 mb-8">
+                 Why Choose <br />
+                    <span className="block mt-4">DoelSoft</span>
+                </h2>
+                <button className="py-2 px-4 border border-black text-black hover:bg-gray-200 w-max">
                     Consult With Us <span className="ml-2">↗</span>
                 </button>
             </div>
             {/* Image Right */}
-            <div className="absolute right-0 bottom-0 h-full w-1/2 mr-10 flex items-end justify-end z-0">
+            <div className="absolute right-36 top-12 h-[432.87px] w-[506.26px] mr-10 flex items-end justify-end z-0">
                 <img
                     src="/Choose1.svg"
                     alt="Team"
-                    className="w-full h-full object-cover"
-                    style={{ objectPosition: 'right bottom' }}
+                    className="w-full h-full object-contain md:object-cover"
+                    style={{ objectPosition: "right bottom" }}
                 />
             </div>
-            {/* Background */}
-            <div
-                className="absolute inset-0 bg-cover bg-center z-0"
-                style={{ backgroundImage: "url('/worldmap.svg')" }}
-            ></div>
         </section>
         <section className="w-full bg-[#F3F3F3]">
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 max-w-7xl mx-auto">
@@ -109,7 +117,8 @@ return (
                 </div>
             </div>
         </section>
-        <div className="p-10 ml-10 relative">
+        <section className='w-full' >
+        <div className="p-10 ml-10 relative ">
             <h1 className="text-3xl font-bold text-gray-800 mb-4">Key Benefits We Deliver</h1>
             <div className="space-y-6 ml-14">
                 <div className="bg-white p-4 flex items-start gap-4">
@@ -166,7 +175,8 @@ return (
                 </div>
             </div>       
         </div>
-        <section className="w-full bg-gray-50 py-12">
+        </section >
+        <section className="w-full bg-gray-50 py-10 ">
             <div className="max-w-7xl mx-auto px-6">
                 {/* Heading */}
                 <h2 className="text-2xl md:text-4xl font-kumbh  mb-12">
@@ -250,21 +260,49 @@ return (
         </div>
       </div>
     </section>
-     <section className="relative bg-cover bg-center text-center py-16 sm:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden" style={{ backgroundImage: "url('/Background2.svg')", }}>
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/70 to-red-900/60"></div>
-            <div className="relative max-w-3xl mx-auto text-white z-10 space-y-6 sm:space-y-8">
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-extrabold leading-tight">
-                      Let’s Build the Future Together
-                </h2>
-                    <p className="text-base sm:text-lg lg:text-xl text-gray-200 leading-relaxed">
-                      Tell us your goals. We’ll design the runway then deliver it with AI,
-                      Cloud & Data.
-                    </p>
-                    <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-light px-6 sm:px-8 py-4  text-base sm:text-lg shadow-lg transition justify-center mx-auto">
-                      Talk to an Expert <ArrowUpRight className='border border-white rounded-full text-center' size={24} />
-                    </button>
-                  </div>
-                </section>
+   <section
+   className="relative w-full bg-cover bg-center text-center py-16 sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
+   style={{ backgroundImage: "url('/Background2.svg')" }}
+ >
+   {/* Decorative Vectors */}
+   <img
+     src="/Vectors.svg"
+     alt=""
+     className="absolute left-6 sm:left-14 top-8 sm:top-10 h-20 sm:h-28 md:h-32 w-20 sm:w-28 md:w-32 object-contain opacity-70 z-30"
+   />
+   <img
+     src="/left.svg"
+     alt=""
+     className="absolute left-10 sm:left-20 bottom-10 sm:top-72 w-3 sm:w-4 object-contain opacity-70 z-30"
+   />
+   <img
+     src="/right.svg"
+     alt=""
+     className="absolute right-10 sm:right-40 lg:right-72 top-6 sm:top-12 w-10 sm:w-16 md:w-20 object-contain opacity-70 z-30"
+   />
+ 
+   {/* Dark overlay */}
+   <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/80 to-black/90"></div>
+ 
+   {/* Main Content */}
+   <div className="relative max-w-3xl mx-auto text-white z-10 flex flex-col items-center justify-center space-y-5 sm:space-y-7 md:space-y-8">
+     <h2 className="text-xl sm:text-2xl md:text-4xl font-kumbh font-light leading-snug px-2">
+       🌍  Build a <span className="font-semibold">Connected Future</span> with Doelsoft
+     </h2>
+ 
+     <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-200 leading-relaxed px-2">
+       👉 Partner with Doelsoft – Your trusted iOS & Android app development company in the USA & India.
+     </p>
+ 
+     <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-4 text-sm sm:text-lg rounded-md shadow-lg transition-all duration-300 ease-in-out">
+       Talk to an Expert{" "}
+       <ArrowUpRight
+         className="border border-white rounded-full p-1"
+         size={24}
+       />
+     </button>
+   </div>
+ </section>
     </div>
 )
 }

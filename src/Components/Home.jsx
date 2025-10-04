@@ -20,12 +20,7 @@ import CyberSecurity from "../assets/CyberSecurity.svg";
 import data from "../assets/Data.svg";
 import Accessibility from "../assets/Accessibility.svg";
 import Background from "../assets/Background.svg";
-
 import { Compass, Ruler, Truck, Share2 } from "lucide-react";
-import frame1 from '../assets/Frame 172.svg';
-import frame2 from '../assets/Frame 173.svg';
-import frame3 from '../assets/Frame 174.svg';
-import frame4 from '../assets/Frame 175.svg';
 import secure from '../assets/Secure.svg';
 import Cloud_Done from '../assets/Cloud_Done.svg';
 
@@ -152,7 +147,7 @@ const steps = [
     icon: <Share2 className="w-8 h-8 text-white" />,
   },
 ];
-const frames=[frame1,frame2,frame3,frame4];
+const frames=["OutCome & First Delivery","AI + Human Intelligence", "Secure,Accesibile by Disign","Global ,Agile & Scalable"];
 const cards = [
     {
       title: "Applied AI, Not Experiments",
@@ -220,160 +215,198 @@ useEffect(()=>{
   return (
     <div className='w-full h-full'>
       {/* Hero Section - Responsive with equal spacing */}
-      <section className="w-full min-h-screen max-w-[80vw]  mx-auto  flex flex-col md:flex-row justify-center items-center bg-white px-4 sm:px-6 lg:px-8 py-4 gap-6 lg:gap-12">
-        <div className="w-full lg:w-1/2 space-y-6 flex flex-col gap-6 lg:gap-8">
-          {CursolDetails.map((details, index) => (
-            <div
-              key={index}
-              className={`flex-1 font-kumbh transition-opacity duration-700 ${
-                cursol === index ? "opacity-100 relative" : "opacity-0 absolute"
-              } w-full`}
-            >
-              <h1 className="text-5xl font-bold leading-tight">
-                {details.h11}
-                <br />
-                <span className="text-red-600 block mt-2 text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold">
-                  {details.h22}
-                </span>
-              </h1>
+  <section className="w-full min-h-lvh  max-w-[80vw] mx-auto relative flex flex-col md:flex-row justify-center items-center bg-white px-4 sm:px-6 lg:px-8 py-16 gap-6 lg:gap-12">
+  {/* Background Diamonds */}
+  <div className="w-full lg:w-1/2 space-y-6 flex flex-col gap-6 lg:gap-8">
+    {CursolDetails.map((details, index) => (
+      <div
+        key={index}
+        className={`flex-1 font-kumbh transition-opacity duration-700 ${
+          cursol === index ? "opacity-100 relative" : "opacity-0 absolute"
+        } w-full`}
+      >
+        <h1 className="text-5xl font-bold leading-tight">
+          {details.h11}
+          <br />
+          <span className="text-red-600 block mt-2 text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold">
+            {details.h22}
+          </span>
+        </h1>
 
-              <p className="text-gray-600 text-base py-4 sm:text-lg leading-relaxed">
-                {details.p}
-              </p>
+        <p className="text-gray-600 text-base py-4 sm:text-lg leading-relaxed">
+          {details.p}
+        </p>
 
-              <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-red-600 hover:bg-gray-600 text-white px-6 sm:px-8 py-3 font-medium rounded transition">
-                  Explore Solutions ↗
-                </button>
-                <button className="bg-white text-black px-6 sm:px-8 py-3 font-medium border border-black hover:bg-red-600 hover:text-white rounded transition">
-                  Consult with Us ↗
-                </button>
-              </div>
-
-              <div className="mt-6 lg:mt-8">
-                <div className="flex gap-4 sm:gap-6 animate-marquee whitespace-nowrap overflow-hidden">
-                  {[spring, wipro, zingo, mevatron, menlo, tech].map((logo, i) => (
-                    <div
-                      key={i}
-                      className="w-16 sm:w-20 lg:w-24 h-12 sm:h-14 lg:h-16 flex items-center justify-center flex-shrink-0"
-                    >
-                      <img
-                        src={logo}
-                        alt={`logo-${i}`}
-                        className="max-w-full max-h-full object-contain"
-                      />
-                    </div>
-                  ))}
-                </div>
-                <p className="text-black font-bold text-lg sm:text-xl lg:text-2xl py-4 lg:py-6 text-center sm:text-left">
-                  Trusted by{" "}
-                  <span className="font-medium">
-                    Leading Enterprises & Fast–Growing Teams
-                  </span>
-                </p>
-              </div>
-            </div>
-          ))}
+        <div className="flex flex-col sm:flex-row gap-4">
+          <button className="bg-red-600 hover:bg-gray-600 text-white px-6 sm:px-8 py-3 font-medium rounded transition">
+            Explore Solutions ↗
+          </button>
+          <button className="bg-white text-black px-6 sm:px-8 py-3 font-medium border border-black hover:bg-red-600 hover:text-white rounded transition">
+            Consult with Us ↗
+          </button>
         </div>
 
-        <div className="w-full lg:w-1/2 relative flex flex-col items-center justify-center gap-4 lg:gap-0 mt-8 lg:mt-0">
-          <img
-            src={mask}
-            alt="mask"
-            className="absolute inset-0 w-1/2 mt-16 ml-40 justify-center h-1/2 bg-gray-200 object-cover hidden lg:block"
-          />
-
-          <img
-            src={CursolDetails[cursol].img}
-            alt={CursolDetails[cursol].h22}
-            className={`w-full h-auto max-w-md mx-auto items-center mb-24 lg:max-w-none ${cursol==0 ? "animate-moveOnce" :""} z-50 object-contain`}
-          />
-
-          {/* Testimonials - Stacked on mobile */}
-          <div className="flex flex-col items-end gap-2 lg:absolute lg:top-1/4 lg:right-0">
-            {Testimonial.map((item, index) => (
+        {/* Logos */}
+        <div className="mt-6 lg:mt-8">
+          <div className="flex gap-4 sm:gap-6 animate-marquee whitespace-nowrap overflow-hidden">
+            {[spring, wipro, zingo, mevatron, menlo, tech].map((logo, i) => (
               <div
-                key={index}
-                className={`bg-white z-50 shadow-xl rounded-md p-3 sm:p-4 w-48 sm:w-56 lg:w-60 transition-opacity duration-1000 ${
-                  index === testimonialIndex ? "opacity-100 block" : "opacity-0 hidden"
-                }`}
+                key={i}
+                className="w-16 sm:w-20 lg:w-24 h-12 sm:h-14 lg:h-16 flex items-center justify-center flex-shrink-0"
               >
-                <p className="text-xs sm:text-sm italic text-gray-600 leading-relaxed">
-                  "{item.quote}"
-                </p>
-                <div className="flex items-center mt-2 gap-2">
-                  <RxAvatar size={20} className="sm:w-6 sm:h-6" />
-                  <div>
-                    <p className="text-xs sm:text-sm font-semibold">
-                      {item.name}
-                    </p>
-                    <p className="text-[10px] sm:text-xs text-gray-500">
-                      Founder @ {item.company}
-                    </p>
-                  </div>
-                </div>
+                <img
+                  src={logo}
+                  alt={`logo-${i}`}
+                  className="max-w-full max-h-full object-contain"
+                />
               </div>
             ))}
           </div>
+          <p className="text-black font-bold text-lg sm:text-xl lg:text-2xl py-4 lg:py-6 text-center sm:text-left">
+            Trusted by{" "}
+            <span className="font-medium">
+              Leading Enterprises & Fast–Growing Teams
+            </span>
+          </p>
+        </div>
+      </div>
+    ))}
+  </div>
 
-          {/* Floating Tags - Responsive positioning */}
-          <div className="flex flex-col sm:flex-row justify-between w-full max-w-md mx-auto lg:absolute lg:bottom-0 lg:w-auto gap-2 lg:gap-4">
-            <div className="bg-white shadow-md rounded-md px-3 py-2 flex items-center gap-2 text-xs sm:text-sm">
-              <span className="font-semibold">Budget Friendly</span>
-              <span className="text-red-600">Life Long</span>
-            </div>
-            <div className="bg-white shadow-md rounded-md px-3 py-2 flex items-center gap-2 text-xs sm:text-sm">
-              <span className="font-semibold">Native, Fast & Powerful</span>
-              <span className="text-red-600">AI leverage</span>
+  {/* RIGHT CONTENT */}
+  <div className="w-full lg:w-1/2 relative flex ml-[-63px]  flex-col items-center justify-center gap-4 lg:gap-0 mt-8 lg:mt-0">
+    {/* Mask background (desktop only) */}
+    <img
+      src={mask}
+      alt="mask"
+      className="absolute bg-[#8c8b8b] inset-0 w-[330px] mt-32 ml-[13rem] h-[370px] object-cover hidden lg:block"
+    />
+
+    {/* Main image */}
+    <img
+      src={CursolDetails[cursol].img}
+      alt={CursolDetails[cursol].h22}
+      className={`w-full h-[570px] max-w-md ml-[45px] pt-[27px]   mx-auto mb-24 lg:max-w-none ${
+        cursol === 0 ? "animate-moveOnce" : ""
+      } z-50 object-contain`}
+    />
+
+    {/* Testimonials */}
+    <div className="flex flex-col mt-[177px] items-end gap-2 lg:absolute lg:top-1/4 lg:right-0 mr-[-65px]" >
+      {Testimonial.map((item, index) => (
+        <div
+          key={index}
+          className={`bg-white z-50 shadow-xl rounded-md p-3 sm:p-4 w-48 sm:w-56 lg:w-60 transition-opacity duration-1000 ${ index === testimonialIndex ? "opacity-100 block" : "opacity-0 hidden" }`}
+        >
+          <p className="text-xs sm:text-sm italic text-gray-600 leading-relaxed">
+            "{item.quote}"
+          </p>
+          <div className="flex items-center mt-2 gap-2">
+            <RxAvatar size={20} className="sm:w-6 sm:h-6" />
+            <div>
+              <p className="text-xs sm:text-sm font-semibold">{item.name}</p>
+              <p className="text-[10px] sm:text-xs text-gray-500">
+                Founder @ {item.company}
+              </p>
             </div>
           </div>
         </div>
+      ))}
+    </div>
 
-        {/* Vertical Carousel Indicators - Hidden on mobile */}
-        <div className="hidden lg:flex flex-col gap-4 absolute right-4 top-1/2 -translate-y-1/2">
-          {CursolDetails.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCursol(index)}
-              className={`w-2 h-8 rounded-full transition-all duration-300 ${
-                cursol === index ? "bg-red-600" : "bg-gray-300"
-              }`}
-            />
-          ))}
-        </div>
-      </section>
+    {/* Floating Tags */}
+    <div className="flex flex-col mt-8 justify-between mb-[-28px] w-full max-w-md mx-auto lg:absolute lg:bottom-0 lg:w-auto gap-2 lg:gap-4">
+      {/* Tag 1 */}
+      <div className="bg-white shadow-md rounded-md px-3 py-2 flex items-center gap-2 text-xs sm:text-sm">
+        
+           <img src="/F1.svg" alt="AI leverage" className='w-8 h-8' />
+        <span className="font-semibold">Budget Friendly</span>
+          <span className="text-red-600 ml-8">Life Long</span>
+      
+      </div>
+
+      {/* Tag 2 */}
+      <div className="bg-white shadow-md rounded-md ml-16  px-3 py-2 flex items-center gap-2 text-xs sm:text-sm">
+        <img src="/F1.svg" alt="AI leverage" className='w-8 h-8' />
+     
+          <span className="font-semibold">Native, Fast & Powerful</span>
+          <span className="text-red-600 ml-8">AI leverage</span>
+        
+      </div>
+    </div>
+  </div>
+
+  {/* Carousel Indicators */}
+  <div className="hidden lg:flex flex-col  pb-[190px] gap-4 absolute right-4 top-1/2 -translate-y-1/2">
+    {CursolDetails.map((_, index) => (
+      <button
+        key={index}
+        aria-label={`Go to slide ${index + 1}`}
+        onClick={() => setCursol(index)}
+        className={`w-2 h-8 rounded-full transition-all duration-300 ${
+          cursol === index
+            ? "bg-red-600 scale-110"
+            : "bg-gray-300 hover:bg-gray-400"
+        }`}
+      /> 
+    ))}
+  </div>
+  <p>{cursol}</p>
+
+</section>
+
+
 
       {/* Industries Section - Responsive grid */}
-      <section className="w-full  bg-black px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
-        <h1 className="text-white text-xl  sm:text-2xl font-bold ml-14 pl-0 sm:pl-4 pt-4 sm:pt-6 mb-8">
-          Industries We Serve
-        </h1>
-        <div className="flex flex-row gap-80 ml-14 mb-8 sm:mb-12">
-          <h2 className="text-white pl-4 text-4xl  font-light">
-            AI for Every Industry
-          </h2>
-          <p className="text-white text-base sm:text-lg mt-4 px-4">
-            We turn domain challenges into measurable outcomes with modern <br className="hidden sm:block" /> cloud, trusted data, and production-ready AI.
+     <section className="relative w-full px-4 sm:px-6 lg:px-8 py-16 sm:py-16 lg:py-20">
+  {/* Background Image + Overlay */}
+  <div className="absolute inset-0">
+    <img
+      src="/11122436.png" // <-- replace with actual image path
+      alt="background"
+      className="w-full h-full object-cover"
+    />
+    <div className="absolute inset-0 bg-[#080808] opacity-90"></div>
+  </div>
+
+  {/* Content */}
+  <div className="relative z-10">
+    <h1 className="text-white text-xl sm:text-2xl font-bold ml-14 pl-0 sm:pl-4 pt-4 sm:pt-6 mb-8">
+      Industries We Serve
+    </h1>
+
+    <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 ml-14 mb-8 sm:mb-12">
+      <h2 className="text-white pl-4 text-3xl sm:text-4xl font-light">
+        AI for Every Industry
+      </h2>
+      <p className="text-white text-base sm:text-lg mt-2 lg:mt-0 max-w-xl px-4">
+        We turn domain challenges into measurable outcomes with modern{" "}
+        <br className="hidden sm:block" /> cloud, trusted data, and
+        production-ready AI.
+      </p>
+    </div>
+
+    {/* Services Grid */}
+    <div className="grid grid-cols-2 sm:grid-cols-3 lg:flex lg:flex-row gap-6 lg:gap-8 px-4 lg:px-12 lg:mx-auto max-w-6xl justify-center">
+      {services.map((service, i) => (
+        <div
+          key={i}
+          className="flex flex-col items-center hover:scale-105 duration-300 py-4"
+        >
+          <img
+            src={service.logo}
+            alt={service.title}
+            className="w-20 sm:w-24 lg:w-32 h-auto object-contain mb-2"
+          />
+          <p className="text-white text-base sm:text-lg text-center">
+            {service.title}
           </p>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:flex lg:flex-row gap-6 lg:gap-8 px-4 lg:px-12 lg:mx-auto max-w-6xl justify-center">
-          {services.map((service, i) => (
-            <div
-              key={i}
-              className="flex flex-col items-center hover:scale-105 duration-300 py-4"
-            >
-              <img
-                src={service.logo}
-                alt={service.title}
-                className="w-20 sm:w-24 lg:w-32 h-auto object-contain mb-2"
-              />
-              <p className="text-white text-base sm:text-lg text-center">
-                {service.title}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* Core Services Section - Responsive flex */}
       <section className='w-full bg-white px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20'>
@@ -447,18 +480,17 @@ useEffect(()=>{
       <section className='w-full bg-white px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20'>
         <div className='flex flex-col lg:flex-row gap-8 lg:gap-12 max-w-7xl mx-auto'>
           <div className='flex-1 relative flex flex-col items-center justify-center lg:justify-start'>
-            <img src={Background} alt='background' className='absolute inset-0 w-full h-full bg-gray-200 object-cover hidden lg:block' />
+            <img src={Background} alt='background' className='absolute inset-0 w-[556px] h-[657px] bg-gray-200 object-cover hidden lg:block' />
             <img 
               src="/Girl.svg"
               alt="Girl" 
-              className="w-full max-w-md h-auto z-10 animate-none relative" 
+              className="w-[390px] max-w-md h-auto z-10 animate-none relative" 
             />
 
             {/* Testimonials */}
-            <div className="flex flex-col items-end gap-2 absolute top-1/2 right-0 mt-8 lg:mt-0">
+            <div className="flex flex-col items-end gap-2 mt-[1px] absolute top-1/2 right-0  lg:mt-0">
               {Testimonial.map((item, index) =>(
-                <div className={`bg-white z-50 shadow-xl rounded-md p-4 w-56 transition-opacity duration-1000 ${
-                  index === testimonialIndex ? 'opacity-100 block' : 'opacity-0 hidden'}`} key={index}>
+                <div c className={`bg-white z-50 shadow-xl rounded-md p-3 sm:p-4 w-48 sm:w-56 lg:w-60 transition-opacity duration-1000 ${index === testimonialIndex ? "opacity-100 block" : "opacity-0 hidden" }`} key={index}>
                   <p className="text-sm italic text-gray-600 leading-relaxed">
                       "{item.quote}"
                   </p>
@@ -494,27 +526,35 @@ useEffect(()=>{
       </section>
 
       {/* Frames Section */}
-      <section className="relative bg-white py-8 sm:py-12 px-4 sm:px-6 lg:px-12 lg:px-48">
+      <section className="relative bg-white py-8 sm:py-12 px-4 sm:px-6  lg:px-48">
         <div className="hidden md:flex flex-row flex-wrap gap-6 justify-center">
           {frames.map((frame, i) => (
-            <div key={i} className="flex flex-col justify-between flex-1 min-w-[200px]">
+            <div key={i} className="flex flex-row bg-slate-100 shadow-sm px-4 py-2 justify-between flex-1 min-w-[200px]">
+              <div className='flex flex-row gap-2 mt-3 whitespace-nowrap'>
               <img
-                src={frame}
-                alt={`Frame ${i + 1}`}
-                className="w-full h-48 sm:h-56 rounded-xl object-cover"
+                src="/F1.svg"
+                alt={`Frame 
+                  `}
+                className="w-10 h-10 "
               />
+              <p>{frame}</p>
+              </div>
             </div>
           ))}
         </div>
         {/* Mobile fallback: Stack frames */}
         <div className="md:hidden grid grid-cols-2 gap-4">
           {frames.map((frame, i) => (
-            <img
-              key={i}
-              src={frame}
-              alt={`Frame ${i + 1}`}
-              className="w-full h-48 rounded-xl object-cover"
-            />
+             <div key={i} className="flex flex-row bg-slate-100 shadow-sm px-4 py-2 justify-between flex-1 min-w-[200px]">
+              <div className='flex flex-row gap-2 mt-3 whitespace-nowrap'>
+              <img
+                src="/F1.svg"
+                alt={frame}
+                className="w-10 h-10 "
+              />
+              <p>{frame}</p>
+              </div>
+            </div>
           ))}
         </div>
       </section>
@@ -611,51 +651,72 @@ useEffect(()=>{
         </div>
       </section>
 
-      {/* Insights Section */}
-      <section className="px-4 sm:px-6 lg:px-12 py-12 sm:py-16 bg-white">
-        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-10 max-w-6xl mx-auto">
-          <div className="flex-1 mb-6 lg:mb-0">
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
-              DoelSoft Insights & Thought Leadership
-            </h2>
-            <p className="text-gray-600 mt-2 max-w-2xl text-base sm:text-lg">
-              Practical playbooks from the field AI, Cloud & Data patterns that ship results.
-            </p>
-          </div>
-          <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-light px-6 sm:px-8 py-4 text-base sm:text-lg shadow-lg transition justify-center mx-auto">
-            View all Insights {" "} <ArrowUpRight
-                    className="border border-white rounded-full text-center"
-                    size={24}
-                  />
-          </button>
+      <section className="relative px-4 sm:px-6 lg:px-12 py-28 bg-white">
+         <div className="absolute  right-48 top-14">
+              
+          <img
+            src="/logo4.svg" 
+            alt="logo"
+            className="w-20 h-auto"
+          />
+      </div>
+      {/* Heading + CTA */}
+      <div className="  flex flex-col lg:flex-row lg:items-center lg:justify-between mb-12 max-w-7xl mx-auto">
+        <div className="flex-1 mb-6 lg:mb-0">
+          <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-semibold leading-tight tracking-[-0.03em] text-black font-['Kumbh_Sans']">
+            DoelSoft Insights & Thought Leadership
+          </h2>
+          <p className="text-gray-800 mt-4 max-w-2xl text-base sm:text-lg leading-relaxed font-['Inter']">
+            Practical playbooks from the field AI, Cloud & Data patterns that
+            ship results.
+          </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
-          {insights.map((item, i) => (
-            <div
-              key={i}
-              className="relative  overflow-hidden shadow-lg group h-64 sm:h-72"
-            >
+        {/* CTA Card (Red Button) */}
+         
+        <button className="relative flex items-center justify-between bg-[#EF0E0E] text-white font-semibold px-10 py-6 shadow-lg hover:bg-red-700 transition">
+          <span className="text-xl tracking-[-0.03em]">View all Insights</span>
+          <span className="ml-4 w-12 h-12 flex items-center justify-center rounded-full border border-white">
+            <ArrowUpRight size={20} />
+          </span>
+        </button>
+      </div>
+
+      {/* Insights Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        {insights.map((item, i) => (
+          <div
+            key={i}
+            className="bg-[#282828] rounded-md overflow-hidden flex flex-col shadow-lg"
+          >
+            {/* Top Image */}
+            <div className="h-[220px] w-full overflow-hidden">
               <img
                 src={item.img}
                 alt={item.title}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                className="w-full h-full object-cover"
               />
-              <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white p-4 sm:p-6">
-                <p className="text-xs sm:text-sm text-gray-300">{item.client}</p>
-                <h3 className="text-base sm:text-lg font-semibold mt-1">{item.title}</h3>
-                <p className="text-xs sm:text-sm text-gray-300 mt-1 leading-relaxed">{item.desc}</p>
-                <button className="mt-3 p-2 rounded-full bg-white/10 hover:bg-white/20 transition">
-                  <ArrowUpRight
-                    className="border border-white rounded-full text-center"
-                    size={24}
-                  />
-                </button>
-              </div>
             </div>
-          ))}
-        </div>
-      </section>
+
+            {/* Content */}
+            <div className="p-6 flex flex-col flex-1 text-white">
+              <p className="text-sm font-light text-gray-300">{item.client}</p>
+              <h3 className="text-xl font-semibold mt-3 font-['Kumbh_Sans']">
+                {item.title}
+              </h3>
+              <p className="text-sm mt-3 text-gray-300 leading-relaxed font-['Inter']">
+                {item.desc}
+              </p>
+
+              {/* Icon Button */}
+              <button className="mt-4 ml-auto w-11 h-11 flex items-center justify-center rounded-full border border-white hover:bg-white/20 transition">
+                <ArrowUpRight size={18} />
+              </button>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
 
       {/* Featured Solutions Section */}
       <section className=" bg-white py-12">
@@ -717,7 +778,7 @@ useEffect(()=>{
             ))}
 
             <div className=" bg-red-600 hover:bg-gray-600 text-white flex flex-col p-10 max-w-96 h-56 mt-10 justify-between sm:col-span-2 lg:col-span-1">
-              <h3 className="font-semibold text-base sm:text-lg mb-4">Talk to an Expert</h3>
+              <h3 className="font-semibold items-center sm:text-lg mb-4">Talk to an Expert</h3>
               <button className="self-end w-10 h-10 flex items-center justify-center rounded-full  border border-white hover:bg-white hover:text-red-600 transition">
                 <ArrowUpRight size={18} />
               </button>
@@ -736,7 +797,7 @@ useEffect(()=>{
       
             >
               <div>
-                  <img src="/vectors.svg" alt="" className="absolute left-14 top-10 h-32 w-32 object-cover object-top opacity-70 z-30" />
+                  <img src="/Vectors.svg" alt="" className="absolute left-14 top-10 h-32 w-32 object-cover object-top opacity-70 z-30" />
               </div>
               <div>
                   <img src="/left.svg" alt="" className="absolute left-20 top-72   w-4 object-cover object-left opacity-70 z-30" />
@@ -765,4 +826,4 @@ useEffect(()=>{
   )
 }
 
-export default Home
+export default Home;

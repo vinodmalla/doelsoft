@@ -7,18 +7,19 @@ import img2 from "../assets/img2.svg";
 import img3 from "../assets/img3.svg";
 import img4 from "../assets/img4.svg";
 import img5 from "../assets/img5.svg";
+import { Link } from "react-router";
 
 
 
 function TalentHub() {
     const services = [
-  { id: 1, title: "IT Staffing Solutions", image:"/Image1.svg" },
+  { id: 1, title: "IT Staffing Solutions", image:"/Image1.svg",link:"/itstaffing" },
   { id: 2, title: "Contract & Temporary Hiring", image: 
-"/Image2.svg"
+"/Image2.svg",link:"/contract"
    },
-  { id: 3, title: "Permanent Hiring", image: "/Image3.svg" },
-  { id: 4, title: "Executive Search", image: "/Image4.svg" },
-  { id: 5, title: "RPO", image: "/Image5.svg" },
+  { id: 3, title: "Permanent Hiring", image: "/Image3.svg",link:"/permanent" },
+  { id: 4, title: "Executive Search", image: "/Image4.svg",link:"/excutive" },
+  { id: 5, title: "RPO", image: "/Image5.svg",link:"/rpo" },
 ];
   return (
     <div>
@@ -117,8 +118,8 @@ function TalentHub() {
               alt={service.title}
               className="w-full h-64 object-cover"
             />
-            <div className="p-4 text-center">
-              <h3 className="text-lg font-semibold">{service.title}</h3>
+            <div className="p-4 text-center"><Link to={service.link} >
+              <h3 className="text-lg font-semibold">{service.title}</h3></Link>
             </div>
           </div>
         ))}
@@ -237,26 +238,37 @@ function TalentHub() {
         </p>
       </div>
     </div>
-    <section
-        className="relative bg-cover bg-center text-center py-16 sm:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
-        style={{
-          backgroundImage: "url('/Background2.svg')",
-        }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/70 to-red-900/60"></div>
-        <div className="relative max-w-3xl mx-auto text-white z-10 space-y-6 sm:space-y-8">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-extrabold leading-tight">
-            Let’s Build the Future Together
-          </h2>
-          <p className="text-base sm:text-lg lg:text-xl text-gray-200 leading-relaxed">
-            Tell us your goals. We’ll design the runway then deliver it with AI,
-            Cloud & Data.
-          </p>
-          <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-semibold px-6 sm:px-8 py-4  text-base sm:text-lg shadow-lg transition justify-center mx-auto">
-            Talk to an Expert <ArrowUpRight size={20} />
-          </button>
-        </div>
-      </section>
+   <section
+              className="relative bg-cover bg-center text-center  sm:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
+              style={{ backgroundImage: "url('/Background2.svg')" }}
+      
+            >
+              <div>
+                  <img src="/Vectors.svg" alt="" className="absolute left-14 top-10 h-32 w-32 object-cover object-top opacity-70 z-30" />
+              </div>
+              <div>
+                  <img src="/left.svg" alt="" className="absolute left-20 top-72   w-4 object-cover object-left opacity-70 z-30" />
+              </div>
+              <div>
+                  <img src="/right.svg" alt="" className="absolute right-96 top-12  w-20 object-cover object-right opacity-70 z-30" />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/80 to-black/90"></div>
+              <div className="relative max-w-3xl mx-auto text-white z-10 space-y-6 sm:space-y-8">
+                <h2 className="text-2xl  font-kumbh  md:text-4xl font-extralight leading-tight">
+                Let’s Build the Future Together
+                </h2>
+                <p className="text-base sm:text-lg lg:text-xl text-gray-200 leading-relaxed">
+                 👉 Partner with Doelsoft – Your trusted iOS & Android app development company in the USA & India.
+                </p>
+                <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-light px-6 sm:px-8 py-4 text-base sm:text-lg shadow-lg transition justify-center mx-auto">
+                  Talk to an Expert{" "}
+                  <ArrowUpRight
+                    className="border border-white rounded-full text-center"
+                    size={24}
+                  />
+                </button>
+              </div>
+            </section>
     </div>
   );
 }

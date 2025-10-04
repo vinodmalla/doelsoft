@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaInstagram, FaDiscord, FaGithub, FaBars, FaTimes } from "react-icons/fa";
 import logo from "../assets/logo.svg"; // update path
+import { Link } from "react-router";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,14 +16,14 @@ function Header() {
         </div>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center space-x-8 " role="navigation" >
-          <a href="#" className=" text-[#000000] hover:text-[#EF0E0E] font-medium">Home</a>
-          <a href="#" className="text-[#000000] hover:text-[#EF0E0E] font-medium">Solutions</a>
-          <a href="#" className="text-[#000000] hover:text-[#EF0E0E] font-medium">Talent Hub</a>
-          <a href="#" className="text-[#000000] hover:text-[#EF0E0E] font-medium">Why choose us</a>
-          <a href="#" className="text-[#000000] hover:text-[#EF0E0E] font-medium">Careers</a>
-          <a href="#" className="text-[#000000] hover:text-[#EF0E0E] font-medium">Insights</a>
-          <a href="#" className="text-[#000000] hover:text-[#EF0E0E] font-medium">Contact</a>
+        <nav className="hidden md:flex items-center space-x-8" role="navigation">
+          <Link to="/" className="text-[#000000] hover:text-[#EF0E0E] font-medium">Home</Link>
+          <Link to="/solutions" className="text-[#000000] hover:text-[#EF0E0E] ac font-medium">Solutions</Link>
+          <Link to="/talenthub" className="text-[#000000] hover:text-[#EF0E0E] font-medium">Talent Hub</Link>
+          <Link to="/chooseus" className="text-[#000000] hover:text-[#EF0E0E] font-medium">Why choose us</Link>
+          <Link to="/carrers" className="text-[#000000] hover:text-[#EF0E0E] font-medium">Careers</Link>
+          <Link to="/insights" className="text-[#000000] hover:text-[#EF0E0E] font-medium">Insights</Link>
+          <Link to="/contact" className="text-[#000000] hover:text-[#EF0E0E] font-medium">Contact</Link>
         </nav>
 
         {/* Social Icons (desktop only) */}
