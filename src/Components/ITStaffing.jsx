@@ -60,40 +60,112 @@ function ITStaffing() {
         </div>
      
       </section>
-    <section className="py-10 bg-[#F3F3F3] w-full max-w-[1440px] mt-[2px] min-h-[576px] text-start font-sans mx-auto px-4">
-  <h1 className="text-3xl sm:text-4xl font-bold ml-4 sm:ml-10 text-black mb-4">
-    Why Doelsoft?
-  </h1>
-  <p className="text-base sm:text-lg text-black ml-4 sm:ml-10 mb-10 max-w-3xl">
-    When it comes to recruitment, we don't just deliver candidates we deliver confidence.
-  </p>
+   <section className="w-full">
+  <div className="p-6 sm:p-8 md:p-10 md:ml-10 relative">
+    <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-6 text-center md:text-left">
+      Key Benefits We Deliver
+    </h1>
 
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 max-w-6xl mx-auto">
-    <div className="border border-black p-6 sm:p-10 w-full sm:w-[390px] h-auto sm:h-[255px] text-left bg-white">
-      <img src={"./Tailored.svg"} alt="Tailored" className="w-10 h-10 mb-4" />
-      <h3 className="text-lg font-bold mb-2">Tailored Approach</h3>
-      <p>Every solution is designed to match your unique challenges.</p>
-    </div>
+    <div className="space-y-6 md:ml-14">
+      {/* Card 1 */}
+      <div className="bg-white p-4 flex flex-col sm:flex-row items-start gap-4 rounded-lg shadow-sm">
+        <img
+          src="./Trustworthy.svg"
+          className="w-10 h-10 border border-black flex-shrink-0"
+          alt="Client-Centric Approach"
+        />
+        <div>
+          <h3 className="text-black text-lg font-semibold">
+            Client-Centric Approach
+          </h3>
+          <p className="text-black text-sm sm:text-base">
+            We collaborate deeply with each client to understand their unique
+            requirements and deliver solutions that drive measurable results.
+          </p>
+        </div>
+      </div>
 
-    <div className="border border-black p-6 sm:p-10 w-full sm:w-[294px] h-auto sm:h-[255px] text-left bg-white">
-      <img src={"./Unmatched.svg"} alt="Unmatched" className="w-10 h-10 mb-4" />
-      <h3 className="text-lg font-bold mb-2">Unmatched Quality</h3>
-      <p>Strict screening ensures only the best reach you.</p>
-    </div>
+      {/* Card 2 */}
+      <div className="bg-white p-4 flex flex-col sm:flex-row items-start gap-4 rounded-lg shadow-sm">
+        <img
+          src="./Stewardship.svg"
+          className="w-10 h-10 border border-black flex-shrink-0"
+          alt="Stewardship"
+        />
+        <div>
+          <h3 className="text-black text-lg font-semibold">
+            Stewardship Taking Responsibility, Driving Results
+          </h3>
+          <p className="text-black text-sm sm:text-base">
+            Leveraging the latest technologies to provide scalable, secure, and
+            high-quality services.
+          </p>
+        </div>
+      </div>
 
-    <div className="border border-black p-6 sm:p-10 w-full sm:w-[294px] h-auto sm:h-[255px] text-left bg-white">
-      <img src={"./Precision.svg"} alt="Precision" className="w-10 h-10 mb-4" />
-      <h3 className="text-lg font-bold mb-2">Speed with Precision</h3>
-      <p>Fast closures without compromising fit.</p>
-    </div>
+      {/* Card 3 */}
+      <div className="bg-white p-4 flex flex-col sm:flex-row items-start gap-4 rounded-lg shadow-sm relative">
+        <img
+          src="./Credibility.svg"
+          className="w-10 h-10 border border-black flex-shrink-0"
+          alt="Dedicated Expert Team"
+        />
+        <div>
+          <h3 className="text-black text-lg font-semibold">
+            Dedicated Expert Team
+          </h3>
+          <p className="text-black text-sm sm:text-base">
+            In today’s competitive staffing landscape, credibility is everything.
+            At Doelsoft, we back our words with consistent action. <br />
+            Every decision, every placement, and every engagement is grounded in
+            honesty, fairness, and reliability <br />
+            so you can count on us to be a partner you trust, time after time.
+          </p>
+        </div>
+      </div>
 
-    <div className="border border-black p-6 sm:p-10 w-full sm:w-[294px] h-auto sm:h-[255px] text-left bg-white">
-      <img src={"./Partnership.svg"} alt="Partnership" className="w-10 h-10 mb-4" />
-      <h3 className="text-lg font-bold mb-2">Long-Term Partnership</h3>
-      <p>More than a vendor, we are your hiring ally.</p>
+      {/* Card 4 */}
+      <div className="bg-white p-4 flex flex-col sm:flex-row items-start gap-4 rounded-lg shadow-sm relative">
+        <img
+          src="./Respect.svg"
+          className="w-10 h-10 border border-black flex-shrink-0"
+          alt="Global Delivery"
+        />
+        <div>
+          <h3 className="text-black text-lg font-semibold">Global Delivery</h3>
+          <p className="text-black text-sm sm:text-base">
+            Serving clients across India, the USA, and worldwide, with flexible
+            engagement models.
+          </p>
+        </div>
+        <img
+          src="/Choose3.svg"
+          alt="Expert Team"
+          className="absolute md:right-[-20px] right-0 top-[50%] -translate-y-1/2 w-40 sm:w-60 md:w-80 object-contain hidden md:block"
+        />
+      </div>
+
+      {/* Card 5 */}
+      <div className="bg-white p-4 flex flex-col sm:flex-row items-start gap-4 rounded-lg shadow-sm">
+        <img
+          src="./Respect.svg"
+          className="w-10 h-10 border border-black flex-shrink-0"
+          alt="Holistic Business Growth"
+        />
+        <div>
+          <h3 className="text-black text-lg font-semibold">
+            Holistic Business Growth
+          </h3>
+          <p className="text-black text-sm sm:text-base">
+            Strategies and solutions designed to enhance efficiency,
+            productivity, and market competitiveness.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
+
 
            <section
             className="relative w-full  bg-cover bg-center text-center py-16   sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"

@@ -70,35 +70,36 @@ return (
     <div className="w-full min-h-screen font-kumbh space-y-6 mt-16 flex flex-col justify-end">
         
         
-          <section
-            className="relative w-full h-auto min-h-[550px] flex flex-col md:flex-row items-end overflow-hidden py-10"
-            style={{
-                backgroundImage: "url('/worldmap.svg')",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-            }}
-        > 
-            {/* Content Left */}
-            <div className="relative z-10 flex-1 flex flex-col justify-end pl-28 bottom-48">
-                <h2 className="text-6xl gap-6 font-semibold text-red-600 mb-8">
-                 Why Choose <br />
-                    <span className="block mt-4">DoelSoft</span>
-                </h2>
-                <button className="py-2 px-4 border border-black text-black hover:bg-gray-200 w-max">
-                    Consult With Us <span className="ml-2">↗</span>
-                </button>
-            </div>
-            {/* Image Right */}
-            <div className="absolute right-36 top-12 h-[432.87px] w-[506.26px] mr-10 flex items-end justify-end z-0">
-                <img
-                    src="/Choose1.svg"
-                    alt="Team"
-                    className="w-full h-full object-contain md:object-cover"
-                    style={{ objectPosition: "right bottom" }}
-                />
-            </div>
-        </section>
+           <section
+  className="relative w-full min-h-[550px] flex flex-col md:flex-row items-center justify-between overflow-hidden py-10 px-6 md:px-16 lg:px-28"
+  style={{
+    backgroundImage: "url('/worldmap.svg')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  }}
+>
+  {/* Left Content */}
+  <div className="relative z-10 flex-1 flex flex-col items-start justify-center text-center md:text-left">
+    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-red-600 leading-snug mb-6">
+      Why Choose <br className="hidden sm:block" />
+      <span className="block mt-2">Doelsoft</span>
+    </h2>
+
+    <button className="py-2 px-5 border border-black ml-[45px] md:ml-[9px]  text-black hover:bg-gray-200 transition-all duration-200 rounded-md">
+      Consult With Us <span className="ml-2">↗</span>
+    </button>
+  </div>
+
+  {/* Right Image */}
+  <div className="mt-10 md:mt-0 md:flex-1 flex justify-center md:justify-end relative z-0">
+    <img
+      src="/Choose1.svg"
+      alt="Team"
+      className="w-72 sm:w-80 md:w-[420px] lg:w-[500px] h-auto object-contain"
+    />
+  </div>
+</section>
         <section className="w-full bg-[#F3F3F3]">
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 max-w-7xl mx-auto">
                 <div className="flex-1 space-y-6 mt-10">
@@ -117,66 +118,113 @@ return (
                 </div>
             </div>
         </section>
-        <section className='w-full' >
-        <div className="p-10 ml-10 relative ">
-            <h1 className="text-3xl font-bold text-gray-800 mb-4">Key Benefits We Deliver</h1>
-            <div className="space-y-6 ml-14">
-                <div className="bg-white p-4 flex items-start gap-4">
-                    <img src={"./Trustworthy.svg"} className="w-10 h-10 border border-black " />
-                    <div>
-                        <h3 className="text-black text-lg font-semibold">Client-Centric Approach</h3>
-                        <p className="text-black">
-                            We collaborate deeply with each client to understand their unique requirements and deliver solutions that drive measurable results.
-                        </p>
-                    </div>
-                </div>
-                <div className="bg-white p-4 flex items-start gap-4">
-                    <img src={"./Stewardship.svg"} className="w-10 h-10 border border-black " />
-                    <div>
-                        <h3 className="text-black text-lg font-semibold">Stewardship Taking Responsibility, Driving Results</h3>
-                        <p className="text-black">
-                            Leveraging the latest technologies to provide scalable, secure, and high-quality services.
-                        </p>
-                    </div>
-                </div>
-                <div className="bg-white p-4 flex items-start gap-4 relative">
-                    <img src={"./Credibility.svg"} className="w-10 h-10 border border-black " />
-                    <div>
-                        <h3 className="text-black text-lg font-semibold">Dedicated Expert Team</h3>
-                        <p className="text-black">
-                            In today’s competitive staffing landscape, credibility is everything. At Doelsoft, we back our words with consistent action.<br/> Every decision, every placement, and every engagement is grounded in honesty, fairness, and reliability<br/> so you can count on us to be a  partner you trust, time after time.
-                        </p>
-                    </div>
-                    {/* Image rendered to the right side of Dedicated Expert Team */}
-                    
-                </div>
-                <div className="bg-white p-4 flex items-start gap-4">
-                    <img src={"./Respect.svg"} className="w-10 h-10 border border-black " />
-                    <div>
-                        <h3 className="text-black text-lg font-semibold">Global Delivery</h3>
-                        <p className="text-black">
-                            Serving clients across India, the USA, and worldwide, with flexible engagement models.
-                        </p>
-                    </div>
-                    <img
-                        src="/Choose3.svg"
-                        alt="Expert Team"
-                        className="absolute right-[-20px] top-[#85px] -translate-y-1/2 w-auto h-80 object-contain hidden md:block"
-                    />
-                </div>
-                <div className="bg-white p-4 flex items-start gap-4">
-                    <img src={"./Respect.svg"} className="w-10 h-10 border border-black  " />
-                    <div>
-                        <h3 className="text-black text-lg font-semibold">Holistic Business Growth</h3>
-                        <p className="text-black">
-                            Strategies and solutions designed to enhance efficiency, productivity, and market competitiveness.
-                        </p>
-                    </div>
-                </div>
-            </div>       
+        <section className="w-full">
+  <div className="p-6 sm:p-8 md:p-10 md:ml-10 relative">
+    <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-6 text-center md:text-left">
+      Key Benefits We Deliver
+    </h1>
+
+    <div className="space-y-6 md:ml-14">
+      {/* Card 1 */}
+      <div className="bg-white p-4 flex flex-col sm:flex-row items-start gap-4 rounded-lg shadow-sm">
+        <img
+          src="./Trustworthy.svg"
+          className="w-10 h-10 border border-black flex-shrink-0"
+          alt="Client-Centric Approach"
+        />
+        <div>
+          <h3 className="text-black text-lg font-semibold">
+            Client-Centric Approach
+          </h3>
+          <p className="text-black text-sm sm:text-base">
+            We collaborate deeply with each client to understand their unique
+            requirements and deliver solutions that drive measurable results.
+          </p>
         </div>
-        </section >
-        <section className="w-full bg-gray-50 py-10 ">
+      </div>
+
+      {/* Card 2 */}
+      <div className="bg-white p-4 flex flex-col sm:flex-row items-start gap-4 rounded-lg shadow-sm">
+        <img
+          src="./Stewardship.svg"
+          className="w-10 h-10 border border-black flex-shrink-0"
+          alt="Stewardship"
+        />
+        <div>
+          <h3 className="text-black text-lg font-semibold">
+            Stewardship Taking Responsibility, Driving Results
+          </h3>
+          <p className="text-black text-sm sm:text-base">
+            Leveraging the latest technologies to provide scalable, secure, and
+            high-quality services.
+          </p>
+        </div>
+      </div>
+
+      {/* Card 3 */}
+      <div className="bg-white p-4 flex flex-col sm:flex-row items-start gap-4 rounded-lg shadow-sm relative">
+        <img
+          src="./Credibility.svg"
+          className="w-10 h-10 border border-black flex-shrink-0"
+          alt="Dedicated Expert Team"
+        />
+        <div>
+          <h3 className="text-black text-lg font-semibold">
+            Dedicated Expert Team
+          </h3>
+          <p className="text-black text-sm sm:text-base">
+            In today’s competitive staffing landscape, credibility is everything.
+            At Doelsoft, we back our words with consistent action. <br />
+            Every decision, every placement, and every engagement is grounded in
+            honesty, fairness, and reliability <br />
+            so you can count on us to be a partner you trust, time after time.
+          </p>
+        </div>
+      </div>
+
+      {/* Card 4 */}
+      <div className="bg-white p-4 flex flex-col sm:flex-row items-start gap-4 rounded-lg shadow-sm relative">
+        <img
+          src="./Respect.svg"
+          className="w-10 h-10 border border-black flex-shrink-0"
+          alt="Global Delivery"
+        />
+        <div>
+          <h3 className="text-black text-lg font-semibold">Global Delivery</h3>
+          <p className="text-black text-sm sm:text-base">
+            Serving clients across India, the USA, and worldwide, with flexible
+            engagement models.
+          </p>
+        </div>
+        <img
+          src="/Choose3.svg"
+          alt="Expert Team"
+          className="absolute md:right-[-20px] right-0 top-[50%] -translate-y-1/2 w-40 sm:w-60 md:w-80 object-contain hidden md:block"
+        />
+      </div>
+
+      {/* Card 5 */}
+      <div className="bg-white p-4 flex flex-col sm:flex-row items-start gap-4 rounded-lg shadow-sm">
+        <img
+          src="./Respect.svg"
+          className="w-10 h-10 border border-black flex-shrink-0"
+          alt="Holistic Business Growth"
+        />
+        <div>
+          <h3 className="text-black text-lg font-semibold">
+            Holistic Business Growth
+          </h3>
+          <p className="text-black text-sm sm:text-base">
+            Strategies and solutions designed to enhance efficiency,
+            productivity, and market competitiveness.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section className="w-full bg-gray-50 py-10 " style={{marginTop:"0px"}}>
             <div className="max-w-7xl mx-auto px-6">
                 {/* Heading */}
                 <h2 className="text-2xl md:text-4xl font-kumbh  mb-12">
@@ -262,7 +310,7 @@ return (
     </section>
    <section
    className="relative w-full bg-cover bg-center text-center py-16 sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
-   style={{ backgroundImage: "url('/Background2.svg')" }}
+   style={{ backgroundImage: "url('/Background2.svg')" ,marginTop:"2px" }}
  >
    {/* Decorative Vectors */}
    <img
@@ -294,7 +342,7 @@ return (
        👉 Partner with Doelsoft – Your trusted iOS & Android app development company in the USA & India.
      </p>
  
-     <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-4 text-sm sm:text-lg rounded-md shadow-lg transition-all duration-300 ease-in-out">
+     <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-4 text-sm sm:text-lg  shadow-lg transition-all duration-300 ease-in-out">
        Talk to an Expert{" "}
        <ArrowUpRight
          className="border border-white rounded-full p-1"
