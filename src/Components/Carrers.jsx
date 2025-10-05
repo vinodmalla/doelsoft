@@ -202,13 +202,13 @@ function Carrers() {
   }}
 >
   {/* Left Content */}
-  <div className="relative z-10 flex-1 flex flex-col items-start justify-center text-center md:text-left">
+  <div className="relative z-10 flex-1 flex flex-col space-y-6 items-start justify-center text-center md:text-left">
     <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-red-600 leading-snug mb-6">
       DoelSoft Careers & <br className="hidden sm:block" />
       <span className="block mt-2">Opportunity</span>
     </h2>
 
-    <button className="py-2 px-5 border border-black ml-[45px] md:ml-[9px]  text-black hover:bg-gray-200 transition-all duration-200 rounded-md">
+    <button className="py-2 px-5 border border-black ml-[45px] md:ml-[9px]  text-black hover:bg-gray-200 transition-all duration-200 ">
       Consult With Us <span className="ml-2">↗</span>
     </button>
   </div>
@@ -307,17 +307,17 @@ function Carrers() {
   {/* Decorative Vectors */}
   <img
     src="/Vectors.svg"
-    alt=""
+    alt="vector"
     className="absolute left-6 sm:left-14 top-8 sm:top-10 h-20 sm:h-28 md:h-32 w-20 sm:w-28 md:w-32 object-contain opacity-70 z-30"
   />
   <img
     src="/left.svg"
-    alt=""
+    alt="left"
     className="absolute left-10 sm:left-20 bottom-10 sm:top-72 w-3 sm:w-4 object-contain opacity-70 z-30"
   />
   <img
     src="/right.svg"
-    alt=""
+    alt="right"
     className="absolute right-10 sm:right-40 lg:right-72 top-6 sm:top-12 w-10 sm:w-16 md:w-20 object-contain opacity-70 z-30"
   />
 
@@ -334,7 +334,7 @@ function Carrers() {
       👉 Partner with Doelsoft – Your trusted iOS & Android app development company in the USA & India.
     </p>
 
-    <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-4 text-sm sm:text-lg rounded-md shadow-lg transition-all duration-300 ease-in-out">
+    <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-4 text-sm sm:text-lg shadow-lg transition-all duration-300 ease-in-out">
       Talk to an Expert{" "}
       <ArrowUpRight
         className="border border-white rounded-full p-1"

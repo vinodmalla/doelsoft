@@ -86,7 +86,7 @@ return (
       <span className="block mt-2">Doelsoft</span>
     </h2>
 
-    <button className="py-2 px-5 border border-black ml-[45px] md:ml-[9px]  text-black hover:bg-gray-200 transition-all duration-200 rounded-md">
+    <button className="py-2 px-5 border border-black ml-[45px] md:ml-[9px]  text-black hover:bg-gray-200 transition-all duration-200">
       Consult With Us <span className="ml-2">↗</span>
     </button>
   </div>
@@ -118,21 +118,21 @@ return (
                 </div>
             </div>
         </section>
-        <section className="w-full">
-  <div className="p-6 sm:p-8 md:p-10 md:ml-10 relative">
+     <section className="w-full overflow-hidden">
+  <div className="p-6 sm:p-8 md:p-10 md:ml-10 relative max-w-7xl mx-auto">
     <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-6 text-center md:text-left">
       Key Benefits We Deliver
     </h1>
 
-    <div className="space-y-6 md:ml-14">
+    <div className="space-y-6 md:ml-0">
       {/* Card 1 */}
-      <div className="bg-white p-4 flex flex-col sm:flex-row items-start gap-4 rounded-lg shadow-sm">
+      <div className="bg-white p-4 flex flex-col sm:flex-row items-start sm:items-center gap-4 rounded-lg shadow-sm">
         <img
           src="./Trustworthy.svg"
-          className="w-10 h-10 border border-black flex-shrink-0"
+          className="w-10 h-10 mx-auto p-1 border border-black sm:mx-0"
           alt="Client-Centric Approach"
         />
-        <div>
+        <div className="text-center sm:text-left">
           <h3 className="text-black text-lg font-semibold">
             Client-Centric Approach
           </h3>
@@ -144,13 +144,13 @@ return (
       </div>
 
       {/* Card 2 */}
-      <div className="bg-white p-4 flex flex-col sm:flex-row items-start gap-4 rounded-lg shadow-sm">
+      <div className="bg-white p-4 flex flex-col sm:flex-row items-start sm:items-center gap-4 rounded-lg shadow-sm">
         <img
           src="./Stewardship.svg"
-          className="w-10 h-10 border border-black flex-shrink-0"
+          className="w-10 h-10 mx-auto p-1 border border-black sm:mx-0"
           alt="Stewardship"
         />
-        <div>
+        <div className="text-center sm:text-left">
           <h3 className="text-black text-lg font-semibold">
             Stewardship Taking Responsibility, Driving Results
           </h3>
@@ -162,13 +162,13 @@ return (
       </div>
 
       {/* Card 3 */}
-      <div className="bg-white p-4 flex flex-col sm:flex-row items-start gap-4 rounded-lg shadow-sm relative">
+      <div className="bg-white p-4 flex flex-col sm:flex-row items-start sm:items-center gap-4 rounded-lg shadow-sm relative">
         <img
           src="./Credibility.svg"
-          className="w-10 h-10 border border-black flex-shrink-0"
+          className="w-10 h-10 mx-auto p-1 border border-black sm:mx-0"
           alt="Dedicated Expert Team"
         />
-        <div>
+        <div className="text-center sm:text-left">
           <h3 className="text-black text-lg font-semibold">
             Dedicated Expert Team
           </h3>
@@ -183,13 +183,13 @@ return (
       </div>
 
       {/* Card 4 */}
-      <div className="bg-white p-4 flex flex-col sm:flex-row items-start gap-4 rounded-lg shadow-sm relative">
+      <div className="bg-white p-4 flex flex-col sm:flex-row items-start sm:items-center gap-4 rounded-lg shadow-sm relative">
         <img
           src="./Respect.svg"
-          className="w-10 h-10 border border-black flex-shrink-0"
+    className="w-10 h-10 mx-auto p-1 border border-black sm:mx-0"
           alt="Global Delivery"
         />
-        <div>
+        <div className="text-center sm:text-left">
           <h3 className="text-black text-lg font-semibold">Global Delivery</h3>
           <p className="text-black text-sm sm:text-base">
             Serving clients across India, the USA, and worldwide, with flexible
@@ -199,18 +199,18 @@ return (
         <img
           src="/Choose3.svg"
           alt="Expert Team"
-          className="absolute md:right-[-20px] right-0 top-[50%] -translate-y-1/2 w-40 sm:w-60 md:w-80 object-contain hidden md:block"
+          className="absolute md:right-[-20px] right-0 top-[50%] -translate-y-1/2 w-40  md:w-80 object-contain hidden md:block"
         />
       </div>
 
       {/* Card 5 */}
-      <div className="bg-white p-4 flex flex-col sm:flex-row items-start gap-4 rounded-lg shadow-sm">
+      <div className="bg-white p-4 flex flex-col sm:flex-row items-start sm:items-center gap-4 rounded-lg shadow-sm">
         <img
           src="./Respect.svg"
-          className="w-10 h-10 border border-black flex-shrink-0"
+          className="w-10 h-10 mx-auto p-1 border border-black sm:mx-0"
           alt="Holistic Business Growth"
         />
-        <div>
+        <div className="text-center sm:text-left">
           <h3 className="text-black text-lg font-semibold">
             Holistic Business Growth
           </h3>
@@ -223,6 +223,7 @@ return (
     </div>
   </div>
 </section>
+
 
         <section className="w-full bg-gray-50 py-10 " style={{marginTop:"0px"}}>
             <div className="max-w-7xl mx-auto px-6">

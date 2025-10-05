@@ -31,13 +31,13 @@ function Executive() {
     backgroundRepeat: "no-repeat",
   }}
 >
-     <div className="relative z-10 flex-1 flex flex-col items-start justify-center text-center md:text-left">
-      <h1 className="text-2xl font-semibold text-gray-800">Talent Hub</h1>
-    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-red-600 leading-snug mb-6">
+     <div className="relative z-10 flex-1 flex flex-col items-start justify-center space-y-6 text-center md:text-left">
+      <h1 className="text-lg md:text-xl font-semibold text-gray-800">Talent Hub</h1>
+    <h2 className="text-3xl md:text-5xl font-bold text-red-600 mt-2">
       Excutive Search
     </h2>
 
-    <button className="py-2 px-5 border border-black ml-[45px] md:ml-[9px]  text-black hover:bg-gray-200 transition-all duration-200 rounded-md">
+    <button className="py-2 px-5 border border-black ml-[45px] md:ml-[9px]  text-black hover:bg-gray-200 transition-all duration-200 ">
       Consult With Us <span className="ml-2">↗</span>
     </button>
   </div>

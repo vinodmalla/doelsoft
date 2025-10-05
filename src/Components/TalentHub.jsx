@@ -23,71 +23,71 @@ function TalentHub() {
 ];
   return (
     <div>
-    <section className="relative w-full mt-10  py-20 flex flex-col items-center text-center overflow-hidden">
-      {/* Background (replace with your own image if needed) */}
-      <div
-  className="absolute bg-cover bg-center inset-0 "
-  style={{ backgroundImage: "url('/worldmap.svg')" }}
-></div>
+   <section className="relative w-full mt-10 py-20 flex flex-col items-center text-center overflow-hidden">
+  {/* Background */}
+  <div
+    className="absolute bg-cover bg-center inset-0"
+    style={{ backgroundImage: "url('/worldmap.svg')" }}
+  ></div>
 
-      {/* Main Heading */}
-      <h1 className="text-4xl md:text-5xl font-bold font-sans text-red-600">
-        Recruitment
-      </h1>
-      <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 my-2">
-        &
-      </h2>
-      <h1 className="text-4xl md:text-5xl font-bold text-red-600">
-        Staffing Services
-      </h1>
+  {/* Headings */}
+  <div className="relative z-10 px-4">
+    <h1 className="text-4xl md:text-5xl font-bold font-sans text-red-600">
+      Recruitment
+    </h1>
+    <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 my-2">
+      &
+    </h2>
+    <h1 className="text-4xl md:text-5xl font-bold text-red-600">
+      Staffing Services
+    </h1>
+  </div>
 
-      {/* Buttons */}
-    {/* Buttons */}
-<div className="mt-8 flex flex-wrap gap-4 z-10 relative">
-  <button className="transition-all duration-300 ease-in-out flex items-center gap-2 bg-red-600 text-white px-6 py-3 font-medium hover:bg-gray-600 focus:outline-none">
-    About Doelsoft <ArrowUpRight size={18} />
-  </button>
-  <button className="transition-all duration-300 ease-in-out flex items-center gap-2 border border-gray-600 px-6 py-3 font-medium hover:bg-red-600 hover:text-white focus:outline-none">
-    Consult With Us <ArrowUpRight size={18} />
-  </button>
-</div>
+  {/* Buttons */}
+  <div className="mt-8 flex flex-wrap justify-center gap-4 z-10 relative px-4">
+    <button className="transition-all duration-300 ease-in-out flex items-center gap-2 bg-red-600 text-white px-6 py-3 font-medium hover:bg-gray-600 focus:outline-none">
+      About Doelsoft <ArrowUpRight size={18} />
+    </button>
+    <button className="transition-all duration-300 ease-in-out flex items-center gap-2 border border-gray-600 px-6 py-3 font-medium hover:bg-red-600 hover:text-white focus:outline-none">
+      Consult With Us <ArrowUpRight size={18} />
+    </button>
+  </div>
 
+  {/* Floating Profile Images */}
+  <div className="relative w-full max-w-5xl mt-12 px-4">
+    {/* Top Left */}
+    <img
+      src={img2}
+      alt="profile1"
+      className="absolute -top-80 left-2 sm:-top-72 sm:left-8 md:-top-80 md:left-0 w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full object-cover"
+    />
+    {/* Middle Left */}
+    <img
+      src={img1}
+      alt="profile2"
+      className="absolute top-1 left-4 sm:-top-8 sm:-left-4 md:-top-8 md:-left-0 w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full object-cover"
+    />
+    {/* Top Right */}
+    <img
+      src={img3}
+      alt="profile3"
+      className="absolute -top-80 right-2 sm:-top-72 sm:right-8 md:-top-80 md:right-0 w-16 h-20 sm:w-24 sm:h-24 md:w-24 md:h-24 rounded-full object-cover"
+    />
+    {/* Bottom Right */}
+    <img
+      src={img4}
+      alt="profile4"
+      className="absolute -bottom-20 right-4 sm:-top-4 md:-top-8 md:right-4 w-29 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full object-cover"
+    />
+    {/* Bottom Center */}
+    <img
+      src={img5}
+      alt="profile5"
+      className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 w-16 h-16 sm:w-20 sm:h-20 md:w-20 md:h-20 rounded-full object-cover"
+    />
+  </div>
+</section>
 
-
-      {/* Floating Profile Images */}
-      <div className="relative w-full max-w-5xl mt-12">
-        {/* Top Left */}
-        <img
-          src={img2}
-          alt="profile1"
-          className="absolute -top-80 left-0 w-28 h-28 rounded-full object-cover "
-        />
-        {/* Middle Left */}
-        <img
-          src={img1}
-          alt="profile2"
-          className="absolute -top-8 -left-0 w-28 h-28 rounded-full object-cover "
-        />
-        {/* Top Right */}
-        <img
-          src={img3}
-          alt="profile3"
-          className="absolute -top-80 right-0 w-24 h-24 rounded-full object-cover "
-        />
-        {/* Bottom Right */}
-        <img
-          src={img4}
-          alt="profile4"
-          className="absolute bottom-0 -top-8 right-4 w-28 h-28 rounded-full object-cover "
-        />
-        {/* Bottom Center */}
-        <img
-          src={img5}
-          alt="profile5"
-          className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 w-20 h-20 rounded-full object-cover"
-        />
-      </div>
-    </section>
      <section className="w-full bg-white py-16 px-6 md:px-12">
       {/* Heading */}
       <div className="text-center max-w-3xl mx-auto mb-12">
@@ -132,29 +132,29 @@ function TalentHub() {
       <p className="text-lg text-black ml-10 mb-10 max-w-3xl mx-auto">
         When it comes to recruitment, we don't just deliver candidates we deliver confidence.
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
-        <div className="border border-black p-10 w-[#390px] h-[#255px]  text-left">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-7xl mx-auto">
+        <div className="border border-black p-10 mx-10  md:mx-auto md:w-[#294px] h-[#255px]  text-left">
           <img src={"./Tailored.svg"} className="w-10 h-10 mb-4" />{/* Replace with actual icon, e.g., from react-icons */}
           <h3 className="text-lg font-bold mb-2">
             Tailored Approach
           </h3>
           <p>Every solution is designed to match your unique challenges.</p>
         </div>
-        <div className="border border-black p-10 w-[#294px] h-[#255px] text-left">
+        <div className="border border-black mx-10  md:mx-auto p-10 w-[#294px] h-[#255px] text-left">
            <img src={"./Unmatched.svg"} className="w-10 h-10 mb-4" /> {/* Replace with checkmark icon */}
           <h3 className="text-lg font-bold mb-2">
             Unmatched Quality
           </h3>
           <p>Strict screening ensures only the best reach you.</p>
         </div>
-        <div className="border border-black   p-10 w-[#294px] h-[#255px] text-left">
+        <div className="border border-black mx-10  md:mx-auto  p-10 w-[#294px] h-[#255px] text-left">
             <img src={"./Precision.svg"} className="w-10 h-10 mb-4" />{/* Replace with target icon */}
           <h3 className="text-lg font-bold mb-2">
             Speed with Precision
           </h3>
           <p>Fast closures without compromising fit.</p>
         </div>
-        <div className="border border-black p-10 w-[#294px] h-[#255px]  text-left">
+        <div className="border border-black mx-10 md:mx-auto p-10 w-[#294px] h-[#255px]  text-left">
            <img src={"./Partnership.svg"} className="w-10 h-10 mb-4" /> {/* Replace with handshake icon */}
           <h3 className="text-lg font-bold mb-2">
             Long-Term Partnership
@@ -164,111 +164,146 @@ function TalentHub() {
       </div>
     </section>
    
-    <div className=" p-10 ml-10">
-      <h1 className="text-3xl font-bold text-gray-800 mb-4">Our Core Values at Doelsoft</h1>
-      <p className="text-black mb-6 ">
-        At Doelsoft, we don't just fill roles we build partnerships that fuel growth. Every staffing solution we provide, whether contract,
-        permanent, offshore, or nearshore, is anchored in our unwavering core values. These principles guide us in creating meaningful
-        connections between businesses and talent, ensuring trust, success, and long-term impact.
-      </p>
+  <div className="p-6 sm:p-8 md:p-10 lg:p-12 ml-4 sm:ml-8 md:ml-10">
+  <h1 className="text-2xl sm:text-3xl md:text-3xl font-bold text-gray-800 mb-4 text-center md:text-left">
+    Our Core Values at Doelsoft
+  </h1>
 
-      <div className="space-y-6 ml-14">
-        <div className="bg-white p-4 flex items-start gap-4">
-          <img src={"./Trustworthy.svg"} className="w-10 h-10 " />
-          <div>
-            <h3 className="text-black text-lg font-semibold">Trustworthy Dependable in Every Step</h3>
-            <p className="text-black">
-              Your trust is our greatest responsibility. At Doelsoft, a promise is never taken lightly we deliver on time, every time. From urgent
-              contract needs to building long-term teams, our clients rely on us because we consistently keep our word and stand by our commitments.
-            </p>
-          </div>
-        </div>
+  <p className="text-black mb-6 text-sm sm:text-base text-center md:text-left">
+    At Doelsoft, we don't just fill roles — we build partnerships that fuel growth. Every staffing solution we provide, whether
+    contract, permanent, offshore, or nearshore, is anchored in our unwavering core values. These principles guide us in creating
+    meaningful connections between businesses and talent, ensuring trust, success, and long-term impact.
+  </p>
 
-        <div className="bg-white p-4   flex items-start gap-4">
-          <img src={"./Stewardship.svg"} className="w-10 h-10 " />
-          <div>
-            <h3 className="text-black text-lg font-semibold">Stewardship Taking Responsibility, Driving Results</h3>
-            <p className="text-black">
-              We see ourselves as stewards of your vision. That means taking ownership of every process and outcome whether sourcing exceptional
-              permanent hires or managing offshore teams. Through proactive solutions and transparent communication, we safeguard your goals as if they were our own.
-            </p>
-          </div>
-        </div>
-
-        <div className="bg-white p-4  flex items-start gap-4">
-         <img src={"./Credibility.svg"} className="w-10 h-10 " />
-          <div>
-            <h3 className="text-black text-lg font-semibold">Credibility Trust Built on Action</h3>
-            <p className="text-black">
-              In today's competitive staffing landscape, credibility is everything. At Doelsoft, we back our words with consistent action. Every
-              decision, every placement, and every engagement is grounded in honesty, fairness, and reliability so you can count on us to be a
-              partner you trust, time after time.
-            </p>
-          </div>
-        </div>
-
-        <div className="bg-white p-4 flex items-start gap-4">
-          <img src={"./Respect.svg"} className="w-10 h-10 " />
-          <div>
-            <h3 className="text-black text-lg font-semibold">Respect People First, Always</h3>
-            <p className="text-black">
-              Behind every role is a person, and behind every business is a vision. We honor both. With humility and empathy, we treat every
-              candidate and client as partners in success. Our respectful approach creates inclusive environments where diverse talent thrives and
-              collaboration flourishes.
-            </p>
-          </div>
-        </div>
-
-        <div className="bg-white p-4  flex items-start gap-4">
-        <img src={"./Respect.svg"} className="w-10 h-10 " />
-          <div>
-            <h3 className="text-black text-lg font-semibold">Result-Oriented Excellence You Can Measure</h3>
-            <p className="text-black">
-              We don't just promise results—we deliver them. With strong processes, proven methodologies, and decades of experience, we provide
-              reliable outcomes that give you a competitive edge. Every staffing solution is designed to add measurable value to your business.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="mt-6 p-8 bg-red-600 text-white text-center ">
-        <p>
-          At Doelsoft, our values are not just words they are the foundation of every decision, every interaction, and every success story we help create. Partner with us, and let's
-          build not just your team, but your future.
+  <div className="space-y-6 ml-0 sm:ml-6 md:ml-14">
+    {/* Trustworthy */}
+    <div className="bg-white p-4 flex flex-col sm:flex-row items-start gap-4">
+      <img src={"./Trustworthy.svg"} className="w-10 h-10 mx-auto p-1 border border-black sm:mx-0" alt="Trustworthy" />
+      <div>
+        <h3 className="text-black text-lg font-semibold text-center sm:text-left">
+          Trustworthy — Dependable in Every Step
+        </h3>
+        <p className="text-black text-sm sm:text-base text-center sm:text-left">
+          Your trust is our greatest responsibility. At Doelsoft, a promise is never taken lightly — we deliver on time, every
+          time. From urgent contract needs to building long-term teams, our clients rely on us because we consistently keep our
+          word and stand by our commitments.
         </p>
       </div>
     </div>
-   <section
-              className="relative bg-cover bg-center text-center  sm:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
-              style={{ backgroundImage: "url('/Background2.svg')" }}
-      
-            >
-              <div>
-                  <img src="/Vectors.svg" alt="" className="absolute left-14 top-10 h-32 w-32 object-cover object-top opacity-70 z-30" />
-              </div>
-              <div>
-                  <img src="/left.svg" alt="" className="absolute left-20 top-72   w-4 object-cover object-left opacity-70 z-30" />
-              </div>
-              <div>
-                  <img src="/right.svg" alt="" className="absolute right-96 top-12  w-20 object-cover object-right opacity-70 z-30" />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/80 to-black/90"></div>
-              <div className="relative max-w-3xl mx-auto text-white z-10 space-y-6 sm:space-y-8">
-                <h2 className="text-2xl  font-kumbh  md:text-4xl font-extralight leading-tight">
-                Let’s Build the Future Together
-                </h2>
-                <p className="text-base sm:text-lg lg:text-xl text-gray-200 leading-relaxed">
-                 👉 Partner with Doelsoft – Your trusted iOS & Android app development company in the USA & India.
-                </p>
-                <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-light px-6 sm:px-8 py-4 text-base sm:text-lg shadow-lg transition justify-center mx-auto">
-                  Talk to an Expert{" "}
-                  <ArrowUpRight
-                    className="border border-white rounded-full text-center"
-                    size={24}
-                  />
-                </button>
-              </div>
-            </section>
+
+    {/* Stewardship */}
+    <div className="bg-white p-4 flex flex-col sm:flex-row items-start gap-4">
+      <img src={"./Stewardship.svg"} className="w-10 h-10 mx-auto p-1 border border-black sm:mx-0" alt="Stewardship" />
+      <div>
+        <h3 className="text-black text-lg font-semibold text-center sm:text-left">
+          Stewardship — Taking Responsibility, Driving Results
+        </h3>
+        <p className="text-black text-sm sm:text-base text-center sm:text-left">
+          We see ourselves as stewards of your vision. That means taking ownership of every process and outcome — whether sourcing
+          exceptional permanent hires or managing offshore teams. Through proactive solutions and transparent communication, we
+          safeguard your goals as if they were our own.
+        </p>
+      </div>
+    </div>
+
+    {/* Credibility */}
+    <div className="bg-white p-4 flex flex-col sm:flex-row items-start gap-4">
+      <img src={"./Credibility.svg"} className="w-10 h-10 mx-auto p-1 border border-black sm:mx-0" alt="Credibility" />
+      <div>
+        <h3 className="text-black text-lg font-semibold text-center sm:text-left">
+          Credibility — Trust Built on Action
+        </h3>
+        <p className="text-black text-sm sm:text-base text-center sm:text-left">
+          In today's competitive staffing landscape, credibility is everything. At Doelsoft, we back our words with consistent
+          action. Every decision, placement, and engagement is grounded in honesty, fairness, and reliability — so you can count on
+          us to be a partner you trust, time after time.
+        </p>
+      </div>
+    </div>
+
+    {/* Respect */}
+    <div className="bg-white p-4 flex flex-col sm:flex-row items-start gap-4">
+      <img src={"./Respect.svg"} className="w-10 h-10 mx-auto p-1 border border-black sm:mx-0" alt="Respect" />
+      <div>
+        <h3 className="text-black text-lg font-semibold text-center sm:text-left">
+          Respect — People First, Always
+        </h3>
+        <p className="text-black text-sm sm:text-base text-center sm:text-left">
+          Behind every role is a person, and behind every business is a vision. We honor both. With humility and empathy, we treat
+          every candidate and client as partners in success. Our respectful approach creates inclusive environments where diverse
+          talent thrives and collaboration flourishes.
+        </p>
+      </div>
+    </div>
+
+    {/* Result-Oriented */}
+    <div className="bg-white p-4 flex flex-col sm:flex-row items-start gap-4">
+      <img src={"./Respect.svg"} className="w-10 h-10 mx-auto border border-black p-1 sm:mx-0" alt="Result-Oriented" />
+      <div>
+        <h3 className="text-black text-lg font-semibold text-center sm:text-left">
+          Result-Oriented — Excellence You Can Measure
+        </h3>
+        <p className="text-black text-sm sm:text-base text-center sm:text-left">
+          We don't just promise results — we deliver them. With strong processes, proven methodologies, and decades of experience,
+          we provide reliable outcomes that give you a competitive edge. Every staffing solution is designed to add measurable
+          value to your business.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div className="mt-6 p-6 sm:p-8 bg-red-600 text-white text-center ">
+    <p className="text-sm sm:text-base leading-relaxed">
+      At Doelsoft, our values are not just words — they are the foundation of every decision, every interaction, and every success
+      story we help create. Partner with us, and let's build not just your team, but your future.
+    </p>
+  </div>
+</div>
+
+ 
+              <section
+             className="relative w-full  bg-cover bg-center text-center py-16   sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
+             style={{ backgroundImage: "url('/Background2.svg')",marginTop:"45px" } }
+           >
+             {/* Decorative Vectors */}
+             <img
+               src="/Vectors.svg"
+               alt="vector"
+               className="absolute left-6 sm:left-14 top-8 sm:top-10 h-20 sm:h-28 md:h-32 w-20 sm:w-28 md:w-32 object-contain opacity-70 z-30"
+             />
+             <img
+               src="/left.svg"
+               alt="left"
+               className="absolute left-10 sm:left-20 bottom-10 sm:top-72 w-3 sm:w-4 object-contain opacity-70 z-30"
+             />
+             <img
+               src="/right.svg"
+               alt="right"
+               className="absolute right-10 sm:right-40 lg:right-72 top-6 sm:top-12 w-10 sm:w-16 md:w-20 object-contain opacity-70 z-30"
+             />
+           
+             {/* Dark overlay */}
+             <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/80 to-black/90"></div>
+           
+             {/* Main Content */}
+             <div className="relative max-w-3xl mx-auto text-white z-10 flex flex-col items-center justify-center space-y-5 sm:space-y-7 md:space-y-8">
+               <h2 className="text-xl sm:text-2xl md:text-4xl font-kumbh font-light leading-snug px-2">
+                 Let's Build the Future Together
+               </h2>
+           
+               <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-200 leading-relaxed px-2">
+                 Tells Us your goals.We'll design the runaway then deliver it with AI,Could and Data.
+               </p>
+           
+               <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-4 text-sm sm:text-lg  shadow-lg transition-all duration-300 ease-in-out">
+                 Talk to an Expert{" "}
+                 <ArrowUpRight
+                   className="border border-white rounded-full p-1"
+                   size={24}
+                 />
+               </button>
+             </div>
+           </section>
     </div>
   );
 }
