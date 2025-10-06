@@ -6,176 +6,205 @@ import { ArrowUpRight } from "lucide-react";
 const SoftwareDevelopment = () => {
   return (
     <div className="w-full font-kumbh bg-white mt-8">
-      <section
-        className="relative w-full h-auto min-h-[550px]  flex flex-col md:flex-row items-end overflow-hidden py-10"
-        style={{
-          backgroundImage: "url('/worldmap.svg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        {/* Content Left */}
-         <div className="relative z-10 flex-1 flex flex-col justify-end pl-28 bottom-48">
-        
+          <section
+  className="relative w-full min-h-[550px] flex flex-col md:flex-row items-center justify-between overflow-hidden py-10 px-6 md:px-16 lg:px-28"
+  style={{
+    backgroundImage: "url('/worldmap.svg')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  }}
+>
+  {/* Left Content */}
+  <div className="relative z-10 flex-1 flex flex-col space-y-6 items-start justify-center text-center md:text-left">
+    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-red-600 leading-snug mb-6">
+      Custom Software <br className="hidden sm:block" />
+      <span className="block mt-2">Development</span>
+      
+    </h2>
 
-    <h2 className="text-6xl gap-6 font-semibold text-red-600 mb-8">
-    Custom Software <br /> 
-    <span className="block mt-4">Development</span>
-</h2>
-                <button className="  py-2 border border-black text-black hover:bg-gray-200 w-max">
+    <button className="py-2 px-5 border border-black ml-[45px] md:ml-[9px]  text-black hover:bg-gray-200 transition-all duration-200 ">
+      Consult With Us <span className="ml-2">↗</span>
+    </button>
+  </div>
 
-                    Consult With Us <span className="ml-2">↗</span>
-
-                </button>
-
-            </div>
-        {/* Image Right */}
-        <div  className=" absolute right-36 top-12  h-[#432.87px] w-[#506.26px] mr-10 flex items-end justify-end z-00">
-          <img
-            src="/SoftwareDevelopment.svg"
-            alt="Team"
-            // Corrected typo from md:object-coverr and ensure object-cover fills the space
-            className="w-full h-full object-contain md:object-cover"
-            style={{ objectPosition: "right bottom" }}
-          />
-        </div>
-      </section>
+  {/* Right Image */}
+  <div className="mt-10 md:mt-0 md:flex-1 flex justify-center md:justify-end relative z-0">
+    <img
+      src="/SoftwareDevelopment.svg"
+      alt="Team"
+      className="w-72 sm:w-80 md:w-[420px] lg:w-[500px] h-auto object-contain"
+    />
+  </div>
+</section>
 
       {/* Description Section */}
-      <section className=" mx-auto px-16 md:px-24 mt-4 py-20 bg-[#F4F6FB] grid md:grid-cols-2 gap-10 items-center">
-        <div className="space-y-6">
-          <h2 className="text-2xl md:text-4xl  font-extralight text-black"> 
-            Custom Software Development <br/> Crafted Around Your Business Needs
-          </h2>
-          <p className="text-black text-lg leading-relaxed">
-            At Doelsoft, we believe every business is unique, and so should be
-            its software solutions. Our custom software development services
-            focus entirely on creating applications tailored precisely to your
-            company’s goals, challenges, and target audience.
-          </p>
-          <p className="text-black text-lg leading-relaxed">
-            Our expert team works closely with you throughout the process from
-            initial consultation to final delivery ensuring the solution we
-            build not only meets your technical requirements but also drives
-            real business value. We emphasize collaboration, transparency, and a
-            user-first approach to deliver software that is intuitive, reliable,
-            and scalable as your business evolves.
-          </p>
-        </div>
-        <div className="flex justify-center">
-          <img
-            src="gearImg.svg"
-            alt="Custom Software"
-            className="max-w-sm transform transition-transform duration-500 hover:scale-110 drop-shadow-2xl"
-          />
-        </div>
-      </section>
+     <section className="mx-auto px-4 sm:px-8 md:px-16 lg:px-24 mt-4 py-20 bg-[#F4F6FB] grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+  {/* Left Text Content */}
+  <div className="space-y-6">
+    <h2 className="text-2xl sm:text-3xl md:text-4xl font-extralight text-black">
+      Custom Software Development <br /> Crafted Around Your Business Needs
+    </h2>
+    <p className="text-black text-base sm:text-lg leading-relaxed">
+      At Doelsoft, we believe every business is unique, and so should be
+      its software solutions. Our custom software development services
+      focus entirely on creating applications tailored precisely to your
+      company’s goals, challenges, and target audience.
+    </p>
+    <p className="text-black text-base sm:text-lg leading-relaxed">
+      Our expert team works closely with you throughout the process from
+      initial consultation to final delivery ensuring the solution we
+      build not only meets your technical requirements but also drives
+      real business value. We emphasize collaboration, transparency, and a
+      user-first approach to deliver software that is intuitive, reliable,
+      and scalable as your business evolves.
+    </p>
+  </div>
+
+  {/* Right Image */}
+  <div className="flex justify-center">
+    <img
+      src="gearImg.svg"
+      alt="Custom Software"
+      className="max-w-full sm:max-w-xs md:max-w-sm transform transition-transform duration-500 hover:scale-110 drop-shadow-2xl"
+    />
+  </div>
+</section>
+
 
       {/* Why Partner Section */}
-      <section className=" mx-auto px-0 py-10 grid md:grid-cols-2 gap-10 items-center">
-        <div>
-          {/* Changed max-w-sm to w-full to allow image to be responsive */}
-          <img src="businessTeam.svg" alt="Business Team" className="w-full max-w-sm mx-auto" />
-        </div>
-        <div className="space-y-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-black">
-            Why Partner with Doelsoft?
-          </h2>
-          <ul className="space-y-4 text-gray-700">
-            <li>
-              <span className="font-semibold">✔ Tailor-Made Solutions:</span> We
-              design and develop software that fits your specific workflows and
-              priorities, avoiding generic products.
-            </li>
-            <li>
-              <span className="font-semibold">
-                ✔ Client-Focused Collaboration:
-              </span>{" "}
-              Your vision guides every stage. We maintain continuous
-              communication.
-            </li>
-            <li>
-              <span className="font-semibold">✔ Empowering User Experiences:</span>{" "}
-              Simplicity and efficiency to engage and accomplish tasks seamlessly.
-            </li>
-            <li>
-              <span className="font-semibold">✔ Cutting-Edge Technologies:</span>{" "}
-              We build future-ready solutions that grow with your organization.
-            </li>
-            <li>
-              <span className="font-semibold">✔ End-to-End Support:</span> Beyond
-              development, we provide maintenance and upgrades.
-            </li>
-          </ul>
-        </div>
-      </section>
+     <section className="mx-auto px-4 sm:px-6 md:px-0 py-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+  {/* Left Image */}
+  <div className="flex justify-center">
+    <img
+      src="businessTeam.svg"
+      alt="Business Team"
+      className="w-full max-w-sm md:max-w-md lg:max-w-lg mx-auto"
+    />
+  </div>
+
+  {/* Right Text Content */}
+  <div className="space-y-6 px-4 sm:px-0">
+    <h2 className="text-2xl sm:text-2xl md:text-3xl font-bold text-black">
+      Why Partner with Doelsoft?
+    </h2>
+    <ul className="space-y-4 text-gray-700 text-base sm:text-base md:text-lg">
+      <li>
+        <span className="font-semibold">✔ Tailor-Made Solutions:</span> We
+        design and develop software that fits your specific workflows and
+        priorities, avoiding generic products.
+      </li>
+      <li>
+        <span className="font-semibold">✔ Client-Focused Collaboration:</span>{" "}
+        Your vision guides every stage. We maintain continuous communication.
+      </li>
+      <li>
+        <span className="font-semibold">✔ Empowering User Experiences:</span>{" "}
+        Simplicity and efficiency to engage and accomplish tasks seamlessly.
+      </li>
+      <li>
+        <span className="font-semibold">✔ Cutting-Edge Technologies:</span>{" "}
+        We build future-ready solutions that grow with your organization.
+      </li>
+      <li>
+        <span className="font-semibold">✔ End-to-End Support:</span> Beyond
+        development, we provide maintenance and upgrades.
+      </li>
+    </ul>
+  </div>
+</section>
+
 
       {/* Areas of Expertise */}
-      <section className="w-full bg-[#F4F6FB] mx-auto py-16 px-6 md:px-36">
-        <h2 className="text-2xl md:text-3xl font-bold text-black text-center mb-10">
-          Our Areas of Expertise
-        </h2>
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8">
-          {[
-            {
-              src: "E1.svg",
-              text: "Customized web and mobile apps tailored to your audience.",
-            },
-            {
-              src: "E2.svg",
-              text: "Cloud-based platforms offering flexibility and security.",
-            },
-            {
-              src: "E3.svg",
-              text: "Modernizing legacy systems to reduce costs and enhance functionality.",
-            },
-            {
-              src: "E4.svg",
-              text: "Integration’s and automation’s to streamline your workflows.",
-            },
-          ].map((item, index) => (
-            <div
-              key={index}
-              className="flex items-start gap-3 p-6 bg-gray-100 shadow hover:shadow-md transition"
-            >
-              {/* Removed redundant mr-2 on the image since gap-3 handles spacing */}
-              <img src={item.src} alt="" className="w-10 h-10 flex-shrink-0" />
-              <h3 className="font-semibold text-lg">{item.text}</h3>
-            </div>
-          ))}
-        </div>
-        {/* Cleaned up Red Rectangle */}
-        <div className="bg-red-600 text-white max-w-7xl mx-auto text-center mt-10 p-12 text-lg font-medium">
-          Choose Doelsoft for custom software crafted with your business at its
-          heart, delivering solutions that empower growth and operational
-          excellence.
-        </div>
-      </section>
+    <section className="w-full bg-[#F4F6FB] mx-auto py-16 px-4 sm:px-6 md:px-36">
+  {/* Heading */}
+  <h2 className="text-2xl sm:text-2xl md:text-3xl font-bold text-black text-center mb-10">
+    Our Areas of Expertise
+  </h2>
+
+  {/* Expertise Grid */}
+  <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+    {[
+      {
+        src: "E1.svg",
+        text: "Customized web and mobile apps tailored to your audience.",
+      },
+      {
+        src: "E2.svg",
+        text: "Cloud-based platforms offering flexibility and security.",
+      },
+      {
+        src: "E3.svg",
+        text: "Modernizing legacy systems to reduce costs and enhance functionality.",
+      },
+      {
+        src: "E4.svg",
+        text: "Integration’s and automation’s to streamline your workflows.",
+      },
+    ].map((item, index) => (
+      <div
+        key={index}
+        className="flex items-start gap-3 p-6 bg-gray-100 shadow hover:shadow-md transition"
+      >
+        <img src={item.src} alt="" className="w-10 h-10 flex-shrink-0" />
+        <h3 className="font-semibold text-base sm:text-lg md:text-lg">{item.text}</h3>
+      </div>
+    ))}
+  </div>
+
+  {/* Red Rectangle CTA */}
+  <div className="bg-red-600 text-white max-w-7xl mx-auto text-center mt-10 p-8 sm:p-10 md:p-12 text-base sm:text-lg md:text-lg font-medium">
+    Choose Doelsoft for custom software crafted with your business at its
+    heart, delivering solutions that empower growth and operational
+    excellence.
+  </div>
+</section>
+
 
       {/* Final CTA Section */}
-      <section
-        className="relative bg-cover bg-center text-center py-16 sm:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
-        style={{ backgroundImage: "url('/Background2.svg')" }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/70 to-red-900/60"></div>
-        <div className="relative max-w-3xl mx-auto text-white z-10 space-y-6 sm:space-y-8">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-extrabold leading-tight">
-            Let’s Build the Future Together
-          </h2>
-          <p className="text-base sm:text-lg lg:text-xl text-gray-200 leading-relaxed">
-            Tell us your goals. We’ll design the runway then deliver it with AI,
-            Cloud & Data.
-          </p>
-          <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-light px-6 sm:px-8 py-4 text-base sm:text-lg shadow-lg transition justify-center mx-auto">
-            Talk to an Expert{" "}
-            <ArrowUpRight
-              className="border border-white rounded-full text-center"
-              size={24}
-            />
-          </button>
-        </div>
-      </section>
+   <section
+                className="relative w-full  bg-cover bg-center text-center py-16   sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
+                style={{ backgroundImage: "url('/Background2.svg')",marginTop:"45px" } }
+              >
+                {/* Decorative Vectors */}
+                <img
+                  src="/Vectors.svg"
+                  alt="vector"
+                  className="absolute left-6 sm:left-14 top-8 sm:top-10 h-20 sm:h-28 md:h-32 w-20 sm:w-28 md:w-32 object-contain opacity-70 z-30"
+                />
+                <img
+                  src="/left.svg"
+                  alt="left"
+                  className="absolute left-10 sm:left-20 bottom-10 sm:top-72 w-3 sm:w-4 object-contain opacity-70 z-30"
+                />
+                <img
+                  src="/right.svg"
+                  alt="right"
+                  className="absolute right-10 sm:right-40 lg:right-72 top-6 sm:top-12 w-10 sm:w-16 md:w-20 object-contain opacity-70 z-30"
+                />
+              
+                {/* Dark overlay */}
+                <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/80 to-black/90"></div>
+              
+                {/* Main Content */}
+                <div className="relative max-w-3xl mx-auto text-white z-10 flex flex-col items-center justify-center space-y-5 sm:space-y-7 md:space-y-8">
+                  <h2 className="text-xl sm:text-2xl md:text-4xl font-kumbh font-light leading-snug px-2">
+                    Let's Build the Future Together
+                  </h2>
+              
+                  <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-200 leading-relaxed px-2">
+                    Tells Us your goals.We'll design the runaway then deliver it with AI,Could and Data.
+                  </p>
+              
+                  <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-4 text-sm sm:text-lg  shadow-lg transition-all duration-300 ease-in-out">
+                    Talk to an Expert{" "}
+                    <ArrowUpRight
+                      className="border border-white rounded-full p-1"
+                      size={24}
+                    />
+                  </button>
+                </div>
+              </section>
       
     </div>
   );

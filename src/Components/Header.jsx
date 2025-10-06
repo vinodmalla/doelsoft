@@ -46,13 +46,13 @@ function Header() {
       {isOpen && (
         <div className="md:hidden bg-white shadow-md">
           <nav className="flex flex-col items-center space-y-4 py-6">
-              <Link to="/" className="text-[#000000] hover:text-[#EF0E0E] font-medium">Home</Link>
-          <Link to="/solutions" className="text-[#000000] hover:text-[#EF0E0E] ac font-medium">Solutions</Link>
-          <Link to="/talenthub" className="text-[#000000] hover:text-[#EF0E0E] font-medium">Talent Hub</Link>
-          <Link to="/chooseus" className="text-[#000000] hover:text-[#EF0E0E] font-medium">Why choose us</Link>
-          <Link to="/carrers" className="text-[#000000] hover:text-[#EF0E0E] font-medium">Careers</Link>
-          <Link to="/insights" className="text-[#000000] hover:text-[#EF0E0E] font-medium">Insights</Link>
-          <Link to="/contact" className="text-[#000000] hover:text-[#EF0E0E] font-medium">Contact</Link>
+          <Link onClick={()=>setIsOpen(isOpen=>!isOpen)} to="/" className="text-[#000000] hover:text-[#EF0E0E] font-medium">Home</Link>
+          <Link onClick={()=>setIsOpen(isOpen=>!isOpen)}  to="/solutions" className="text-[#000000] hover:text-[#EF0E0E] ac font-medium">Solutions</Link>
+          <Link onClick={()=>setIsOpen(isOpen=>!isOpen)} to="/talenthub" className="text-[#000000] hover:text-[#EF0E0E] font-medium">Talent Hub</Link>
+          <Link onClick={()=>setIsOpen(isOpen=>!isOpen)} to="/chooseus" className="text-[#000000] hover:text-[#EF0E0E] font-medium">Why choose us</Link>
+          <Link onClick={()=>setIsOpen(isOpen=>!isOpen)} to="/carrers" className="text-[#000000] hover:text-[#EF0E0E] font-medium">Careers</Link>
+          <Link onClick={()=>setIsOpen(isOpen=>!isOpen)} to="/insights" className="text-[#000000] hover:text-[#EF0E0E] font-medium">Insights</Link>
+          <Link onClick={()=>setIsOpen(isOpen=>!isOpen)} to="/contact" className="text-[#000000] hover:text-[#EF0E0E] font-medium">Contact</Link>
             {/* Social Icons inside mobile menu */}
             <div className="flex space-x-6 pt-4">
               <a href="#"><FaInstagram className="text-xl text-gray-700 hover:text-red-600" /></a>

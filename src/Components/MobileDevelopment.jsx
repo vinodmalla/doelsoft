@@ -31,35 +31,38 @@ function MobileDevelopment() {
 ];
 return (
     <div className="w-full font-kumbh bg-white mt-8">
-        <section
-            className="relative w-full h-auto min-h-[550px] flex flex-col md:flex-row items-end overflow-hidden py-10"
-            style={{
-                backgroundImage: "url('/worldmap.svg')",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-            }}
-        >
-            {/* Content Left */}
-            <div className="relative z-10 flex-1 flex flex-col justify-end pl-28 bottom-48">
-                <h2 className="text-6xl gap-6 font-semibold text-red-600 mb-8">
-                    Mobile App<br />
-                    <span className="block mt-4">Development</span>
-                </h2>
-                <button className="py-2 px-4 border border-black text-black hover:bg-gray-200 w-max">
-                    Consult With Us <span className="ml-2">↗</span>
-                </button>
-            </div>
-            {/* Image Right */}
-            <div className="absolute right-36 top-12 h-[432.87px] w-[506.26px] mr-10 flex items-end justify-end z-0">
-                <img
-                    src="/MobileDevelopment.svg"
-                    alt="Team"
-                    className="w-full h-full object-contain md:object-cover"
-                    style={{ objectPosition: "right bottom" }}
-                />
-            </div>
-        </section>
+    
+                  <section
+  className="relative w-full min-h-[550px] flex flex-col md:flex-row items-center justify-between overflow-hidden py-10 px-6 md:px-16 lg:px-28"
+  style={{
+    backgroundImage: "url('/worldmap.svg')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  }}
+>
+  {/* Left Content */}
+  <div className="relative z-10 flex-1 flex flex-col space-y-6 items-start justify-center text-center md:text-left">
+    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-red-600 leading-snug mb-6">
+       Mobile App <br className="hidden sm:block" />
+      <span className="block mt-2">Development</span>
+      
+    </h2>
+
+    <button className="py-2 px-5 border border-black ml-[45px] md:ml-[9px]  text-black hover:bg-gray-200 transition-all duration-200 ">
+      Consult With Us <span className="ml-2">↗</span>
+    </button>
+  </div>
+
+  {/* Right Image */}
+  <div className="mt-10 md:mt-0 md:flex-1 flex justify-center md:justify-end relative z-0">
+    <img
+      src="/MobileDevelopment.svg"
+      alt="Team"
+      className="w-72 sm:w-80 md:w-[420px] lg:w-[500px] h-auto object-contain"
+    />
+  </div>
+</section>
         <section className="mx-auto px-16 md:px-24 mt-4 py-20 bg-[#F4F6FB] grid md:grid-cols-2 gap-10 items-center">
             <div className="space-y-6">
                 <h2 className="text-2xl md:text-4xl font-extralight text-black">
@@ -83,36 +86,69 @@ return (
                 />
             </div>
         </section>
-        <section className="mx-auto px-0 py-10 grid md:grid-cols-2 gap-10 items-center">
-            <div className=''>
-                <img src="Mobilemen.svg" alt="Business Team" className="w-full max-w-sm mx-auto" />
-            </div>
-            <div className="space-y-6">
-                <h2 className="text-2xl md:text-4xl font-kumbh font-extralight text-black">
-                    🌟 Our Mobile App Development<br /> Expertise
-                </h2>
-                <div className="text-black text-lg leading-relaxed py-6">
-                    {[
-                        { src: "/m1.svg", title: "iOS App Development", desc: "Feature-rich apps optimized for iPhones, iPads, and Apple Watches with unmatched performance and design." },
-                        { src: "/m2.svg", title: "Android App Development", desc: "Scalable, secure apps compatible across multiple devices and OS versions." },
-                        { src: "/m3.svg", title: "Cross-Platform Development (Flutter & React Native)", desc: "Build once, deploy everywhere. Faster time-to-market and cost efficiency.\nFeature-rich apps optimized for iPhones,iPads, and Apple Watches with unmatched performance and design." },
-                        { src: "/m4.svg", title: "Enterprise Mobility Solutions", desc: "Tailored apps that streamline operations, boost collaboration, and empower decision-making." },
-                        { src: "/m5.svg", title: "UI/UX Design Excellence", desc: "Apps designed with accessibility, usability, and customer engagement at the core." },
-                        { src: "/m6.svg", title: "App Maintenance & Suppor", desc: "Continuous updates, optimization, and technical support for seamless performance." },
-                    ].map((item, idx) => (
-                        <div key={idx} className="flex flex-row gap-6 items-start mb-4">
-                            <div className="border border-black p-2 flex items-center justify-center w-20 h-20 bg-white">
-                                <img src={item.src} alt="" className="w-10 h-10 object-contain" />
-                            </div>
-                            <div className='ml-2'>
-                                <h3 className="font-semibold">{item.title}</h3>
-                                <p className="text-gray-500 text-base whitespace-pre-line">{item.desc}</p>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </div>
-        </section>
+       <section className="container mx-auto px-4 sm:px-6 lg:px-20 py-12 grid gap-10 md:grid-cols-2 items-center">
+  {/* Left Image */}
+  <div className="flex justify-center md:justify-start">
+    <img
+      src="Mobilemen.svg"
+      alt="Business Team"
+      className="w-full max-w-xs sm:max-w-sm md:max-w-md"
+    />
+  </div>
+
+  {/* Right Content */}
+  <div className="space-y-8">
+    <h2 className="text-3xl sm:text-4xl md:text-5xl font-kumbh font-extralight text-black leading-tight">
+      🌟 Our Mobile App Development <br /> Expertise
+    </h2>
+
+    <div className="space-y-6">
+      {[
+        {
+          src: "/m1.svg",
+          title: "iOS App Development",
+          desc: "Feature-rich apps optimized for iPhones, iPads, and Apple Watches with unmatched performance and design.",
+        },
+        {
+          src: "/m2.svg",
+          title: "Android App Development",
+          desc: "Scalable, secure apps compatible across multiple devices and OS versions.",
+        },
+        {
+          src: "/m3.svg",
+          title: "Cross-Platform Development (Flutter & React Native)",
+          desc: "Build once, deploy everywhere. Faster time-to-market and cost efficiency.\nFeature-rich apps optimized for iPhones, iPads, and Apple Watches with unmatched performance and design.",
+        },
+        {
+          src: "/m4.svg",
+          title: "Enterprise Mobility Solutions",
+          desc: "Tailored apps that streamline operations, boost collaboration, and empower decision-making.",
+        },
+        {
+          src: "/m5.svg",
+          title: "UI/UX Design Excellence",
+          desc: "Apps designed with accessibility, usability, and customer engagement at the core.",
+        },
+        {
+          src: "/m6.svg",
+          title: "App Maintenance & Support",
+          desc: "Continuous updates, optimization, and technical support for seamless performance.",
+        },
+      ].map((item, idx) => (
+        <div key={idx} className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-start">
+          <div className="flex-shrink-0 bg-white border border-gray-300 p-4 rounded-lg flex items-center justify-center w-20 h-20 sm:w-24 sm:h-24">
+            <img src={item.src} alt={item.title} className="w-10 h-10 sm:w-12 sm:h-12 object-contain" />
+          </div>
+          <div>
+            <h3 className="text-lg sm:text-xl font-semibold text-black">{item.title}</h3>
+            <p className="text-gray-600 text-base sm:text-lg whitespace-pre-line">{item.desc}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
         <section className='bg-[#F4F6FB] py-10'>
             <div className='px-16 md:px-20 space-y-4'>
                 <h1 className='font-kumbh font-extralight text-4xl '>🏢 Industries We Serve</h1>
@@ -147,92 +183,117 @@ return (
             </div>
 
         </section>
-        <section className='bg-white py-10' >
-            <div>
-                <h1 className='font-extralight font-kumbh text-4xl px-16 md:px-20 py-4'>👨‍💻 Our Talent Pool – Powered by Doelsoft Experts</h1>
-                <p className='py-2 text-lg px-16 md:px-20'>Our skilled mobile app developers in the USA and India ensure every project is delivered with precision:</p>
-            </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-6 px-16 md:px-20'>
-                {[{ src: "/t1.svg", desc: "Certified iOS & Android developers proficient in Swift, Kotlin, Java, React Native, and Flutter." },
-                { src: "/t2.svg", desc: "Creative UI/UX designers focused on intuitive, engaging, and inclusive experiences." },
-                { src: "/t3.svg", desc: "Dedicated QA testers ensuring bug-free, accessible, and performance-driven apps." },
-                { src: "/t4.svg", desc: "Agile project managers delivering on-time, client-focused solutions." },
-                ].map((item, idx) => (
-                    <div key={idx} className="flex flex-row  border border-white shadow-xl p-8 gap-6 ">
-                        <img src={item.src} alt="" className="w-16 h-16 mb-4" />
-                        <p className="text-black text-justify">{item.desc}</p>
-                    </div>
-                ))}
-                </div>
-        </section>
-      <section className="px-6 md:px-16 pt-12 bg-[#F4F6FB] font-sans">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-10">
-        
-        {/* Left Content */}
-        <div className="flex-1">
-          <h1 className="text-2xl font-kumbh md:text-4xl font-extralight mb-8">
-            💡 Why Partner with Doelsoft for Mobile App Development?
-          </h1>
-          
-          <div className="space-y-6 ">
-            {features.map((feature, index) => (
-              <div key={index} className="flex items-start gap-4 pb-4 ">
-                <div className="border border-black p-2 flex items-center justify-center w-16 h-16 bg-white">
-                    <img src={feature.icon} alt="" className="w-10 h-10 flex-shrink-0" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-lg">{feature.title}</h4>
-                  <p className="text-gray-600 text-sm">{feature.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+      <section className="bg-white py-12">
+  {/* Header */}
+  <div className="text-center md:text-left px-4 sm:px-6 lg:px-20 mb-10">
+    <h1 className="text-3xl sm:text-4xl md:text-5xl font-kumbh font-extralight mb-4">
+      👨‍💻 Our Talent Pool – Powered by Doelsoft Experts
+    </h1>
+    <p className="text-base sm:text-lg text-gray-700">
+      Our skilled mobile app developers in the USA and India ensure every project is delivered with precision:
+    </p>
+  </div>
 
-        {/* Right Image */}
-        <div className="flex-1 max-w-md pt-60 md:mx-0">
-          <img
-            src='/youngmen.svg'
-            alt="Man holding toy plane"
-            className="w-full h-auto object-cover  "
-          />
-        </div>
-
+  {/* Talent Cards */}
+  <div className="container mx-auto px-4 sm:px-6 lg:px-20 grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
+    {[
+      { src: "/t1.svg", desc: "Certified iOS & Android developers proficient in Swift, Kotlin, Java, React Native, and Flutter." },
+      { src: "/t2.svg", desc: "Creative UI/UX designers focused on intuitive, engaging, and inclusive experiences." },
+      { src: "/t3.svg", desc: "Dedicated QA testers ensuring bug-free, accessible, and performance-driven apps." },
+      { src: "/t4.svg", desc: "Agile project managers delivering on-time, client-focused solutions." },
+    ].map((item, idx) => (
+      <div
+        key={idx}
+        className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6 p-6 sm:p-8 bg-white border border-gray-200 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300"
+      >
+        <img src={item.src} alt="" className="w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0" />
+        <p className="text-gray-800 text-base sm:text-lg">{item.desc}</p>
       </div>
-    </section>
+    ))}
+  </div>
+</section>
+
+     <section className="bg-[#F4F6FB] py-12 px-4 sm:px-6 lg:px-20 font-sans">
+  <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center md:items-start gap-10">
+    
+    {/* Left Content */}
+    <div className="flex-1">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-kumbh font-extralight mb-8 leading-tight">
+        💡 Why Partner with Doelsoft for Mobile App Development?
+      </h1>
+
+      <div className="space-y-6">
+        {features.map((feature, index) => (
+          <div key={index} className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6 p-4 sm:p-0 bg-white sm:bg-transparent rounded-lg">
+            <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center border border-black rounded-lg bg-white">
+              <img src={feature.icon} alt={feature.title} className="w-10 h-10 sm:w-12 sm:h-12 object-contain" />
+            </div>
+            <div>
+              <h4 className="text-lg sm:text-xl font-semibold text-black">{feature.title}</h4>
+              <p className="text-gray-600 text-sm sm:text-base">{feature.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    {/* Right Image */}
+    <div className="flex-1 flex justify-center md:justify-end">
+      <img
+        src="/youngmen.svg"
+        alt="Man holding toy plane"
+        className="w-full max-w-sm sm:max-w-md md:max-w-lg h-auto object-cover"
+      />
+    </div>
+    
+  </div>
+</section>
+
        
 
-         <section
-        className="relative bg-cover bg-center text-center  sm:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
-        style={{ backgroundImage: "url('/Background2.svg')" }}
-
-      >
-        <div>
-            <img src="/vectors.svg" alt="" className="absolute left-14 top-10 h-32 w-32 object-cover object-top opacity-70 z-30" />
-        </div>
-        <div>
-            <img src="/left.svg" alt="" className="absolute left-20 top-72   w-4 object-cover object-left opacity-70 z-30" />
-        </div>
-        <div>
-            <img src="/right.svg" alt="" className="absolute right-96 top-12  w-20 object-cover object-right opacity-70 z-30" />
-        </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/80 to-black/90"></div>
-        <div className="relative max-w-3xl mx-auto text-white z-10 space-y-6 sm:space-y-8">
-          <h2 className="text-2xl  font-kumbh  md:text-4xl font-extralight leading-tight">
-           🌍 Build Your Mobile Future with Doelsoft
-          </h2>
-          <p className="text-base sm:text-lg lg:text-xl text-gray-200 leading-relaxed">
-           👉 Partner with Doelsoft – Your trusted iOS & Android app development company in the USA & India.
-          </p>
-          <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-light px-6 sm:px-8 py-4 text-base sm:text-lg shadow-lg transition justify-center mx-auto">
-            Talk to an Expert{" "}
-            <ArrowUpRight
-              className="border border-white rounded-full text-center"
-              size={24}
-            />
-          </button>
-        </div>
-      </section>
+        <section
+                     className="relative w-full  bg-cover bg-center text-center py-16   sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
+                     style={{ backgroundImage: "url('/Background2.svg')",marginTop:"45px" } }
+                   >
+                     {/* Decorative Vectors */}
+                     <img
+                       src="/Vectors.svg"
+                       alt="vector"
+                       className="absolute left-6 sm:left-14 top-8 sm:top-10 h-20 sm:h-28 md:h-32 w-20 sm:w-28 md:w-32 object-contain opacity-70 z-30"
+                     />
+                     <img
+                       src="/left.svg"
+                       alt="left"
+                       className="absolute left-10 sm:left-20 bottom-10 sm:top-72 w-3 sm:w-4 object-contain opacity-70 z-30"
+                     />
+                     <img
+                       src="/right.svg"
+                       alt="right"
+                       className="absolute right-10 sm:right-40 lg:right-72 top-6 sm:top-12 w-10 sm:w-16 md:w-20 object-contain opacity-70 z-30"
+                     />
+                   
+                     {/* Dark overlay */}
+                     <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/80 to-black/90"></div>
+                   
+                     {/* Main Content */}
+                     <div className="relative max-w-3xl mx-auto text-white z-10 flex flex-col items-center justify-center space-y-5 sm:space-y-7 md:space-y-8">
+                       <h2 className="text-xl sm:text-2xl md:text-4xl font-kumbh font-light leading-snug px-2">
+                         Let's Build the Future Together
+                       </h2>
+                   
+                       <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-200 leading-relaxed px-2">
+                         Tells Us your goals.We'll design the runaway then deliver it with AI,Could and Data.
+                       </p>
+                   
+                       <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-4 text-sm sm:text-lg  shadow-lg transition-all duration-300 ease-in-out">
+                         Talk to an Expert{" "}
+                         <ArrowUpRight
+                           className="border border-white rounded-full p-1"
+                           size={24}
+                         />
+                       </button>
+                     </div>
+                   </section>
     </div>
 )
 }

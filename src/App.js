@@ -17,6 +17,7 @@ import ScrollTop from './Components/ScrollTop';
 import Rpo from './Components/Rpo';
 import Executive from './Components/Executive';
 import Permanent from './Components/Permanent';
+import Solutions from './Components/Solutions';
 
 function App() {
   return (
@@ -38,6 +39,10 @@ export const approuter = createBrowserRouter([
     element: <App />,
     children: [
       { path: "/", element: <Home /> },
+      {path:"/solutions",element:<Solutions />},
+      {path:"/softwareDevelopment",element:<SoftwareDevelopment/>},
+      {path:"/mobileDevelopment",element:<MobileDevelopment/>},
+      {path:"/digitalaccessibilit",element:<Accessibility/>},
       { path: "/talenthub", element: <TalentHub /> },
       { path: "/chooseus", element: <Choose /> },
       { path: "/carrers", element: <Carrers /> },
