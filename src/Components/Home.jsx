@@ -215,9 +215,10 @@ useEffect(()=>{
   return (
     <div className='w-full h-full'>
       {/* Hero Section - Responsive with equal spacing */}
-  <section className="w-full min-h-lvh  max-w-[80vw] mx-auto relative flex flex-col md:flex-row justify-center items-center bg-white px-4 sm:px-6 lg:px-8 py-16 gap-6 lg:gap-12">
-  {/* Background Diamonds */}
-  <div className="w-full lg:w-1/2 space-y-6 flex flex-col gap-6 lg:gap-8">
+ <section className="w-full min-h-lvh max-w-[90vw] md:max-w-[80vw] mx-auto relative flex flex-col lg:flex-row justify-center items-center bg-white px-4 sm:px-6 lg:px-8 py-12 sm:py-16 gap-8 lg:gap-12 overflow-hidden">
+
+  {/* LEFT CONTENT */}
+  <div className="w-full lg:w-1/2 space-y-6 flex flex-col gap-6 lg:gap-8 text-center lg:text-left">
     {CursolDetails.map((details, index) => (
       <div
         key={index}
@@ -225,7 +226,7 @@ useEffect(()=>{
           cursol === index ? "opacity-100 relative" : "opacity-0 absolute"
         } w-full`}
       >
-        <h1 className="text-5xl font-bold leading-tight">
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
           {details.h11}
           <br />
           <span className="text-red-600 block mt-2 text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold">
@@ -233,11 +234,11 @@ useEffect(()=>{
           </span>
         </h1>
 
-        <p className="text-gray-600 text-base py-4 sm:text-lg leading-relaxed">
+        <p className="text-gray-600 text-sm sm:text-base md:text-lg py-4 leading-relaxed max-w-[90%] mx-auto lg:mx-0">
           {details.p}
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4">
+        <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
           <button className="bg-red-600 hover:bg-gray-600 text-white px-6 sm:px-8 py-3 font-medium rounded transition">
             Explore Solutions ↗
           </button>
@@ -248,11 +249,11 @@ useEffect(()=>{
 
         {/* Logos */}
         <div className="mt-6 lg:mt-8">
-          <div className="flex gap-4 sm:gap-6 animate-marquee whitespace-nowrap overflow-hidden">
+          <div className="flex gap-4 sm:gap-6 animate-marquee whitespace-nowrap overflow-x-auto no-scrollbar py-2">
             {[spring, wipro, zingo, mevatron, menlo, tech].map((logo, i) => (
               <div
                 key={i}
-                className="w-16 sm:w-20 lg:w-24 h-12 sm:h-14 lg:h-16 flex items-center justify-center flex-shrink-0"
+                className="w-14 sm:w-16 md:w-20 lg:w-24 h-10 sm:h-12 md:h-14 lg:h-16 flex items-center justify-center flex-shrink-0"
               >
                 <img
                   src={logo}
@@ -262,7 +263,7 @@ useEffect(()=>{
               </div>
             ))}
           </div>
-          <p className="text-black font-bold text-lg sm:text-xl lg:text-2xl py-4 lg:py-6 text-center sm:text-left">
+          <p className="text-black font-bold text-base sm:text-lg lg:text-2xl py-4 lg:py-6 text-center lg:text-left">
             Trusted by{" "}
             <span className="font-medium">
               Leading Enterprises & Fast–Growing Teams
@@ -274,29 +275,31 @@ useEffect(()=>{
   </div>
 
   {/* RIGHT CONTENT */}
-  <div className="w-full lg:w-1/2 relative flex ml-[-63px]  flex-col items-center justify-center gap-4 lg:gap-0 mt-8 lg:mt-0">
-    {/* Mask background (desktop only) */}
+  <div className="w-full lg:w-1/2 relative flex flex-col items-center justify-center gap-4 lg:gap-0 mt-8 lg:mt-0">
+    {/* Mask background */}
     <img
       src={mask}
       alt="mask"
-      className="absolute bg-[#8c8b8b] inset-0 w-[330px] mt-32 ml-[13rem] h-[370px] object-cover hidden lg:block"
+      className="absolute bg-[#8c8b8b] inset-0 w-[250px] sm:w-[300px] md:w-[330px] h-[300px] sm:h-[340px] md:h-[370px] mt-20 md:mt-32 lg:ml-[13rem] object-cover hidden lg:block"
     />
 
     {/* Main image */}
     <img
       src={CursolDetails[cursol].img}
       alt={CursolDetails[cursol].h22}
-      className={`w-full h-[570px] max-w-md ml-[45px] pt-[27px]   mx-auto mb-24 lg:max-w-none ${
+      className={`w-[80%] sm:w-[70%] md:w-[60%] lg:w-full h-auto max-h-[450px] md:max-h-[570px] mx-auto mb-10 lg:mb-24 object-contain ${
         cursol === 0 ? "animate-moveOnce" : ""
-      } z-50 object-contain`}
+      } z-50`}
     />
 
     {/* Testimonials */}
-    <div className="flex flex-col mt-[177px] items-end gap-2 lg:absolute lg:top-1/4 lg:right-0 mr-[-65px]" >
+    <div className="flex flex-col mt-8 md:mt-[177px] items-center lg:items-end gap-4 lg:absolute lg:top-1/4 lg:right-0 lg:mr-[-65px]">
       {Testimonial.map((item, index) => (
         <div
           key={index}
-          className={`bg-white z-50 shadow-xl rounded-md p-3 sm:p-4 w-48 sm:w-56 lg:w-60 transition-opacity duration-1000 ${ index === testimonialIndex ? "opacity-100 block" : "opacity-0 hidden" }`}
+          className={`bg-white z-50 shadow-xl rounded-md p-3 sm:p-4 w-56 sm:w-60 lg:w-64 transition-opacity duration-1000 ${
+            index === testimonialIndex ? "opacity-100 block" : "opacity-0 hidden"
+          }`}
         >
           <p className="text-xs sm:text-sm italic text-gray-600 leading-relaxed">
             "{item.quote}"
@@ -315,29 +318,29 @@ useEffect(()=>{
     </div>
 
     {/* Floating Tags */}
-    <div className="flex flex-col mt-8 justify-between mb-[-28px] w-full max-w-md mx-auto lg:absolute lg:bottom-0 lg:w-auto gap-2 lg:gap-4">
+    <div className="flex flex-col mt-8 justify-between mb-[-28px] w-full max-w-sm mx-auto lg:absolute lg:bottom-0 lg:w-auto gap-3 lg:gap-4">
       {/* Tag 1 */}
-      <div className="bg-white shadow-md rounded-md px-3 py-2 flex items-center gap-2 text-xs sm:text-sm">
-        
-           <img src="/F1.svg" alt="AI leverage" className='w-8 h-8' />
-        <span className="font-semibold">Budget Friendly</span>
-          <span className="text-red-600 ml-8">Life Long</span>
-      
+      <div className="bg-white shadow-md rounded-md px-3 py-2 flex items-center justify-between text-xs sm:text-sm">
+        <div className="flex items-center gap-2">
+          <img src="/F1.svg" alt="AI leverage" className="w-6 sm:w-8 h-6 sm:h-8" />
+          <span className="font-semibold">Budget Friendly</span>
+        </div>
+        <span className="text-red-600 ml-4 sm:ml-8">Life Long</span>
       </div>
 
       {/* Tag 2 */}
-      <div className="bg-white shadow-md rounded-md ml-16  px-3 py-2 flex items-center gap-2 text-xs sm:text-sm">
-        <img src="/F1.svg" alt="AI leverage" className='w-8 h-8' />
-     
+      <div className="bg-white shadow-md rounded-md px-3 py-2 flex items-center justify-between text-xs sm:text-sm ml-0 lg:ml-16">
+        <div className="flex items-center gap-2">
+          <img src="/F1.svg" alt="AI leverage" className="w-6 sm:w-8 h-6 sm:h-8" />
           <span className="font-semibold">Native, Fast & Powerful</span>
-          <span className="text-red-600 ml-8">AI leverage</span>
-        
+        </div>
+        <span className="text-red-600 ml-4 sm:ml-8">AI leverage</span>
       </div>
     </div>
   </div>
 
   {/* Carousel Indicators */}
-  <div className="hidden lg:flex flex-col  pb-[190px] gap-4 absolute right-4 top-1/2 -translate-y-1/2">
+  <div className="hidden lg:flex flex-col pb-[190px] gap-4 absolute right-4 top-1/2 -translate-y-1/2">
     {CursolDetails.map((_, index) => (
       <button
         key={index}
@@ -348,17 +351,16 @@ useEffect(()=>{
             ? "bg-red-600 scale-110"
             : "bg-gray-300 hover:bg-gray-400"
         }`}
-      /> 
+      />
     ))}
   </div>
-  <p>{cursol}</p>
-
 </section>
 
 
 
+
       {/* Industries Section - Responsive grid */}
-     <section className="relative w-full px-4 sm:px-6 lg:px-8 py-16 sm:py-16 lg:py-20">
+     <section className="relative w-full px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 overflow-hidden">
   {/* Background Image + Overlay */}
   <div className="absolute inset-0">
     <img
@@ -371,15 +373,17 @@ useEffect(()=>{
 
   {/* Content */}
   <div className="relative z-10">
-    <h1 className="text-white text-xl sm:text-2xl font-bold ml-14 pl-0 sm:pl-4 pt-4 sm:pt-6 mb-8">
+    {/* Heading */}
+    <h1 className="text-white text-lg sm:text-2xl md:text-3xl font-bold ml-0 sm:ml-8 md:ml-14 pl-0 sm:pl-4 pt-2 sm:pt-6 mb-6 sm:mb-8 text-center sm:text-left">
       Industries We Serve
     </h1>
 
-    <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 ml-14 mb-8 sm:mb-12">
-      <h2 className="text-white pl-4 text-3xl sm:text-4xl font-light">
+    {/* Subheading + Paragraph */}
+    <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 sm:gap-6 ml-0 sm:ml-8 md:ml-14 mb-8 sm:mb-12 text-center lg:text-left">
+      <h2 className="text-white text-2xl sm:text-3xl md:text-4xl font-light px-4 sm:px-0">
         AI for Every Industry
       </h2>
-      <p className="text-white text-base sm:text-lg mt-2 lg:mt-0 max-w-xl px-4">
+      <p className="text-white text-sm sm:text-base md:text-lg mt-2 lg:mt-0 max-w-xl mx-auto lg:mx-0 px-4 sm:px-0 leading-relaxed">
         We turn domain challenges into measurable outcomes with modern{" "}
         <br className="hidden sm:block" /> cloud, trusted data, and
         production-ready AI.
@@ -387,18 +391,18 @@ useEffect(()=>{
     </div>
 
     {/* Services Grid */}
-    <div className="grid grid-cols-2 sm:grid-cols-3 lg:flex lg:flex-row gap-6 lg:gap-8 px-4 lg:px-12 lg:mx-auto max-w-6xl justify-center">
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:flex lg:flex-row flex-wrap gap-6 sm:gap-8 px-4 sm:px-8 lg:px-12 mx-auto max-w-6xl justify-center">
       {services.map((service, i) => (
         <div
           key={i}
-          className="flex flex-col items-center hover:scale-105 duration-300 py-4"
+          className="flex flex-col items-center hover:scale-105 duration-300 py-4 w-full sm:w-auto"
         >
           <img
             src={service.logo}
             alt={service.title}
-            className="w-20 sm:w-24 lg:w-32 h-auto object-contain mb-2"
+            className="w-16 sm:w-20 md:w-24 lg:w-28 xl:w-32 h-auto object-contain mb-2 sm:mb-4"
           />
-          <p className="text-white text-base sm:text-lg text-center">
+          <p className="text-white text-sm sm:text-base md:text-lg text-center leading-snug">
             {service.title}
           </p>
         </div>
@@ -408,42 +412,124 @@ useEffect(()=>{
 </section>
 
 
-      {/* Core Services Section - Responsive flex */}
-      <section className='w-full bg-white px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20'>
-        <div className='flex flex-col lg:flex-row gap-8 lg:gap-12 max-w-7xl mx-auto'>
-          <div className='flex-1 space-y-6 lg:space-y-8'>
-            <h1 className='font-extralight text-4xl sm:text-3xl lg:text-4xl leading-tight'>DoelSoft<br/>Core Services</h1>
-            <p className='text-lg leading-relaxed'>We Combine AI,Cloud & Data to design,build and <br className="hidden lg:block"/> scale secure digital products aligned to measurable outcomes.</p>
-            <img src="Robot2.svg" alt='robot2' className='w-full max-w-sm sm:max-w-md lg:w-96 h-auto animate-moveOnce mx-auto lg:mx-0'/>
-           <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-light px-32 py-4 text-lg shadow-lg transition  mx-10">
-                  Explor AI Strategy{" "}
-                  <ArrowUpRight
-                    className=" border border-white rounded-full text-center"
-                    size={24}
-                  />
-                </button>
-          </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8">
-            {[
-              { icon: AI, title: "AI Strategy & Consulting", list: ["Gen-AI features & Copilots", "Microservices & API,Integrations", "Performance,security,observability"] },
-              { icon: cloud, title: "Cloud & AI Infrastructure", list: ["Cloud migrations & Modernization", "MLOPs Platforms,model serving", "Cost,reliability & security baselines"] },
-              { icon: data, title: "Data Science & Analytics", list: ["Data engineering & Governance", "ML modeling & evaluation", "BI dashboards & decision intelligence"] },
-              { icon: Intelligent, title: "Intelligent Software Deve", list: ["Gen-AI features & copilots", "Microservices & APIs, integrations", "Performance, security, observability"] },
-              { icon: CyberSecurity, title: "AI-Enhanced CyberSecurity", list: ["Anomaly & fraud detection", "Identity,access & zero-trust", "Compliance hardening & monitoring"] },
-              { icon: Accessibility, title: "Accessibility Inclusive Design", list: ["Accessibility audits & remediation", "Inclusive UX writing & patterns", "Continuous accessibility in CI/CD"] }
-            ].map((service, i) => (
-              <div key={i} className='border border-gray-600 px-6 py-6 '>
-                <img src={service.icon} alt={service.title} className='w-10 h-auto mb-4'/>
-                <h3 className='text-black font-semibold text-lg sm:text-xl mb-4'>{service.title}</h3>
-                <ul className='list-disc list-inside text-gray-600 space-y-2 text-sm sm:text-base'>
-                  {service.list.map((item, j) => <li key={j}>{item}</li>)}
-                </ul>
-              </div>
+      {/* Core Services Section - Responsive flex */}
+    <section className="w-full bg-white px-4 sm:px-6 lg:px-8 py-10 sm:py-16 lg:py-20 overflow-hidden">
+  <div className="flex flex-col lg:flex-row gap-10 lg:gap-12 max-w-7xl mx-auto">
+    
+    {/* LEFT SECTION */}
+    <div className="flex-1 space-y-6 lg:space-y-8 text-center lg:text-left">
+      <h1 className="font-extralight text-3xl sm:text-4xl lg:text-5xl leading-tight">
+        DoelSoft
+        <br />
+        Core Services
+      </h1>
+      <p className="text-base sm:text-lg leading-relaxed px-2 sm:px-0">
+        We Combine AI, Cloud & Data to design, build and{" "}
+        <br className="hidden lg:block" /> scale secure digital products aligned
+        to measurable outcomes.
+      </p>
+
+      {/* Image */}
+      <img
+        src="Robot2.svg"
+        alt="robot2"
+        className="w-64 sm:w-72 md:w-80 lg:w-96 h-auto animate-moveOnce mx-auto lg:mx-0"
+      />
+
+      {/* Button */}
+      <div className="flex justify-center lg:justify-start">
+        <button className="flex items-center justify-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-light px-16 sm:px-24 md:px-28 lg:px-32 py-3 sm:py-4 text-base sm:text-lg shadow-lg transition mt-4">
+          Explore AI Strategy{" "}
+          <ArrowUpRight
+            className="border border-white rounded-full text-center"
+            size={22}
+          />
+        </button>
+      </div>
+    </div>
+
+    {/* RIGHT SECTION: Services Grid */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 w-full lg:w-1/2">
+      {[
+        {
+          icon: AI,
+          title: "AI Strategy & Consulting",
+          list: [
+            "Gen-AI features & Copilots",
+            "Microservices & API, Integrations",
+            "Performance, security, observability",
+          ],
+        },
+        {
+          icon: cloud,
+          title: "Cloud & AI Infrastructure",
+          list: [
+            "Cloud migrations & Modernization",
+            "MLOPs Platforms, model serving",
+            "Cost, reliability & security baselines",
+          ],
+        },
+        {
+          icon: data,
+          title: "Data Science & Analytics",
+          list: [
+            "Data engineering & Governance",
+            "ML modeling & evaluation",
+            "BI dashboards & decision intelligence",
+          ],
+        },
+        {
+          icon: Intelligent,
+          title: "Intelligent Software Dev",
+          list: [
+            "Gen-AI features & copilots",
+            "Microservices & APIs, integrations",
+            "Performance, security, observability",
+          ],
+        },
+        {
+          icon: CyberSecurity,
+          title: "AI-Enhanced CyberSecurity",
+          list: [
+            "Anomaly & fraud detection",
+            "Identity, access & zero-trust",
+            "Compliance hardening & monitoring",
+          ],
+        },
+        {
+          icon: Accessibility,
+          title: "Accessibility Inclusive Design",
+          list: [
+            "Accessibility audits & remediation",
+            "Inclusive UX writing & patterns",
+            "Continuous accessibility in CI/CD",
+          ],
+        },
+      ].map((service, i) => (
+        <div
+          key={i}
+          className="border border-gray-600 px-4 sm:px-6 py-6 hover:shadow-lg transition duration-300"
+        >
+          <img
+            src={service.icon}
+            alt={service.title}
+            className="w-8 sm:w-10 h-auto mb-4 mx-auto sm:mx-0"
+          />
+          <h3 className="text-black font-semibold text-base sm:text-lg md:text-xl mb-3 sm:mb-4 text-center sm:text-left">
+            {service.title}
+          </h3>
+          <ul className="list-disc list-inside text-gray-600 space-y-1 sm:space-y-2 text-sm sm:text-base text-left">
+            {service.list.map((item, j) => (
+              <li key={j}>{item}</li>
             ))}
-          </div>
+          </ul>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* How We Work Section */}
       <section className="relative bg-cover bg-center text-center py-16 sm:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
@@ -526,94 +612,105 @@ useEffect(()=>{
       </section>
 
       {/* Frames Section */}
-      <section className="relative bg-white py-8 sm:py-12 px-4 sm:px-6  lg:px-48">
-        <div className="hidden md:flex flex-row flex-wrap gap-6 justify-center">
-          {frames.map((frame, i) => (
-            <div key={i} className="flex flex-row bg-slate-100 shadow-sm px-4 py-2 justify-between flex-1 min-w-[200px]">
-              <div className='flex flex-row gap-2 mt-3 whitespace-nowrap'>
-              <img
-                src="/F1.svg"
-                alt={`Frame 
-                  `}
-                className="w-10 h-10 "
-              />
-              <p>{frame}</p>
-              </div>
-            </div>
-          ))}
+     <section className="relative bg-white py-8 sm:py-12 px-4 sm:px-6 lg:px-48">
+  {/* Desktop / Tablet view */}
+  <div className="hidden md:flex flex-wrap gap-6 justify-center">
+    {frames.map((frame, i) => (
+      <div
+        key={i}
+        className="flex flex-row bg-slate-100 shadow-sm px-4 py-2 justify-between flex-1 min-w-[200px] max-w-[300px]"
+      >
+        <div className="flex flex-row gap-2 mt-3 items-center whitespace-nowrap">
+          <img
+            src="/F1.svg"
+            alt={frame}
+            className="w-10 h-10"
+          />
+          <p className="text-sm sm:text-base text-gray-800">{frame}</p>
         </div>
-        {/* Mobile fallback: Stack frames */}
-        <div className="md:hidden grid grid-cols-2 gap-4">
-          {frames.map((frame, i) => (
-             <div key={i} className="flex flex-row bg-slate-100 shadow-sm px-4 py-2 justify-between flex-1 min-w-[200px]">
-              <div className='flex flex-row gap-2 mt-3 whitespace-nowrap'>
-              <img
-                src="/F1.svg"
-                alt={frame}
-                className="w-10 h-10 "
-              />
-              <p>{frame}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+      </div>
+    ))}
+  </div>
+
+  {/* Mobile view */}
+  <div className="md:hidden grid grid-cols-1 sm:grid-cols-2 gap-4">
+    {frames.map((frame, i) => (
+      <div
+        key={i}
+        className="flex flex-row bg-slate-100 shadow-sm px-4 py-2 justify-start items-center gap-2"
+      >
+        <img
+          src="/F1.svg"
+          alt={frame}
+          className="w-8 h-8"
+        />
+        <p className="text-sm text-gray-800">{frame}</p>
+      </div>
+    ))}
+  </div>
+</section>
+
 
       {/* Outcomes Section */}
       <section className="bg-white py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto text-center mb-8 sm:mb-12">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
-            Outcomes We Deliver
-          </h2>
-          <p className="mt-4 text-gray-600 text-base sm:text-lg max-w-3xl mx-auto">
-            We apply AI, Cloud & Data to move the metrics that matter speed, cost,
-            and customer experience backed by production-grade delivery.
-          </p>
-        </div>
+  {/* Header */}
+  <div className="max-w-6xl mx-auto text-center mb-8 sm:mb-12 px-2">
+    <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
+      Outcomes We Deliver
+    </h2>
+    <p className="mt-4 text-gray-600 text-base sm:text-lg max-w-3xl mx-auto leading-relaxed">
+      We apply AI, Cloud & Data to move the metrics that matter — speed, cost,
+      and customer experience — backed by production-grade delivery.
+    </p>
+  </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto">
-          {cards.map((card, i) => (
-            <div
-              key={i}
-              className={`relative overflow-hidden  shadow-lg h-64 sm:h-80 ${
-                card.type === "solid" ? `${card.bg} flex items-center justify-center p-6 sm:p-8` : ""
-              }`}
-            >
-              {card.type === "image" && (
-                <div className="relative h-full">
-                  <img
-                    src={card.image}
-                    alt={card.title}
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute bottom-0 w-full bg-black bg-opacity-70 p-4 sm:p-6">
-                    <h3 className={`text-base sm:text-lg font-semibold ${card.text}`}>
-                      {card.title}
-                    </h3>
-                    <p className={`mt-2 text-sm ${card.text}`}>{card.desc}</p>
-                  </div>
-                </div>
-              )}
-
-              {card.type === "solid" && (
-                <div className="flex flex-col items-start gap-4">
-                  {card.icon && (
-                    <img
-                      src={card.icon}
-                      alt="icon"
-                      className="w-10 h-10 sm:w-12 sm:h-12"
-                    />
-                  )}
-                  <h3 className={`text-base sm:text-lg font-semibold ${card.text}`}>
-                    {card.title}
-                  </h3>
-                  <p className={`text-sm ${card.text}`}>{card.desc}</p>
-                </div>
-              )}
+  {/* Card Grid */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto">
+    {cards.map((card, i) => (
+      <div
+        key={i}
+        className={`relative overflow-hidden shadow-lg rounded-lg h-auto min-h-[250px] sm:min-h-[300px] lg:min-h-[320px] ${
+          card.type === "solid" ? `${card.bg} flex items-center justify-center p-6 sm:p-8` : ""
+        }`}
+      >
+        {/* Image Card */}
+        {card.type === "image" && (
+          <div className="relative w-full h-full">
+            <img
+              src={card.image}
+              alt={card.title}
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute bottom-0 w-full bg-black bg-opacity-70 p-4 sm:p-6">
+              <h3 className={`text-base sm:text-lg font-semibold ${card.text}`}>
+                {card.title}
+              </h3>
+              <p className={`mt-2 text-sm ${card.text}`}>{card.desc}</p>
             </div>
-          ))}
-        </div>
-      </section>
+          </div>
+        )}
+
+        {/* Solid Card */}
+        {card.type === "solid" && (
+          <div className="flex flex-col items-start gap-3 sm:gap-4 text-left w-full">
+            {card.icon && (
+              <img
+                src={card.icon}
+                alt="icon"
+                className="w-10 h-10 sm:w-12 sm:h-12"
+              />
+            )}
+            <h3 className={`text-base sm:text-lg font-semibold ${card.text}`}>
+              {card.title}
+            </h3>
+            <p className={`text-sm sm:text-base ${card.text}`}>{card.desc}</p>
+          </div>
+        )}
+      </div>
+    ))}
+  </div>
+</section>
+
 
       {/* Counters Section */}
       <section
@@ -719,109 +816,121 @@ useEffect(()=>{
     </section>
 
       {/* Featured Solutions Section */}
-      <section className=" bg-white py-12">
-        <div className='flex flex-row justify-evenly ml-0'>
-          <div className="py-8">
-          <h2 className="text-4xl font-extralight font-kumbh text-gray-900 mb-2">Featured Solutions</h2>
-          <p className="text-gray-600 text-base mt-14 sm:text-lg max-w-2xl">
-            Opinionated, production-ready solutions that turn <br/> AI, Cloud & Data into outcomes fast.
-          </p>
-           {
-              solutions.slice(0,1).map((item, i) => (<div
-                key={i}
-                className={`p-10 max-w-96 h-56 mt-10  shadow-sm transition hover:shadow-md ${
-                  item.type === "bg"
-                    ? "bg-gray-100"
-                    : "border border-red-500 bg-white"
-                }`}
-              >
-                <img src={item.icon} alt={item.title} className="h-10 w-10 mb-4 object-contain" />
-                <h3 className="font-semibold text-base sm:text-lg text-gray-900 mb-2">
-                  {item.title}
-                </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
-              </div>
-            ))}
+<section className="bg-white py-12">
+  <div className="flex flex-col lg:flex-row items-center justify-between gap-10 px-4 sm:px-8">
+    {/* Text + First Card Column */}
+    <div className="w-full lg:w-1/2 py-8">
+      <h2 className="text-4xl font-extralight font-kumbh text-gray-900 mb-2">
+        Featured Solutions
+      </h2>
+
+      <p className="text-gray-600 text-base mt-6 sm:text-lg max-w-2xl">
+        Opinionated, production-ready solutions that turn <br /> AI, Cloud & Data into outcomes fast.
+      </p>
+
+      {solutions.slice(0, 1).map((item, i) => (
+        <div
+          key={i}
+          className={`p-10 max-w-96 h-56 mt-10 shadow-sm transition hover:shadow-md ${
+            item.type === "bg"
+              ? "bg-gray-100"
+              : "border border-red-500 bg-white"
+          }`}
+        >
+          <img src={item.icon} alt={item.title} className="h-10 w-10 mb-4 object-contain" />
+          <h3 className="font-semibold text-base sm:text-lg text-gray-900 mb-2">
+            {item.title}
+          </h3>
+          <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
         </div>
-        <div className="flex justify-center lg:justify-end">
-            <img
-              src="/Solution.svg" 
-              alt="Solution Graphic"
-              className="w-full  lg:max-w-2xl object-contain"
-            />
-          </div>
+      ))}
+    </div>
 
-        </div>
-        
+    {/* Image Column */}
+    <div className="w-full lg:w-1/2 flex justify-center">
+      <img
+        src="/Solution.svg"
+        alt="Solution Graphic"
+        className="w-full max-w-md sm:max-w-xl lg:max-w-2xl object-contain"
+      />
+    </div>
+  </div>
 
-   
-          <div className="grid grid-cols-1 ml-36  sm:grid-cols-3 gap-10">
-           
-              
-          
-            
-            { solutions.slice(1).map((item, i) => (
-              <div
-                key={i}
-                className={`p-10 max-w-96 h-56 mt-10  shadow-sm transition hover:shadow-md ${
-                  item.type === "bg"
-                    ? "bg-gray-100"
-                    : "border border-red-500 bg-white"
-                }`}
-              >
-                <img src={item.icon} alt={item.title} className="h-10 w-10 mb-4 object-contain" />
-                <h3 className="font-semibold text-base sm:text-lg text-gray-900 mb-2">
-                  {item.title}
-                </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
-              </div>
-            ))}
+  {/* Cards Grid */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-16 px-4 sm:px-8">
+    {solutions.slice(1).map((item, i) => (
+      <div
+        key={i}
+        className={`p-10 max-w-96 h-56 mx-auto shadow-sm transition hover:shadow-md ${
+          item.type === "bg"
+            ? "bg-gray-100"
+            : "border border-red-500 bg-white"
+        }`}
+      >
+        <img src={item.icon} alt={item.title} className="h-10 w-10 mb-4 object-contain" />
+        <h3 className="font-semibold text-base sm:text-lg text-gray-900 mb-2">
+          {item.title}
+        </h3>
+        <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
+      </div>
+    ))}
 
-            <div className=" bg-red-600 hover:bg-gray-600 text-white flex flex-col p-10 max-w-96 h-56 mt-10 justify-between sm:col-span-2 lg:col-span-1">
-              <h3 className="font-semibold items-center sm:text-lg mb-4">Talk to an Expert</h3>
-              <button className="self-end w-10 h-10 flex items-center justify-center rounded-full  border border-white hover:bg-white hover:text-red-600 transition">
-                <ArrowUpRight size={18} />
-              </button>
-            </div>
-          </div>
+    {/* CTA Card */}
+    <div className="bg-red-600 hover:bg-gray-600 text-white flex flex-col p-10 max-w-96 h-56 mx-auto justify-between sm:col-span-2 lg:col-span-1">
+      <h3 className="font-semibold items-center sm:text-lg mb-4">Talk to an Expert</h3>
+      <button className="self-end w-10 h-10 flex items-center justify-center rounded-full border border-white hover:bg-white hover:text-red-600 transition">
+        <ArrowUpRight size={18} />
+      </button>
+    </div>
+  </div>
+</section>
 
-        
-   
-      </section>
 
       {/* Final CTA Section */}
     
-       <section
-              className="relative bg-cover bg-center text-center  sm:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
-              style={{ backgroundImage: "url('/Background2.svg')" }}
-      
-            >
-              <div>
-                  <img src="/Vectors.svg" alt="" className="absolute left-14 top-10 h-32 w-32 object-cover object-top opacity-70 z-30" />
-              </div>
-              <div>
-                  <img src="/left.svg" alt="" className="absolute left-20 top-72   w-4 object-cover object-left opacity-70 z-30" />
-              </div>
-              <div>
-                  <img src="/right.svg" alt="" className="absolute right-96 top-12  w-20 object-cover object-right opacity-70 z-30" />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/80 to-black/90"></div>
-              <div className="relative max-w-3xl mx-auto text-white z-10 space-y-6 sm:space-y-8">
-                <h2 className="text-2xl  font-kumbh  md:text-4xl font-extralight leading-tight">
-                Let’s Build the Future Together
-                </h2>
-                <p className="text-base sm:text-lg lg:text-xl text-gray-200 leading-relaxed">
-                 👉 Partner with Doelsoft – Your trusted iOS & Android app development company in the USA & India.
-                </p>
-                <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-light px-6 sm:px-8 py-4 text-base sm:text-lg shadow-lg transition justify-center mx-auto">
-                  Talk to an Expert{" "}
-                  <ArrowUpRight
-                    className="border border-white rounded-full text-center"
-                    size={24}
-                  />
-                </button>
-              </div>
-            </section>
+        <section
+                    className="relative w-full  bg-cover bg-center text-center py-16   sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
+                    style={{ backgroundImage: "url('/Background2.svg')",marginTop:"45px" } }
+                  >
+                    {/* Decorative Vectors */}
+                    <img
+                      src="/Vectors.svg"
+                      alt="vector"
+                      className="absolute left-6 sm:left-14 top-8 sm:top-10 h-20 sm:h-28 md:h-32 w-20 sm:w-28 md:w-32 object-contain opacity-70 z-30"
+                    />
+                    <img
+                      src="/left.svg"
+                      alt="left"
+                      className="absolute left-10 sm:left-20 bottom-10 sm:top-72 w-3 sm:w-4 object-contain opacity-70 z-30"
+                    />
+                    <img
+                      src="/right.svg"
+                      alt="right"
+                      className="absolute right-10 sm:right-40 lg:right-72 top-6 sm:top-12 w-10 sm:w-16 md:w-20 object-contain opacity-70 z-30"
+                    />
+                  
+                    {/* Dark overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/80 to-black/90"></div>
+                  
+                    {/* Main Content */}
+                    <div className="relative max-w-3xl mx-auto text-white z-10 flex flex-col items-center justify-center space-y-5 sm:space-y-7 md:space-y-8">
+                      <h2 className="text-xl sm:text-2xl md:text-4xl font-kumbh font-light leading-snug px-2">
+                        Let's Build the Future Together
+                      </h2>
+                  
+                      <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-200 leading-relaxed px-2">
+                        Tells Us your goals.We'll design the runaway then deliver it with AI,Could and Data.
+                      </p>
+                  
+                      <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-4 text-sm sm:text-lg  shadow-lg transition-all duration-300 ease-in-out">
+                        Talk to an Expert{" "}
+                        <ArrowUpRight
+                          className="border border-white rounded-full p-1"
+                          size={24}
+                        />
+                      </button>
+                    </div>
+                  </section>
     </div>
   )
 }

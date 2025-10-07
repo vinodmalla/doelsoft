@@ -18,6 +18,9 @@ import Rpo from './Components/Rpo';
 import Executive from './Components/Executive';
 import Permanent from './Components/Permanent';
 import Solutions from './Components/Solutions';
+import Salesforce from './Components/Salesforce';
+import MicrosoftSolutions from './Components/MicrosoftSolutions';
+import WebDevelopment from './Components/WebDevelopment';
 
 function App() {
   return (
@@ -42,7 +45,10 @@ export const approuter = createBrowserRouter([
       {path:"/solutions",element:<Solutions />},
       {path:"/softwareDevelopment",element:<SoftwareDevelopment/>},
       {path:"/mobileDevelopment",element:<MobileDevelopment/>},
+      {path:"/servicesmicrosoft",element:<MicrosoftSolutions />},
+      {path:"/servicesweb",element:<WebDevelopment />},
       {path:"/digitalaccessibilit",element:<Accessibility/>},
+      {path:"/salesforce",element:<Salesforce />},
       { path: "/talenthub", element: <TalentHub /> },
       { path: "/chooseus", element: <Choose /> },
       { path: "/carrers", element: <Carrers /> },
