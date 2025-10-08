@@ -21,6 +21,9 @@ import Solutions from './Components/Solutions';
 import Salesforce from './Components/Salesforce';
 import MicrosoftSolutions from './Components/MicrosoftSolutions';
 import WebDevelopment from './Components/WebDevelopment';
+import UIUXDesign from './Components/UIUXDesign';
+import MuleSoftSolutions from './Components/MuleSoftSolutions';
+import IoTDevelopment from './Components/IoTDevelopment';
 
 function App() {
   return (
@@ -45,10 +48,13 @@ export const approuter = createBrowserRouter([
       {path:"/solutions",element:<Solutions />},
       {path:"/softwareDevelopment",element:<SoftwareDevelopment/>},
       {path:"/mobileDevelopment",element:<MobileDevelopment/>},
+      {path:"/servicesuiux",element:<UIUXDesign />},
+      {path:"/servicesmulesoft",element:<MuleSoftSolutions />},
       {path:"/servicesmicrosoft",element:<MicrosoftSolutions />},
       {path:"/servicesweb",element:<WebDevelopment />},
       {path:"/digitalaccessibilit",element:<Accessibility/>},
       {path:"/salesforce",element:<Salesforce />},
+      {path:"/servicesiot",element:<IoTDevelopment />},
       { path: "/talenthub", element: <TalentHub /> },
       { path: "/chooseus", element: <Choose /> },
       { path: "/carrers", element: <Carrers /> },

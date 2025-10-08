@@ -4,37 +4,37 @@ import { ArrowUpRight } from "lucide-react";
 function MicrosoftSolutions() {
   const features = [
     {
-      icon: "/ms1.svg",
+      icon: "/p1.svg",
       title: "Client-Focused Solutions",
       description:
         "Tailored Microsoft solutions designed to achieve your business goals.",
     },
     {
-      icon: "/ms2.svg",
+      icon: "/certificate.svg",
       title: "Certified Experts",
       description:
         "Microsoft-certified professionals ensuring secure, efficient implementations.",
     },
     {
-      icon: "/ms3.svg",
+      icon: "/p3.svg",
       title: "Agile & Transparent Delivery",
       description:
         "Flexible delivery models with continuous feedback and collaboration.",
     },
     {
-      icon: "/ms4.svg",
+      icon: "/p4.svg",
       title: "End-to-End Services",
       description:
         "From consultation to post-deployment support, we handle it all.",
     },
     {
-      icon: "/ms5.svg",
+      icon: "/p5.svg",
       title: "Global Reach",
       description:
         "Serving enterprises across the USA, India, and worldwide.",
     },
     {
-      icon: "/ms6.svg",
+      icon: "/p6.svg",
       title: "Proven Success",
       description:
         "Microsoft-based solutions that drive innovation, productivity, and ROI.",
@@ -197,12 +197,12 @@ function MicrosoftSolutions() {
         <div className="grid grid-cols-1 md:grid-cols-2 py-10 px-6 sm:px-12 md:px-20 gap-6">
           {[
             { src: "/ecommerce.svg", title: "E-Commerce & Retail", desc: "Seamless customer engagement and omnichannel management." },
-            { src: "/industry2.svg", title: "Healthcare & Life Sciences", desc: "HIPAA-compliant workflows, data analytics, and automation." },
+            { src: "/lifecare.svg", title: "Healthcare & Life Sciences", desc: "HIPAA-compliant workflows, data analytics, and automation." },
             { src: "/finance.svg", title: "Banking & Financial Services", desc: "Streamlined operations with secure, scalable solutions." },
             { src: "/education.svg", title: "Education & EdTech", desc: "Learning management systems and student engagement tools." },
-            { src: "/industry5.svg", title: "Telecom & IT Services", desc: "Improved collaboration and data integration capabilities." },
-            { src: "/industry6.svg", title: "Government & Public Sector", desc: "Enhanced transparency and citizen engagement platforms." },
-            { src: "/industry7.svg", title: "Manufacturing & Logistics", desc: "Optimized ERP systems, predictive analytics, and automation." },
+            { src: "/telecomit.svg", title: "Telecom & IT Services", desc: "Improved collaboration and data integration capabilities." },
+            { src: "/govt.svg", title: "Government & Public Sector", desc: "Enhanced transparency and citizen engagement platforms." },
+            { src: "/manufacture.svg", title: "Manufacturing & Logistics", desc: "Optimized ERP systems, predictive analytics, and automation." },
           ].map((item, idx) => (
             <div
               key={idx}
@@ -241,7 +241,7 @@ function MicrosoftSolutions() {
             { src: "/t2.svg", desc: "Azure Cloud Engineers – Certified in migration, DevOps, and cloud architecture." },
             { src: "/t3.svg", desc: "Dynamics 365 Consultants – Skilled in CRM, ERP, and Power Platform solutions." },
             { src: "/t4.svg", desc: "SharePoint Specialists – Building collaborative portals and document systems." },
-            { src: "/t5.svg", desc: "QA & Support Engineers – Ensuring secure, high-performing Microsoft applications." },
+            { src: "/w4.svg", desc: "QA & Support Engineers – Ensuring secure, high-performing Microsoft applications." },
           ].map((item, idx) => (
             <div
               key={idx}
@@ -272,9 +272,9 @@ function MicrosoftSolutions() {
               {features.map((feature, index) => (
                 <div
                   key={index}
-                  className="flex flex-col sm:flex-row items-start gap-4 bg-white p-4 shadow-sm"
+                  className="flex flex-col sm:flex-row items-start gap-4 p-4 "
                 >
-                  <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center border border-black bg-white mx-auto sm:mx-0">
+                  <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center border border-white bg-white mx-auto sm:mx-0">
                     <img
                       src={feature.icon}
                       alt={feature.title}

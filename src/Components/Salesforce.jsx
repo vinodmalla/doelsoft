@@ -9,7 +9,7 @@ function Salesforce() {
       description: 'We understand your business goals before coding begins.',
     },
     {
-      icon: '/p1.svg',
+      icon: '/certificate.svg',
       title: 'Certified Experts',
       description: 'A team of Salesforce-certified developers and consultants.',
     },
@@ -262,23 +262,23 @@ function Salesforce() {
         <div className="container mx-auto px-6 sm:px-10 md:px-20 grid gap-6 sm:grid-cols-2">
           {[
             {
-              src: '/t1.svg',
+              src: '/s1.svg',
               desc: 'Salesforce Developers skilled in Apex, Visualforce, Lightning Web Components.',
             },
             {
-              src: '/t2.svg',
+              src: '/s2.svg',
               desc: 'Salesforce Administrators to optimize workflows, dashboards, and data management.',
             },
             {
-              src: '/t3.svg',
+              src: '/s3.svg',
               desc: 'CRM Consultants helping you design customer-first business strategies.',
             },
             {
-              src: '/t4.svg',
+              src: '/s4.svg',
               desc: 'Integration Specialists connecting Salesforce with APIs, ERP, and external apps.',
             },
             {
-              src: '/t5.svg',
+              src: '/s5.svg',
               desc: 'Quality Analysts ensuring error-free, secure, and compliant Salesforce deployments.',
             },
           ].map((item, idx) => (
@@ -311,9 +311,9 @@ function Salesforce() {
               {features.map((feature, index) => (
                 <div
                   key={index}
-                  className="flex flex-col sm:flex-row items-start gap-4 bg-white p-4  shadow-sm"
+                  className="flex flex-col sm:flex-row items-start gap-4  p-4  "
                 >
-                  <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center border border-black  bg-white mx-auto sm:mx-0">
+                  <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center border border-white  bg-white mx-auto sm:mx-0">
                     <img
                       src={feature.icon}
                       alt={feature.title}

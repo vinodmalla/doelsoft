@@ -7,7 +7,7 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="relative top-0 left-0 w-full z-50 bg-white shadow-none">
+    <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-none">
       <div className="max-w-7xl mx-auto flex items-center justify-between h-16 px-6">
         {/* Logo */}
         <div className="flex items-center space-x-2">

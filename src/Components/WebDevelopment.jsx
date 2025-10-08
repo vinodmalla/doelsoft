@@ -90,9 +90,14 @@ function WebDevelopment() {
       {/* Expertise Section */}
       <section className="container mx-auto px-6 sm:px-10 lg:px-20 py-12 grid gap-10 md:grid-cols-2 items-center">
         {/* Left Image */}
-        <div className="flex justify-center md:justify-start">
+        <div className="flex flex-col justify-center md:justify-start">
           <img
             src="/Developer.svg"
+            alt="Developer"
+            className="w-full max-w-xs sm:max-w-sm md:max-w-md"
+          />
+          <img
+            src="/Developer1.svg"
             alt="Developer"
             className="w-full max-w-xs sm:max-w-sm md:max-w-md"
           />
@@ -197,11 +202,11 @@ function WebDevelopment() {
 
         <div className="container mx-auto px-6 sm:px-10 md:px-20 grid gap-6 sm:grid-cols-2">
           {[
-            { src: '/t1.svg', desc: 'Skilled Front-End Developers for responsive, intuitive, and interactive interfaces.' },
-            { src: '/t2.svg', desc: 'Experienced Back-End Engineers for secure, scalable, and high-performance systems.' },
-            { src: '/t3.svg', desc: 'Expert Full-Stack Developers for end-to-end solutions combining front-end and back-end expertise.' },
-            { src: '/t4.svg', desc: 'Creative UI/UX Designers focused on accessibility, engagement, and seamless navigation.' },
-            { src: '/t5.svg', desc: 'QA Specialists ensuring bug-free, high-performing, and secure websites.' },
+            { src: '/s1.svg', desc: 'Skilled Front-End Developers for responsive, intuitive, and interactive interfaces.' },
+            { src: '/w1.svg', desc: 'Experienced Back-End Engineers for secure, scalable, and high-performance systems.' },
+            { src: '/w2.svg', desc: 'Expert Full-Stack Developers for end-to-end solutions combining front-end and back-end expertise.' },
+            { src: '/w3.svg', desc: 'Creative UI/UX Designers focused on accessibility, engagement, and seamless navigation.' },
+            { src: '/w4.svg', desc: 'QA Specialists ensuring bug-free, high-performing, and secure websites.' },
           ].map((item, idx) => (
             <div
               key={idx}
@@ -225,9 +230,9 @@ function WebDevelopment() {
               {features.map((feature, index) => (
                 <div
                   key={index}
-                  className="flex flex-col sm:flex-row items-start gap-4 bg-white p-4 shadow-sm"
+                  className="flex flex-col sm:flex-row items-start gap-4  p-4 "
                 >
-                  <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center border border-black bg-white mx-auto sm:mx-0">
+                  <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center border border-white bg-white mx-auto sm:mx-0">
                     <img
                       src={feature.icon}
                       alt={feature.title}
