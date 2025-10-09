@@ -29,25 +29,27 @@ import Applied from '../assets/Applied_AI.svg';
 function Home() {
     const [testimonialIndex,setTestimonialIndex]=useState(0)
     const [cursol,setCursol]=useState(0)
-    const CursolDetails=[{
-      h11:"Accelerate Digital Transformation with ",
-      h22:"AI, Cloud & Data",
-      img:"/robot.svg",
-      p:"We design, build, and scale secure digital products combining applied AI,modern cloud architectures, and human expertise to deliver real business outcomes."
-    },
+   const CursolDetails = [
   {
-      h11:"People Powered",
-      h22:"Staffing Excellence",
-      img:"/businessman.svg",
-      p:"Driven by talent, guided by expertise we connect the right people with the right opportunities to fuel lasting business success."
+    h11: "Accelerate Digital Transformation with ",
+    h22: "AI, Cloud & Data",
+    img: "/robot.svg",
+    p: "We design, build, and scale secure digital products combining applied AI, modern cloud architectures, and human expertise to deliver real business outcomes."
+  },
+  {
+    h11: "Empower Business Growth through ",
+    h22: "People & Talent",
+    img: "/businessman.svg",
+    p: "Driven by talent, guided by expertise we connect the right people with the right opportunities to fuel lasting business success."
+  },
+  {
+    h11: "Advance Universal Engagement with ",
+    h22: "Accessibility & Inclusion",
+    img: "/businessman.svg",
+    p: "From accessibility to true inclusion, we ensure every interaction empowers every user."
   }
-,{
-   h11:"Accessibility First,",
-   h22:"Inclusion Always",
-   img:"/medium.svg",
-   p:"From accessibility to true inclusion, we ensure every interaction empowers every user"
+];
 
-}]
     const services=[{
         title:"BFSI",
         logo:BFSI
@@ -111,18 +113,18 @@ function Home() {
        { quote:" Welcome to the epicenter of AI innovation. Future Tech AI News is your passport",
         name:"Ajay sharma",
         company:"Techoly",
-        avitor:""
+        avitor:"/Avatar.svg"
     },
      { quote:" Welcome to the epicenter of AI innovation. Future Tech AI News is your passport"
 ,
         name:"Avinash",
         company:"Tech world",
-        avitor:""
+        avitor:"/Avatar.svg"
     },
      { quote:" Welcome to the epicenter of AI innovation. Future Tech AI News is your passport",
         name:"Tim Cook",
         company:"apple",
-        avitor:""
+        avitor:"/Avatar.svg"
     }
 ]
 const steps = [
@@ -213,12 +215,26 @@ useEffect(()=>{
 
     
   return (
-    <div className='w-full h-full'>
+    <div className='w-full h-full mt-2 '>
       {/* Hero Section - Responsive with equal spacing */}
- <section className="w-full min-h-lvh max-w-[90vw] md:max-w-[80vw] mx-auto relative flex flex-col lg:flex-row justify-center items-center bg-white px-4 sm:px-6 lg:px-8 py-12 sm:py-16 gap-8 lg:gap-12 overflow-hidden">
+       <div className="hidden md:flex flex-col  pb-[180px] gap-4 absolute right-20 top-1/2 ml-6 -translate-y-1/2">
+    {CursolDetails.map((_, index) => (
+      <button
+        key={index}
+        aria-label={`Go to slide ${index + 1}`}
+        onClick={() => setCursol(index)}
+        className={`w-2 h-8 rounded-full transition-all duration-300 ${
+          cursol === index
+            ? "bg-red-600 scale-110"
+            : "bg-gray-300 hover:bg-gray-400"
+        }`}
+      />
+    ))}
+  </div>
+ <section className="w-full min-h-lvh max-w-[90vw] md:max-w-[80vw]  md:ml-16   relative flex flex-col lg:flex-row justify-between items-center bg-white px-4 sm:px-6 lg:px-8 py-20  gap-8 lg:gap-12 overflow-hidden">
 
   {/* LEFT CONTENT */}
-  <div className="w-full lg:w-1/2 space-y-6 flex flex-col gap-6 lg:gap-8 text-center lg:text-left">
+  <div className="w-full lg:w-1/2 space-y-6 flex flex-col gap-6 md:gap-8 text-center lg:text-left">
     {CursolDetails.map((details, index) => (
       <div
         key={index}
@@ -226,10 +242,10 @@ useEffect(()=>{
           cursol === index ? "opacity-100 relative" : "opacity-0 absolute"
         } w-full`}
       >
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl whitespace-nowrap font-bold leading-tight">
           {details.h11}
           <br />
-          <span className="text-red-600 block mt-2 text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold">
+          <span className="text-red-600 block mt-2 text-2xl sm:text-3xl lg:text-4xl  font-bold">
             {details.h22}
           </span>
         </h1>
@@ -249,11 +265,11 @@ useEffect(()=>{
 
         {/* Logos */}
         <div className="mt-6 lg:mt-8">
-          <div className="flex gap-4 sm:gap-6 animate-marquee whitespace-nowrap overflow-x-auto no-scrollbar py-2">
+          <div className="flex  gap-0 animate-marquee whitespace-nowrap overflow-x-auto no-scrollbar py-2">
             {[spring, wipro, zingo, mevatron, menlo, tech].map((logo, i) => (
               <div
                 key={i}
-                className="w-14 sm:w-16 md:w-20 lg:w-24 h-10 sm:h-12 md:h-14 lg:h-16 flex items-center justify-center flex-shrink-0"
+                className="w-14 sm:w-16 md:w-16 lg:w-24 h-10 sm:h-12 md:h-14 lg:h-16 flex items-center justify-center flex-shrink-0"
               >
                 <img
                   src={logo}
@@ -275,37 +291,38 @@ useEffect(()=>{
   </div>
 
   {/* RIGHT CONTENT */}
-  <div className="w-full lg:w-1/2 relative flex flex-col items-center justify-center gap-4 lg:gap-0 mt-8 lg:mt-0">
+  <div className="w-full lg:w-1/2 relative flex flex-col items-center justify-center gap-4 lg:gap-0 mt-2 lg:mt-0">
     {/* Mask background */}
     <img
       src={mask}
       alt="mask"
-      className="absolute bg-[#8c8b8b] inset-0 w-[250px] sm:w-[300px] md:w-[330px] h-[300px] sm:h-[340px] md:h-[370px] mt-20 md:mt-32 lg:ml-[13rem] object-cover hidden lg:block"
+      className=" absolute bg-[#cfcece] inset-0 w-[280px]  md:w-[320px] h-[30px] md:h-[350px] mt-20 md:mt-32 md:ml-[13rem] object-cover hidden lg:block"
     />
 
     {/* Main image */}
     <img
       src={CursolDetails[cursol].img}
       alt={CursolDetails[cursol].h22}
-      className={`w-[80%] sm:w-[70%] md:w-[60%] lg:w-full h-auto max-h-[450px] md:max-h-[570px] mx-auto mb-10 lg:mb-24 object-contain ${
+      className={`w-[80%] sm:w-[70%] md:w-[60%] lg:w-full h-auto max-h-[450px] md:max-h-[570px] mx-auto md:ml-[67px] mb-10 lg:mb-24 object-contain ${
         cursol === 0 ? "animate-moveOnce" : ""
       } z-50`}
     />
+     <img src="/Highlight.svg" className='hidden md:flex absolute z-30 bottom-2 right-96' />
 
     {/* Testimonials */}
-    <div className="flex flex-col mt-8 md:mt-[177px] items-center lg:items-end gap-4 lg:absolute lg:top-1/4 lg:right-0 lg:mr-[-65px]">
+    <div className="flex flex-col  md:mt-[145px] items-center lg:items-end gap-4 lg:absolute lg:top-1/4 lg:right-0 lg:mr-[-70px]">
       {Testimonial.map((item, index) => (
         <div
           key={index}
-          className={`bg-white z-50 shadow-xl rounded-md p-3 sm:p-4 w-56 sm:w-60 lg:w-64 transition-opacity duration-1000 ${
+          className={`bg-slate-50 z-50 p-3 md:p-8  max-w-80  transition-opacity duration-1000 ${
             index === testimonialIndex ? "opacity-100 block" : "opacity-0 hidden"
           }`}
         >
-          <p className="text-xs sm:text-sm italic text-gray-600 leading-relaxed">
+          <p className="text-xs md:text-sm italic  text-gray-600 leading-relaxed">
             "{item.quote}"
           </p>
           <div className="flex items-center mt-2 gap-2">
-            <RxAvatar size={20} className="sm:w-6 sm:h-6" />
+            <img src={item.avitor} className="sm:w-6 sm:h-6 h-16 w-16" />
             <div>
               <p className="text-xs sm:text-sm font-semibold">{item.name}</p>
               <p className="text-[10px] sm:text-xs text-gray-500">
@@ -316,11 +333,14 @@ useEffect(()=>{
         </div>
       ))}
     </div>
+  
+     
+
 
     {/* Floating Tags */}
     <div className="flex flex-col mt-8 justify-between mb-[-28px] w-full max-w-sm mx-auto lg:absolute lg:bottom-0 lg:w-auto gap-3 lg:gap-4">
       {/* Tag 1 */}
-      <div className="bg-white shadow-md rounded-md px-3 py-2 flex items-center justify-between text-xs sm:text-sm">
+      <div className="bg-white shadow-lg md:ml-32 rounded-lg px-3 py-2 flex items-center justify-between text-xs sm:text-sm">
         <div className="flex items-center gap-2">
           <img src="/F1.svg" alt="AI leverage" className="w-6 sm:w-8 h-6 sm:h-8" />
           <span className="font-semibold">Budget Friendly</span>
@@ -329,9 +349,9 @@ useEffect(()=>{
       </div>
 
       {/* Tag 2 */}
-      <div className="bg-white shadow-md rounded-md px-3 py-2 flex items-center justify-between text-xs sm:text-sm ml-0 lg:ml-16">
+      <div className="bg-white shadow-lg rounded-lg px-3 py-2 flex items-center justify-between text-xs sm:text-sm ml-0 lg:ml-16">
         <div className="flex items-center gap-2">
-          <img src="/F1.svg" alt="AI leverage" className="w-6 sm:w-8 h-6 sm:h-8" />
+          <img src="/F2.svg" alt="AI leverage" className="w-6 sm:w-8 h-6 sm:h-8" />
           <span className="font-semibold">Native, Fast & Powerful</span>
         </div>
         <span className="text-red-600 ml-4 sm:ml-8">AI leverage</span>
@@ -340,20 +360,9 @@ useEffect(()=>{
   </div>
 
   {/* Carousel Indicators */}
-  <div className="hidden lg:flex flex-col pb-[190px] gap-4 absolute right-4 top-1/2 -translate-y-1/2">
-    {CursolDetails.map((_, index) => (
-      <button
-        key={index}
-        aria-label={`Go to slide ${index + 1}`}
-        onClick={() => setCursol(index)}
-        className={`w-2 h-8 rounded-full transition-all duration-300 ${
-          cursol === index
-            ? "bg-red-600 scale-110"
-            : "bg-gray-300 hover:bg-gray-400"
-        }`}
-      />
-    ))}
-  </div>
+ 
+ 
+
 </section>
 
 
