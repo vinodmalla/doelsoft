@@ -9,7 +9,7 @@ import {useState, useEffect } from 'react'
 import { RxAvatar } from "react-icons/rx";
 import mask from "../assets/mask.svg";
 import BFSI from "../assets/BFSI.svg";
-import Healthcare from "../assets/Healthcare.svg";
+
 import ECommerce from "../assets/E-Commerce.svg";
 import { ArrowUpRight } from "lucide-react";
 import Startups from "../assets/Startups.svg";
@@ -56,7 +56,7 @@ function Home() {
     },
   {
         title:"Healthcare",
-        logo:Healthcare
+        logo:"/Healthcare.png"
   },
 {
         title:"E-Commerce",
@@ -231,7 +231,7 @@ useEffect(()=>{
       />
     ))}
   </div>
- <section className="w-full min-h-lvh max-w-[90vw] md:max-w-[80vw]  md:ml-16   relative flex flex-col lg:flex-row justify-between items-center bg-white px-4 sm:px-6 lg:px-8 py-20  gap-8 lg:gap-12 overflow-hidden">
+<section className="w-full min-h-lvh max-w-[95vw] md:max-w-[85vw] xl:max-w-[80vw] mx-auto relative flex flex-col lg:flex-row justify-between items-center bg-white px-4 sm:px-6 lg:px-8 py-16 sm:py-20 gap-8 lg:gap-12 overflow-hidden">
 
   {/* LEFT CONTENT */}
   <div className="w-full lg:w-1/2 space-y-6 flex flex-col gap-6 md:gap-8 text-center lg:text-left">
@@ -242,34 +242,40 @@ useEffect(()=>{
           cursol === index ? "opacity-100 relative" : "opacity-0 absolute"
         } w-full`}
       >
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl whitespace-nowrap font-bold leading-tight">
+        <h1 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold leading-tight whitespace-nowrap">
           {details.h11}
           <br />
-          <span className="text-red-600 block mt-2 text-2xl sm:text-3xl lg:text-4xl  font-bold">
+          <span className="text-red-600 block mt-2 text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold">
             {details.h22}
           </span>
         </h1>
 
-        <p className="text-gray-600 text-sm sm:text-base md:text-lg py-4 leading-relaxed max-w-[90%] mx-auto lg:mx-0">
+        <p className="text-gray-600 text-sm sm:text-base md:text-lg lg:text-xl py-4 leading-relaxed max-w-[90%] mx-auto lg:mx-0">
           {details.p}
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
-          <button className="bg-red-600 hover:bg-gray-600 text-white px-6 sm:px-8 py-3 font-medium rounded transition">
+          <button
+            type="button"
+            className="bg-red-600 text-white px-6 sm:px-8 py-3 font-medium transition-colors duration-200 border border-transparent hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-red-600"
+          >
             Explore Solutions ↗
           </button>
-          <button className="bg-white text-black px-6 sm:px-8 py-3 font-medium border border-black hover:bg-red-600 hover:text-white rounded transition">
+          <button
+            type="button"
+            className="bg-white text-black px-6 sm:px-8 py-3 font-medium border border-black transition-colors duration-200 hover:bg-red-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-red-600"
+          >
             Consult with Us ↗
           </button>
         </div>
 
         {/* Logos */}
         <div className="mt-6 lg:mt-8">
-          <div className="flex  gap-0 animate-marquee whitespace-nowrap overflow-x-auto no-scrollbar py-2">
+          <div className="flex gap-0 animate-marquee whitespace-nowrap overflow-x-auto no-scrollbar py-2">
             {[spring, wipro, zingo, mevatron, menlo, tech].map((logo, i) => (
               <div
                 key={i}
-                className="w-14 sm:w-16 md:w-16 lg:w-24 h-10 sm:h-12 md:h-14 lg:h-16 flex items-center justify-center flex-shrink-0"
+                className="w-14 sm:w-16 md:w-20 lg:w-24 h-10 sm:h-12 md:h-14 lg:h-16 flex items-center justify-center flex-shrink-0"
               >
                 <img
                   src={logo}
@@ -291,38 +297,49 @@ useEffect(()=>{
   </div>
 
   {/* RIGHT CONTENT */}
-  <div className="w-full lg:w-1/2 relative flex flex-col items-center justify-center gap-4 lg:gap-0 mt-2 lg:mt-0">
+  <div className="w-full lg:w-1/2 relative flex flex-col items-center justify-center gap-6 lg:gap-0 mt-8 lg:mt-0">
+
     {/* Mask background */}
     <img
       src={mask}
       alt="mask"
-      className=" absolute bg-[#cfcece] inset-0 w-[280px]  md:w-[320px] h-[30px] md:h-[350px] mt-20 md:mt-32 md:ml-[13rem] object-cover hidden lg:block"
+      className="absolute bg-[#cfcece] inset-0 w-[220px] sm:w-[240px] md:w-[260px] lg:w-[280px] xl:w-[300px] h-[250px] sm:h-[300px] md:h-[350px] mt-12 sm:mt-20 md:mt-32 md:ml-[10rem] xl:ml-[13rem] object-cover hidden lg:block"
     />
 
     {/* Main image */}
     <img
       src={CursolDetails[cursol].img}
       alt={CursolDetails[cursol].h22}
-      className={`w-[80%] sm:w-[70%] md:w-[60%] lg:w-full h-auto max-h-[450px] md:max-h-[570px] mx-auto md:ml-[67px] mb-10 lg:mb-24 object-contain ${
+      className={`w-[85%] sm:w-[75%] md:w-[65%] lg:w-full h-auto max-h-[400px] sm:max-h-[450px] md:max-h-[550px] mx-auto md:ml-[40px] lg:ml-[67px] mb-8 lg:mb-24 object-contain ${
         cursol === 0 ? "animate-moveOnce" : ""
       } z-50`}
     />
-     <img src="/Highlight.svg" className='hidden md:flex absolute z-30 bottom-2 right-96' />
+
+    {/* Highlight */}
+    <img
+      src="/Highlight.svg"
+      className="hidden md:flex absolute z-30 bottom-2 right-[200px] lg:right-[420px]"
+      alt="highlight"
+    />
 
     {/* Testimonials */}
-    <div className="flex flex-col  md:mt-[145px] items-center lg:items-end gap-4 lg:absolute lg:top-1/4 lg:right-0 lg:mr-[-70px]">
+    <div className="flex flex-col items-center lg:items-end gap-4 lg:absolute lg:top-1/4 lg:right-0 lg:mr-[-50px] md:mt-[120px] lg:mt-[145px]">
       {Testimonial.map((item, index) => (
         <div
           key={index}
-          className={`bg-slate-50 z-50 p-3 md:p-8  max-w-80  transition-opacity duration-1000 ${
+          className={`bg-slate-50 z-50 p-3 md:p-4 lg:p-6 max-w-72 transition-opacity duration-1000 ${
             index === testimonialIndex ? "opacity-100 block" : "opacity-0 hidden"
           }`}
         >
-          <p className="text-xs md:text-sm italic  text-gray-600 leading-relaxed">
+          <p className="text-xs sm:text-sm italic text-gray-600 leading-relaxed">
             "{item.quote}"
           </p>
           <div className="flex items-center mt-2 gap-2">
-            <img src={item.avitor} className="sm:w-6 sm:h-6 h-16 w-16" />
+            <img
+              src={item.avitor}
+              alt="avatar"
+              className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full object-cover"
+            />
             <div>
               <p className="text-xs sm:text-sm font-semibold">{item.name}</p>
               <p className="text-[10px] sm:text-xs text-gray-500">
@@ -333,12 +350,9 @@ useEffect(()=>{
         </div>
       ))}
     </div>
-  
-     
-
 
     {/* Floating Tags */}
-    <div className="flex flex-col mt-8 justify-between mb-[-28px] w-full max-w-sm mx-auto lg:absolute lg:bottom-0 lg:w-auto gap-3 lg:gap-4">
+    <div className="flex flex-col mt-8 justify-between mb-[-28px] w-full max-w-[90%] sm:max-w-sm mx-auto lg:absolute lg:bottom-0 lg:w-auto gap-3 lg:gap-4">
       {/* Tag 1 */}
       <div className="bg-white shadow-lg md:ml-32 rounded-lg px-3 py-2 flex items-center justify-between text-xs sm:text-sm">
         <div className="flex items-center gap-2">
@@ -358,41 +372,33 @@ useEffect(()=>{
       </div>
     </div>
   </div>
-
-  {/* Carousel Indicators */}
- 
- 
-
 </section>
 
 
 
 
+
       {/* Industries Section - Responsive grid */}
-     <section className="relative w-full px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 overflow-hidden">
+  <section className="relative w-full px-4 sm:px-6  lg:px-8 py-12 sm:py-16 lg:py-20 overflow-hidden">
   {/* Background Image + Overlay */}
   <div className="absolute inset-0">
-    <img
-      src="/11122436.png" // <-- replace with actual image path
-      alt="background"
-      className="w-full h-full object-cover"
-    />
+    
     <div className="absolute inset-0 bg-[#080808] opacity-90"></div>
   </div>
 
   {/* Content */}
-  <div className="relative z-10">
+  <div className="relative z-10 md:ml:-10 max-w-7xl mx-auto">
     {/* Heading */}
     <h1 className="text-white text-lg sm:text-2xl md:text-3xl font-bold ml-0 sm:ml-8 md:ml-14 pl-0 sm:pl-4 pt-2 sm:pt-6 mb-6 sm:mb-8 text-center sm:text-left">
       Industries We Serve
     </h1>
 
     {/* Subheading + Paragraph */}
-    <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 sm:gap-6 ml-0 sm:ml-8 md:ml-14 mb-8 sm:mb-12 text-center lg:text-left">
-      <h2 className="text-white text-2xl sm:text-3xl md:text-4xl font-light px-4 sm:px-0">
+    <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 sm:gap-6 ml-0 sm:ml-8 md:ml-14 mb-8 sm:mb-12 text-center lg:text-left px-4 sm:px-0">
+      <h2 className="text-white text-2xl sm:text-3xl md:text-4xl font-light px-0 sm:px-0">
         AI for Every Industry
       </h2>
-      <p className="text-white text-sm sm:text-base md:text-lg mt-2 lg:mt-0 max-w-xl mx-auto lg:mx-0 px-4 sm:px-0 leading-relaxed">
+      <p className="text-white text-sm sm:text-base md:text-lg mt-2 lg:mt-0 max-w-xl mx-auto lg:mx-0 leading-relaxed">
         We turn domain challenges into measurable outcomes with modern{" "}
         <br className="hidden sm:block" /> cloud, trusted data, and
         production-ready AI.
@@ -400,18 +406,18 @@ useEffect(()=>{
     </div>
 
     {/* Services Grid */}
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:flex lg:flex-row flex-wrap gap-6 sm:gap-8 px-4 sm:px-8 lg:px-12 mx-auto max-w-6xl justify-center">
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 sm:gap-8 px-2 sm:px-8 lg:px-12 mx-auto max-w-6xl justify-items-center">
       {services.map((service, i) => (
         <div
           key={i}
-          className="flex flex-col items-center hover:scale-105 duration-300 py-4 w-full sm:w-auto"
+          className="flex flex-col items-center hover:scale-105 duration-300 md:mt-6 w-full sm:w-auto text-center"
         >
           <img
             src={service.logo}
             alt={service.title}
-            className="w-16 sm:w-20 md:w-24 lg:w-28 xl:w-32 h-auto object-contain mb-2 sm:mb-4"
+            className="w-32 h-auto object-contain  "
           />
-          <p className="text-white text-sm sm:text-base md:text-lg text-center leading-snug">
+          <p className="text-white bg-red-600  p-2 md:p-1 w-32 text-sm sm:text-base md:text-lg text-center leading-snug">
             {service.title}
           </p>
         </div>
@@ -422,18 +428,19 @@ useEffect(()=>{
 
 
 
+
       {/* Core Services Section - Responsive flex */}
-    <section className="w-full bg-white px-4 sm:px-6 lg:px-8 py-10 sm:py-16 lg:py-20 overflow-hidden">
+    <section className="w-full bg-white px-4 sm:px-6 lg:px-8 py-10 mx-auto md:ml-10 sm:py-16 lg:py-20 overflow-hidden">
   <div className="flex flex-col lg:flex-row gap-10 lg:gap-12 max-w-7xl mx-auto">
     
     {/* LEFT SECTION */}
     <div className="flex-1 space-y-6 lg:space-y-8 text-center lg:text-left">
-      <h1 className="font-extralight text-3xl sm:text-4xl lg:text-5xl leading-tight">
+      <h1 className="font-bold text-xl sm:text-2xl lg:text-3xl xl:text-4xl leading-tight">
         DoelSoft
         <br />
         Core Services
       </h1>
-      <p className="text-base sm:text-lg leading-relaxed px-2 sm:px-0">
+      <p className="text-base md:text-lg leading-relaxed px-2 sm:px-0">
         We Combine AI, Cloud & Data to design, build and{" "}
         <br className="hidden lg:block" /> scale secure digital products aligned
         to measurable outcomes.
@@ -459,7 +466,7 @@ useEffect(()=>{
     </div>
 
     {/* RIGHT SECTION: Services Grid */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 w-full lg:w-1/2">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 ml-12 w-72 lg:w-1/2">
       {[
         {
           icon: AI,
@@ -518,19 +525,19 @@ useEffect(()=>{
       ].map((service, i) => (
         <div
           key={i}
-          className="border border-gray-600 px-4 sm:px-6 py-6 hover:shadow-lg transition duration-300"
+          className="border border-gray-600 px-2 sm:px-6 py-6 hover:shadow-lg transition duration-300"
         >
           <img
             src={service.icon}
             alt={service.title}
             className="w-8 sm:w-10 h-auto mb-4 mx-auto sm:mx-0"
           />
-          <h3 className="text-black font-semibold text-base sm:text-lg md:text-xl mb-3 sm:mb-4 text-center sm:text-left">
+          <h3 className="text-black font-semibold  text-base sm:text-lg md:text-xl mb-3 sm:mb-4 text-center sm:text-left">
             {service.title}
           </h3>
-          <ul className="list-disc list-inside text-gray-600 space-y-1 sm:space-y-2 text-sm sm:text-base text-left">
+          <ul className="list-disc list-inside text-gray-600  space-y-1 sm:space-y-2 text-center  md:text-left">
             {service.list.map((item, j) => (
-              <li key={j}>{item}</li>
+              <li className=' text-sm' key={j}>{item}</li>
             ))}
           </ul>
         </div>
@@ -910,7 +917,7 @@ useEffect(()=>{
                     <img
                       src="/left.svg"
                       alt="left"
-                      className="absolute left-10 sm:left-20 bottom-10 sm:top-72 w-3 sm:w-4 object-contain opacity-70 z-30"
+                      className="absolute left-10 sm:left-20 bottom-10 sm:top-70 w-3 sm:w-4 object-contain opacity-70 z-30"
                     />
                     <img
                       src="/right.svg"
