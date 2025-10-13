@@ -215,15 +215,15 @@ useEffect(()=>{
 
     
   return (
-    <div className='w-full h-full mt-2 '>
+    <div className='w-full h-full overflow-x-hidden mt-2 '>
       {/* Hero Section - Responsive with equal spacing */}
-       <div className="hidden md:flex flex-col  pb-[180px] gap-4 absolute right-20 top-1/2 ml-6 -translate-y-1/2">
+       <div className="hidden md:flex flex-col  pb-[180px] gap-2 absolute right-20 top-1/2 ml-6 -translate-y-1/2">
     {CursolDetails.map((_, index) => (
       <button
         key={index}
         aria-label={`Go to slide ${index + 1}`}
         onClick={() => setCursol(index)}
-        className={`w-2 h-8 rounded-full transition-all duration-300 ${
+        className={`w-2 h-8  transition-all duration-300 ${
           cursol === index
             ? "bg-red-600 scale-110"
             : "bg-gray-300 hover:bg-gray-400"
@@ -231,7 +231,7 @@ useEffect(()=>{
       />
     ))}
   </div>
-<section className="w-full min-h-lvh max-w-[95vw] md:max-w-[85vw] xl:max-w-[80vw] mx-auto relative flex flex-col lg:flex-row justify-between items-center bg-white px-4 sm:px-6 lg:px-8 py-16 sm:py-20 gap-8 lg:gap-12 overflow-hidden">
+<section className="w-full min-h-lvh max-w-[95vw] md:max-w-[85vw] xl:max-w-[80vw] mx-auto relative flex flex-col lg:flex-row justify-between items-center bg-white px-4 sm:px-6 lg:px-8 py-20 sm:py-20 gap-8 lg:gap-12 overflow-hidden">
 
   {/* LEFT CONTENT */}
   <div className="w-full lg:w-1/2 space-y-6 flex flex-col gap-6 md:gap-8 text-center lg:text-left">
@@ -466,7 +466,7 @@ useEffect(()=>{
     </div>
 
     {/* RIGHT SECTION: Services Grid */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 ml-12 w-72 lg:w-1/2">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 ml-0 md:ml-12 w-72 lg:w-1/2">
       {[
         {
           icon: AI,
@@ -685,7 +685,7 @@ useEffect(()=>{
     {cards.map((card, i) => (
       <div
         key={i}
-        className={`relative overflow-hidden shadow-lg rounded-lg h-auto min-h-[250px] sm:min-h-[300px] lg:min-h-[320px] ${
+        className={`relative overflow-hidden shadow-lg  h-auto min-h-[250px] sm:min-h-[300px] lg:min-h-[320px] ${
           card.type === "solid" ? `${card.bg} flex items-center justify-center p-6 sm:p-8` : ""
         }`}
       >
@@ -800,7 +800,7 @@ useEffect(()=>{
         {insights.map((item, i) => (
           <div
             key={i}
-            className="bg-[#282828] rounded-md overflow-hidden flex flex-col shadow-lg"
+            className="bg-[#282828]  overflow-hidden flex flex-col shadow-lg"
           >
             {/* Top Image */}
             <div className="h-[220px] w-full overflow-hidden">
@@ -833,7 +833,7 @@ useEffect(()=>{
 
       {/* Featured Solutions Section */}
 <section className="bg-white py-12">
-  <div className="flex flex-col lg:flex-row items-center justify-between gap-10 px-4 sm:px-8">
+  <div className="flex flex-col lg:flex-row items-center md:ml-16 justify-between gap-10 px-4 sm:px-8">
     {/* Text + First Card Column */}
     <div className="w-full lg:w-1/2 py-8">
       <h2 className="text-4xl font-extralight font-kumbh text-gray-900 mb-2">
@@ -847,7 +847,7 @@ useEffect(()=>{
       {solutions.slice(0, 1).map((item, i) => (
         <div
           key={i}
-          className={`p-10 max-w-96 h-56 mt-10 shadow-sm transition hover:shadow-md ${
+          className={`p-10 max-w-96 h-56 md:ml-14  mt-14 shadow-sm transition hover:shadow-md ${
             item.type === "bg"
               ? "bg-gray-100"
               : "border border-red-500 bg-white"
@@ -863,7 +863,7 @@ useEffect(()=>{
     </div>
 
     {/* Image Column */}
-    <div className="w-full lg:w-1/2 flex justify-center">
+    <div className="w-full lg:w-1/2  flex justify-center">
       <img
         src="/Solution.svg"
         alt="Solution Graphic"
@@ -873,7 +873,7 @@ useEffect(()=>{
   </div>
 
   {/* Cards Grid */}
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-16 px-4 sm:px-8">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 md:ml-24 mt-16 px-4 sm:px-8">
     {solutions.slice(1).map((item, i) => (
       <div
         key={i}
@@ -892,9 +892,9 @@ useEffect(()=>{
     ))}
 
     {/* CTA Card */}
-    <div className="bg-red-600 hover:bg-gray-600 text-white flex flex-col p-10 max-w-96 h-56 mx-auto justify-between sm:col-span-2 lg:col-span-1">
-      <h3 className="font-semibold items-center sm:text-lg mb-4">Talk to an Expert</h3>
-      <button className="self-end w-10 h-10 flex items-center justify-center rounded-full border border-white hover:bg-white hover:text-red-600 transition">
+    <div className="bg-red-600 hover:bg-gray-600 text-white flex flex-col p-10  md:w-[383px]  h-56 mx-auto justify-between sm:col-span-2 lg:col-span-1">
+      <h3 className="font-semibold items-center sm:text-lg mb-2">Talk to an Expert</h3>
+      <button className="self-end w-10 h-10 flex items-center rounded-full justify-center border border-white hover:bg-white hover:text-red-600 transition">
         <ArrowUpRight size={18} />
       </button>
     </div>

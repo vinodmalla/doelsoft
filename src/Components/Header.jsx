@@ -17,7 +17,7 @@ function Header() {
     <header className="fixed top-0 left-0 w-full z-50 p-[5px] bg-white shadow-none">
       <div className="max-w-7xl mx-auto flex items-center justify-between h-16 px-6">
         <div className="flex items-center space-x-2">
-          <img src={logo} alt="Doelsoft" className="absolute w-[178px] h-auto left-[76px] top-[29px]" />
+          <img src={logo} alt="Doelsoft" className="absolute max-w-[178px] h-auto   md:left-[76px] top-[29px]" />
         </div>
 
         {/* Desktop Nav */}

@@ -11,9 +11,9 @@ function ContactUs() {
   });
 
   const location = {
-    name: "India",
+    name: "DoelSoft",
     url: "https://www.google.com/maps/place/Manjeera+Trinity+Corporate/@17.4893763,78.3900814,17z",
-    style: "left-[70%] top-[50%]",
+    style:  "left-[70%] md:left-[60%] top-[42%] md:top-[42%]",
   };
 
   const handleChange = (e) => {
@@ -37,82 +37,47 @@ function ContactUs() {
         }}
       >
         {/* Text Content */}
-        <div className="relative z-10 flex-1 text-center md:text-left space-y-6">
-          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-semibold text-red-600 leading-tight">
+        <div className="relative z-10 flex-1 text-center mt-16 md:mt-2 md:mb-56 md:text-left space-y-6 max-w-full">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-red-600 leading-tight">
             Let’s Build the <br />
             <span className="block mt-2">Future Together</span>
           </h2>
-
-          {/* Contact Info */}
-          <div className="flex flex-col gap-4 sm:gap-6 mt-6">
-            <div className="flex items-start gap-3">
-              <MapPin className="text-gray-600 w-10 md:w-6 h-10 md:h-6 mt-1" />
-              <div>
-                <h3 className="text-red-600 font-semibold">Address</h3>
-                <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
-                  Office No: 604, 1st floor, Marvela Infinity Corporate, <br />
-                  dNo: 1a, KPHB Phase 3, Kukatpally, Hyderabad, Telangana 500072
-                </p>
-              </div>
-            </div>
-
-            <div className="flex flex-col md:flex-row gap-8">
-              {/* Phone */}
-              <div className="flex items-start gap-3">
-                <Phone className="text-gray-600 w-6 h-6 mt-1" />
-                <div >
-                  <h3 className="text-red-600 font-semibold">Phone</h3>
-                  <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
-                    040 - 68853867 <br /> +1 321 204 3271
-                  </p>
-                </div>
-              </div>
-
-              {/* Email */}
-              <div className="flex items-start gap-3">
-                <Mail className="text-gray-600 w-6 h-6 mt-1" />
-                <div>
-                  <h3 className="text-red-600 font-semibold">Email</h3>
-                  <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
-                    info@doelsoft.com
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
 
         {/* Image Right */}
-        <div className="mt-10 md:mt-0 flex justify-center md:justify-end flex-1">
+        <div className="mt-10 md:mt-0 flex justify-center md:justify-end flex-1 w-full">
           <img
             src="/Contact.svg"
             alt="Team"
-            className="w-[280px] sm:w-[380px] md:w-[450px] lg:w-[520px] object-contain"
+            className="w-[260px] sm:w-[360px] md:w-[450px] lg:w-[520px] object-contain"
           />
         </div>
       </section>
 
       {/* Form Section */}
       <section className="bg-[#F4F6FB] py-16 px-6 sm:px-10 lg:px-20">
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start gap-12">
           {/* Form */}
           <div className="w-full lg:w-1/2">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
               Get in <span className="text-red-600">Touch</span>
             </h2>
-            <p className="text-gray-600 mb-8">
+            <p className="text-gray-600 mb-8 text-sm sm:text-base">
               Share your goals across AI, Cloud & Data—we’ll review and
               recommend next steps within one business day.
             </p>
 
-            <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+            <form
+              onSubmit={handleSubmit}
+              className="flex flex-col gap-4 w-full max-w-full"
+            >
               <input
                 type="text"
                 name="name"
                 placeholder="Name *"
                 value={formData.name}
                 onChange={handleChange}
-                className="border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-red-500"
+                className="border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-red-500 w-full"
                 required
               />
               <input
@@ -121,7 +86,7 @@ function ContactUs() {
                 placeholder="Email"
                 value={formData.email}
                 onChange={handleChange}
-                className="border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-red-500"
+                className="border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-red-500 w-full"
               />
               <input
                 type="tel"
@@ -129,14 +94,14 @@ function ContactUs() {
                 placeholder="Phone number *"
                 value={formData.phone}
                 onChange={handleChange}
-                className="border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-red-500"
+                className="border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-red-500 w-full"
                 required
               />
               <select
                 name="source"
                 value={formData.source}
                 onChange={handleChange}
-                className="border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-red-500"
+                className="border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-red-500 w-full"
               >
                 <option value="">How did you find us?</option>
                 <option value="google">Google</option>
@@ -149,7 +114,7 @@ function ContactUs() {
                 placeholder="Tip Us."
                 value={formData.message}
                 onChange={handleChange}
-                className="border border-gray-300 rounded-md p-3 h-24 resize-none focus:outline-none focus:ring-2 focus:ring-red-500"
+                className="border border-gray-300 rounded-md p-3 h-24 resize-none focus:outline-none focus:ring-2 focus:ring-red-500 w-full"
               ></textarea>
 
               <button
@@ -162,32 +127,75 @@ function ContactUs() {
           </div>
 
           {/* Map Section */}
-          <div className="w-full lg:w-1/2 relative">
-            <img src="/MAP.svg" alt="World Map" className="w-full opacity-80" />
+          <div className="w-full lg:w-1/2 relative flex flex-col items-center">
+            <div className="flex flex-col gap-4 sm:gap-6 mt-1 w-full">
+              <div className="flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-4">
+                <MapPin className="text-gray-600 w-6 h-6 mt-1 shrink-0" />
+                <div>
+                  <h3 className="text-red-600 font-semibold">Address</h3>
+                  <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
+                    Office No: 604, 1st floor, Marvela Infinity Corporate, <br />
+                    dNo: 1a, KPHB Phase 3, Kukatpally, Hyderabad, Telangana
+                    500072
+                  </p>
+                </div>
+              </div>
 
-            <div className="absolute left-[35%] top-[40%] bg-white shadow-md rounded-md px-3 py-1 flex items-center gap-2 text-sm">
-              <span>🇲🇽</span> SA
+              <div className="flex flex-col sm:flex-row gap-6 sm:gap-8 flex-wrap">
+                <div className="flex items-start gap-3 sm:gap-4">
+                  <Phone className="text-gray-600 w-6 h-6 mt-1 shrink-0" />
+                  <div>
+                    <h3 className="text-red-600 font-semibold">Phone</h3>
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      040 - 68853867 <br /> +1 321 204 3271
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3 sm:gap-4">
+                  <Mail className="text-gray-600 w-6 h-6 mt-1 shrink-0" />
+                  <div>
+                    <h3 className="text-red-600 font-semibold">Email</h3>
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      info@doelsoft.com
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div className="absolute left-[28%] bottom-[38%] bg-white shadow-md rounded-md px-3 py-1 flex items-center gap-2 text-sm">
-              <span>🇺🇸</span> USA
-            </div>
+            <div className="w-full mt-8">
+              <img
+                src="/MAP.svg"
+                alt="World Map"
+                className="w-full h-auto opacity-80 object-contain"
+              />
 
-            <div className="absolute right-[30%] top-[28%] bg-white shadow-md rounded-md px-3 py-1 flex items-center gap-2 text-sm">
-              <span>🇫🇮</span> Europe
-            </div>
+              {/* Flags */}
+              <div className="absolute left-[25%]  md:left-[25%] top-[88%] md:top-[78%] sm:top-[80%] bg-white shadow-md rounded-md px-3 py-1 flex items-center gap-2 text-xs sm:text-sm">
+                <span>🇲🇽</span> SA
+              </div>
 
-            <div className="absolute right-[22%] bottom-[40%] bg-white shadow-md rounded-md px-3 py-1 flex items-center gap-2 text-sm">
-              <span>🇮🇳</span> India
+              <div className="absolute left-[10%] md:left-[30%] bottom-[20%] md:bottom-[44%] bg-white shadow-md rounded-md px-3 py-1 flex items-center gap-2 text-xs sm:text-sm">
+                <span>🇺🇸</span> USA
+              </div>
+
+              <div className="absolute right-[30%] md:right-[40%] top-[75%] md:top-[50%] bg-white shadow-md rounded-md px-3 py-1 flex items-center gap-2 text-xs sm:text-sm">
+                <span>🇫🇮</span> Europe
+              </div>
+
+              <div className="absolute right-[25%] md:right-[23%] bottom-[12%] md:bottom-[32%] bg-white shadow-md rounded-md px-3 py-1 flex items-center gap-2 text-xs sm:text-sm">
+                <span>🇮🇳</span> India
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Location Section */}
-      <section className="relative w-full h-[400px] sm:h-[500px] md:h-[600px] bg-[#F4F6FB] overflow-hidden">
+      <section className="relative w-full h-[350px] sm:h-[450px] md:h-[550px] bg-[#F4F6FB] overflow-hidden">
         <img
-          src="/location2.png"
+          src="/location4.svg"
           alt="World Map"
           className="absolute inset-0 w-full h-full object-cover"
         />
