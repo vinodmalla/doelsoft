@@ -24,6 +24,7 @@ import WebDevelopment from './Components/WebDevelopment';
 import UIUXDesign from './Components/UIUXDesign';
 import MuleSoftSolutions from './Components/MuleSoftSolutions';
 import IoTDevelopment from './Components/IoTDevelopment';
+import Embedded from './Components/Embedded';
 
 function App() {
   return (
@@ -52,6 +53,7 @@ export const approuter = createBrowserRouter([
       {path:"/servicesmulesoft",element:<MuleSoftSolutions />},
       {path:"/servicesmicrosoft",element:<MicrosoftSolutions />},
       {path:"/servicesweb",element:<WebDevelopment />},
+      {path:"/servicesembedded",element:<Embedded />},
       {path:"/digitalaccessibilit",element:<Accessibility/>},
       {path:"/salesforce",element:<Salesforce />},
       {path:"/servicesiot",element:<IoTDevelopment />},

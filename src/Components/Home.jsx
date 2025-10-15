@@ -359,7 +359,7 @@ useEffect(()=>{
           <img src="/F1.svg" alt="AI leverage" className="w-6 sm:w-8 h-6 sm:h-8" />
           <span className="font-semibold">Budget Friendly</span>
         </div>
-        <span className="text-red-600 ml-4 sm:ml-8">Life Long</span>
+        <span className="text-red-600 whitespace-nowrap ml-4 sm:ml-8">Life Long</span>
       </div>
 
       {/* Tag 2 */}
@@ -368,7 +368,7 @@ useEffect(()=>{
           <img src="/F2.svg" alt="AI leverage" className="w-6 sm:w-8 h-6 sm:h-8" />
           <span className="font-semibold">Native, Fast & Powerful</span>
         </div>
-        <span className="text-red-600 ml-4 sm:ml-8">AI leverage</span>
+        <span className="text-red-600 whitespace-nowrap ml-4 sm:ml-8">AI leverage</span>
       </div>
     </div>
   </div>

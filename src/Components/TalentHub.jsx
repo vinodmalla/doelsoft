@@ -108,7 +108,26 @@ function TalentHub() {
 
       {/* Services Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center gap-8 justify-items-center">
-        {services.map((service) => (
+        {services.slice(0,3).map((service) => (
+          <div
+            key={service.id}
+            className="w-full sm:w-[280px] md:w-[320px] bg-black text-white shadow-lg  overflow-hidden"
+          >
+            <img
+              src={service.image}
+              alt={service.title}
+              className="w-full h-64 object-cover"
+            />
+            <div className="p-4 text-center"><Link to={service.link} >
+              <h3 className="text-lg font-semibold">{service.title}</h3></Link>
+            </div>
+          </div>
+        ))}
+
+        
+      </div>
+      <div className="grid grid-cols-1 md:flex flex-row justify-center py-10 gap-12 ">
+        {services.slice(3).map((service) => (
           <div
             key={service.id}
             className="w-full sm:w-[280px] md:w-[320px] bg-black text-white shadow-lg  overflow-hidden"
