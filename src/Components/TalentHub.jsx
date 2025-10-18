@@ -126,7 +126,7 @@ function TalentHub() {
 
         
       </div>
-      <div className="grid grid-cols-1 md:flex flex-row justify-center py-10 gap-12 ">
+      <div className="grid grid-cols-1 md:flex flex-row justify-evenly py-10 ">
         {services.slice(3).map((service) => (
           <div
             key={service.id}

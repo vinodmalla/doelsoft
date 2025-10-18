@@ -33,7 +33,7 @@ function Home() {
   {
     h11: "Accelerate Digital Transformation with ",
     h22: "AI, Cloud & Data",
-    img: "/robot.svg",
+    img: "/robot1.svg",
     p: "We design, build, and scale secure digital products combining applied AI, modern cloud architectures, and human expertise to deliver real business outcomes."
   },
   {
@@ -231,7 +231,7 @@ useEffect(()=>{
       />
     ))}
   </div>
-<section className="w-full min-h-lvh max-w-[95vw] md:max-w-[85vw] xl:max-w-[80vw] mx-auto relative flex flex-col lg:flex-row justify-between items-center bg-white px-4 sm:px-6 lg:px-8 py-20 sm:py-20 gap-8 lg:gap-12 overflow-hidden">
+<section className="w-full min-h-lvh max-w-[95vw] md:max-w-[85vw] xl:max-w-[80vw] mx-auto md:mx-[92px] relative flex flex-col lg:flex-row justify-between items-center bg-white px-4 sm:px-6 lg:px-8 py-20 sm:py-20 gap-8 lg:gap-12 overflow-hidden">
 
   {/* LEFT CONTENT */}
   <div className="w-full lg:w-1/2 space-y-6 flex flex-col gap-6 md:gap-8 text-center lg:text-left">
@@ -285,6 +285,7 @@ useEffect(()=>{
               </div>
             ))}
           </div>
+          
           <p className="text-black font-bold text-base sm:text-lg lg:text-2xl py-4 lg:py-6 text-center lg:text-left">
             Trusted by{" "}
             <span className="font-medium">
@@ -318,20 +319,20 @@ useEffect(()=>{
     {/* Highlight */}
     <img
       src="/Highlight.svg"
-      className="hidden md:flex absolute z-30 bottom-2 right-[200px] lg:right-[420px]"
+      className="hidden md:flex absolute z-30 bottom-10 lg:right-[340px]"
       alt="highlight"
     />
 
     {/* Testimonials */}
-    <div className="flex flex-col items-center lg:items-end gap-4 lg:absolute lg:top-1/4 lg:right-0 lg:mr-[-50px] md:mt-[120px] lg:mt-[145px]">
+    <div className="flex flex-col items-center lg:items-end gap-4 lg:absolute lg:top-1/4 lg:right-0 lg:mr-[-45px] md:mt-[120px] lg:mt-[145px]">
       {Testimonial.map((item, index) => (
         <div
           key={index}
-          className={`bg-slate-50 z-50 p-3 md:p-4 lg:p-6 max-w-72 transition-opacity duration-1000 ${
+          className={`bg-white drop-shadow-lg z-50 p-3 md:p-4 lg:p-6 max-w-72 transition-opacity duration-1000 ${
             index === testimonialIndex ? "opacity-100 block" : "opacity-0 hidden"
           }`}
         >
-          <p className="text-xs sm:text-sm italic text-gray-600 leading-relaxed">
+          <p className="text-xs sm:text-base italic text-gray-600 ">
             "{item.quote}"
           </p>
           <div className="flex items-center mt-2 gap-2">
@@ -389,7 +390,7 @@ useEffect(()=>{
   {/* Content */}
   <div className="relative z-10 md:ml:-10 max-w-7xl mx-auto">
     {/* Heading */}
-    <h1 className="text-white text-lg sm:text-2xl md:text-3xl font-bold ml-0 sm:ml-8 md:ml-14 pl-0 sm:pl-4 pt-2 sm:pt-6 mb-6 sm:mb-8 text-center sm:text-left">
+    <h1 className="text-white text-lg sm:text-2xl md:text-3xl font-bold  pl-0 sm:pl-4 pt-2 sm:pt-6 mb-6 sm:mb-8 text-center sm:text-left">
       Industries We Serve
     </h1>
 
@@ -406,7 +407,7 @@ useEffect(()=>{
     </div>
 
     {/* Services Grid */}
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 sm:gap-8 px-2 sm:px-8 lg:px-12 mx-auto max-w-6xl justify-items-center">
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-2 sm:gap-8 px-2 sm:px-8 lg:px-12 mx-auto max-w-6xl justify-items-center">
       {services.map((service, i) => (
         <div
           key={i}
@@ -415,9 +416,9 @@ useEffect(()=>{
           <img
             src={service.logo}
             alt={service.title}
-            className="w-32 h-auto object-contain  "
+            className="w-40 h-auto object-contain  "
           />
-          <p className="text-white bg-red-600  p-2 md:p-1 w-32 text-sm sm:text-base md:text-lg text-center leading-snug">
+          <p className="text-white bg-red-600  p-2 md:p-1 w-40 text-sm sm:text-base md:text-lg text-center leading-snug">
             {service.title}
           </p>
         </div>
@@ -430,7 +431,7 @@ useEffect(()=>{
 
 
       {/* Core Services Section - Responsive flex */}
-    <section className="w-full bg-white px-4 sm:px-6 lg:px-8 py-10 mx-auto md:ml-10 sm:py-16 lg:py-20 overflow-hidden">
+    <section className="w-full bg-white px-4 sm:px-6 lg:px-8 py-10 mx-auto md:ml-2 sm:py-16 lg:py-20 overflow-hidden">
   <div className="flex flex-col lg:flex-row gap-10 lg:gap-12 max-w-7xl mx-auto">
     
     {/* LEFT SECTION */}
@@ -466,7 +467,7 @@ useEffect(()=>{
     </div>
 
     {/* RIGHT SECTION: Services Grid */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 ml-0 md:ml-12 w-72 lg:w-1/2">
+    <div className="grid grid-cols-1 sm:grid-cols-2  gap-6 lg:gap-8 ml-7 md:ml-12 w-72 lg:w-1/2">
       {[
         {
           icon: AI,
@@ -552,7 +553,7 @@ useEffect(()=>{
         style={{
           backgroundImage: "url('/Mask group.svg')",
         }}>
-        <div className="max-w-6xl mx-auto text-left">
+        <div className="max-w-6xl mx-auto md:mx-[93px] text-left">
           <h3 className="text-lg text-gray-700 mb-2">Doelsoft</h3>
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8 sm:mb-12">How we work</h2>
 
