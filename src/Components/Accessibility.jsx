@@ -71,7 +71,7 @@ export default function Accessibility() {
       "Real-world testing with assistive technologies and diverse disability perspectives.",
       "Detailed reports with issue severity, user impact analysis, and prioritized recommendations."
     ],
-    image: "/audit.svg",
+     image: "/MultimediaAccessibility.svg",
     alt: "Accessibility audit in progress",
   },
   {
@@ -98,7 +98,7 @@ export default function Accessibility() {
       "Keyboard & Voice Navigation: Mobile apps operable without touch.",
       "Responsive Design Review: Accessible layouts, font resizing, contrast handling."
     ],
-    image: "/mobileaccessibility.svg",
+    image: "DocumentAccessibility.svg",
     alt: "Mobile accessibility testing tools",
   },
   {
@@ -112,7 +112,8 @@ export default function Accessibility() {
       "Born-accessible workflows to prevent future remediation.",
       "High-volume document support with feedback from disability communities."
     ],
-    image: "DocumentAccessibility.svg",
+    
+     image: "/mobileaccessibility.svg",
     alt: " Inclusive Document Accessibility",
   },
   {
@@ -125,7 +126,8 @@ export default function Accessibility() {
       "Accessible media players with keyboard navigation, captions, and sign-language support.",
       "Support for podcasts, webinars, training videos, e-learning content, OTT platforms—tested by diverse users."
     ],
-    image: "/MultimediaAccessibility.svg",
+   
+    image: "/audit.svg",
     alt: "Multimedia Accessibility",
   },
   {

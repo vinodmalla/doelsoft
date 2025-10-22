@@ -1,196 +1,64 @@
-import React from 'react'
-import { Briefcase,ArrowUpRight} from "lucide-react";
+import React,{useState} from 'react'
+import { ArrowUpRight} from "lucide-react";
+import { SearchIcon } from 'lucide-react';
 function Carrers() {
-    const jobs = [
+  const jobs = [
   {
     id: 1,
-    company: "Bunsen Studio",
-    role: "Senior Web Designer",
-    description:
-      "Hi, we're Bunsen. We do creative work for science companies solving tough problems, like brain-computer interfaces or biology tools.",
-    location: "United States",
-    website: "bunsenstudio.com",
-    posted: "15 hours ago",
-    remote: true,
+    title: "Full Stack Developer",
+    level: "Mid-Level",
+    location: ["Chennai", "Madurai"],
+    responsibility:
+      "Designing and implementing user interfaces using HTML, CSS, and JavaScript frameworks like React or Angular. Building and maintaining server-side application logic, databases, and APIs.",
+    details: {
+      responsibilities: [
+        "Designing and implementing user interfaces using HTML, CSS, and JavaScript frameworks like React or Angular.",
+        "Building and maintaining server-side application logic, databases, and APIs using Node.js, Python, or Java.",
+        "Using Git to manage code changes and collaborate with other developers.",
+        "Implementing security best practices to protect applications.",
+      ],
+      specifications: [
+        "Proficiency in front-end technologies like React or Angular.",
+        "Experience in back-end technologies like Node.js, Python, or Java.",
+        "Experience managing databases (SQL & NoSQL).",
+        "Knowledge of web security best practices.",
+        "Excellent collaboration skills.",
+      ],
+      type: "Full-time",
+      workplace: "Hybrid",
+      experience: "Minimum 3 Years",
+      salary: "Commensurate with experience and skills",
+      jobLocation: ["Chennai", "Madurai", "Coimbatore"],
+    },
   },
   {
     id: 2,
-    company: "Studio Vi",
-    role: "Digital (Visual) Designer Internship",
-    description:
-      "We are a Digital Human Experience Design Studio. We believe digital should enhance human potential, not distract.",
-    location: "Netherlands",
-    website: "studiovi.com",
-    posted: "5 days ago",
-    remote: false,
+    title: "React Developer",
+    level: "Mid-Level",
+    location: ["Chennai", "Madurai"],
+    responsibility:
+      "Designing and implementing user interfaces using HTML, CSS, and JavaScript frameworks like React. Building and maintaining server-side application logic, databases.",
   },
   {
     id: 3,
-    company: "Digital Cover",
-    role: "UX/UI designer - Directeur artistique web",
-    description:
-      "Êtes-vous passionné par la création de sites captivants et inspirants ? Rejoignez-nous pour repousser les limites UX.",
-    location: "France",
-    website: "digital-cover.com",
-    posted: "21 days ago",
-    remote: false,
+    title: "Flutter Developer",
+    level: "Mid-Level",
+    location: ["Chennai", "Madurai"],
+    responsibility:
+      "Designing and implementing cross-platform apps using Flutter, maintaining responsive UI and performance optimization.",
   },
   {
     id: 4,
-    company: "Digital Cover",
-    role: "Creative Developer - Front-end H/F",
-    description:
-      "Vous êtes une personne créative et rigoureuse ? Venez travailler sur des projets innovants avec notre équipe.",
-    location: "France",
-    website: "digital-cover.com",
-    posted: "21 days ago",
-    remote: false,
-  },
-  {
-    id: 5,
-    company: "Limesharp",
-    role: "UX/UI Designer",
-    description:
-      "We design & build top-tier eCommerce websites for luxury and premium brands around the globe.",
-    location: "United Kingdom",
-    website: "limesharp.net",
-    posted: "27 days ago",
-    remote: true,
-  },
-  {
-    id: 6,
-    company: "ROCANI Studio",
-    role: "Senior 3D Artist",
-    description:
-      "At Rocani Studio, we craft immersive digital narratives with cutting-edge 3D design and storytelling.",
-    location: "Germany",
-    website: "rocani.studio",
-    posted: "1 month ago",
-    remote: true,
-  },
-  // ---------- Add 12 more companies ----------
-  {
-    id: 7,
-    company: "Intelli Tek",
-    role: "React Developer",
-    description: "Join us to build scalable web apps with React, Tailwind & cloud technologies.",
-    location: "India",
-    website: "intellitek.com",
-    posted: "2 weeks ago",
-    remote: true,
-  },
-  {
-    id: 8,
-    company: "OpenAI",
-    role: "AI Research Engineer",
-    description: "Work on advanced AI systems and contribute to safe AGI research.",
-    location: "United States",
-    website: "openai.com",
-    posted: "10 days ago",
-    remote: true,
-  },
-  {
-    id: 9,
-    company: "Tesla",
-    role: "UI Engineer",
-    description: "Design next-gen vehicle UI systems for electric mobility solutions.",
-    location: "United States",
-    website: "tesla.com",
-    posted: "5 days ago",
-    remote: false,
-  },
-  {
-    id: 10,
-    company: "Spotify",
-    role: "Frontend Engineer",
-    description: "Create beautiful music streaming experiences used by millions worldwide.",
-    location: "Sweden",
-    website: "spotify.com",
-    posted: "3 days ago",
-    remote: true,
-  },
-  {
-    id: 11,
-    company: "Google",
-    role: "Cloud Solutions Architect",
-    description: "Help businesses migrate and scale with Google Cloud technologies.",
-    location: "United States",
-    website: "google.com",
-    posted: "1 week ago",
-    remote: true,
-  },
-  {
-    id: 12,
-    company: "Amazon",
-    role: "Software Engineer",
-    description: "Work on high-scale eCommerce systems and AWS cloud infrastructure.",
-    location: "United States",
-    website: "amazon.com",
-    posted: "1 week ago",
-    remote: false,
-  },
-  {
-    id: 13,
-    company: "Netflix",
-    role: "Product Designer",
-    description: "Design seamless streaming interfaces for millions of global users.",
-    location: "United States",
-    website: "netflix.com",
-    posted: "12 days ago",
-    remote: true,
-  },
-  {
-    id: 14,
-    company: "Microsoft",
-    role: "Full Stack Developer",
-    description: "Work on enterprise-scale apps across Azure cloud and Office 365 ecosystem.",
-    location: "United States",
-    website: "microsoft.com",
-    posted: "8 days ago",
-    remote: true,
-  },
-  {
-    id: 15,
-    company: "Adobe",
-    role: "UI/UX Designer",
-    description: "Join Adobe XD & Photoshop teams to craft creative software experiences.",
-    location: "United States",
-    website: "adobe.com",
-    posted: "6 days ago",
-    remote: false,
-  },
-  {
-    id: 16,
-    company: "Figma",
-    role: "Design Engineer",
-    description: "Shape the future of collaborative design tools with our product team.",
-    location: "United States",
-    website: "figma.com",
-    posted: "2 weeks ago",
-    remote: true,
-  },
-  {
-    id: 17,
-    company: "Meta",
-    role: "AR/VR Designer",
-    description: "Build immersive Metaverse experiences with cutting-edge AR/VR tools.",
-    location: "United States",
-    website: "meta.com",
-    posted: "1 month ago",
-    remote: true,
-  },
-  {
-    id: 18,
-    company: "Stripe",
-    role: "Frontend Developer",
-    description: "Craft payment UIs for millions of businesses worldwide.",
-    location: "United States",
-    website: "stripe.com",
-    posted: "2 weeks ago",
-    remote: true,
+    title: "MERN Stack Developer",
+    level: "Mid-Level",
+    location: ["Chennai", "Madurai"],
+    responsibility:
+      "Developing applications using MongoDB, Express, React, and Node.js. Managing database integrations and deployment.",
   },
 ];
+const [selectedJob, setSelectedJob] = useState(jobs[0]);
   return (
+    
     <div  className="w-full min-h-screen font-kumbh space-y-6 mt-16 flex flex-col justify-end">
       <section
   className="relative w-full min-h-[550px] flex flex-col md:flex-row items-center justify-between overflow-hidden py-10 px-6 md:px-16 lg:px-28"
@@ -223,82 +91,145 @@ function Carrers() {
   </div>
 </section>
 
-<section className="bg-[#F4F6FB] py-10 sm:py-12">
-  {/* Title */}
-  <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center md:text-left md:ml-20 lg:ml-28">
-    The Jobs Onboard
-  </h1>
+<div className="min-h-screen  bg-[#F4F6FB] py-8" style={{
+    marginBottom: window.innerWidth >= 768 ? "-44px" : "0px",
+  }}>
+      {/* Header */}
+      <header className=" md:ml-24 py-6 px-6 text-2xl md:text-4xl font-semibold text-gray-900">
+        The Jobs Onboard
+      </header>
 
-  {/* Jobs Grid */}
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-    {jobs.map((job, index) => (
-      <div
-        key={index}
-        className="w-full bg-white rounded-2xl shadow-sm border border-gray-100 p-5 sm:p-6 flex flex-col hover:shadow-md transition-all duration-300"
-      >
-        {/* Header */}
-        <div className="flex items-center justify-between mb-4 flex-wrap gap-2">
-          {/* Company Info */}
-          <div className="flex items-center gap-3">
-            <img
-              src={job.logo}
-              alt={job.company}
-              className="w-10 h-10 rounded-full object-cover"
-            />
-            <div className="relative">
-              <h2 className="text-base sm:text-lg font-bold text-gray-900">
-                {job.company}
-              </h2>
-              <span className="absolute left-0 -bottom-1 w-full h-[2px] bg-gradient-to-r from-[#222] via-[#222]/30 to-[#222]/30"></span>
+      {/* Banner */}
+      <div className="flex flex-col  md:mx-24 bg-[#FEB800] md:flex-row items-center px-6 py-10">
+        
+        <img
+          src="/carrerss.svg"
+          alt="Career"
+          className="w-auto h-auto md:w-auto bg-transparent md:h-auto mt-4 md:mt-0"
+        />
+       <div className='flex flex-col'>
+         <input
+          type="text"
+          placeholder="Search for Jobs"
+          className="border border-black md:ml-4 mt-4 md:mt-0 bg-[#FEB800] text-black px-4 py-2 w-auto md:w-[745px]"
+        />
+        
+      
+        <div className="flex flex-col md:flex-row justify-center items-center gap-6  p-4 ">
+        <select className="border border-black bg-[#FEB800] whitespace-nowrap px-6 py-2 w-full md:w-auto">
+          <option>All Experience Level</option>
+          <option>Fresher</option>
+          <option>Mid-Level</option>
+          <option>Senior</option>
+        </select>
+        <select className="border border-black bg-[#FEB800]  px-6 py-2 w-full md:w-auto">
+          <option>All Locations</option>
+          <option>Chennai</option>
+          <option>Madurai</option>
+          <option>Coimbatore</option>
+        </select>
+        <select className="border border-black  bg-[#FEB800]  px-6 py-2 w-full md:w-auto">
+          <option>All Categories</option>
+          <option>Full Stack</option>
+          <option>Frontend</option>
+          <option>Backend</option>
+        </select>
+        <button className="bg-red-600 hover:bg-red-700 whitespace-nowrap text-white px-6 py-2 w-full md:w-auto">
+          View Jobs
+        </button>
+      </div>
+       </div>
+       
+        
+      </div>
+
+      {/* Search Section */}
+    
+
+      {/* Jobs Section */}
+      <div className="flex flex-col md:mx-16 md:flex-row gap-6 px-4 md:px-8 py-8">
+        {/* Left: Job List */}
+        <div className="md:w-1/2 bg-[#FFFFFF] shadow-md max-h-max md:max-h-[90vh] p-4">
+          {jobs.map((job) => (
+            <div
+              key={job.id}
+              onClick={() => setSelectedJob(job)}
+              className={`border  p-4 mb-4 cursor-pointer ${
+                selectedJob.id === job.id
+                  ? "border-red-500 bg-red-50"
+                  : "border-gray-200 hover:bg-gray-50"
+              }`}
+            >
+              <h3 className="font-semibold text-red-600">{job.title}</h3>
+              <div className="flex gap-2 text-sm text-gray-500 mt-1">
+                <span>{job.level}</span>
+                {job.location.map((loc, i) => (
+                  <span key={i}>{loc}</span>
+                ))}
+              </div>
+              <p className="text-gray-600 text-sm mt-2">
+                {job.responsibility.substring(0, 120)}...
+              </p>
             </div>
-          </div>
-
-          {/* Remote Badge */}
-          {job.remote && (
-            <span className="px-2 py-1 text-[10px] sm:text-[11px] border border-gray-400/40 rounded text-gray-700 font-medium">
-              REMOTE
-            </span>
-          )}
+          ))}
         </div>
 
-        {/* Role */}
-        <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mt-2 mb-3">
-          {job.role}
-        </h3>
-
-        {/* Description */}
-        <p className="text-gray-600 text-sm leading-relaxed mb-4">
-          {job.description}
-        </p>
-
-        {/* Footer Info */}
-        <div className="mt-auto border-t border-gray-200 divide-y">
-          <div className="flex justify-between py-3 text-xs sm:text-sm flex-wrap">
-            <span className="font-bold text-gray-800">Location</span>
-            <span className="text-gray-600">{job.location}</span>
+        {/* Right: Job Details */}
+        <div className="md:w-2/3 bg-white shadow-md  p-6">
+          <h2 className="text-xl font-semibold text-gray-800 mb-2">
+            {selectedJob.title}
+          </h2>
+          <div className="flex gap-3 text-sm text-gray-500 mb-4">
+            <span>{selectedJob.level}</span>
+            {selectedJob.location.map((loc, i) => (
+              <span key={i}>{loc}</span>
+            ))}
           </div>
+          <h4 className="font-semibold text-gray-700 mb-2">
+            Primary Responsibility:
+          </h4>
+          <p className="text-gray-600 mb-4">{selectedJob.responsibility}</p>
 
-          <div className="flex justify-between py-3 text-xs sm:text-sm flex-wrap">
-            <span className="font-bold text-gray-800">Website</span>
-            <a
-              href={`https://${job.website}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 hover:underline break-words"
-            >
-              {job.website}
-            </a>
-          </div>
+          {selectedJob.details && (
+            <>
+              <h4 className="font-semibold text-gray-700 mb-2">
+                Job Specification:
+              </h4>
+              <ul className="list-disc list-inside text-gray-600 mb-4">
+                {selectedJob.details.specifications.map((spec, i) => (
+                  <li key={i}>{spec}</li>
+                ))}
+              </ul>
 
-          <div className="flex justify-between py-3 text-xs sm:text-sm flex-wrap">
-            <span className="font-bold text-gray-800">Posted</span>
-            <span className="text-gray-600">{job.posted}</span>
-          </div>
+              <div className="text-gray-700 space-y-2 text-sm">
+                <p>
+                  <strong>Employment Type:</strong> {selectedJob.details.type}
+                </p>
+                <p>
+                  <strong>Workplace Type:</strong>{" "}
+                  {selectedJob.details.workplace}
+                </p>
+                <p>
+                  <strong>Experience Required:</strong>{" "}
+                  {selectedJob.details.experience}
+                </p>
+                <p>
+                  <strong>Salary:</strong> {selectedJob.details.salary}
+                </p>
+                <p>
+                  <strong>Job Location:</strong>{" "}
+                  {selectedJob.details.jobLocation.join(", ")}
+                </p>
+              </div>
+            </>
+          )}
+
+          <button className="mt-6 bg-red-600 hover:bg-red-700 text-white px-6 py-2 ">
+            Apply Now
+          </button>
         </div>
       </div>
-    ))}
-  </div>
-</section>
+    </div>
 
     <section
   className="relative w-full  bg-cover bg-center text-center py-16   sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
