@@ -591,13 +591,13 @@ useEffect(()=>{
             />
 
             {/* Testimonials */}
-            <div className="flex flex-col items-end gap-2 mt-[1px] absolute top-1/2 right-0  lg:mt-0">
+            <div className="flex flex-col items-end gap-2 mt-[1px] absolute top-[380px] md:top-[500px] right-0  lg:mt-0">
               {Testimonial.map((item, index) =>(
-                <div c className={`bg-white z-50 shadow-xl rounded-md p-3 sm:p-4 w-48 sm:w-56 lg:w-60 transition-opacity duration-1000 ${index === testimonialIndex ? "opacity-100 block" : "opacity-0 hidden" }`} key={index}>
+                <div c className={`bg-white z-50 shadow-xl  p-3 sm:p-4 w-48 md:w-48 h-48 transition-opacity duration-1000 ${index === testimonialIndex ? "opacity-100 block" : "opacity-0 hidden" }`} key={index}>
                   <p className="text-sm italic text-gray-600 leading-relaxed">
                       "{item.quote}"
                   </p>
-                  <div className="flex items-center mt-2 gap-2">
+                  <div className="flex items-center mt-6 gap-2">
                     <RxAvatar size={24} />
                     <div>
                       <p className="text-sm font-semibold">{item.name}</p>
@@ -635,7 +635,7 @@ useEffect(()=>{
     {frames.map((frame, i) => (
       <div
         key={i}
-        className="flex flex-row bg-slate-100 shadow-sm px-4 py-2 justify-between flex-1 min-w-[200px] max-w-[300px]"
+        className="flex flex-row bg-white shadow-xl px-4 py-2 justify-between flex-1 min-w-[200px] max-w-[300px]"
       >
         <div className="flex flex-row gap-2 mt-3 items-center whitespace-nowrap">
           <img
@@ -647,14 +647,24 @@ useEffect(()=>{
         </div>
       </div>
     ))}
+    <div className='hidden md:flex py-6 '>
+    <img
+      src="/Highlight.svg"
+      className=" absolute w-28 z-30 mt-9 lg:left-[420px] top-[-110px]"
+      alt="highlight"
+    />
+
   </div>
+  </div>
+  
+    
 
   {/* Mobile view */}
-  <div className="md:hidden grid grid-cols-1 sm:grid-cols-2 gap-4">
+  <div className=" md:hidden grid grid-cols-1 sm:grid-cols-2 md:py-8 gap-4">
     {frames.map((frame, i) => (
       <div
         key={i}
-        className="flex flex-row bg-slate-100 shadow-sm px-4 py-2 justify-start items-center gap-2"
+        className="flex flex-row bg-slate-100  shadow-sm px-4 py-2 justify-start items-center gap-2"
       >
         <img
           src="/F1.svg"
@@ -682,11 +692,11 @@ useEffect(()=>{
   </div>
 
   {/* Card Grid */}
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto">
-    {cards.map((card, i) => (
+  <div className="grid gird-col-1 md:grid-cols-2 justify-between gap-6 sm:gap-8 max-w-6xl mx-auto">
+    {cards.slice(0, 4).map((card, i) => (
       <div
         key={i}
-        className={`relative overflow-hidden shadow-lg  h-auto min-h-[250px] sm:min-h-[300px] lg:min-h-[320px] ${
+        className={`relative overflow-hidden shadow-lg  h-auto ${i==0 || i==3 ? "h-[200px] " : " h-[300px"} ${
           card.type === "solid" ? `${card.bg} flex items-center justify-center p-6 sm:p-8` : ""
         }`}
       >
@@ -725,7 +735,9 @@ useEffect(()=>{
         )}
       </div>
     ))}
+    
   </div>
+  
 </section>
 
 
@@ -837,11 +849,11 @@ useEffect(()=>{
   <div className="flex flex-col lg:flex-row items-center md:ml-16 justify-between gap-10 px-4 sm:px-8">
     {/* Text + First Card Column */}
     <div className="w-full lg:w-1/2 py-8">
-      <h2 className="text-4xl font-extralight font-kumbh text-gray-900 mb-2">
+      <h2 className="text-4xl md:ml-8  font-bold font-kumbh text-gray-900 mb-2">
         Featured Solutions
       </h2>
 
-      <p className="text-gray-600 text-base mt-6 sm:text-lg max-w-2xl">
+      <p className="text-gray-600 md:ml-8 text-base mt-6 sm:text-lg max-w-2xl">
         Opinionated, production-ready solutions that turn <br /> AI, Cloud & Data into outcomes fast.
       </p>
 
