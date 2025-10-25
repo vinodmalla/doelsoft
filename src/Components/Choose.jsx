@@ -1,66 +1,66 @@
 import React from 'react'
-import { Settings, DollarSign, Target, Box, Award, Globe } from "lucide-react";
-import { Star, Lightbulb, ShieldCheck, Users,ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, DollarSign, Target, Box, Award, Globe } from "lucide-react";
+
 function Choose() {
     const features = [
   {
-    icon: <Settings className="w-10 h-10 text-red-600" />,
+    icon: <img src="/feature1.svg" className="w-10 h-10 text-red-600" />,
     title: "Agile Transformation",
     desc: "Modernizing business processes for flexibility and speed.",
   },
   {
-    icon: <DollarSign className="w-10 h-10 text-black" />,
+    icon: <img src="/feature2.svg" className="w-10 h-10 text-black" />,
     title: "Cost Reduction & Resource Optimization",
     desc: "Delivering value-driven solutions while maximizing efficiency.",
   },
   {
-    icon: <Target className="w-10 h-10 text-red-600" />,
+    icon: <img src="/feature3.svg" className="w-10 h-10 text-red-600" />,
     title: "Customer–Centric Solutions",
     desc: "Tailored strategies focused on achieving your business goals.",
   },
   {
-    icon: <Box className="w-10 h-10 text-red-600" />,
+    icon: <img src="/feature4.svg" className="w-10 h-10 text-red-600" />,
     title: "Customized Engagement Models",
     desc: "Flexible frameworks aligned to your unique needs.",
   },
   {
-    icon: <Award className="w-10 h-10 text-red-600" />,
+    icon: <img src="/feature5.svg" className="w-10 h-10 text-red-600" />,
     title: "Top–Class Quality Services",
     desc: "Excellence in every service we provide.",
   },
   {
-    icon: <Globe className="w-10 h-10 text-black" />,
+    icon: <img src="/feature6.svg" className="w-10 h-10 text-black" />,
     title: "Offshoring & Cost–Effective Solutions",
     desc: "Leveraging global talent to deliver high-quality outcomes.",
   },
 ];
 const coreValues = [
   {
-    icon: <Star className="w-10 h-10 text-red-600" />,
+    icon: <img src='/core1.svg' className="w-10 h-10 text-red-600" />,
     title: "Excellence",
     desc: "Delivering the highest quality in every project.",
     bg: "bg-gray-200",
   },
   {
-    icon: <Lightbulb className="w-10 h-10 text-red-600" />,
+    icon:  <img src='/core2.svg' className="w-10 h-10 text-red-600" />,
     title: "Innovation",
     desc: "Continuously adopting advanced technologies and creative solutions.",
     bg: "border border-red-600",
   },
   {
-    icon: <ShieldCheck className="w-10 h-10 text-red-600" />,
+    icon:  <img src='/core3.svg' className="w-10 h-10 text-red-600" />,
     title: "Integrity",
     desc: "Transparent, honest, and ethical business practices.",
     bg: "bg-gray-200",
   },
   {
-    icon: <Users className="w-10 h-10 text-red-600" />,
+    icon:  <img src='/core4.svg' className="w-10 h-10 text-red-600" />,
     title: "Collaboration",
     desc: "Building strong partnerships with clients for long-term success.",
     bg: "border border-red-600",
   },
   {
-    icon: <Target className="w-10 h-10 text-red-600" />,
+    icon: <img src='/core5.svg' className="w-10 h-10 text-red-600" />,
     title: "Customer Focus",
     desc: "Ensuring every solution is aligned with client goals and adds real value.",
     bg:"bg-gray-200",
@@ -103,11 +103,11 @@ return (
         <section className="w-full bg-[#F3F3F3]">
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 max-w-7xl mx-auto">
                 <div className="flex-1 space-y-6 mt-10">
-                    <h1 className="text-4xl font-extralight text-black mt-4 ml-10">
+                    <h1 className="text-4xl font-extralight text-black mt-4 ml-10 md:ml-2">
                       Doelsoft – Innovating Technology,<br/>Empowering Businesses
 
                     </h1>
-                    <p className="text-start font-light text-black mt-12 ml-10">
+                    <p className="text-start font-light text-black mt-12 ml-10 md:ml-2">
                         Doelsoft is a leading software development and business consulting company, with a strong presence in India and the USA, delivering innovative solutions that help businesses stand out in a competitive global landscape. We specialize in software development, digital transformation, consulting, and tailor-made solutions that drive growth, efficiency, and long-term success.
                         <br /><br />
                         At Doelsoft, we turn challenges into opportunities. Our team works closely with clients to resolve complex issues, scale operations efficiently, and implement innovative strategies that accelerate business growth. We aim to transform every business vision into reality, leveraging technologically advanced solutions, expert professionals, and a commitment to excellence.
@@ -120,16 +120,16 @@ return (
         </section>
      <section className="w-full overflow-hidden">
   <div className="p-6 sm:p-8 md:p-10 md:ml-10 relative max-w-7xl mx-auto">
-    <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-6 text-center md:text-left">
+    <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-6 md:ml-14 text-center md:text-left">
       Key Benefits We Deliver
     </h1>
 
-    <div className="space-y-6 md:ml-0">
+    <div className="space-y-6 md:ml-14">
       {/* Card 1 */}
       <div className="bg-white p-4 flex flex-col sm:flex-row items-start sm:items-center gap-4 rounded-lg shadow-sm">
         <img
-          src="./Trustworthy.svg"
-          className="w-10 h-10 mx-auto p-1 border border-black sm:mx-0"
+          src="./key1.svg"
+          className="w-14 h-14 mx-auto p-3 border bg-white sm:mx-0"
           alt="Client-Centric Approach"
         />
         <div className="text-center sm:text-left">
@@ -146,8 +146,8 @@ return (
       {/* Card 2 */}
       <div className="bg-white p-4 flex flex-col sm:flex-row items-start sm:items-center gap-4 rounded-lg shadow-sm">
         <img
-          src="./Stewardship.svg"
-          className="w-10 h-10 mx-auto p-1 border border-black sm:mx-0"
+          src="./key2.svg"
+          className="w-14 h-14 mx-auto p-3 border bg-white sm:mx-0"
           alt="Stewardship"
         />
         <div className="text-center sm:text-left">
@@ -164,8 +164,8 @@ return (
       {/* Card 3 */}
       <div className="bg-white p-4 flex flex-col sm:flex-row items-start sm:items-center gap-4 rounded-lg shadow-sm relative">
         <img
-          src="./Credibility.svg"
-          className="w-10 h-10 mx-auto p-1 border border-black sm:mx-0"
+          src="./key3.svg"
+          className="w-14 h-14 mx-auto p-3 border bg-white sm:mx-0"
           alt="Dedicated Expert Team"
         />
         <div className="text-center sm:text-left">
@@ -185,8 +185,8 @@ return (
       {/* Card 4 */}
       <div className="bg-white p-4 flex flex-col sm:flex-row items-start sm:items-center gap-4 rounded-lg shadow-sm relative">
         <img
-          src="./Respect.svg"
-    className="w-10 h-10 mx-auto p-1 border border-black sm:mx-0"
+          src="./key4.svg"
+    className="w-14 h-14 mx-auto p-3 border bg-white sm:mx-0"
           alt="Global Delivery"
         />
         <div className="text-center sm:text-left">
@@ -206,8 +206,8 @@ return (
       {/* Card 5 */}
       <div className="bg-white p-4 flex flex-col sm:flex-row items-start sm:items-center gap-4 rounded-lg shadow-sm">
         <img
-          src="./Respect.svg"
-          className="w-10 h-10 mx-auto p-1 border border-black sm:mx-0"
+          src="./key5.svg"
+          className="w-14 h-14 mx-auto p-3 border bg-white sm:mx-0"
           alt="Holistic Business Growth"
         />
         <div className="text-center sm:text-left">
@@ -228,7 +228,7 @@ return (
         <section className="w-full bg-gray-50 py-10 " style={{marginTop:"0px"}}>
             <div className="max-w-7xl mx-auto px-6">
                 {/* Heading */}
-                <h2 className="text-2xl md:text-4xl font-kumbh  mb-12">
+                <h2 className="text-2xl md:text-4xl font-bold font-kumbh  mb-12">
                     Why Doelsoft is Your Trusted Partner
                 </h2>
 
@@ -237,7 +237,7 @@ return (
                     {features.map((item, index) => (
                         <div
                             key={index}
-                            className="bg-white shadow-lg rounded-lg p-10 flex flex-col gap-2 hover:shadow-md transition"
+                            className="bg-white shadow-lg p-10 flex flex-col gap-2 hover:shadow-md transition"
                         >
                             {/* Icon and Title in a row */}
                             <div className="flex items-center gap-4 mb-2">
@@ -255,7 +255,7 @@ return (
          <section className="w-full bg-[#f3f3f3] py-12">
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-light mb-12">Our Core Values</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-12">Our Core Values</h2>
 
         {/* Cards + Image */}
         <div className="grid grid-cols-1 gap-10">
@@ -316,17 +316,17 @@ return (
    {/* Decorative Vectors */}
    <img
      src="/Vectors.svg"
-     alt=""
+     alt="vector"
      className="absolute left-6 sm:left-14 top-8 sm:top-10 h-20 sm:h-28 md:h-32 w-20 sm:w-28 md:w-32 object-contain opacity-70 z-30"
    />
    <img
      src="/left.svg"
-     alt=""
+     alt="left"
      className="absolute left-10 sm:left-20 bottom-10 sm:top-72 w-3 sm:w-4 object-contain opacity-70 z-30"
    />
    <img
      src="/right.svg"
-     alt=""
+     alt="right"
      className="absolute right-10 sm:right-40 lg:right-72 top-6 sm:top-12 w-10 sm:w-16 md:w-20 object-contain opacity-70 z-30"
    />
  

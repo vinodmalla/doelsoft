@@ -17,7 +17,7 @@ function Rpo() {
   <div className="relative z-10 flex-1 flex flex-col items-start space-y-6 justify-center text-center md:text-left">
       <h1 className="text-lg md:text-xl font-semibold text-gray-800">Talent Hub</h1>
     <h2 className="text-3xl md:text-5xl font-bold text-red-600 mt-2">
-      Permanent Hiring
+      RPO
     </h2>
 
     <button className="py-2 px-5 border border-black ml-[45px] md:ml-[9px]  text-black hover:bg-gray-200 transition-all duration-200 ">
@@ -28,52 +28,52 @@ function Rpo() {
   {/* Right Image */}
   <div className="mt-10 md:mt-0 md:flex-1 flex justify-center md:justify-end relative z-0">
     <img
-      src="/Carrers.svg"
+      src="/rpo.svg"
       alt="Team"
       className="w-72 sm:w-80 md:w-[420px] lg:w-[500px] h-auto object-contain"
     />
   </div>
 </section>
-       <section className="w-full bg-[#F4F6FB] py-12">
+       <section className="w-full bg-white py-12">
   <div className="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-6">
     
     {/* Text Content */}
     <div className="md:w-1/2">
       <h1 className="text-3xl font-kumbh text-black font-light">
-        Permanent Hiring <span className="font-semibold">Building Your Core Team</span>
+       RPO (Recruitment Process Outsourcing)
+ <span className="font-semibold">End-to-End Hiring Excellence</span>
       </h1>
       <p className="text-gray-700 mt-4 leading-relaxed">
-        Sustainable success comes from building a strong foundation of permanent talent. 
-        Our hiring solutions go beyond resumes. We assess candidates for technical expertise, 
-        cultural alignment, and long-term value to your organization.
+        Hiring doesn’t have to drain your time and resources. With Doelsoft’s customized RPO solutions, we act as a seamless extension of your HR team, 
+        managing everything from talent sourcing to onboarding — with measurable cost savings and faster turnaround.
       </p>
 
       <h2 className="text-xl font-semibold text-black mt-6">
-        Why Doelsoft Stands Out:
+        Why Doelsoft RPO Works:
       </h2>
       <ul className="space-y-3 mt-4">
         <li className="flex items-start">
           <img src="/logo4.svg" alt="" className="h-5 w-5 mr-3 mt-1" />
           <span className="text-black">
-            Talent mapping to identify the right fit, not just a quick match
+            Flexible models tailored to your business goals
           </span>
         </li>
         <li className="flex items-start">
           <img src="/logo4.svg" alt="" className="h-5 w-5 mr-3 mt-1" />
           <span className="text-black">
-            Emphasis on reducing attrition and wrong hires
+             Data-driven insights for smarter hiring decisions
           </span>
         </li>
         <li className="flex items-start">
           <img src="/logo4.svg" alt="" className="h-5 w-5 mr-3 mt-1" />
           <span className="text-black">
-            Focus on stability and leadership potential
+            Cost savings with a faster time-to-hire
           </span>
         </li>
         <li className="flex items-start">
           <img src="/logo4.svg" alt="" className="h-5 w-5 mr-3 mt-1" />
           <span className="text-black">
-            Proven success across industries in building high-performing teams
+             Full accountability for process, quality, and results
           </span>
         </li>
       </ul>
@@ -82,9 +82,9 @@ function Rpo() {
       <div className="mt-8">
         <a
           href="#"
-          className="inline-block bg-[#E10000] text-white font-medium px-6 py-3 rounded-md hover:bg-red-600 transition"
+          className="inline-block bg-[#E10000] text-white font-medium px-6 py-3 hover:bg-red-600 transition"
         >
-          Hire once, hire right with Doelsoft permanent staffing.
+          Outsource the process. Keep the control. With Doelsoft RPO.
         </a>
       </div>
     </div>
@@ -92,19 +92,19 @@ function Rpo() {
     {/* Image */}
     <div className="md:w-1/2 mt-10 md:mt-0 flex justify-center">
       <img
-        src="/permanent-hiring.jpg"
+        src="/Rpohiring.svg"
         alt="Smiling professional holding 'We Are Hiring' sign"
         className="w-full max-w-md h-auto object-contain"
       />
     </div>
   </div>
 </section>
-  <section className="py-10 bg-[#F3F3F3] w-[#1440px] h-[#576px] text-start  font-sans">
-      <h1 className="text-4xl font-bold ml-10 text-black mb-4">
+   <section className="py-10 bg-[#F3F3F3] w-[#1440px] h-[#576px] text-start  font-sans">
+      <h1 className="text-4xl font-bold md:ml-32 text-black mb-4">
         Why Doelsoft?
       </h1>
-      <p className="text-lg text-black ml-10 mb-10 max-w-3xl mx-auto">
-        When it comes to recruitment, we don't just deliver candidates we deliver confidence.
+      <p className="text-lg text-black ml-10 md:ml-32 mb-10 max-w-3xl mx-auto">
+      When it comes to recruitment, we don’t just deliver candidates we deliver confidence.
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-7xl mx-auto">
         <div className="border border-black p-10 mx-10  md:mx-auto md:w-[#294px] h-[#255px]  text-left">

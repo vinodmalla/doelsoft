@@ -35,47 +35,45 @@ function Permanent() {
     />
   </div>
 </section>
-       <section className="w-full bg-[#F4F6FB] py-12">
+       <section className="w-full  bg-[#F4F6FB] py-12" style={{marginBottom:"-25px"}}>
   <div className="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-6">
     
     {/* Text Content */}
     <div className="md:w-1/2">
       <h1 className="text-3xl font-kumbh text-black font-light">
-        RPO (Recruitment Process Outsourcing)<br/>
-End-to-End Hiring Excellence
+        Permanent Hiring  Building Your Core Team<br/>
+
       </h1>
       <p className="text-gray-700 mt-4 leading-relaxed">
-       Hiring doesn’t have to drain your time and resources. With Doelsoft’s customized RPO solutions,
-        we act as a seamless extension of your HR team,
-        managing everything from talent sourcing to onboarding — with measurable cost savings and faster turnaround.
+       Sustainable success comes from building a strong foundation of permanent talent. Our hiring solutions go beyond resumes. we assess candidates for technical expertise, cultural alignment, and long-term value to your organization.
       </p>
 
       <h2 className="text-xl font-semibold text-black mt-6">
-        Why Doelsoft RPO Works:
+        Why Doelsoft Stands Out:
       </h2>
       <ul className="space-y-3 mt-4">
         <li className="flex items-start">
           <img src="/logo4.svg" alt="" className="h-5 w-5 mr-3 mt-1" />
           <span className="text-black">
-            Flexible models tailored to your business goals
+           Talent mapping to identify the right fit, not just a quick match
           </span>
         </li>
         <li className="flex items-start">
           <img src="/logo4.svg" alt="" className="h-5 w-5 mr-3 mt-1" />
           <span className="text-black">
-             Data-driven insights for smarter hiring decisions
+            Emphasis on reducing attrition and wrong hires
           </span>
         </li>
         <li className="flex items-start">
           <img src="/logo4.svg" alt="" className="h-5 w-5 mr-3 mt-1" />
           <span className="text-black">
-           Cost savings with a faster time-to-hire
+           Focus on stability and leadership potential
           </span>
         </li>
         <li className="flex items-start">
           <img src="/logo4.svg" alt="" className="h-5 w-5 mr-3 mt-1" />
           <span className="text-black">
-            Full accountability for process, quality, and results
+            Proven success across industries in building high-performing teams
           </span>
         </li>
       </ul>
@@ -101,40 +99,44 @@ End-to-End Hiring Excellence
     </div>
   </div>
 </section>
-<section className="py-10 bg-[#F3F3F3] w-full max-w-[1440px] mt-[2px] min-h-[576px] text-start font-sans mx-auto px-4" style={{marginTop:"0px"}}>
-  <h1 className="text-3xl sm:text-4xl font-bold ml-4 sm:ml-10 text-black mb-4">
-    Why Doelsoft?
-  </h1>
-  <p className="text-base sm:text-lg text-black ml-4 sm:ml-10 mb-10 max-w-3xl">
-    When it comes to recruitment, we don't just deliver candidates we deliver confidence.
-  </p>
-
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 max-w-6xl mx-auto">
-    <div className="border border-black p-6 sm:p-10 w-full sm:w-[390px] h-auto sm:h-[255px] text-left bg-white">
-      <img src={"./Tailored.svg"} alt="Tailored" className="w-10 h-10 mb-4" />
-      <h3 className="text-lg font-bold mb-2">Tailored Approach</h3>
-      <p>Every solution is designed to match your unique challenges.</p>
-    </div>
-
-    <div className="border border-black p-6 sm:p-10 w-full sm:w-[294px] h-auto sm:h-[255px] text-left bg-white">
-      <img src={"./Unmatched.svg"} alt="Unmatched" className="w-10 h-10 mb-4" />
-      <h3 className="text-lg font-bold mb-2">Unmatched Quality</h3>
-      <p>Strict screening ensures only the best reach you.</p>
-    </div>
-
-    <div className="border border-black p-6 sm:p-10 w-full sm:w-[294px] h-auto sm:h-[255px] text-left bg-white">
-      <img src={"./Precision.svg"} alt="Precision" className="w-10 h-10 mb-4" />
-      <h3 className="text-lg font-bold mb-2">Speed with Precision</h3>
-      <p>Fast closures without compromising fit.</p>
-    </div>
-
-    <div className="border border-black p-6 sm:p-10 w-full sm:w-[294px] h-auto sm:h-[255px] text-left bg-white">
-      <img src={"./Partnership.svg"} alt="Partnership" className="w-10 h-10 mb-4" />
-      <h3 className="text-lg font-bold mb-2">Long-Term Partnership</h3>
-      <p>More than a vendor, we are your hiring ally.</p>
-    </div>
-  </div>
-</section>
+<section className="py-10 bg-[#F3F3F3] w-[#1440px] h-[#576px] text-start  font-sans">
+      <h1 className="text-4xl font-bold ml-10 text-black mb-4">
+        Why Doelsoft?
+      </h1>
+      <p className="text-lg text-black ml-10 mb-10 max-w-3xl mx-auto">
+      When it comes to recruitment, we don’t just deliver candidates we deliver confidence.
+      </p>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-7xl mx-auto">
+        <div className="border border-black p-10 mx-10  md:mx-auto md:w-[#294px] h-[#255px]  text-left">
+          <img src={"./Tailored.svg"} className="w-10 h-10 mb-4" />{/* Replace with actual icon, e.g., from react-icons */}
+          <h3 className="text-lg font-bold mb-2">
+            Tailored Approach
+          </h3>
+          <p>Every solution is designed to match your unique challenges.</p>
+        </div>
+        <div className="border border-black mx-10  md:mx-auto p-10 w-[#294px] h-[#255px] text-left">
+           <img src={"./Unmatched.svg"} className="w-10 h-10 mb-4" /> {/* Replace with checkmark icon */}
+          <h3 className="text-lg font-bold mb-2">
+            Unmatched Quality
+          </h3>
+          <p>Strict screening ensures only the best reach you.</p>
+        </div>
+        <div className="border border-black mx-10  md:mx-auto  p-10 w-[#294px] h-[#255px] text-left">
+            <img src={"./Precision.svg"} className="w-10 h-10 mb-4" />{/* Replace with target icon */}
+          <h3 className="text-lg font-bold mb-2">
+            Speed with Precision
+          </h3>
+          <p>Fast closures without compromising fit.</p>
+        </div>
+        <div className="border border-black mx-10 md:mx-auto p-10 w-[#294px] h-[#255px]  text-left">
+           <img src={"./Partnership.svg"} className="w-10 h-10 mb-4" /> {/* Replace with handshake icon */}
+          <h3 className="text-lg font-bold mb-2">
+            Long-Term Partnership
+          </h3>
+          <p>More than a vendor, we are your hiring ally.</p>
+        </div>
+      </div>
+    </section>
 
              <section
             className="relative w-full  bg-cover bg-center text-center py-16   sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"

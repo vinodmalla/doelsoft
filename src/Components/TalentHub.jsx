@@ -57,27 +57,27 @@ function TalentHub() {
   <div className="relative w-full max-w-5xl mt-12 px-4">
     {/* Top Left */}
     <img
-      src={img2}
+      src={img1}
       alt="profile1"
-      className="absolute -top-80 left-2 sm:-top-72 sm:left-8 md:-top-80 md:left-0 w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full object-cover"
+      className="absolute -top-80 left-2 sm:-top-72 sm:left-8 md:-top-80 md:-left-24 w-20 h-20 sm:w-24 sm:h-24 md:w-20 md:h-20 rounded-full object-cover"
     />
     {/* Middle Left */}
     <img
-      src={img1}
+      src={img3}
       alt="profile2"
-      className="absolute top-1 left-4 sm:-top-8 sm:-left-4 md:-top-8 md:-left-0 w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full object-cover"
+      className="absolute top-1 left-4 sm:-top-8 sm:-left-4 md:-top-8 md:-left-36 w-20 h-20 sm:w-24 sm:h-24 md:w-24 md:h-24 rounded-full object-cover"
     />
     {/* Top Right */}
     <img
-      src={img3}
+      src={img2}
       alt="profile3"
-      className="absolute -top-80 right-2 sm:-top-72 sm:right-8 md:-top-80 md:right-0 w-16 h-20 sm:w-24 sm:h-24 md:w-24 md:h-24 rounded-full object-cover"
+      className="absolute -top-80 right-2 sm:-top-72 sm:right-8 md:-top-80 md:-right-24 w-16 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full object-cover"
     />
     {/* Bottom Right */}
     <img
       src={img4}
       alt="profile4"
-      className="absolute -bottom-20 right-4 sm:-top-4 md:-top-8 md:right-4 w-29 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full object-cover"
+      className="absolute -bottom-20 right-4 sm:-top-4 md:-top-14 md:-right-24 w-29 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 rounded-full object-cover"
     />
     {/* Bottom Center */}
     <img
@@ -107,7 +107,7 @@ function TalentHub() {
       </div>
 
       {/* Services Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center gap-8 justify-items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center gap-1 md:mr-7 justify-items-center">
         {services.slice(0,3).map((service) => (
           <div
             key={service.id}
@@ -126,7 +126,7 @@ function TalentHub() {
 
         
       </div>
-      <div className="grid grid-cols-1 md:flex flex-row justify-evenly py-10 ">
+      <div className="md:ml-72 grid grid-cols-1 md:grid-cols-2 md:mr-52 py-14">
         {services.slice(3).map((service) => (
           <div
             key={service.id}
@@ -145,13 +145,13 @@ function TalentHub() {
       </div>
       </section>
       <section className="py-10 bg-[#F3F3F3] w-[#1440px] h-[#576px] text-start  font-sans">
-      <h1 className="text-4xl font-bold ml-10 text-black mb-4">
+      <h1 className="text-4xl md:ml-32 font-bold ml-10 text-black mb-4">
         Why Doelsoft?
       </h1>
-      <p className="text-lg text-black ml-10 mb-10 max-w-3xl mx-auto">
+      <p className="text-lg text-black ml-10 md:ml-32 mb-10 max-w-3xl mx-auto">
         When it comes to recruitment, we don't just deliver candidates we deliver confidence.
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 md:ml-32 max-w-7xl mx-auto">
         <div className="border border-black p-10 mx-10  md:mx-auto md:w-[#294px] h-[#255px]  text-left">
           <img src={"./Tailored.svg"} className="w-10 h-10 mb-4" />{/* Replace with actual icon, e.g., from react-icons */}
           <h3 className="text-lg font-bold mb-2">
@@ -161,7 +161,7 @@ function TalentHub() {
         </div>
         <div className="border border-black mx-10  md:mx-auto p-10 w-[#294px] h-[#255px] text-left">
            <img src={"./Unmatched.svg"} className="w-10 h-10 mb-4" /> {/* Replace with checkmark icon */}
-          <h3 className="text-lg font-bold mb-2">
+          <h3 className="text-lg  font-bold mb-2">
             Unmatched Quality
           </h3>
           <p>Strict screening ensures only the best reach you.</p>
@@ -183,7 +183,7 @@ function TalentHub() {
       </div>
     </section>
    
-  <div className="p-6 sm:p-8 md:p-10 lg:p-12 ml-4 sm:ml-8 md:ml-10">
+  <div className="p-6 sm:p-8 md:p-10 lg:p-12 ml-4 sm:ml-8 md:ml-20">
   <h1 className="text-2xl sm:text-3xl md:text-3xl font-bold text-gray-800 mb-4 text-center md:text-left">
     Our Core Values at Doelsoft
   </h1>
@@ -197,7 +197,7 @@ function TalentHub() {
   <div className="space-y-6 ml-0 sm:ml-6 md:ml-14">
     {/* Trustworthy */}
     <div className="bg-white p-4 flex flex-col sm:flex-row items-start gap-4">
-      <img src={"./Trustworthy.svg"} className="w-10 h-10 mx-auto p-1 border border-black sm:mx-0" alt="Trustworthy" />
+      <img src={"./Result.svg"} className="w-14 h-14 mx-auto p-2 border border-black sm:mx-0" alt="Trustworthy" />
       <div>
         <h3 className="text-black text-lg font-semibold text-center sm:text-left">
           Trustworthy — Dependable in Every Step
@@ -212,7 +212,7 @@ function TalentHub() {
 
     {/* Stewardship */}
     <div className="bg-white p-4 flex flex-col sm:flex-row items-start gap-4">
-      <img src={"./Stewardship.svg"} className="w-10 h-10 mx-auto p-1 border border-black sm:mx-0" alt="Stewardship" />
+      <img  src={"./Trustworthy.svg"} className="w-14 h-14 mx-auto p-2 border border-black sm:mx-0" alt="Stewardship" />
       <div>
         <h3 className="text-black text-lg font-semibold text-center sm:text-left">
           Stewardship — Taking Responsibility, Driving Results
@@ -227,7 +227,7 @@ function TalentHub() {
 
     {/* Credibility */}
     <div className="bg-white p-4 flex flex-col sm:flex-row items-start gap-4">
-      <img src={"./Credibility.svg"} className="w-10 h-10 mx-auto p-1 border border-black sm:mx-0" alt="Credibility" />
+      <img  src={"./Stewardship.svg"} className="w-14 h-14 mx-auto p-2 border border-black sm:mx-0" alt="Credibility" />
       <div>
         <h3 className="text-black text-lg font-semibold text-center sm:text-left">
           Credibility — Trust Built on Action
@@ -242,7 +242,7 @@ function TalentHub() {
 
     {/* Respect */}
     <div className="bg-white p-4 flex flex-col sm:flex-row items-start gap-4">
-      <img src={"./Respect.svg"} className="w-10 h-10 mx-auto p-1 border border-black sm:mx-0" alt="Respect" />
+      <img src={"./Credibility.svg"}  className="w-14 h-14 mx-auto p-2 border border-black sm:mx-0" alt="Respect" />
       <div>
         <h3 className="text-black text-lg font-semibold text-center sm:text-left">
           Respect — People First, Always
@@ -257,7 +257,7 @@ function TalentHub() {
 
     {/* Result-Oriented */}
     <div className="bg-white p-4 flex flex-col sm:flex-row items-start gap-4">
-      <img src={"./Respect.svg"} className="w-10 h-10 mx-auto border border-black p-1 sm:mx-0" alt="Result-Oriented" />
+      <img src={"./Respect.svg"}className="w-14 h-14 mx-auto p-2 border border-black  sm:mx-0" alt="Result-Oriented" />
       <div>
         <h3 className="text-black text-lg font-semibold text-center sm:text-left">
           Result-Oriented — Excellence You Can Measure

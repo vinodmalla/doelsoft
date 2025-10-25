@@ -54,12 +54,12 @@ function Executive() {
       className="relative bg-cover bg-center py-20 px-6 md:px-12 lg:px-24"
       style={{ backgroundImage: "url('/Ex_back.svg')" }} // Replace with your background image path
     >
-      <div className="max-w-6xl mx-auto text-center text-black">
+      <div className="max-w-6xl md:ml-14 text-black">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
           Executive Search Finding Leaders Who Inspire
         </h2>
-        <p className="text-gray-600 max-w-3xl mx-auto mb-10">
+        <p className="text-gray-600 text-start max-w-3xl  mb-10">
           Every successful business is led by visionary leaders. Through our
           executive search practice, we identify and secure top-tier leaders who
           can set strategy, drive growth, and inspire performance across your
@@ -87,8 +87,8 @@ function Executive() {
         </div>
 
         {/* CTA Button */}
-        <div className="flex justify-center">
-          <button className="bg-black text-white px-6 py-3 rounded-none flex items-center gap-2 hover:bg-gray-900 transition">
+        <div className="flex ">
+          <button className="bg-black text-white px-6 py-3 rounded-none flex  gap-2 hover:bg-gray-900 transition">
             Secure leaders who define the future with Doelsoft.
             <ArrowUpRight size={18} />
           </button>

@@ -33,7 +33,7 @@ return (
   </div>
 </section>
         <section className="w-full mx-auto bg-pink-200 px-4 sm:px-6 lg:px-8 py-12">
-  <div className="space-y-6 ml-0 sm:ml-6 md:ml-10 text-center md:text-left">
+  <div className="space-y-6 ml-0 sm:ml-6 md:ml-24 text-center md:text-left">
     <h1 className="text-2xl sm:text-3xl font-bold">
       Contract & Temporary Hiring — Agility When You Need It
     </h1>
@@ -104,7 +104,7 @@ return (
   </div>
 </section>
 
-      <div className="p-6 sm:p-8 md:p-10 lg:p-12 ml-4 sm:ml-8 md:ml-10">
+  <div className="p-6 sm:p-8 md:p-10 lg:p-12 ml-4 sm:ml-8 md:ml-20">
   <h1 className="text-2xl sm:text-3xl md:text-3xl font-bold text-gray-800 mb-4 text-center md:text-left">
     Our Core Values at Doelsoft
   </h1>
@@ -118,7 +118,7 @@ return (
   <div className="space-y-6 ml-0 sm:ml-6 md:ml-14">
     {/* Trustworthy */}
     <div className="bg-white p-4 flex flex-col sm:flex-row items-start gap-4">
-      <img src={"./Trustworthy.svg"} className="w-10 h-10 p-1 border border-black mx-auto sm:mx-0" alt="Trustworthy" />
+      <img src={"./Result.svg"} className="w-14 h-14 mx-auto p-2 border border-black sm:mx-0" alt="Trustworthy" />
       <div>
         <h3 className="text-black text-lg font-semibold text-center sm:text-left">
           Trustworthy — Dependable in Every Step
@@ -133,7 +133,7 @@ return (
 
     {/* Stewardship */}
     <div className="bg-white p-4 flex flex-col sm:flex-row items-start gap-4">
-      <img src={"./Stewardship.svg"} className="w-10 h-10 mx-auto p-1 border border-black sm:mx-0" alt="Stewardship" />
+      <img  src={"./Trustworthy.svg"} className="w-14 h-14 mx-auto p-2 border border-black sm:mx-0" alt="Stewardship" />
       <div>
         <h3 className="text-black text-lg font-semibold text-center sm:text-left">
           Stewardship — Taking Responsibility, Driving Results
@@ -148,7 +148,7 @@ return (
 
     {/* Credibility */}
     <div className="bg-white p-4 flex flex-col sm:flex-row items-start gap-4">
-      <img src={"./Credibility.svg"} className="w-10 h-10 mx-auto p-1 border border-black sm:mx-0" alt="Credibility" />
+      <img  src={"./Stewardship.svg"} className="w-14 h-14 mx-auto p-2 border border-black sm:mx-0" alt="Credibility" />
       <div>
         <h3 className="text-black text-lg font-semibold text-center sm:text-left">
           Credibility — Trust Built on Action
@@ -163,7 +163,7 @@ return (
 
     {/* Respect */}
     <div className="bg-white p-4 flex flex-col sm:flex-row items-start gap-4">
-      <img src={"./Respect.svg"} className="w-10 h-10 mx-auto p-1 border border-black sm:mx-0" alt="Respect" />
+      <img src={"./Credibility.svg"}  className="w-14 h-14 mx-auto p-2 border border-black sm:mx-0" alt="Respect" />
       <div>
         <h3 className="text-black text-lg font-semibold text-center sm:text-left">
           Respect — People First, Always
@@ -178,7 +178,7 @@ return (
 
     {/* Result-Oriented */}
     <div className="bg-white p-4 flex flex-col sm:flex-row items-start gap-4">
-      <img src={"./Respect.svg"} className="w-10 h-10 mx-auto p-1 border border-black sm:mx-0" alt="Result-Oriented" />
+      <img src={"./Respect.svg"}className="w-14 h-14 mx-auto p-2 border border-black  sm:mx-0" alt="Result-Oriented" />
       <div>
         <h3 className="text-black text-lg font-semibold text-center sm:text-left">
           Result-Oriented — Excellence You Can Measure
