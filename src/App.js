@@ -25,6 +25,7 @@ import UIUXDesign from './Components/UIUXDesign';
 import MuleSoftSolutions from './Components/MuleSoftSolutions';
 import IoTDevelopment from './Components/IoTDevelopment';
 import Embedded from './Components/Embedded';
+import QA from './Components/QA';
 
 function App() {
   return (
@@ -67,6 +68,7 @@ export const approuter = createBrowserRouter([
       { path: "/permanent", element: <Permanent /> },
       { path: "/excutive", element: <Executive /> },
       { path: "/rpo", element: <Rpo /> },
+      {path:"/servicesqa",element:<QA/>},
     ],
   },
 ]);

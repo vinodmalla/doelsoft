@@ -51,14 +51,14 @@ function Salesforce() {
       >
         {/* Left Content */}
         <div className="relative z-10 flex-1 flex flex-col space-y-6 items-start justify-center text-center md:text-left">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-red-600 leading-snug mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl md:ml-9 lg:text-6xl font-semibold text-red-600 leading-snug mb-6">
             Salesforce <br className="hidden sm:block" />
             <span className="block mt-2">Solutions</span>
           </h2>
 
-          <button className="py-2 px-5 border border-black mx-auto md:mx-0 text-black hover:bg-gray-200 transition-all duration-200">
-            Consult With Us <span className="ml-2">↗</span>
-          </button>
+           <button className="py-2 px-5 border border-black ml-[45px] md:ml-9  text-black hover:bg-gray-200 transition-all duration-200 ">
+      Consult With Us <span className="ml-2">↗</span>
+    </button>
         </div>
 
         {/* Right Image */}
@@ -74,16 +74,16 @@ function Salesforce() {
       {/* Transform Section */}
       <section className="mx-auto px-6 sm:px-12 md:px-24 py-16 bg-[#F4F6FB] grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <div className="space-y-6 text-center md:text-left">
-          <h2 className="text-2xl md:text-4xl font-extralight text-black">
+          <h2 className="text-2xl md:text-4xl md:ml-12 font-bold text-black">
             Transform Your Business with <br /> Doelsoft Salesforce Solutions
           </h2>
-          <p className="text-black text-base sm:text-lg leading-relaxed">
+          <p className="text-black text-base md:ml-12 sm:text-lg leading-relaxed">
             In today’s competitive market, customer relationships define
             success. At Doelsoft, we leverage the power of Salesforce CRM to help
             businesses improve customer engagement, automate processes, and
             accelerate growth.
           </p>
-          <p className="text-black text-base sm:text-lg leading-relaxed">
+          <p className="text-black text-base md:ml-12 sm:text-lg leading-relaxed">
             As a trusted Salesforce consulting and development partner in the USA
             & India, we deliver tailored CRM solutions that align with your
             business goals — whether you’re a startup or a large enterprise.
@@ -111,7 +111,7 @@ function Salesforce() {
 
         {/* Right Content */}
         <div className="space-y-8">
-          <h2 className="text-3xl sm:text-4xl font-extralight text-black leading-tight text-center md:text-left">
+          <h2 className="text-3xl sm:text-4xl font-bold text-black leading-tight text-center md:text-left">
             🌟 Our Salesforce Services
           </h2>
 
@@ -180,17 +180,17 @@ function Salesforce() {
 
       {/* Industries Section */}
       <section className="bg-[#F4F6FB] py-10">
-        <div className="px-6 sm:px-12 md:px-20 text-center md:text-left space-y-4">
-          <h1 className="text-3xl sm:text-4xl font-extralight">
+        <div className="px-6 sm:px-12 md:px-20 md:ml-16 text-center md:text-left space-y-4">
+          <h1 className="text-3xl sm:text-4xl font-bold">
             🏢 Industries We Empower with Salesforce
           </h1>
-          <p className="text-gray-600">
+          <p className="text-gray-600 md:ml-1">
             Doelsoft enables businesses across industries to unlock Salesforce
             potential:
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 py-10 px-6 sm:px-12 md:px-20 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 md:ml-16 py-10 px-6 sm:px-12 md:px-20 gap-6">
           {[
             {
               src: '/ecommerce.svg',
@@ -250,16 +250,16 @@ function Salesforce() {
 
       {/* Talent Pool Section */}
       <section className="bg-white py-12">
-        <div className="text-center px-6 sm:px-10 md:px-20 mb-10">
-          <h1 className="text-3xl sm:text-4xl font-extralight mb-4">
+        <div className="md:ml-14 px-6 sm:px-10 md:px-20 mb-10">
+          <h1 className="text-3xl sm:text-4xl font-bold mb-4">
             👨‍💻 Doelsoft Salesforce Talent Pool
           </h1>
-          <p className="text-base sm:text-lg text-gray-700">
+          <p className="text-base sm:text-lg md:ml-2 text-gray-700">
             Our Salesforce-certified experts ensure maximum ROI:
           </p>
         </div>
 
-        <div className="container mx-auto px-6 sm:px-10 md:px-20 grid gap-6 sm:grid-cols-2">
+        <div className="container mx-auto px-6 sm:px-10 md:px-20 md:ml-16 max-w-7xl grid gap-8 sm:grid-cols-2">
           {[
             {
               src: '/s1.svg',
@@ -300,14 +300,14 @@ function Salesforce() {
       </section>
 
       {/* Why Choose Section */}
-      <section className="bg-[#F4F6FB] py-12 px-6 sm:px-10 lg:px-20 font-sans">
+      <section className="bg-[#F4F6FB] py-12 px-6 sm:px-10 lg:px-20 font-sans" style={{marginBottom:"-44px"}}>
         <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-10">
           <div className="flex-1 space-y-6">
-            <h1 className="text-3xl sm:text-4xl font-extralight mb-6 text-center md:text-left">
+            <h1 className="text-3xl sm:text-4xl md:ml-2 font-bold md:whitespace-nowrap mb-6  text-center md:text-left">
               💡 Why Choose Doelsoft for Salesforce Services?
             </h1>
 
-            <div className="space-y-6">
+            <div className="space-y-6 mb:ml-5">
               {features.map((feature, index) => (
                 <div
                   key={index}
@@ -372,11 +372,11 @@ function Salesforce() {
                     {/* Main Content */}
                     <div className="relative max-w-3xl mx-auto text-white z-10 flex flex-col items-center justify-center space-y-5 sm:space-y-7 md:space-y-8">
                       <h2 className="text-xl sm:text-2xl md:text-4xl font-kumbh font-light leading-snug px-2">
-                        Let's Build the Future Together
+                       🌍 Unlock Salesforce Power with Doelsoft
                       </h2>
                   
                       <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-200 leading-relaxed px-2">
-                        Tells Us your goals.We'll design the runaway then deliver it with AI,Could and Data.
+                        👉 Partner with Doelsoft – Your Salesforce consulting and development company in the USA & India.
                       </p>
                   
                       <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-4 text-sm sm:text-lg  shadow-lg transition-all duration-300 ease-in-out">

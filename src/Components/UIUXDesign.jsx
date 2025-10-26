@@ -49,12 +49,12 @@ function UIUXDesign() {
                 }}
             >
                 <div className="relative z-10 flex-1 flex flex-col space-y-6 items-start justify-center text-center md:text-left">
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-red-600 leading-snug mb-6">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl md:ml-9 font-semibold text-red-600 leading-snug mb-6">
                         UI/UX Design <br className="hidden sm:block" />
                         <span className="block mt-2"> Services</span>
                     </h2>
 
-                    <button className="py-2 px-5 border border-black ml-[45px] md:ml-[9px] text-black hover:bg-gray-200 transition-all duration-200 ">
+                    <button className="py-2 px-5 border border-black ml-[45px] md:ml-9 text-black hover:bg-gray-200 transition-all duration-200 ">
                         Consult With Us <span className="ml-2">↗</span>
                     </button>
                 </div>
@@ -77,11 +77,11 @@ function UIUXDesign() {
 
         {/* Right Content */}
         <div className="space-y-8">
-          <h2 className="text-3xl ml-10 sm:text-4xl font-extralight text-black leading-tight text-center md:text-left">
+          <h2 className="text-3xl ml-10 sm:text-4xl font-bold md:ml-14 text-black leading-tight text-center md:text-left">
             🌟 Our UI/UX Design Services
           </h2>
 
-          <div className="space-y-6 ml-10">
+          <div className="space-y-6 ml-10 md:ml-16">
             {[
               {
                 src: "/m1.svg",
@@ -114,7 +114,7 @@ function UIUXDesign() {
                 desc: "Continuous monitoring, optimization, and issue resolution.",
               },
               {
-                src: "/m7.svg",
+                src: "/m4.svg",
                 title: "Custom Connectors & Extensions",
                 desc: "Build connectors tailored to your unique business systems.",
               },
@@ -151,11 +151,11 @@ function UIUXDesign() {
         </div>
       </section>
               <section className="bg-[#F4F6FB] py-10">
-        <div className="px-6 sm:px-12 md:px-20 text-center md:text-left space-y-4">
-          <h1 className="text-3xl sm:text-4xl font-extralight">🏢 Industries We Serve</h1>
-          <p className="text-gray-600">Doelsoft provides UI/UX design services for diverse industries, tailoring experiences to specific user needs:</p>
+        <div className="px-6 sm:px-12 md:ml-16 md:px-20 text-center md:text-left space-y-4">
+          <h1 className="text-3xl sm:text-4xl font-bold">🏢 Industries We Serve</h1>
+          <p className="text-gray-600 md:ml-2">Doelsoft provides UI/UX design services for diverse industries, tailoring experiences to specific user needs:</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 py-10 px-6 sm:px-12 md:px-20 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 md:ml-16 py-10 px-6 sm:px-12 md:px-20 gap-6">
           {[
             { src: '/ecommerce.svg', title: 'E-Commerce & Retail', desc: 'Engaging shopping journeys, personalized interfaces, and smooth checkout processes.' },
             { src: '/health_care.svg', title: 'Healthcare & Life Sciences', desc: 'Patient portals, telehealth platforms, and intuitive wellness apps.' },
@@ -182,18 +182,18 @@ function UIUXDesign() {
       </section>
 
             <section className="bg-white py-12">
-        <div className="text-center px-6 sm:px-10 md:px-20 mb-10">
-          <h1 className="text-3xl sm:text-4xl font-extralight mb-4">
+        <div className="md:ml-16 px-6 sm:px-10 md:px-20 mb-10">
+          <h1 className="text-3xl sm:text-4xl font-bold mb-4">
            👨‍💻 Doelsoft MuleSoft Talent Pool
 
           </h1>
-          <p className="text-base sm:text-lg text-gray-700">
+          <p className="text-base md:ml-2 sm:text-lg text-gray-700">
             Our team ensures every integration project delivers efficiency and scalability:
 
           </p>
         </div>
 
-        <div className="container mx-auto px-6 sm:px-10 md:px-20 grid gap-6 sm:grid-cols-2">
+        <div className="container mx-auto px-6 max-w-7xl md:ml-16 sm:px-10 md:px-20 grid gap-16 sm:grid-cols-2">
           {[
             { src: "/t1.svg", desc: "Experienced UI Designers creating visually engaging interfaces." },
             { src: "/t2.svg", desc: "Skilled UX Designers focusing on usability, accessibility, and intuitive flows." },
@@ -220,10 +220,10 @@ function UIUXDesign() {
 
             {/* Why Choose Section */}
           
-            <section className="bg-[#F4F6FB] py-12 px-6 sm:px-10 lg:px-20 font-sans">
+            <section className="bg-[#F4F6FB] py-12 px-6 sm:px-10 lg:px-20 font-sans" style={{marginBottom:"-44px"}}>
         <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-10">
-          <div className="flex-1 space-y-6">
-            <h1 className="text-3xl sm:text-4xl font-extralight mb-6 text-center md:text-left">
+          <div className="flex-1 space-y-6 md:ml-4">
+            <h1 className="text-3xl sm:text-4xl font-bold md:whitespace-nowrap mb-6 text-center md:text-left">
               💡 Why Choose Doelsoft for UI/UX Design?
             </h1>
 
@@ -292,11 +292,11 @@ function UIUXDesign() {
                           {/* Main Content */}
                           <div className="relative max-w-3xl mx-auto text-white z-10 flex flex-col items-center justify-center space-y-5 sm:space-y-7 md:space-y-8">
                             <h2 className="text-xl sm:text-2xl md:text-4xl font-kumbh font-light leading-snug px-2">
-                              Let's Build the Future Together
+                             🌍  Elevate Your Digital Presence with Doelsoft
                             </h2>
                         
                             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-200 leading-relaxed px-2">
-                              Tells Us your goals.We'll design the runaway then deliver it with AI,Could and Data.
+                             👉Partner with Doelsoft – Your trusted UI/UX design company in the USA & India.
                             </p>
                         
                             <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-4 text-sm sm:text-lg  shadow-lg transition-all duration-300 ease-in-out">

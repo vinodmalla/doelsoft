@@ -44,12 +44,12 @@ function MuleSoftSolutions() {
                 }}
             >
                 <div className="relative z-10 flex-1 flex flex-col space-y-6 items-start justify-center text-center md:text-left">
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-red-600 leading-snug mb-6">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl md:ml-9 font-semibold text-red-600 leading-snug mb-6">
                         Doelsoft <br className="hidden sm:block" />
                         <span className="block mt-2">MuleSoft Solutions</span>
                     </h2>
 
-                    <button className="py-2 px-5 border border-black ml-[45px] md:ml-[9px] text-black hover:bg-gray-200 transition-all duration-200 ">
+                    <button className="py-2 px-5 border border-black ml-[45px] md:ml-9 text-black hover:bg-gray-200 transition-all duration-200 ">
                         Consult With Us <span className="ml-2">↗</span>
                     </button>
                 </div>
@@ -64,14 +64,14 @@ function MuleSoftSolutions() {
             </section>
              <section className="mx-auto px-6 sm:px-12 md:px-24 py-16 bg-[#F4F6FB] grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <div className="space-y-6 text-center md:text-left">
-          <h2 className="text-2xl md:text-4xl font-extralight text-black">
+          <h2 className="text-2xl md:text-4xl font-bold md:whitespace-nowrap md:ml-12 text-black">
            Transform Your Business with Doelsoft <br /> MuleSoft Solutions
           </h2>
-          <p className="text-black text-base sm:text-lg leading-relaxed">
+          <p className="text-black text-base sm:text-lg md:ml-12 leading-relaxed">
              In today’s digital ecosystem, businesses run on multiple applications, systems, and data sources.
               Integrating and connecting these efficiently is the key to digital transformation success.
           </p>
-          <p className="text-black text-base sm:text-lg leading-relaxed">
+          <p className="text-black text-base sm:text-lg md:ml-12 leading-relaxed">
              At Doelsoft, we integrate MuleSoft to unify disparate systems, automate workflows, 
              and deliver seamless digital experiences with speed, security, and efficiency.
           </p>
@@ -100,8 +100,8 @@ function MuleSoftSolutions() {
 
         {/* Right Content */}
         <div className="space-y-8">
-          <h2 className="text-3xl sm:text-4xl font-extralight text-black leading-tight text-center md:text-left">
-            ⚙️ Our Microsoft Technologies Services
+          <h2 className="text-3xl sm:text-4xl font-bold text-black leading-tight text-center md:text-left">
+            🌟 Our MuleSoft Services
           </h2>
 
           <div className="space-y-6">
@@ -168,15 +168,15 @@ function MuleSoftSolutions() {
       </section>
             <section className="bg-[#F4F6FB] py-10">
         <div className="px-6 sm:px-12 md:px-20 text-center md:text-left space-y-4">
-          <h1 className="text-3xl sm:text-4xl font-extralight">
+          <h1 className="text-3xl sm:text-4xl md:ml-16 font-bold">
             🏭 Industries We Serve
           </h1>
-          <p className="text-gray-600">
+          <p className="text-gray-600 md:ml-16">
             Doelsoft delivers Microsoft-based solutions to diverse industries:
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 py-10 px-6 sm:px-12 md:px-20 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2  md:ml-16 py-10 px-6 sm:px-12 md:px-20 gap-6">
           {[
             { src: "/ecommerce.svg", title: "E-Commerce & Retail", desc: "Seamless customer engagement and omnichannel management." },
             { src: "/lifecare.svg", title: "Healthcare & Life Sciences", desc: "HIPAA-compliant workflows, data analytics, and automation." },
@@ -207,18 +207,18 @@ function MuleSoftSolutions() {
       </section>
 
             <section className="bg-white py-12">
-        <div className="text-center px-6 sm:px-10 md:px-20 mb-10">
-          <h1 className="text-3xl sm:text-4xl font-extralight mb-4">
+        <div className="px-6 md:ml-12 sm:px-10 md:px-20 mb-10">
+          <h1 className="text-3xl sm:text-4xl font-bold mb-4">
            👨‍💻 Doelsoft MuleSoft Talent Pool
 
           </h1>
-          <p className="text-base sm:text-lg text-gray-700">
+          <p className="text-base md:ml-2 sm:text-lg text-gray-700">
             Our team ensures every integration project delivers efficiency and scalability:
 
           </p>
         </div>
 
-        <div className="container mx-auto px-6 sm:px-10 md:px-20 grid gap-6 sm:grid-cols-2">
+        <div className="container md:ml-14 mx-auto px-6 sm:px-10 md:px-20 grid gap-16 max-w-7xl sm:grid-cols-2">
           {[
             { src: "/t1.svg", desc: "Certified MuleSoft Developers building robust APIs and integrations" },
             { src: "/t2.svg", desc: "Support & Maintenance Engineers ensuring smooth operations post-deployment." },
@@ -245,10 +245,10 @@ function MuleSoftSolutions() {
 
             {/* Why Choose Section */}
           
-            <section className="bg-[#F4F6FB] py-12 px-6 sm:px-10 lg:px-20 font-sans">
+            <section className="bg-[#F4F6FB] py-12 px-6 sm:px-10 lg:px-20 font-sans" style={{marginBottom:"-44px"}}>
         <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-10">
           <div className="flex-1 space-y-6">
-            <h1 className="text-3xl sm:text-4xl font-extralight mb-6 text-center md:text-left">
+            <h1 className="text-2xl sm:text-3xl font-bold md:whitespace-nowrap mb-6 text-center md:text-left">
               💡 Why Choose Doelsoft for MuleSoft Services?
             </h1>
 
@@ -317,11 +317,11 @@ function MuleSoftSolutions() {
                           {/* Main Content */}
                           <div className="relative max-w-3xl mx-auto text-white z-10 flex flex-col items-center justify-center space-y-5 sm:space-y-7 md:space-y-8">
                             <h2 className="text-xl sm:text-2xl md:text-4xl font-kumbh font-light leading-snug px-2">
-                              Let's Build the Future Together
+                             🌍  Accelerate Digital Transformation with Doelsoft MuleSoft Services
                             </h2>
                         
                             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-200 leading-relaxed px-2">
-                              Tells Us your goals.We'll design the runaway then deliver it with AI,Could and Data.
+                              👉Partner with Doelsoft – Your trusted MuleSoft consulting and integration partner in the USA & India.
                             </p>
                         
                             <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-4 text-sm sm:text-lg  shadow-lg transition-all duration-300 ease-in-out">

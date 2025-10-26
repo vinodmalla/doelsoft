@@ -73,7 +73,7 @@ function Solutions() {
   {
     title: "FLAWLESS QA SERVICES",
     img: "/servicesqa.svg",
-    link:"servicesqa",
+    link:"/servicesqa",
     color: "red",
   },
   {
@@ -131,13 +131,13 @@ const reviews = [
 >
   {/* Left Content */}
   <div className="relative z-10 flex-1 flex flex-col space-y-6 items-start justify-center text-center md:text-left">
-    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-red-600 leading-snug mb-6">
+    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl md:ml-9 font-semibold text-red-600 leading-snug mb-6">
      Secure, Accessible, <br className="hidden sm:block" />
       <span className="block mt-2">AI-Powered</span>
       <span className="block mt-2">Services</span>
     </h2>
 
-    <button className="py-2 px-5 border border-black ml-[45px] md:ml-[9px]  text-black hover:bg-gray-200 transition-all duration-200 ">
+    <button className="py-2 px-5 border border-black ml-[45px] md:ml-9  text-black hover:bg-gray-200 transition-all duration-200 ">
       Consult With Us <span className="ml-2">↗</span>
     </button>
   </div>

@@ -55,14 +55,14 @@ function MicrosoftSolutions() {
       >
         {/* Left Content */}
         <div className="relative z-10 flex-1 flex flex-col space-y-6 items-start justify-center text-center md:text-left">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-red-600 leading-snug mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl md:ml-9 font-semibold text-red-600 leading-snug mb-6">
             Doelsoft <br className="hidden sm:block" />
             <span className="block mt-2">Microsoft Solutions</span>
           </h2>
 
-          <button className="py-2 px-5 border border-black mx-auto md:mx-0 text-black hover:bg-gray-200 transition-all duration-200">
-            Consult With Us <span className="ml-2">↗</span>
-          </button>
+         <button className="py-2 px-5 border border-black ml-[45px] md:ml-9  text-black hover:bg-gray-200 transition-all duration-200 ">
+      Consult With Us <span className="ml-2">↗</span>
+    </button>
         </div>
 
         {/* Right Image */}
@@ -78,16 +78,16 @@ function MicrosoftSolutions() {
       {/* Transform Section */}
       <section className="mx-auto px-6 sm:px-12 md:px-24 py-16 bg-[#F4F6FB] grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <div className="space-y-6 text-center md:text-left">
-          <h2 className="text-2xl md:text-4xl font-extralight text-black">
+          <h2 className="text-2xl md:text-4xl font-bold md:ml-12 text-black">
             Transform Your Enterprise with <br /> Doelsoft Microsoft Solutions
           </h2>
-          <p className="text-black text-base sm:text-lg leading-relaxed">
+          <p className="text-black text-base md:ml-12 sm:text-lg leading-relaxed">
             In today’s digital landscape, businesses require robust, scalable,
             and secure solutions to stay competitive. At Doelsoft, we specialize
             in delivering Microsoft-based technologies that streamline workflows
             and accelerate innovation.
           </p>
-          <p className="text-black text-base sm:text-lg leading-relaxed">
+          <p className="text-black text-base md:ml-12 sm:text-lg leading-relaxed">
             As a trusted Microsoft Technologies partner in the USA & India, we
             combine deep technical expertise with business insight to help you
             achieve efficiency, improve customer engagement, and drive digital
@@ -116,7 +116,7 @@ function MicrosoftSolutions() {
 
         {/* Right Content */}
         <div className="space-y-8">
-          <h2 className="text-3xl sm:text-4xl font-extralight text-black leading-tight text-center md:text-left">
+          <h2 className="text-3xl sm:text-4xl md:whitespace-nowrap font-bold text-black leading-tight text-center md:text-left">
             ⚙️ Our Microsoft Technologies Services
           </h2>
 
@@ -153,7 +153,7 @@ function MicrosoftSolutions() {
                 desc: "Implementation, migration, and customization of Teams, Outlook, and Office 365 solutions.",
               },
               {
-                src: "/m7.svg",
+                src: "/m4.svg",
                 title: "Support & Maintenance",
                 desc: "Continuous monitoring, performance optimization, and issue resolution.",
               },
@@ -185,16 +185,16 @@ function MicrosoftSolutions() {
 
       {/* Industries Section */}
       <section className="bg-[#F4F6FB] py-10">
-        <div className="px-6 sm:px-12 md:px-20 text-center md:text-left space-y-4">
-          <h1 className="text-3xl sm:text-4xl font-extralight">
+        <div className="px-6 sm:px-12 md:px-20 text-center md:text-left md:ml-14 space-y-4">
+          <h1 className="text-3xl sm:text-4xl font-bold">
             🏭 Industries We Serve
           </h1>
-          <p className="text-gray-600">
+          <p className="text-gray-600 md:ml-2">
             Doelsoft delivers Microsoft-based solutions to diverse industries:
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 py-10 px-6 sm:px-12 md:px-20 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 py-10 px-6 md:ml-16 sm:px-12 md:px-20 gap-6">
           {[
             { src: "/ecommerce.svg", title: "E-Commerce & Retail", desc: "Seamless customer engagement and omnichannel management." },
             { src: "/lifecare.svg", title: "Healthcare & Life Sciences", desc: "HIPAA-compliant workflows, data analytics, and automation." },
@@ -226,16 +226,16 @@ function MicrosoftSolutions() {
 
       {/* Talent Pool Section */}
       <section className="bg-white py-12">
-        <div className="text-center px-6 sm:px-10 md:px-20 mb-10">
-          <h1 className="text-3xl sm:text-4xl font-extralight mb-4">
+        <div className="px-6 sm:px-10 md:ml-14 md:px-20 mb-10">
+          <h1 className="text-3xl sm:text-4xl font-bold mb-4">
             👨‍💻 Doelsoft Microsoft Talent Pool
           </h1>
-          <p className="text-base sm:text-lg text-gray-700">
+          <p className="text-base sm:text-lg md:ml-2 text-gray-700">
             Our certified experts ensure every Microsoft project delivers value, performance, and reliability:
           </p>
         </div>
 
-        <div className="container mx-auto px-6 sm:px-10 md:px-20 grid gap-6 sm:grid-cols-2">
+        <div className="container mx-auto md:ml-16 px-6 sm:px-10 md:px-20 grid gap-16 max-w-7xl sm:grid-cols-2">
           {[
             { src: "/t1.svg", desc: ".NET Developers – Experts in web, desktop, and enterprise app development." },
             { src: "/t2.svg", desc: "Azure Cloud Engineers – Certified in migration, DevOps, and cloud architecture." },
@@ -261,10 +261,10 @@ function MicrosoftSolutions() {
       </section>
 
       {/* Why Choose Section */}
-      <section className="bg-[#F4F6FB] py-12 px-6 sm:px-10 lg:px-20 font-sans">
+      <section className="bg-[#F4F6FB] py-12 px-6 sm:px-10 lg:px-20 font-sans" style={{marginBottom:"-44px"}}>
         <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-10">
-          <div className="flex-1 space-y-6">
-            <h1 className="text-3xl sm:text-4xl font-extralight mb-6 text-center md:text-left">
+          <div className="flex-1 md:ml-4 space-y-6">
+            <h1 className="text-2xl sm:text-3xl font-bold md:whitespace-nowrap mb-6 text-center md:text-left">
               💡 Why Choose Doelsoft for Microsoft Technologies?
             </h1>
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { ArrowUpRight } from "lucide-react";
 
-function Embedded() {
+function QA() {
   
   const features = [
     {
@@ -55,9 +55,9 @@ function Embedded() {
       >
         <div className="relative z-10 flex-1 flex flex-col space-y-6 items-start justify-center text-center md:text-left">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl md:ml-9 font-semibold text-red-600 leading-snug mb-6">
-            Embedded
+            Doelsoft
             <br className="hidden sm:block" />
-            <span className="block mt-2">Technologies</span>
+            <span className="block mt-2">QA</span>
           </h2>
 
           <button className="py-2 px-5 border border-black ml-[45px] md:ml-9 text-black hover:bg-gray-200 hover:scale-105 transition-all duration-200">
@@ -68,8 +68,8 @@ function Embedded() {
         <div className="mt-10 md:mt-0 md:flex-1 flex justify-center md:justify-end relative z-0">
           <img
             loading="lazy"
-            src="/Embedded.svg"
-            alt=" Embedded technology "
+            src="/QA.svg"
+            alt="QA professionals "
             className="w-72 sm:w-80 md:w-[420px] lg:w-[500px] h-auto object-contain"
           />
         </div>
@@ -79,28 +79,23 @@ function Embedded() {
       <section className="mx-auto px-6 sm:px-12 md:px-24 py-16 bg-[#F4F6FB] grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <div className="space-y-6 text-center md:text-left">
           <h2 className="text-2xl md:text-4xl md:whitespace-nowrap md:ml-12 font-extralight text-black">
-            🚀 Transform Your Products with Doelsoft
+            Deliver Flawless Software with Doelsoft 
             <br />
-             Embedded Technologies
+            QA Services
           </h2>
           <p className="text-black text-base sm:text-lg md:ml-12 leading-relaxed">
-            Embedded technologies are the backbone of modern smart devices,
-            industrial systems, and IoT solutions. At Doelsoft, we design and
-            develop embedded systems that are reliable, high-performing, and
-            tailored to your product requirements.
+            In the fast-paced digital era, software quality is non-negotiable. At Doelsoft, we provide comprehensive Quality Assurance services that ensure your applications are reliable, secure, and user-friendly.
+
           </p>
           <p className="text-black text-base sm:text-lg md:ml-12 leading-relaxed">
-            As a trusted embedded technologies partner in the USA & India, we
-            empower businesses to innovate, automate, and create intelligent
-            devices that connect seamlessly to cloud platforms and digital
-            ecosystems.
+            As a trusted QA services provider in the USA & India, we help businesses reduce risk, improve performance, and enhance user satisfaction by identifying defects before they impact end-users.
           </p>
         </div>
         <div className="flex justify-center">
           <img
             loading="lazy"
-            src="/Embeddedmen.svg"
-            alt="Embedded system engineer working on IoT devices"
+            src="/QAgirl.svg"
+            alt="A QA professional working on software testing"
             className="max-w-xs sm:max-w-sm md:max-w-md w-full h-auto"
           />
         </div>
@@ -111,53 +106,53 @@ function Embedded() {
         <div className="flex justify-center md:justify-start">
           <img
             loading="lazy"
-            src="/Embeddeddeveloper.svg"
-            alt="Embedded developer creating embedded systems"
+            src="/QAmen.svg"
+            alt="A QA professional analyzing software quality"
             className="w-full max-w-xs sm:max-w-sm md:max-w-md"
           />
         </div>
 
         <div className="space-y-8">
           <h2 className="text-3xl sm:text-4xl font-extralight text-black leading-tight text-center md:text-left">
-            🌟 Our Embedded Technologies Services
+            🌟 Our Quality Assurance Services
           </h2>
 
           <div className="space-y-6">
             {[
               {
                 src: "/m1.svg",
-                title: "Firmware Development",
-                desc: "Writing efficient, reliable code for microcontrollers, microprocessors, and SoC platforms.",
+                title: "Manual Testing",
+                desc: "Functional, regression, smoke, and user acceptance testing to ensure flawless performance.",
               },
               {
                 src: "/m2.svg",
-                title: "Embedded System Design",
-                desc: "Custom hardware and software integration for sensors, controllers, and IoT devices.",
+                title: "Automation Testing",
+                desc:" Selenium, Appium, Cypress, and other tools for fast, repeatable, and reliable test execution.",
               },
               {
                 src: "/m3.svg",
-                title: "IoT Device Integration",
-                desc: "Connecting embedded devices to cloud platforms for real-time monitoring and analytics.",
+                title: "Performance & Load Testing",
+                desc: "Evaluating system behavior under high traffic and load conditions.",
               },
               {
                 src: "/m4.svg",
-                title: "Real-Time Operating Systems (RTOS)",
-                desc: "Designing systems with high reliability and deterministic performance.",
+                title: "Security Testing",
+                desc: "Identifying vulnerabilities and ensuring compliance with data protection standards.",
               },
               {
                 src: "/m5.svg",
-                title: "PCB Design & Prototyping",
-                desc: "Complete electronic design for embedded systems and smart devices.",
+                title: "Mobile Application Testing",
+                desc: "Testing apps for performance, usability, and compatibility across devices.",
               },
               {
                 src: "/m6.svg",
-                title: "Device Testing & Validation",
-                desc: "Real-time monitoring, predictive analytics, and AI-driven decision-making.",
+                title: "API & Integration Testing",
+                desc: "Ensuring seamless data flow and integration between applications.",
               },
               {
                 src: "/m4.svg",
-                title: "Support & Maintenance",
-                desc: "Firmware updates, system optimization, and troubleshooting for deployed devices.",
+                title: "QA Consulting & Process Improvement",
+                desc: "Designing QA strategies and frameworks for improved quality outcomes.",
               },
             ].map((item, idx) => (
               <div
@@ -193,46 +188,45 @@ function Embedded() {
             🏢 Industries We Serve
           </h1>
           <p className="text-gray-600 md:ml-2">
-            Doelsoft provides embedded technology solutions for diverse
-            industries, tailoring innovation to specific needs:
+            Doelsoft delivers embedded technology solutions across multiple sectors, enabling smart, connected, and efficient systems:
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 py-10 px-6 md:ml-16 sm:px-12 md:px-20 gap-6">
           {[
             {
-              src: "/Embedded1.svg",
-              title: "Automotive & Transportation",
-              desc: "ECU development, vehicle telematics, and connected car solutions.",
+              src: "/QA1.svg",
+              title: "Banking & Financial Services (BFSI)",
+              desc: "Secure, compliant, and high-performance financial applications.",
             },
             {
-              src: "/Embedded2.svg",
-              title: "Healthcare & Medical Devices",
-              desc: "Wearables, monitoring devices, and IoT-enabled medical systems.",
+              src: "/QA2.svg",
+              title: "Healthcare & Life Sciences",
+              desc: "Patient portals, telehealth apps, and medical software testing.",
             },
             {
-              src: "/Embedded3.svg",
-              title: "Consumer Electronics",
-              desc: "Smart home devices, wearables, and intelligent gadgets.",
+              src: "/QA3.svg",
+              title: "E-Commerce & Retail",
+              desc: "Online stores, marketplaces, and omnichannel platforms.",
             },
             {
-              src: "/Embedded4.svg",
-              title: "Telecom & Networking",
-              desc: "Embedded solutions for routers, modems, and communication devices.",
+              src: "/QA4.svg",
+              title: "Education & EdTech",
+              desc: "Learning platforms, LMS, and virtual classroom software testing.",
             },
             {
-              src: "/Embedded5.svg",
-              title: "Aerospace & Defense",
-              desc: "Embedded control systems, avionics, and mission-critical applications.",
+              src: "/QA5.svg",
+              title: "Telecom & IT Services",
+              desc: "Enterprise applications, SaaS platforms, and network systems.",
             },
             {
-              src: "/Embedded6.svg",
-              title: "Energy & Utilities",
-              desc: "Smart meters, energy management, and IoT-enabled grids.",
+              src: "/QA6.svg",
+              title: "Travel & Hospitality",
+              desc: "Booking engines, itinerary apps, and customer engagement platforms.",
             },
             {
-              src: "/Embedded7.svg",
-              title: "Industrial Automation",
-              desc: "PLCs, robotics, smart manufacturing, and predictive maintenance systems.",
+              src: "/QA7.svg",
+              title: "Government & Public Sector",
+              desc: "Citizen services portals, compliance applications, and e-governance solution.",
             },
            
           ].map((item, idx) => (
@@ -261,10 +255,10 @@ function Embedded() {
       <section className="bg-white py-12">
         <div className="px-6 sm:px-10 md:ml-14 md:px-20 mb-10">
           <h1 className="text-3xl sm:text-4xl font-bold mb-4">
-            👨‍💻 Doelsoft Embedded Technologies Talent Pool
+            👨‍💻 Doelsoft QA Talent Pool
           </h1>
           <p className="text-base sm:text-lg md:ml-2 text-gray-700">
-            Our team ensures every embedded project delivers precision, reliability, and performance:
+           Our QA team ensures every application meets the highest standards of reliability, performance, and usability:
           </p>
         </div>
 
@@ -272,23 +266,27 @@ function Embedded() {
           {[
             {
               src: "/Em1.svg",
-              desc: "Embedded System Engineers – Designing hardware-software integrated solutions.",
+              desc: "Automation Engineers – Experts in Selenium, Appium, Cypress, and other automation frameworks.",
             },
             {
               src: "/Em2.svg",
-              desc: "Firmware Developers – Optimized, low-level programming for microcontrollers and devices.",
+              desc: "Security Testers –Identifying vulnerabilities and ensuring regulatory compliance.",
             },
             {
               src: "/Em3.svg",
-              desc: "IoT & Connectivity Specialists – Connecting devices securely to cloud and enterprise systems.",
+              desc: "Performance Test Engineers – Ensuring system stability under peak load conditions.",
             },
             {
               src: "/Em5.svg",
-              desc: "PCB Designers & Hardware Engineers – Circuit design, prototyping, and testing.",
+              desc: "Manual Testers –  Skilled in functional, regression, UAT, and exploratory testing.",
             },
             {
               src: "/Em4.svg",
               desc: "QA & Testing Engineers – Functional, performance, and compliance testing of embedded systems.",
+            },
+            {
+              src: "/p1.svg",
+              desc: "Mobile QA Specialists –  Testing across platforms, devices, and screen resolutions.",
             },
           ].map((item, idx) => (
             <div
@@ -383,12 +381,11 @@ function Embedded() {
 
         <div className="relative max-w-3xl mx-auto text-white z-10 flex flex-col items-center justify-center space-y-5 sm:space-y-7 md:space-y-8">
           <h2 className="text-xl sm:text-2xl md:text-4xl font-kumbh font-light leading-snug px-2">
-            Let's Build the Future Together
+            Build Smart Devices & Systems with Doelsoft
           </h2>
 
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-200 leading-relaxed px-2">
-            Tell us your goals. We'll design the runway and deliver it with AI,
-            Cloud, and Data.
+            👉 Partner with Doelsoft – Your trusted embedded technologies services company in the USA & India.
           </p>
 
           <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-4 text-sm sm:text-lg shadow-lg transition-all duration-300 ease-in-out">
@@ -404,4 +401,4 @@ function Embedded() {
   );
 }
 
-export default Embedded;
+export default QA;

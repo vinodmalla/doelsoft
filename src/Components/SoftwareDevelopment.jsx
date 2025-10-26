@@ -17,13 +17,13 @@ const SoftwareDevelopment = () => {
 >
   {/* Left Content */}
   <div className="relative z-10 flex-1 flex flex-col space-y-6 items-start justify-center text-center md:text-left">
-    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-red-600 leading-snug mb-6">
+    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl md:ml-9 font-semibold text-red-600 leading-snug mb-6">
       Custom Software <br className="hidden sm:block" />
       <span className="block mt-2">Development</span>
       
     </h2>
 
-    <button className="py-2 px-5 border border-black ml-[45px] md:ml-[9px]  text-black hover:bg-gray-200 transition-all duration-200 ">
+    <button className="py-2 px-5 border border-black ml-[45px] md:ml-9  text-black hover:bg-gray-200 transition-all duration-200 ">
       Consult With Us <span className="ml-2">↗</span>
     </button>
   </div>
@@ -42,16 +42,16 @@ const SoftwareDevelopment = () => {
      <section className="mx-auto px-4 sm:px-8 md:px-16 lg:px-24 mt-4 py-20 bg-[#F4F6FB] grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
   {/* Left Text Content */}
   <div className="space-y-6">
-    <h2 className="text-2xl sm:text-3xl md:text-4xl font-extralight text-black">
+    <h2 className="text-2xl sm:text-3xl whitespace-nowrap md:text-4xl md:ml-14 font-bold text-black">
       Custom Software Development <br /> Crafted Around Your Business Needs
     </h2>
-    <p className="text-black text-base sm:text-lg leading-relaxed">
+    <p className="text-black text-base md:ml-14 sm:text-lg leading-relaxed">
       At Doelsoft, we believe every business is unique, and so should be
       its software solutions. Our custom software development services
       focus entirely on creating applications tailored precisely to your
       company’s goals, challenges, and target audience.
     </p>
-    <p className="text-black text-base sm:text-lg leading-relaxed">
+    <p className="text-black text-base md:ml-14 sm:text-lg leading-relaxed">
       Our expert team works closely with you throughout the process from
       initial consultation to final delivery ensuring the solution we
       build not only meets your technical requirements but also drives
@@ -84,41 +84,60 @@ const SoftwareDevelopment = () => {
   </div>
 
   {/* Right Text Content */}
-  <div className="space-y-6 px-4 sm:px-0">
-    <h2 className="text-2xl sm:text-2xl md:text-3xl font-bold text-black">
+   <div className="space-y-8">
+    <h2 className="text-2xl sm:text-3xl md:text-4xl font-kumbh font-bold text-black leading-tight">
       Why Partner with Doelsoft?
+
     </h2>
-    <ul className="space-y-4 text-gray-700 text-base sm:text-base md:text-lg">
-      <li>
-        <span className="font-semibold">✔ Tailor-Made Solutions:</span> We
-        design and develop software that fits your specific workflows and
-        priorities, avoiding generic products.
-      </li>
-      <li>
-        <span className="font-semibold">✔ Client-Focused Collaboration:</span>{" "}
-        Your vision guides every stage. We maintain continuous communication.
-      </li>
-      <li>
-        <span className="font-semibold">✔ Empowering User Experiences:</span>{" "}
-        Simplicity and efficiency to engage and accomplish tasks seamlessly.
-      </li>
-      <li>
-        <span className="font-semibold">✔ Cutting-Edge Technologies:</span>{" "}
-        We build future-ready solutions that grow with your organization.
-      </li>
-      <li>
-        <span className="font-semibold">✔ End-to-End Support:</span> Beyond
-        development, we provide maintenance and upgrades.
-      </li>
-    </ul>
+
+    <div className="space-y-6">
+      {[
+        {
+          src: "/m1.svg",
+          title: "Tailor-Made Solutions",
+          desc: "We design and develop software that fits your specific workflows and priorities, avoiding generic products that require costly adaptations later.",
+        },
+        {
+          src: "/m2.svg",
+          title: "Client-Focused Collaboration",
+          desc: "Your vision guides every stage. We maintain continuous communication so your feedback shapes the development journey.",
+        },
+        {
+          src: "/m3.svg",
+          title: "Empowering User Experiences",
+          desc: "Our applications prioritize simplicity and efficiency, making it easy for your users to engage and accomplish tasks seamlessly.",
+        },
+        {
+          src: "/m4.svg",
+          title: "Cutting-Edge Technologies",
+          desc: "Utilizing modern tools and best practices, we build future-ready solutions that grow with your organization.",
+        },
+        {
+          src: "/m5.svg",
+          title: "End-to-End Support",
+          desc: "Beyond development, we provide maintenance and upgrades to keep your software performing at its best.",
+        },
+     
+      ].map((item, idx) => (
+        <div key={idx} className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-start">
+          <div className="flex-shrink-0 bg-white border border-gray-300 p-4  flex items-center justify-center w-20 h-20 sm:w-24 sm:h-24">
+            <img src={item.src} alt={item.title} className="w-10 h-10 sm:w-12 sm:h-12 object-contain" />
+          </div>
+          <div>
+            <h3 className="text-lg sm:text-xl font-semibold text-black">{item.title}</h3>
+            <p className="text-gray-600 text-base sm:text-lg whitespace-pre-line">{item.desc}</p>
+          </div>
+        </div>
+      ))}
+    </div>
   </div>
 </section>
 
 
       {/* Areas of Expertise */}
-    <section className="w-full bg-[#F4F6FB] mx-auto py-16 px-4 sm:px-6 md:px-36">
+    <section className="w-full bg-[#F4F6FB] mx-auto py-16 px-4 sm:px-6 md:px-36" style={{marginBottom:"-44px"}}>
   {/* Heading */}
-  <h2 className="text-2xl sm:text-2xl md:text-3xl font-bold text-black text-center mb-10">
+  <h2 className="text-2xl sm:text-2xl md:text-3xl font-bold text-black mb-10">
     Our Areas of Expertise
   </h2>
 
@@ -147,7 +166,7 @@ const SoftwareDevelopment = () => {
         className="flex items-start gap-3 p-6 bg-gray-100 shadow hover:shadow-md transition"
       >
         <img src={item.src} alt="" className="w-10 h-10 flex-shrink-0" />
-        <h3 className="font-semibold text-base sm:text-lg md:text-lg">{item.text}</h3>
+        <h3 className="font-semibold text-base sm:text-base md:text-base">{item.text}</h3>
       </div>
     ))}
   </div>

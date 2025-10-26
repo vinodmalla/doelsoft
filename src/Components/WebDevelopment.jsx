@@ -44,13 +44,14 @@ function WebDevelopment() {
       >
         {/* Left Content */}
         <div className="relative z-10 flex-1 flex flex-col space-y-6 items-start justify-center text-center md:text-left">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-red-600 leading-snug mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl md:ml-9 font-semibold text-red-600 leading-snug mb-6">
             Web Design <br className="hidden sm:block" />
             <span className="block mt-2">& Development</span>
           </h2>
-          <button className="py-2 px-5 border border-black mx-auto md:mx-0 text-black hover:bg-gray-200 transition-all duration-200">
-            Consult With Us <span className="ml-2">↗</span>
-          </button>
+          
+           <button className="py-2 px-5 border border-black ml-[45px] md:ml-9  text-black hover:bg-gray-200 transition-all duration-200 ">
+      Consult With Us <span className="ml-2">↗</span>
+    </button>
         </div>
 
         {/* Right Image */}
@@ -66,14 +67,14 @@ function WebDevelopment() {
       {/* Crafting Websites Section */}
       <section className="mx-auto px-6 sm:px-12 md:px-24 py-16 bg-[#F4F6FB] grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <div className="space-y-6 text-center md:text-left">
-          <h2 className="text-2xl md:text-4xl font-extralight text-black">
-            🚀 Doelsoft Web Development <br /> Crafting Websites That Drive Growth
+          <h2 className="text-2xl md:text-4xl md:ml-12 font-bold text-black">
+            🚀 Doelsoft Web Development <br /> Crafting Websites That <br/> Drive Growth
           </h2>
-          <p className="text-black text-base sm:text-lg leading-relaxed">
+          <p className="text-black text-base md:ml-12 sm:text-lg leading-relaxed">
             In the digital age, your website is your brand’s online identity. At Doelsoft, we specialize in creating
             websites that are not only visually appealing but also robust, scalable, and user-friendly.
           </p>
-          <p className="text-black text-base sm:text-lg leading-relaxed">
+          <p className="text-black text-base md:ml-12 sm:text-lg leading-relaxed">
             Whether it’s a startup seeking a brand presence or an enterprise platform targeting global customers, our
             development solutions are designed to meet your evolving business goals.
           </p>
@@ -104,8 +105,8 @@ function WebDevelopment() {
         </div>
 
         {/* Right Content */}
-        <div className="space-y-8">
-          <h2 className="text-3xl sm:text-4xl font-extralight text-black leading-tight text-center md:text-left">
+        <div className="space-y-8 ">
+          <h2 className="text-3xl sm:text-4xl font-bold text-black leading-tight text-center md:text-left">
             💻 Our Web Development Expertise
           </h2>
           <div className="space-y-6">
@@ -164,11 +165,11 @@ function WebDevelopment() {
 
       {/* Industries Section */}
       <section className="bg-[#F4F6FB] py-10">
-        <div className="px-6 sm:px-12 md:px-20 text-center md:text-left space-y-4">
-          <h1 className="text-3xl sm:text-4xl font-extralight">🏭 Industries We Empower with Web Solutions</h1>
-          <p className="text-gray-600">Doelsoft delivers tailored web solutions for a wide range of industries:</p>
+        <div className="px-6 sm:px-12 md:px-20 md:ml-16 text-center md:text-left space-y-4">
+          <h1 className="text-3xl sm:text-4xl font-bold">🏭 Industries We Empower with Web Solutions</h1>
+          <p className="text-gray-600 md:ml-2">Doelsoft delivers tailored web solutions for a wide range of industries:</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 py-10 px-6 sm:px-12 md:px-20 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 md:ml-16 py-10 px-6 sm:px-12 md:px-20 gap-6">
           {[
             { src: '/ecommerce.svg', title: 'E-Commerce & Retail', desc: 'Online stores, payment gateways, and customer portals.' },
             { src: '/health_care.svg', title: 'Healthcare & Life Sciences', desc: 'Patient management, booking systems, and HIPAA-compliant platforms.' },
@@ -193,14 +194,14 @@ function WebDevelopment() {
 
       {/* Talent Pool Section */}
       <section className="bg-white py-12">
-        <div className="text-center px-6 sm:px-10 md:px-20 mb-10">
-          <h1 className="text-3xl sm:text-4xl font-extralight mb-4">👨‍💻 Doelsoft Web Development Talent Pool</h1>
-          <p className="text-base sm:text-lg text-gray-700">
+        <div className="md:ml-14 px-6 sm:px-10 md:px-20 mb-10">
+          <h1 className="text-3xl sm:text-4xl font-bold mb-4">👨‍💻 Doelsoft Web Development Talent Pool</h1>
+          <p className="text-base md:ml-2 sm:text-lg text-gray-700">
             Our team ensures every project is delivered with precision and creativity:
           </p>
         </div>
 
-        <div className="container mx-auto px-6 sm:px-10 md:px-20 grid gap-6 sm:grid-cols-2">
+        <div className="container mx-auto md:ml-16 max-w-7xl  px-6 sm:px-10 md:px-20 grid gap-16 sm:grid-cols-2">
           {[
             { src: '/s1.svg', desc: 'Skilled Front-End Developers for responsive, intuitive, and interactive interfaces.' },
             { src: '/w1.svg', desc: 'Experienced Back-End Engineers for secure, scalable, and high-performance systems.' },
@@ -220,13 +221,13 @@ function WebDevelopment() {
       </section>
 
       {/* Why Choose Section */}
-      <section className="bg-[#F4F6FB] py-12 px-6 sm:px-10 lg:px-20 font-sans">
+      <section className="bg-[#F4F6FB] py-12 px-6 sm:px-10 lg:px-20 font-sans" style={{marginBottom:"-44px"}}>
         <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-10">
           <div className="flex-1 space-y-6">
-            <h1 className="text-3xl sm:text-4xl font-extralight mb-6 text-center md:text-left">
+            <h1 className="text-3xl sm:text-4xl md:ml-5 font-bold mb-6 text-center md:text-left">
               💡 Why Choose Doelsoft for Web Development?
             </h1>
-            <div className="space-y-6">
+            <div className="space-y-6 md:ml-5">
               {features.map((feature, index) => (
                 <div
                   key={index}
@@ -251,14 +252,13 @@ function WebDevelopment() {
           {/* Right Image */}
           <div className="flex-1 flex justify-center">
             <img
-              src="/WomanWeb.svg"
+              src="/WomanWeb1.svg"
               alt="Web Developer"
-              className="w-full max-w-sm sm:max-w-md md:max-w-lg object-cover"
+              className="w-full max-w-sm sm:max-w-md md:max-w-lg  object-cover"
             />
           </div>
         </div>
       </section>
-
       {/* CTA Section */}
        <section
                       className="relative w-full  bg-cover bg-center text-center py-16   sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
@@ -287,7 +287,7 @@ function WebDevelopment() {
                       {/* Main Content */}
                       <div className="relative max-w-3xl mx-auto text-white z-10 flex flex-col items-center justify-center space-y-5 sm:space-y-7 md:space-y-8">
                         <h2 className="text-xl sm:text-2xl md:text-4xl font-kumbh font-light leading-snug px-2">
-                          Let's Build the Future Together
+                          🌍 Build Your Digital Presence with Doelsoft
                         </h2>
                     
                         <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-200 leading-relaxed px-2">

@@ -380,17 +380,16 @@ useEffect(()=>{
 
 
       {/* Industries Section - Responsive grid */}
-  <section className="relative w-full px-4 sm:px-6  lg:px-8 py-12 sm:py-16 lg:py-20 overflow-hidden">
+  <section className="relative w-full px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 overflow-hidden">
   {/* Background Image + Overlay */}
   <div className="absolute inset-0">
-    
     <div className="absolute inset-0 bg-[#080808] opacity-90"></div>
   </div>
 
   {/* Content */}
-  <div className="relative z-10 md:ml:-10 max-w-7xl mx-auto">
+  <div className="relative z-10 md:ml-20 max-w-7xl mx-auto">
     {/* Heading */}
-    <h1 className="text-white text-lg sm:text-2xl md:text-3xl font-bold  pl-0 sm:pl-4 pt-2 sm:pt-6 mb-6 sm:mb-8 text-center sm:text-left">
+    <h1 className="text-white text-lg sm:text-2xl md:text-3xl font-bold pl-0 sm:pl-4 pt-2 sm:pt-6 mb-6 sm:mb-8 text-center sm:text-left">
       Industries We Serve
     </h1>
 
@@ -407,7 +406,7 @@ useEffect(()=>{
     </div>
 
     {/* Services Grid */}
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-2 sm:gap-8 px-2 sm:px-8 lg:px-12 mx-auto max-w-6xl justify-items-center">
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 sm:gap-8 px-2 sm:px-8 lg:px-12 mx-auto max-w-6xl justify-items-center">
       {services.map((service, i) => (
         <div
           key={i}
@@ -416,9 +415,9 @@ useEffect(()=>{
           <img
             src={service.logo}
             alt={service.title}
-            className="w-40 h-auto object-contain  "
+            className="w-28 sm:w-32 md:w-36 lg:w-40 h-auto object-contain"
           />
-          <p className="text-white bg-red-600  p-2 md:p-1 w-40 text-sm sm:text-base md:text-lg text-center leading-snug">
+          <p className="text-white bg-red-600 p-2 md:p-1 w-28 sm:w-32 md:w-36 lg:w-40 text-xs sm:text-sm md:text-base text-center leading-snug">
             {service.title}
           </p>
         </div>
@@ -426,10 +425,6 @@ useEffect(()=>{
     </div>
   </div>
 </section>
-
-
-
-
       {/* Core Services Section - Responsive flex */}
     <section className="w-full bg-white px-4 sm:px-6 lg:px-8 py-10 mx-auto md:ml-2 sm:py-16 lg:py-20 overflow-hidden">
   <div className="flex flex-col lg:flex-row gap-10 lg:gap-12 max-w-7xl mx-auto">
@@ -876,7 +871,7 @@ useEffect(()=>{
     </div>
 
     {/* Image Column */}
-    <div className="w-full lg:w-1/2  flex justify-center">
+    <div className="w-96 lg:w-1/2  flex justify-center">
       <img
         src="/Solution.svg"
         alt="Solution Graphic"

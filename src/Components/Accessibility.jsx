@@ -172,13 +172,13 @@ export default function Accessibility() {
         }}
       >
         <div className="relative z-10 flex-1 flex flex-col space-y-6 items-start justify-center text-center md:text-left">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-red-600 leading-snug mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl md:ml-9 font-semibold text-red-600 leading-snug mb-6">
             Doelsoft <br />
             <span className="block mt-4">Digital Accessibility</span>
           </h2>
-          <button className="py-2 px-5 border border-black text-black hover:bg-gray-200 transition-all duration-200 mx-auto md:mx-0">
-            Consult With Us <span className="ml-2">↗</span>
-          </button>
+         <button className="py-2 px-5 border border-black ml-[45px] md:ml-9  text-black hover:bg-gray-200 transition-all duration-200 ">
+      Consult With Us <span className="ml-2">↗</span>
+    </button>
         </div>
         <div className="mt-10 md:mt-0 md:flex-1 flex justify-center md:justify-end relative z-0">
           <img
@@ -193,20 +193,20 @@ export default function Accessibility() {
       <section className="w-full bg-[#F4F6FB] flex items-center py-12 px-6 md:px-16 lg:px-28 mt-10">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
           <div className="lg:col-span-2">
-            <h2 className="text-2xl font-semibold mt-10 text-gray-900">
-              Inclusive Digital Accessibility Solutions Powered by Human Expertise & AI
+            <h2 className="text-2xl md:text-4xl md:ml-10 font-semibold mt-10 text-gray-900">
+              Inclusive Digital Accessibility Solutions <br/> Powered by Human Expertise & AI
 
             </h2>
-            <p className="text-black text-base sm:text-lg mt-8 leading-relaxed">
+            <p className="text-black text-base md:ml-12 sm:text-lg mt-8 leading-relaxed">
               Fostering Equitable, Real-World Digital Experiences for All
             </p>
-            <p className="text-black text-base sm:text-lg mt-8 leading-relaxed">
+            <p className="text-black text-base  md:ml-12 sm:text-lg mt-8 leading-relaxed">
               At Doelsoft, we believe accessibility is more than compliance it’s about inclusion, equity, and empowerment. Our mission is to bridge the digital divide by combining cutting-edge AI technology with deep human expertise including people with lived experiences of disability, professional accessibility testers, and real users from diverse backgrounds.
             </p>
-            <p className="text-black text-base sm:text-lg mt-8 leading-relaxed">
+            <p className="text-black text-base  md:ml-12 sm:text-lg mt-8 leading-relaxed">
               Our holistic, collaborative approach ensures your websites, mobile apps, documents, multimedia, and enterprise systems are not only fully accessible and compliant with global standards (WCAG 2.1/2.2, ADA, Section 508, AODA, EN 301 549, EAA, PDF/UA), but also optimized for real-world usability tested, validated, and shaped by the people who rely on these tools every day.
             </p>
-            <p className="text-black text-base sm:text-lg mt-6 leading-relaxed">
+            <p className="text-black text-base  md:ml-12 sm:text-lg mt-6 leading-relaxed">
              
 We go beyond fixing issues. We help you future-proof your digital platforms, build inclusive workflows, and unlock new opportunities by embracing the needs of the 1+ billion people with disabilities worldwide. Our work is co-created with disability communities, ensuring that our solutions are grounded in real experiences, not just theory.
 
@@ -358,7 +358,7 @@ We go beyond fixing issues. We help you future-proof your digital platforms, bui
       <section className="w-full bg-[#F4F6FB] py-10 md:mb-[-46px]">
         <div className="flex flex-col md:flex-row justify-center items-center max-w-7xl mx-auto px-4 gap-10">
           <div className="flex-1">
-            <h1 className="font-kumbh text-3xl font-extralight text-black">💡 Why Choose Doelsoft?</h1>
+            <h1 className="font-kumbh text-2xl md:text-4xl font-bold text-black">💡 Why Choose Doelsoft?</h1>
             <ul className="space-y-4 mt-6">
               {whyChoose.map((item, idx) => (
                 <li key={idx} className="flex items-start space-x-3">
