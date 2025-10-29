@@ -238,17 +238,18 @@ useEffect(()=>{
     {CursolDetails.map((details, index) => (
       <div
         key={index}
-        className={`flex-1 font-kumbh transition-opacity duration-700 ${
+        className={`flex-1 font-kumbh transition-opacity md:mt-36 duration-700 ${
           cursol === index ? "opacity-100 relative" : "opacity-0 absolute"
         } w-full`}
       >
         <h1 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold leading-tight whitespace-nowrap">
           {details.h11}
-          <br />
-          <span className="text-red-600 block mt-2 text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold">
+          </h1>
+      
+          <h2 className="text-red-600 block mt-2 text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold">
             {details.h22}
-          </span>
-        </h1>
+       
+        </h2>
 
         <p className="text-gray-600 text-sm sm:text-base md:text-lg lg:text-xl py-4 leading-relaxed max-w-[90%] mx-auto lg:mx-0">
           {details.p}
@@ -380,22 +381,23 @@ useEffect(()=>{
 
 
       {/* Industries Section - Responsive grid */}
-  <section className="relative w-full px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 overflow-hidden">
+  <section className="relative w-full h-[725px] bg-[#080808] overflow-hidden">
   {/* Background Image + Overlay */}
-  <div className="absolute inset-0">
-    <div className="absolute inset-0 bg-[#080808] opacity-90"></div>
-  </div>
+  <div className="absolute inset-0 bg-cover bg-center bg-[#080808]" style={{ backgroundImage: "url('/11122436.svg')" }}></div>
+  <div className="absolute inset-0 bg-[#080808]/10"></div>
 
   {/* Content */}
-  <div className="relative z-10 md:ml-20 max-w-7xl mx-auto">
+  <div className="relative z-10 md:ml-20 max-w-7xl md:mt-16 mx-auto px-4 sm:px-6 lg:px-8">
     {/* Heading */}
-    <h1 className="text-white text-lg sm:text-2xl md:text-3xl font-bold pl-0 sm:pl-4 pt-2 sm:pt-6 mb-6 sm:mb-8 text-center sm:text-left">
-      Industries We Serve
-    </h1>
+    <div className="flex justify-center items-start px-2 py-1 gap-2 bg-[#333333] rounded-md w-fit">
+  <p className="text-white font-inter font-medium text-[16px] leading-[150%] tracking-[-0.03em]">
+    Industries We Serve
+  </p>
+</div>
 
     {/* Subheading + Paragraph */}
-    <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 sm:gap-6 ml-0 sm:ml-8 md:ml-14 mb-8 sm:mb-12 text-center lg:text-left px-4 sm:px-0">
-      <h2 className="text-white text-2xl sm:text-3xl md:text-4xl font-light px-0 sm:px-0">
+    <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 sm:gap-6 mb-8 md:mt-2 sm:mb-12 text-center lg:text-left">
+      <h2 className="text-white font-[500] text-[44px] leading-[130%] tracking-[-0.03em] font-['Kumbh_Sans']">
         AI for Every Industry
       </h2>
       <p className="text-white text-sm sm:text-base md:text-lg mt-2 lg:mt-0 max-w-xl mx-auto lg:mx-0 leading-relaxed">
@@ -406,18 +408,18 @@ useEffect(()=>{
     </div>
 
     {/* Services Grid */}
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 sm:gap-8 px-2 sm:px-8 lg:px-12 mx-auto max-w-6xl justify-items-center">
+    <div className="grid grid-cols-2 md:flex flex-row md:mt-32  gap-4 sm:gap-4 px-2 sm:px-2   max-w-7xl ">
       {services.map((service, i) => (
         <div
           key={i}
-          className="flex flex-col items-center hover:scale-105 duration-300 md:mt-6 w-full sm:w-auto text-center"
+          className="flex flex-col items-center hover:scale-105 duration-300 md:mt-6 text-center"
         >
           <img
             src={service.logo}
             alt={service.title}
-            className="w-28 sm:w-32 md:w-36 lg:w-40 h-auto object-contain"
+            className="w-28 sm:w-32 md:w-36 lg:w-52 h-auto object-contain"
           />
-          <p className="text-white bg-red-600 p-2 md:p-1 w-28 sm:w-32 md:w-36 lg:w-40 text-xs sm:text-sm md:text-base text-center leading-snug">
+          <p className="text-white bg-red-600 py-1 px-2 sm:py-1.5 sm:px-3 md:py-2 md:px-4 w-28 sm:w-32 md:w-36 lg:w-52 text-xs sm:text-sm md:text-base text-center leading-snug ">
             {service.title}
           </p>
         </div>
@@ -425,8 +427,9 @@ useEffect(()=>{
     </div>
   </div>
 </section>
+
       {/* Core Services Section - Responsive flex */}
-    <section className="w-full bg-white px-4 sm:px-6 lg:px-8 py-10 mx-auto md:ml-2 sm:py-16 lg:py-20 overflow-hidden">
+    <section className="w-full bg-white px-4 sm:px-6 lg:px-8 py-10 mx-auto md:-ml-2 sm:py-16 lg:py-20 overflow-hidden">
   <div className="flex flex-col lg:flex-row gap-10 lg:gap-12 max-w-7xl mx-auto">
     
     {/* LEFT SECTION */}
@@ -443,26 +446,28 @@ useEffect(()=>{
       </p>
 
       {/* Image */}
+     
       <img
         src="Robot2.svg"
         alt="robot2"
-        className="w-64 sm:w-72 md:w-80 lg:w-96 h-auto animate-moveOnce mx-auto lg:mx-0"
+         className=" w-[550px] h-[658px] -left-[117px] -top-[23px]  object-contain animate-moveOnce"
       />
+    
 
       {/* Button */}
       <div className="flex justify-center lg:justify-start">
-        <button className="flex items-center justify-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-light px-16 sm:px-24 md:px-28 lg:px-32 py-3 sm:py-4 text-base sm:text-lg shadow-lg transition mt-4">
+        <button className="flex items-center justify-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-light px-16 sm:px-24 md:px-28 lg:px-40 md:whitespace-nowrap py-3 sm:py-5 text-lg sm:text-xl shadow-lg transition mt-4">
           Explore AI Strategy{" "}
           <ArrowUpRight
             className="border border-white rounded-full text-center"
-            size={22}
+            size={28}
           />
         </button>
       </div>
     </div>
 
     {/* RIGHT SECTION: Services Grid */}
-    <div className="grid grid-cols-1 sm:grid-cols-2  gap-6 lg:gap-8 ml-7 md:ml-12 w-72 lg:w-1/2">
+    <div className="grid grid-cols-1 sm:grid-cols-2  gap-6 lg:gap-8 ml-7 md:ml-4 w-72 lg:w-1/2">
       {[
         {
           icon: AI,
@@ -526,7 +531,7 @@ useEffect(()=>{
           <img
             src={service.icon}
             alt={service.title}
-            className="w-8 sm:w-10 h-auto mb-4 mx-auto sm:mx-0"
+            className="w-8 sm:w-16 h-auto mb-4 mx-auto sm:mx-0"
           />
           <h3 className="text-black font-semibold  text-base sm:text-lg md:text-xl mb-3 sm:mb-4 text-center sm:text-left">
             {service.title}
@@ -548,26 +553,31 @@ useEffect(()=>{
         style={{
           backgroundImage: "url('/Mask group.svg')",
         }}>
-        <div className="max-w-6xl mx-auto md:mx-[93px] text-left">
-          <h3 className="text-lg text-gray-700 mb-2">Doelsoft</h3>
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8 sm:mb-12">How we work</h2>
+        <div className="max-w-6xl mx-auto md:mx-[91px] md:ml-24 text-left">
+          <h3 className="text-lg text-white mb-2">Doelsoft</h3>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8 sm:mb-12">How we work</h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {steps.map((step, idx) => (
               <div
                 key={idx}
-                className="bg-red-600 text-white  p-6 flex flex-col justify-between shadow-lg hover:scale-105 transition-transform"
+                className="bg-red-600 text-white  p-8  flex flex-col justify-between shadow-lg hover:scale-105 transition-transform"
               >
-                <div className="flex items-center gap-3 mb-4">
+                <div className="flex flex-col items-start gap-3 mb-4">
                   {step.icon}
-                  <h3 className="text-xl font-semibold">{step.title}</h3>
+                 
+                  
                 </div>
-                <p className="text-sm mb-6 leading-relaxed">{step.desc}</p>
-                <div className="flex justify-end">
-                  <button className="w-8 h-8 flex items-center justify-center rounded-full border border-white hover:bg-white hover:text-red-600 transition">
+                
+                <div className="flex flex-row justify-between gap-3 ">
+                   
+                       <h3 className="text-xl font-semibold">{step.title}</h3>
+                  <button className="w-8 h-8 flex items-center justify-center rounded-full  border border-white hover:bg-white hover:text-red-600 transition">
                     →
                   </button>
                 </div>
+                <p className="text-sm mb-6 mt-2 whitespace-nowrap leading-relaxed">{step.desc}</p>
+               
               </div>
             ))}
           </div>
@@ -575,15 +585,24 @@ useEffect(()=>{
       </section>
 
       {/* Why Doelsoft Section - Responsive flex */}
-      <section className='w-full bg-white px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20'>
-        <div className='flex flex-col lg:flex-row gap-8 lg:gap-12 max-w-7xl mx-auto'>
+      <section className='w-full bg-white px-4 sm:px-6 lg:px-8 py-12 md:py-20 '>
+        <div className='flex flex-col lg:flex-row gap-8 lg:gap-12 max-w-7xl mx-6auto md:ml-'>
           <div className='flex-1 relative flex flex-col items-center justify-center lg:justify-start'>
-            <img src={Background} alt='background' className='absolute inset-0 w-[556px] h-[657px] bg-gray-200 object-cover hidden lg:block' />
+            <div className="absolute  right-8 top-10 z-50">
+              
+          <img
+            src="/logo4.svg" 
+            alt="logo"
+            className="w-24 h-auto"
+          />
+      </div>
+            <img src={Background} alt='background' className='absolute inset-0 w-[400px] h-[580px] left-[146px] top-[72px]  bg-[#F8F9FD] bg-cover' />
             <img 
               src="/Girl.svg"
               alt="Girl" 
               className="w-[390px] max-w-md h-auto z-10 animate-none relative" 
             />
+
 
             {/* Testimonials */}
             <div className="flex flex-col items-end gap-2 mt-[1px] absolute top-[380px] md:top-[500px] right-0  lg:mt-0">
@@ -605,7 +624,7 @@ useEffect(()=>{
           </div>
 
           <div className='flex-1 space-y-6 lg:space-y-8 py-8 lg:py-10'>
-            <h1 className='font-bold text-2xl sm:text-3xl lg:text-4xl'>Why Doelsoft</h1>
+            <h1 className="font-bold text-2xl sm:text-[40px] lg:text-[44px] font-kumbh">Why Doelsoft</h1>
             <p className='py-4 text-lg leading-relaxed'>We turn AI, Cloud & Data into measurable outcomes shipping production systems with governance, security, and accessibility built in.</p>
             <h2 className='font-bold text-xl sm:text-2xl lg:text-3xl'>Proof points</h2>
             <ul className='list-disc list-inside text-black mt-4 space-y-2 text-base'>
@@ -621,16 +640,24 @@ useEffect(()=>{
             </ul>
           </div>
         </div>
+       {/* <div className=' hidden md:flex ' >
+        <button className="w-10 h-10    flex items-center rounded-full justify-center border border-black hover:bg-white hover:text-red-600 ">
+        <ArrowUpRight size={18} />
+      </button>
+    </div> */}
+       
       </section>
 
       {/* Frames Section */}
      <section className="relative bg-white py-8 sm:py-12 px-4 sm:px-6 lg:px-48">
   {/* Desktop / Tablet view */}
+
+   
   <div className="hidden md:flex flex-wrap gap-6 justify-center">
     {frames.map((frame, i) => (
       <div
         key={i}
-        className="flex flex-row bg-white shadow-xl px-4 py-2 justify-between flex-1 min-w-[200px] max-w-[300px]"
+        className="flex flex-row bg-white shadow-xl px-4 py-3 justify-between flex-1 min-w-[200px] max-w-[300px]"
       >
         <div className="flex flex-row gap-2 mt-3 items-center whitespace-nowrap">
           <img
@@ -638,14 +665,16 @@ useEffect(()=>{
             alt={frame}
             className="w-10 h-10"
           />
-          <p className="text-sm sm:text-base text-gray-800">{frame}</p>
+          <p className="text-sm sm:text-base font-semibold text-gray-800">{frame}</p>
         </div>
       </div>
     ))}
+      
+    
     <div className='hidden md:flex py-6 '>
     <img
-      src="/Highlight.svg"
-      className=" absolute w-28 z-30 mt-9 lg:left-[420px] top-[-110px]"
+      src="/Highlight1.svg"
+      className=" absolute w-20 z-30 mt-9 lg:left-[390px] top-[-100px]"
       alt="highlight"
     />
 
@@ -784,10 +813,10 @@ useEffect(()=>{
       {/* Heading + CTA */}
       <div className="  flex flex-col lg:flex-row lg:items-center lg:justify-between mb-12 max-w-7xl mx-auto">
         <div className="flex-1 mb-6 lg:mb-0">
-          <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-semibold leading-tight tracking-[-0.03em] text-black font-['Kumbh_Sans']">
+          <h2 className="text-3xl sm:text-4xl lg:text-[44px] md:-ml-3 font-semibold leading-tight tracking-[-0.03em] text-black font-['Kumbh_Sans']">
             DoelSoft Insights & Thought Leadership
           </h2>
-          <p className="text-gray-800 mt-4 max-w-2xl text-base sm:text-lg leading-relaxed font-['Inter']">
+          <p className="text-gray-800 mt-4 md:-ml-3 max-w-2xl text-base sm:text-lg leading-relaxed font-['Inter']">
             Practical playbooks from the field AI, Cloud & Data patterns that
             ship results.
           </p>
@@ -804,7 +833,7 @@ useEffect(()=>{
       </div>
 
       {/* Insights Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:ml-20 max-w-7xl mx-auto">
         {insights.map((item, i) => (
           <div
             key={i}
@@ -844,18 +873,18 @@ useEffect(()=>{
   <div className="flex flex-col lg:flex-row items-center md:ml-16 justify-between gap-10 px-4 sm:px-8">
     {/* Text + First Card Column */}
     <div className="w-full lg:w-1/2 py-8">
-      <h2 className="text-4xl md:ml-8  font-bold font-kumbh text-gray-900 mb-2">
+      <h2 className="text-4xl md:ml-6  font-bold font-kumbh text-gray-900 mb-2">
         Featured Solutions
       </h2>
 
-      <p className="text-gray-600 md:ml-8 text-base mt-6 sm:text-lg max-w-2xl">
+      <p className="text-gray-600 md:ml-6 text-base mt-6 sm:text-lg max-w-2xl">
         Opinionated, production-ready solutions that turn <br /> AI, Cloud & Data into outcomes fast.
       </p>
 
       {solutions.slice(0, 1).map((item, i) => (
         <div
           key={i}
-          className={`p-10 max-w-96 h-56 md:ml-14  mt-14 shadow-sm transition hover:shadow-md ${
+          className={`p-10 max-w-96 h-56 md:ml-6  mt-14 shadow-sm transition hover:shadow-md ${
             item.type === "bg"
               ? "bg-gray-100"
               : "border border-red-500 bg-white"
@@ -875,13 +904,13 @@ useEffect(()=>{
       <img
         src="/Solution.svg"
         alt="Solution Graphic"
-        className="w-full max-w-md sm:max-w-xl lg:max-w-2xl object-contain"
+        className="w-full max-w-md sm:h-[487px] sm:max-w-xl lg:max-w-2xl object-contain"
       />
     </div>
   </div>
 
   {/* Cards Grid */}
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 md:ml-24 mt-16 px-4 sm:px-8">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 md:ml-14 mt-16 md:mt-6 px-4 sm:px-8">
     {solutions.slice(1).map((item, i) => (
       <div
         key={i}
@@ -913,7 +942,7 @@ useEffect(()=>{
       {/* Final CTA Section */}
     
         <section
-                    className="relative w-full  bg-cover bg-center text-center py-16   sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
+                    className="relative w-full  bg-cover bg-center text-center py-16 h-[568px]   sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
                     style={{ backgroundImage: "url('/Background2.svg')",marginTop:"45px" } }
                   >
                     {/* Decorative Vectors */}
@@ -938,15 +967,15 @@ useEffect(()=>{
                   
                     {/* Main Content */}
                     <div className="relative max-w-3xl mx-auto text-white z-10 flex flex-col items-center justify-center space-y-5 sm:space-y-7 md:space-y-8">
-                      <h2 className="text-xl sm:text-2xl md:text-4xl font-kumbh font-light leading-snug px-2">
+                      <h2 className="text-xl sm:text-2xl md:text-6xl font-kumbh font-light leading-snug px-2">
                         Let's Build the Future Together
                       </h2>
                   
-                      <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-200 leading-relaxed px-2">
+                      <p className="text-sm sm:text-base md:text-lg lg:text-2xl text-gray-200 leading-relaxed px-2">
                         Tells Us your goals.We'll design the runaway then deliver it with AI,Could and Data.
                       </p>
                   
-                      <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-4 text-sm sm:text-lg  shadow-lg transition-all duration-300 ease-in-out">
+                      <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-4 text-sm sm:text-xl  shadow-lg transition-all duration-300 ease-in-out">
                         Talk to an Expert{" "}
                         <ArrowUpRight
                           className="border border-white rounded-full p-1"
