@@ -192,7 +192,7 @@ const cards = [
     desc: "What matters now and how leaders can build durable advantage.",
   },
   {
-    img: "/Client2.svg",
+    img: "/client2.svg",
     client: "Client Name",
     title: "AI-Powered Software Development",
     desc: "From scaffolds to scale: patterns for shipping smarter, faster.",
@@ -231,40 +231,41 @@ useEffect(()=>{
       />
     ))}
   </div>
-<section className="w-full min-h-lvh max-w-[95vw] md:max-w-[85vw] xl:max-w-[80vw] mx-auto md:mx-[92px] relative flex flex-col lg:flex-row justify-between items-center bg-white px-4 sm:px-6 lg:px-8 py-20 sm:py-20 gap-8 lg:gap-12 overflow-hidden">
+<section className="w-full min-h-lvh max-w-[95vw] md:max-w-[90vw] xl:max-w-[85vw] mx-auto md:mx-[80px] relative flex flex-col lg:flex-row justify-between items-center bg-white px-4 sm:px-6 lg:px-8 py-20 sm:py-20 gap-8 lg:gap-12 overflow-hidden">
 
   {/* LEFT CONTENT */}
-  <div className="w-full lg:w-1/2 space-y-6 flex flex-col gap-6 md:gap-8 text-center lg:text-left">
+  <div className="w-full lg:w-1/2 space-y-6 flex flex-col gap-6 md:gap-8 text-center lg:text-left md:mt-36">
     {CursolDetails.map((details, index) => (
       <div
         key={index}
-        className={`flex-1 font-kumbh transition-opacity md:mt-36 duration-700 ${
+        className={`flex-1 font-kumbh transition-opacity  duration-700 ${
           cursol === index ? "opacity-100 relative" : "opacity-0 absolute"
-        } w-full`}
+        } w-full `}
       >
-        <h1 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold leading-tight whitespace-nowrap">
+        {index==0 && <p className={`font-inter  `}>Target Tomorrow with AI</p> }
+        <h1 className="text-xl font-kumbh md:text-[40px] font-semibold leading-tight whitespace-nowrap">
           {details.h11}
           </h1>
       
-          <h2 className="text-red-600 block mt-2 text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold">
+          <h2 className="text-red-600 font-kumbh block mt-2 text-xl md:whitespace-nowrap  md:text-[70px] leading-tight font-semibold">
             {details.h22}
        
         </h2>
 
-        <p className="text-gray-600 text-sm sm:text-base md:text-lg lg:text-xl py-4 leading-relaxed max-w-[90%] mx-auto lg:mx-0">
+        <p className="text-gray-600 text-sm sm:text-base font-normal md:text-lg  font-inter py-4 leading-relaxed max-w-[90%] mx-auto lg:mx-0">
           {details.p}
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
           <button
             type="button"
-            className="bg-red-600 text-white px-6 sm:px-8 py-3 font-medium transition-colors duration-200 border border-transparent hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-red-600"
+            className="bg-red-600 font-inter font-normal text-white px-6 sm:px-8 py-3  transition-colors duration-200 border border-transparent hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-red-600"
           >
             Explore Solutions ↗
           </button>
           <button
             type="button"
-            className="bg-white text-black px-6 sm:px-8 py-3 font-medium border border-black transition-colors duration-200 hover:bg-red-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-red-600"
+            className="bg-white font-inter  text-black px-6 sm:px-8 py-3 font-medium border border-black transition-colors duration-200 hover:bg-red-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-red-600"
           >
             Consult with Us ↗
           </button>
@@ -276,7 +277,7 @@ useEffect(()=>{
             {[spring, wipro, zingo, mevatron, menlo, tech].map((logo, i) => (
               <div
                 key={i}
-                className="w-14 sm:w-16 md:w-20 lg:w-24 h-10 sm:h-12 md:h-14 lg:h-16 flex items-center justify-center flex-shrink-0"
+                className="w-14 sm:w-16 md:w-20 lg:w-28 h-10 sm:h-12 md:h-16 lg:h-24 flex items-center justify-center flex-shrink-0"
               >
                 <img
                   src={logo}
@@ -287,9 +288,9 @@ useEffect(()=>{
             ))}
           </div>
           
-          <p className="text-black font-bold text-base sm:text-lg lg:text-2xl py-4 lg:py-6 text-center lg:text-left">
+          <p className="text-black  font-inter font-medium text-base sm:text-lg lg:text-2xl py-4 lg:py-6 text-center lg:text-left">
             Trusted by{" "}
-            <span className="font-medium">
+            <span className="font-normal">
               Leading Enterprises & Fast–Growing Teams
             </span>
           </p>
@@ -305,14 +306,14 @@ useEffect(()=>{
     <img
       src={mask}
       alt="mask"
-      className="absolute bg-[#cfcece] inset-0 w-[220px] sm:w-[240px] md:w-[260px] lg:w-[280px] xl:w-[300px] h-[250px] sm:h-[300px] md:h-[350px] mt-12 sm:mt-20 md:mt-32 md:ml-[10rem] xl:ml-[13rem] object-cover hidden lg:block"
+      className="absolute bg-[#cfcece] inset-0 w-[220px] md:w-[360px] h-[250px] sm:h-[300px] md:h-[380px] mt-12 sm:mt-20 md:mt-24 md:ml-[8rem] xl:ml-[11rem] object-cover hidden lg:block"
     />
 
     {/* Main image */}
     <img
       src={CursolDetails[cursol].img}
       alt={CursolDetails[cursol].h22}
-      className={`w-[85%] sm:w-[75%] md:w-[65%] lg:w-full h-auto max-h-[400px] sm:max-h-[450px] md:max-h-[550px] mx-auto md:ml-[40px] lg:ml-[67px] mb-8 lg:mb-24 object-contain ${
+      className={`w-[85%] sm:w-[75%] md:w-[65%] lg:w-full h-auto max-h-[400px] sm:max-h-[450px] md:max-h-[550px] mx-auto md:ml-[45px] mb-8 lg:mb-24 object-contain ${
         cursol === 0 ? "animate-moveOnce" : ""
       } z-50`}
     />
@@ -325,15 +326,15 @@ useEffect(()=>{
     />
 
     {/* Testimonials */}
-    <div className="flex flex-col items-center lg:items-end gap-4 lg:absolute lg:top-1/4 lg:right-0 lg:mr-[-45px] md:mt-[120px] lg:mt-[145px]">
+    <div className="flex flex-col items-center lg:items-end gap-4 lg:absolute lg:top-1/4 lg:right-0 lg:mr-[-90px] md:mt-[140px] ">
       {Testimonial.map((item, index) => (
         <div
           key={index}
-          className={`bg-white drop-shadow-lg z-50 p-3 md:p-4 lg:p-6 max-w-72 transition-opacity duration-1000 ${
+          className={`bg-white drop-shadow-lg z-50 p-3 md:p-8 lg:p-6 w-72 transition-opacity duration-1000 ${
             index === testimonialIndex ? "opacity-100 block" : "opacity-0 hidden"
           }`}
         >
-          <p className="text-xs sm:text-base italic text-gray-600 ">
+          <p className="text-xs sm:text-[14px] italic whitespace-break-spaces text-gray-600 ">
             "{item.quote}"
           </p>
           <div className="flex items-center mt-2 gap-2">
@@ -359,7 +360,7 @@ useEffect(()=>{
       <div className="bg-white shadow-lg md:ml-32 rounded-lg px-3 py-2 flex items-center justify-between text-xs sm:text-sm">
         <div className="flex items-center gap-2">
           <img src="/F1.svg" alt="AI leverage" className="w-6 sm:w-8 h-6 sm:h-8" />
-          <span className="font-semibold">Budget Friendly</span>
+          <span className="font-medium">Budget Friendly</span>
         </div>
         <span className="text-red-600 whitespace-nowrap ml-4 sm:ml-8">Life Long</span>
       </div>
@@ -368,7 +369,7 @@ useEffect(()=>{
       <div className="bg-white shadow-lg rounded-lg px-3 py-2 flex items-center justify-between text-xs sm:text-sm ml-0 lg:ml-16">
         <div className="flex items-center gap-2">
           <img src="/F2.svg" alt="AI leverage" className="w-6 sm:w-8 h-6 sm:h-8" />
-          <span className="font-semibold">Native, Fast & Powerful</span>
+          <span className="font-medium">Native, Fast & Powerful</span>
         </div>
         <span className="text-red-600 whitespace-nowrap ml-4 sm:ml-8">AI leverage</span>
       </div>
@@ -397,10 +398,10 @@ useEffect(()=>{
 
     {/* Subheading + Paragraph */}
     <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 sm:gap-6 mb-8 md:mt-2 sm:mb-12 text-center lg:text-left">
-      <h2 className="text-white font-[500] text-[44px] leading-[130%] tracking-[-0.03em] font-['Kumbh_Sans']">
+      <h2 className="text-white font-[500] text-[44px] leading-[130%] tracking-[-0.03em] font-kumbh">
         AI for Every Industry
       </h2>
-      <p className="text-white text-sm sm:text-base md:text-lg mt-2 lg:mt-0 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+      <p className="text-white text-sm font-normal sm:text-base md:text-lg mt-2 lg:mt-0 max-w-xl mx-auto lg:mx-0 leading-relaxed">
         We turn domain challenges into measurable outcomes with modern{" "}
         <br className="hidden sm:block" /> cloud, trusted data, and
         production-ready AI.
@@ -434,12 +435,12 @@ useEffect(()=>{
     
     {/* LEFT SECTION */}
     <div className="flex-1 space-y-6 lg:space-y-8 text-center lg:text-left">
-      <h1 className="font-bold text-xl sm:text-2xl lg:text-3xl xl:text-4xl leading-tight">
+      <h1 className="font-medium text-xl md:text-[44px] font-kumbh leading-tight">
         DoelSoft
         <br />
         Core Services
       </h1>
-      <p className="text-base md:text-lg leading-relaxed px-2 sm:px-0">
+      <p className="text-base font-inter md:text-lg font-normal leading-relaxed px-2 sm:px-0">
         We Combine AI, Cloud & Data to design, build and{" "}
         <br className="hidden lg:block" /> scale secure digital products aligned
         to measurable outcomes.
@@ -456,7 +457,7 @@ useEffect(()=>{
 
       {/* Button */}
       <div className="flex justify-center lg:justify-start">
-        <button className="flex items-center justify-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-light px-16 sm:px-24 md:px-28 lg:px-40 md:whitespace-nowrap py-3 sm:py-5 text-lg sm:text-xl shadow-lg transition mt-4">
+        <button className="flex items-center justify-center font-inter gap-2 bg-red-600 hover:bg-gray-600 text-white font-light px-16 sm:px-24 md:px-28 lg:px-40 md:whitespace-nowrap py-3 sm:py-5 text-lg sm:text-xl shadow-lg transition mt-4">
           Explore AI Strategy{" "}
           <ArrowUpRight
             className="border border-white rounded-full text-center"
@@ -526,19 +527,19 @@ useEffect(()=>{
       ].map((service, i) => (
         <div
           key={i}
-          className="border border-gray-600 px-2 sm:px-6 py-6 hover:shadow-lg transition duration-300"
+          className="border border-gray-600 px-2 sm:px-6  py-6 hover:shadow-lg transition duration-300"
         >
           <img
             src={service.icon}
             alt={service.title}
             className="w-8 sm:w-16 h-auto mb-4 mx-auto sm:mx-0"
           />
-          <h3 className="text-black font-semibold  text-base sm:text-lg md:text-xl mb-3 sm:mb-4 text-center sm:text-left">
+          <h3 className="text-black font-semibold  font-kumbh text-base sm:text-lg md:text-xl mb-3 sm:mb-4 text-center sm:text-left">
             {service.title}
           </h3>
-          <ul className="list-disc list-inside text-gray-600  space-y-1 sm:space-y-2 text-center  md:text-left">
+          <ul className="list-disc list-inside text-gray-600 font-normal  space-y-1 sm:space-y-2 text-center font-normal  md:text-left">
             {service.list.map((item, j) => (
-              <li className=' text-sm' key={j}>{item}</li>
+              <li className=' text-sm font-inter' key={j}>{item}</li>
             ))}
           </ul>
         </div>
@@ -553,9 +554,9 @@ useEffect(()=>{
         style={{
           backgroundImage: "url('/Mask group.svg')",
         }}>
-        <div className="max-w-6xl mx-auto md:mx-[91px] md:ml-24 text-left">
+        <div className="max-w-6xl mx-auto md:mx-[91px] md:ml-[5.5rem] text-left">
           <h3 className="text-lg text-white mb-2">Doelsoft</h3>
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8 sm:mb-12">How we work</h2>
+          <h2 className="text-3xl sm:text-[44px] font-kumbh font-medium text-white mb-8 sm:mb-12">How we work</h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {steps.map((step, idx) => (
@@ -571,12 +572,12 @@ useEffect(()=>{
                 
                 <div className="flex flex-row justify-between gap-3 ">
                    
-                       <h3 className="text-xl font-semibold">{step.title}</h3>
+                       <h3 className="text-xl font-kumbh font-medium">{step.title}</h3>
                   <button className="w-8 h-8 flex items-center justify-center rounded-full  border border-white hover:bg-white hover:text-red-600 transition">
                     →
                   </button>
                 </div>
-                <p className="text-sm mb-6 mt-2 whitespace-nowrap leading-relaxed">{step.desc}</p>
+                <p className="text-sm mb-6 mt-2 font-inter whitespace-nowrap leading-relaxed">{step.desc}</p>
                
               </div>
             ))}
@@ -588,7 +589,7 @@ useEffect(()=>{
       <section className='w-full bg-white px-4 sm:px-6 lg:px-8 py-12 md:py-20 '>
         <div className='flex flex-col lg:flex-row gap-8 lg:gap-12 max-w-7xl mx-6auto md:ml-'>
           <div className='flex-1 relative flex flex-col items-center justify-center lg:justify-start'>
-            <div className="absolute  right-8 top-10 z-50">
+            <div className=" hidden md:flex absolute  right-8 top-10 z-50">
               
           <img
             src="/logo4.svg" 
@@ -614,8 +615,8 @@ useEffect(()=>{
                   <div className="flex items-center mt-6 gap-2">
                     <RxAvatar size={24} />
                     <div>
-                      <p className="text-sm font-semibold">{item.name}</p>
-                      <p className="text-xs text-gray-500">Founder @ {item.company}</p>
+                      <p className="text-sm font-inter font-semibold">{item.name}</p>
+                      <p className="text-xs font-inter text-gray-500">Founder @ {item.company}</p>
                     </div>
                   </div>
                 </div>
@@ -624,10 +625,10 @@ useEffect(()=>{
           </div>
 
           <div className='flex-1 space-y-6 lg:space-y-8 py-8 lg:py-10'>
-            <h1 className="font-bold text-2xl sm:text-[40px] lg:text-[44px] font-kumbh">Why Doelsoft</h1>
-            <p className='py-4 text-lg leading-relaxed'>We turn AI, Cloud & Data into measurable outcomes shipping production systems with governance, security, and accessibility built in.</p>
-            <h2 className='font-bold text-xl sm:text-2xl lg:text-3xl'>Proof points</h2>
-            <ul className='list-disc list-inside text-black mt-4 space-y-2 text-base'>
+            <h1 className="font-medium text-2xl sm:text-[40px] lg:text-[44px] font-kumbh">Why Doelsoft</h1>
+            <p className='py-4 text-lg font-inter leading-relaxed'>We turn AI, Cloud & Data into measurable outcomes shipping production systems with governance, security, and accessibility built in.</p>
+            <h2 className='font-semibold text-xl font-inter sm:text-2xl lg:text-3xl'>Proof points</h2>
+            <ul className='list-disc list-inside font-inter text-black mt-4 space-y-2 text-base'>
               <li>Agile transformation</li>
               <li>Cost Reduction</li>
               <li>Focusing on customers centric goals</li>
@@ -706,10 +707,10 @@ useEffect(()=>{
       <section className="bg-white py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
   {/* Header */}
   <div className="max-w-6xl mx-auto text-center mb-8 sm:mb-12 px-2">
-    <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
+    <h2 className="text-2xl md:text-[44px] font-kumbh font-medium text-gray-900">
       Outcomes We Deliver
     </h2>
-    <p className="mt-4 text-gray-600 text-base sm:text-lg max-w-3xl mx-auto leading-relaxed">
+    <p className="mt-4 text-gray-600 text-base font-inter sm:text-lg max-w-3xl mx-auto leading-relaxed">
       We apply AI, Cloud & Data to move the metrics that matter — speed, cost,
       and customer experience — backed by production-grade delivery.
     </p>
@@ -733,10 +734,10 @@ useEffect(()=>{
               className="w-full h-full object-cover"
             />
             <div className="absolute bottom-0 w-full bg-black bg-opacity-70 p-4 sm:p-6">
-              <h3 className={`text-base sm:text-lg font-semibold ${card.text}`}>
+              <h3 className={`text-base sm:text-lg font-kumbh font-semibold ${card.text}`}>
                 {card.title}
               </h3>
-              <p className={`mt-2 text-sm ${card.text}`}>{card.desc}</p>
+              <p className={`mt-2 font-inter text-sm ${card.text}`}>{card.desc}</p>
             </div>
           </div>
         )}
@@ -751,10 +752,10 @@ useEffect(()=>{
                 className="w-10 h-10 sm:w-12 sm:h-12"
               />
             )}
-            <h3 className={`text-base sm:text-lg font-semibold ${card.text}`}>
+            <h3 className={`text-base font-kumbh sm:text-lg font-semibold ${card.text}`}>
               {card.title}
             </h3>
-            <p className={`text-sm sm:text-base ${card.text}`}>{card.desc}</p>
+            <p className={`text-sm font-inter sm:text-base ${card.text}`}>{card.desc}</p>
           </div>
         )}
       </div>
@@ -774,28 +775,28 @@ useEffect(()=>{
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/70 to-red-900/60"></div>
         <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-16 max-w-6xl mx-auto">
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-tight">
+          <h1 className="text-2xl md:text-[44px] font-kumbh font-medium text-white leading-tight">
             Where Talent, Trust & <br className="hidden lg:block" /> Code Add Up
           </h1>
 
           <div className="flex flex-col sm:flex-row justify-center lg:justify-end items-center gap-6 sm:gap-10 bg-transparent rounded-lg">
             <div className="text-center">
               <Counter target="120" suffix="+" />
-              <p className="text-white text-base sm:text-lg md:text-xl">Employees</p>
+              <p className="text-white font-inter text-base sm:text-lg md:text-xl">Employees</p>
             </div>
 
-            <p className="hidden sm:block text-white font-bold text-2xl sm:text-3xl">|</p>
+            <p className="hidden sm:block text-white font-inter  text-2xl sm:text-3xl">|</p>
 
             <div className="text-center">
               <Counter target="150" suffix="+" />
-              <p className="text-white text-base sm:text-lg md:text-xl">Clients</p>
+              <p className="text-white text-base font-inter sm:text-lg md:text-xl">Clients</p>
             </div>
 
-            <p className="hidden sm:block text-white font-bold text-2xl sm:text-3xl">|</p>
+            <p className="hidden sm:block text-white  text-2xl sm:text-3xl">|</p>
 
-            <div className="text-center">
+            <div className="text-center ">
               <Counter target="500" suffix="K" />
-              <p className="text-white text-base sm:text-lg md:text-xl">Lines of Code</p>
+              <p className="text-white text-base font-inter sm:text-lg md:text-xl">Lines of Code</p>
             </div>
           </div>
         </div>
@@ -812,11 +813,11 @@ useEffect(()=>{
       </div>
       {/* Heading + CTA */}
       <div className="  flex flex-col lg:flex-row lg:items-center lg:justify-between mb-12 max-w-7xl mx-auto">
-        <div className="flex-1 mb-6 lg:mb-0">
-          <h2 className="text-3xl sm:text-4xl lg:text-[44px] md:-ml-3 font-semibold leading-tight tracking-[-0.03em] text-black font-['Kumbh_Sans']">
-            DoelSoft Insights & Thought Leadership
+        <div className="flex-1 mb-6 space-y-4 lg:mb-0">
+          <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-kumbh md:-ml-3 font-medium  leading-tight tracking-[-0.03em] text-black ">
+            DoelSoft Insights &  Thought Leadership
           </h2>
-          <p className="text-gray-800 mt-4 md:-ml-3 max-w-2xl text-base sm:text-lg leading-relaxed font-['Inter']">
+          <p className="text-gray-800 mt-4 md:-ml-3 max-w-2xl text-base sm:text-lg leading-relaxed font-inter">
             Practical playbooks from the field AI, Cloud & Data patterns that
             ship results.
           </p>
@@ -825,8 +826,8 @@ useEffect(()=>{
         {/* CTA Card (Red Button) */}
          
         <button className="relative flex items-center justify-between bg-[#EF0E0E] text-white font-semibold px-10 py-6 shadow-lg hover:bg-red-700 transition">
-          <span className="text-xl tracking-[-0.03em]">View all Insights</span>
-          <span className="ml-4 w-12 h-12 flex items-center justify-center rounded-full border border-white">
+          <span className="text-xl tracking-[-0.03em] font-inter">View all Insights</span>
+          <span className="ml-4 w-12 h-12 font-inter flex items-center justify-center rounded-full border border-white">
             <ArrowUpRight size={20} />
           </span>
         </button>
@@ -850,11 +851,11 @@ useEffect(()=>{
 
             {/* Content */}
             <div className="p-6 flex flex-col flex-1 text-white">
-              <p className="text-sm font-light text-gray-300">{item.client}</p>
-              <h3 className="text-xl font-semibold mt-3 font-['Kumbh_Sans']">
+              <p className="text-sm font-light font-inter text-gray-300">{item.client}</p>
+              <h3 className="text-xl font-semibold mt-3 font-kumbh">
                 {item.title}
               </h3>
-              <p className="text-sm mt-3 text-gray-300 leading-relaxed font-['Inter']">
+              <p className="text-sm mt-3 font-inter whitespace-nowrap text-gray-300 leading-relaxed ">
                 {item.desc}
               </p>
 
@@ -873,11 +874,11 @@ useEffect(()=>{
   <div className="flex flex-col lg:flex-row items-center md:ml-16 justify-between gap-10 px-4 sm:px-8">
     {/* Text + First Card Column */}
     <div className="w-full lg:w-1/2 py-8">
-      <h2 className="text-4xl md:ml-6  font-bold font-kumbh text-gray-900 mb-2">
+      <h2 className="text-4xl md:text-[44px] md:ml-6  font-medium font-kumbh text-gray-900 mb-2">
         Featured Solutions
       </h2>
 
-      <p className="text-gray-600 md:ml-6 text-base mt-6 sm:text-lg max-w-2xl">
+      <p className="text-gray-600 md:ml-6 font-inter text-base mt-6 sm:text-lg max-w-2xl">
         Opinionated, production-ready solutions that turn <br /> AI, Cloud & Data into outcomes fast.
       </p>
 
@@ -891,10 +892,10 @@ useEffect(()=>{
           }`}
         >
           <img src={item.icon} alt={item.title} className="h-10 w-10 mb-4 object-contain" />
-          <h3 className="font-semibold text-base sm:text-lg text-gray-900 mb-2">
+          <h3 className="font-semibold font-kumbh text-base sm:text-lg text-gray-900 mb-2">
             {item.title}
           </h3>
-          <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
+          <p className="text-gray-600 font-inter text-sm leading-relaxed">{item.desc}</p>
         </div>
       ))}
     </div>
@@ -921,19 +922,19 @@ useEffect(()=>{
         }`}
       >
         <img src={item.icon} alt={item.title} className="h-10 w-10 mb-4 object-contain" />
-        <h3 className="font-semibold text-base sm:text-lg text-gray-900 mb-2">
+        <h3 className="font-medium text-base sm:text-lg text-gray-900 mb-2">
           {item.title}
         </h3>
-        <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
+        <p className="text-gray-600 font-normal text-sm leading-relaxed">{item.desc}</p>
       </div>
     ))}
 
     {/* CTA Card */}
-    <div className="bg-red-600 hover:bg-gray-600 text-white flex flex-col p-10  md:w-[383px]  h-56 mx-auto justify-between sm:col-span-2 lg:col-span-1">
-      <h3 className="font-semibold items-center sm:text-lg mb-2">Talk to an Expert</h3>
-      <button className="self-end w-10 h-10 flex items-center rounded-full justify-center border border-white hover:bg-white hover:text-red-600 transition">
+    <div className="bg-red-600 hover:bg-gray-600 text-white whitespace-nowrap flex flex-col p-10  w-80   md:w-[383px]  h-56 mx-auto justify-between sm:col-span-2 lg:col-span-1">
+      <h3 className="font-semibold font-inter mt-8 items-center sm:text-2xl mb-2">Talk to an Expert<br/><button className="w-10 h-10 mt-3 flex items-center rounded-full justify-center border border-white hover:bg-white hover:text-red-600 transition">
         <ArrowUpRight size={18} />
-      </button>
+      </button> </h3>
+  
     </div>
   </div>
 </section>
@@ -942,7 +943,7 @@ useEffect(()=>{
       {/* Final CTA Section */}
     
         <section
-                    className="relative w-full  bg-cover bg-center text-center py-16 h-[568px]   sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
+                    className="relative w-full  bg-cover bg-center text-center py-16 md:h-[568px]   sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
                     style={{ backgroundImage: "url('/Background2.svg')",marginTop:"45px" } }
                   >
                     {/* Decorative Vectors */}
@@ -966,16 +967,16 @@ useEffect(()=>{
                     <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/80 to-black/90"></div>
                   
                     {/* Main Content */}
-                    <div className="relative max-w-3xl mx-auto text-white z-10 flex flex-col items-center justify-center space-y-5 sm:space-y-7 md:space-y-8">
-                      <h2 className="text-xl sm:text-2xl md:text-6xl font-kumbh font-light leading-snug px-2">
+                    <div className="relative max-w-3xl mx-auto md:mt-8 text-white z-10 flex flex-col items-center justify-center space-y-5 sm:space-y-7 md:space-y-8">
+                      <h2 className="text-xl md:text-[56px] font-manrope font-bold whitespace-nowrap leading-snug px-2">
                         Let's Build the Future Together
                       </h2>
                   
-                      <p className="text-sm sm:text-base md:text-lg lg:text-2xl text-gray-200 leading-relaxed px-2">
+                      <p className="text-sm sm:text-[30px] font-inter text-gray-200 leading-relaxed px-2">
                         Tells Us your goals.We'll design the runaway then deliver it with AI,Could and Data.
                       </p>
                   
-                      <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-4 text-sm sm:text-xl  shadow-lg transition-all duration-300 ease-in-out">
+                      <button className="flex items-center gap-2  bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-6 text-sm sm:text-xl  shadow-lg transition-all duration-300 ease-in-out">
                         Talk to an Expert{" "}
                         <ArrowUpRight
                           className="border border-white rounded-full p-1"

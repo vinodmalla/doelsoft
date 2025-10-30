@@ -6,7 +6,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        kumbh: ['Kumbh Sans', 'sans-serif'],
+        kumbh: ['Kumbh Sans', 'sans-serif',"'Inter'", "system-ui", "sans-serif"],
+        inter: ["'Inter'", "system-ui", "sans-serif"],
+        manrope: ["'Manrope'", "ui-sans-serif", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica Neue", "Arial"],
       },
       keyframes: {
         marquee: {
