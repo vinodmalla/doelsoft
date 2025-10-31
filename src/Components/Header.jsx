@@ -5,23 +5,31 @@ import { Link } from "react-router-dom";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState("home"); // ✅ state to track active link
+  const [activeLink, setActiveLink] = useState("home");
 
   const handleLinkClick = (link) => {
-    setActiveLink(link); // mark as active
-   
-    
+    setActiveLink(link);
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 p-[5px] bg-white shadow-none">
-      <div className="max-w-7xl mx-auto flex items-center justify-between h-16 px-6">
-        <div className="flex items-center  space-x-2">
-          <img src={logo} alt="Doelsoft" className="absolute max-w-[178px] h-auto md:left-[120px] top-[29px]" />
+    <header className="fixed top-0 left-0 w-full z-50 bg-white p-[5px] shadow-none">
+      <div className="max-w-7xl mx-auto md:ml-3.5 flex  items-center justify-between h-16 px-4 sm:px-6 lg:px-8">
+        {/* Logo */}
+        <div className="flex-shrink-0 flex items-center md:ml-8">
+          <Link to="/" className="flex items-center md:ml-8">
+            <img
+              src={logo}
+              alt="Doelsoft"
+              className="w-[150px] sm:w-[160px] md:w-[178px] h-auto"
+            />
+          </Link>
         </div>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex  items-center space-x-8" role="navigation">
+        <nav
+          className="hidden md:flex items-center ml-72 whitespace-nowrap justify-center space-x-8"
+          role="navigation"
+        >
           {[
             { name: "home", path: "/" },
             { name: "solutions", path: "/solutions" },
@@ -46,8 +54,8 @@ function Header() {
           ))}
         </nav>
 
-        {/* Social Icons (Desktop only) */}
-        <div className="hidden md:flex items-center space-x-5">
+        {/* Social Icons (Desktop) */}
+        <div className="hidden md:flex ml-36 items-center space-x-5">
           <a href="#"><FaInstagram className="text-xl text-gray-700 hover:text-red-600" /></a>
           <a href="#"><FaDiscord className="text-xl text-gray-700 hover:text-red-600" /></a>
           <a href="#"><FaGithub className="text-xl text-gray-700 hover:text-red-600" /></a>
@@ -78,9 +86,8 @@ function Header() {
               <Link
                 key={item.name}
                 to={item.path}
-                onClick={()=>setIsOpen(isOpen=>!isOpen)}
-                className={`font-medium text-gray-700 hover:text-[#EF0E0E]
-                `}
+                onClick={() => setIsOpen(false)}
+                className="font-medium text-gray-700 hover:text-[#EF0E0E]"
               >
                 {item.name.charAt(0).toUpperCase() + item.name.slice(1).replace("us", " us")}
               </Link>

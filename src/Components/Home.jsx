@@ -388,7 +388,7 @@ useEffect(()=>{
   <div className="absolute inset-0 bg-[#080808]/10"></div>
 
   {/* Content */}
-  <div className="relative z-10 md:ml-20 max-w-7xl md:mt-16 mx-auto px-4 sm:px-6 lg:px-8">
+  <div className="relative z-10 md:ml-20 max-w-7xl mt-8 md:mt-16 mx-auto px-4 sm:px-6 lg:px-8">
     {/* Heading */}
     <div className="flex justify-center items-start px-2 py-1 gap-2 bg-[#333333] rounded-md w-fit">
   <p className="text-white font-inter font-medium text-[16px] leading-[150%] tracking-[-0.03em]">
@@ -430,7 +430,7 @@ useEffect(()=>{
 </section>
 
       {/* Core Services Section - Responsive flex */}
-    <section className="w-full bg-white px-4 sm:px-6 lg:px-8 py-10 mx-auto md:-ml-2 sm:py-16 lg:py-20 overflow-hidden">
+    <section className="w-full bg-white px-4 sm:px-6 lg:px-8 py-10 mx-auto md:-ml-3 sm:py-16 lg:py-20 overflow-hidden">
   <div className="flex flex-col lg:flex-row gap-10 lg:gap-12 max-w-7xl mx-auto">
     
     {/* LEFT SECTION */}
@@ -554,7 +554,7 @@ useEffect(()=>{
         style={{
           backgroundImage: "url('/Mask group.svg')",
         }}>
-        <div className="max-w-6xl mx-auto md:mx-[91px] md:ml-[5.5rem] text-left">
+        <div className="max-w-6xl mx-auto md:mx-[91px] md:ml-[5rem] text-left">
           <h3 className="text-lg text-white mb-2">Doelsoft</h3>
           <h2 className="text-3xl sm:text-[44px] font-kumbh font-medium text-white mb-8 sm:mb-12">How we work</h2>
 
@@ -874,7 +874,7 @@ useEffect(()=>{
   <div className="flex flex-col lg:flex-row items-center md:ml-16 justify-between gap-10 px-4 sm:px-8">
     {/* Text + First Card Column */}
     <div className="w-full lg:w-1/2 py-8">
-      <h2 className="text-4xl md:text-[44px] md:ml-6  font-medium font-kumbh text-gray-900 mb-2">
+      <h2 className="text-4xl md:text-[44px] md:ml-5  font-medium font-kumbh text-gray-900 mb-2">
         Featured Solutions
       </h2>
 
