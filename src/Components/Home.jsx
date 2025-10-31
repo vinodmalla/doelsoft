@@ -436,7 +436,7 @@ useEffect(()=>{
     {/* LEFT SECTION */}
     <div className="flex-1 space-y-6 lg:space-y-8 text-center lg:text-left">
       <h1 className="font-medium text-xl md:text-[44px] font-kumbh leading-tight">
-        DoelSoft
+        Doelsoft
         <br />
         Core Services
       </h1>
@@ -815,7 +815,7 @@ useEffect(()=>{
       <div className="  flex flex-col lg:flex-row lg:items-center lg:justify-between mb-12 max-w-7xl mx-auto">
         <div className="flex-1 mb-6 space-y-4 lg:mb-0">
           <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-kumbh md:-ml-3 font-medium  leading-tight tracking-[-0.03em] text-black ">
-            DoelSoft Insights &  Thought Leadership
+            Doelsoft Insights &  Thought Leadership
           </h2>
           <p className="text-gray-800 mt-4 md:-ml-3 max-w-2xl text-base sm:text-lg leading-relaxed font-inter">
             Practical playbooks from the field AI, Cloud & Data patterns that
