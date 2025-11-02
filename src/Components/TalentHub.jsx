@@ -2,11 +2,7 @@ import React from "react";
 import { ArrowUpRight } from "lucide-react"; // for arrow icons
 
 // sample images (replace with your own)
-import img1 from "../assets/img1.svg";
-import img2 from "../assets/img2.svg";
-import img3 from "../assets/img3.svg";
-import img4 from "../assets/img4.svg";
-import img5 from "../assets/img5.svg";
+
 import { Link } from "react-router";
 
 
@@ -23,32 +19,32 @@ function TalentHub() {
 ];
   return (
     <div>
-   <section className="relative w-full mt-10 py-20 flex flex-col items-center text-center overflow-hidden">
+   <section className="relative w-full mt-32 py-20 flex flex-col items-center text-center overflow-hidden">
   {/* Background */}
   <div
     className="absolute bg-cover bg-center inset-0"
-    style={{ backgroundImage: "url('/worldmap.svg')" }}
+    style={{ backgroundImage: "url('/worldmap.svg')",width:"1440px",height:"576px" }}
   ></div>
 
   {/* Headings */}
-  <div className="relative z-10 px-4">
-    <h1 className="text-4xl md:text-5xl font-bold font-sans text-red-600">
+  <div className="relative z-10 px-4 space-y-10">
+    <h1 className="text-4xl md:text-[71px] font-semibold font-kumbh text-[#EF0E0E]">
       Recruitment
     </h1>
-    <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 my-2">
+    <h2 className="text-3xl md:text-[71px] font-semibold font-kumbh text-gray-800 my-2">
       &
     </h2>
-    <h1 className="text-4xl md:text-5xl font-bold text-red-600">
+    <h1 className="text-4xl md:text-[71px] font-semibold font-kumbh text-[#EF0E0E]">
       Staffing Services
     </h1>
   </div>
 
   {/* Buttons */}
-  <div className="mt-8 flex flex-wrap justify-center gap-4 z-10 relative px-4">
-    <button className="transition-all duration-300 ease-in-out flex items-center gap-2 bg-red-600 text-white px-6 py-3 font-medium hover:bg-gray-600 focus:outline-none">
+  <div className="mt-24 flex  flex-wrap justify-center gap-8 z-10 relative px-4">
+    <button className="transition-all duration-300 ease-in-out flex items-center gap-2 bg-[#EF0E0E] text-white px-12 py-5 font-medium hover:bg-gray-600 focus:outline-none">
       About Doelsoft <ArrowUpRight size={18} />
     </button>
-    <button className="transition-all duration-300 ease-in-out flex items-center gap-2 border border-gray-600 px-6 py-3 font-medium hover:bg-red-600 hover:text-white focus:outline-none">
+    <button className="transition-all duration-300 ease-in-out flex items-center gap-2 border border-gray-600 px-12 py-5 font-medium hover:bg-[#EF0E0E] hover:text-white focus:outline-none">
       Consult With Us <ArrowUpRight size={18} />
     </button>
   </div>
@@ -57,33 +53,33 @@ function TalentHub() {
   <div className="relative w-full max-w-5xl mt-12 px-4">
     {/* Top Left */}
     <img
-      src={img1}
+      src="/img1.svg"
       alt="profile1"
-      className="absolute -top-80 left-2 sm:-top-72 sm:left-8 md:-top-80 md:-left-24 w-20 h-20 sm:w-24 sm:h-24 md:w-20 md:h-20 rounded-full object-cover"
+      className="absolute -top-[36rem] left-2 sm:-top-72 sm:left-8 md:-top-[26rem] md:-left-24 w-20 h-20 sm:w-24 sm:h-24 md:w-20 md:h-20 rounded-full object-cover"
     />
     {/* Middle Left */}
     <img
-      src={img3}
+      src="/img3.svg"
       alt="profile2"
-      className="absolute top-1 left-4 sm:-top-8 sm:-left-4 md:-top-8 md:-left-36 w-20 h-20 sm:w-24 sm:h-24 md:w-24 md:h-24 rounded-full object-cover"
+      className="absolute top-0 left-4 sm:-top-8 sm:-left-4 md:-top-12 md:-left-36 w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 rounded-full object-cover"
     />
     {/* Top Right */}
     <img
-      src={img2}
+      src="/img2.svg"
       alt="profile3"
-      className="absolute -top-80 right-2 sm:-top-72 sm:right-8 md:-top-80 md:-right-24 w-16 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full object-cover"
+      className="absolute -top-[36rem] right-2 sm:-top-72 sm:right-8 md:-top-[28rem] md:-right-24 w-24 h-24 sm:w-24 sm:h-24 md:w-36 md:h-36 rounded-full object-cover"
     />
     {/* Bottom Right */}
     <img
-      src={img4}
+      src="/img4.svg"
       alt="profile4"
-      className="absolute -bottom-20 right-4 sm:-top-4 md:-top-14 md:-right-24 w-29 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 rounded-full object-cover"
+      className="absolute -bottom-20 right-4 sm:-top-4 md:-top-16 md:-right-24 w-29 h-20 sm:w-24 sm:h-24 md:w-[8rem] md:h-[8rem] rounded-full object-cover"
     />
     {/* Bottom Center */}
     <img
-      src={img5}
+      src="/img5.svg"
       alt="profile5"
-      className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 w-16 h-16 sm:w-20 sm:h-20 md:w-20 md:h-20 rounded-full object-cover"
+      className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 w-16 h-16 sm:w-20 sm:h-20 md:w-20 md:h-20 rounded-full object-cover"
     />
   </div>
 </section>
@@ -91,23 +87,23 @@ function TalentHub() {
      <section className="w-full bg-white py-16 px-6 md:px-12">
       {/* Heading */}
       <div className="text-center max-w-3xl mx-auto mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+        <h2 className="text-3xl md:text-[44px] font-semibold font-kumbh text-gray-900">
           Recruitment & Staffing Services
         </h2>
-        <p className="text-gray-600 mt-4">
+        <p className="text-gray-600 font-inter mt-4">
           At Doelsoft, we believe that recruitment is more than filling vacancies
           it’s about creating partnerships that shape the future of businesses.
           We combine deep industry knowledge, advanced hiring practices, and a
           powerful talent network to deliver people who not only meet
           requirements but also inspire growth.
         </p>
-        <p className="font-semibold mt-4">
+        <p className="font-semibold font-inter mt-4">
           With us, you don’t just hire resources. You hire results.
         </p>
       </div>
 
       {/* Services Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center gap-1 md:mr-7 justify-items-center">
+      <div className="md:ml-56 grid grid-cols-1 gap-6 md:flex flex-row md:space-x-12 items-center md:mr-7 justify-items-center">
         {services.slice(0,3).map((service) => (
           <div
             key={service.id}
@@ -116,7 +112,7 @@ function TalentHub() {
             <img
               src={service.image}
               alt={service.title}
-              className="w-full h-64 object-cover"
+              className="w-full h-90 object-cover"
             />
             <div className="p-4 text-center"><Link to={service.link} >
               <h3 className="text-lg font-semibold">{service.title}</h3></Link>
@@ -126,16 +122,16 @@ function TalentHub() {
 
         
       </div>
-      <div className="md:ml-72 grid grid-cols-1 md:grid-cols-2 md:mr-52 py-14">
+      <div className="md:ml-[26rem]  grid grid-cols-1 gap-6 md:flex flex-row md:space-x-12  md:mr-52 py-8 md:py-14">
         {services.slice(3).map((service) => (
           <div
             key={service.id}
             className="w-full sm:w-[280px] md:w-[320px] bg-black text-white shadow-lg  overflow-hidden"
           >
-            <img
+           <img
               src={service.image}
               alt={service.title}
-              className="w-full h-64 object-cover"
+              className="w-full h-90 object-cover"
             />
             <div className="p-4 text-center"><Link to={service.link} >
               <h3 className="text-lg font-semibold">{service.title}</h3></Link>
@@ -145,10 +141,10 @@ function TalentHub() {
       </div>
       </section>
       <section className="py-10 bg-[#F3F3F3] w-[#1440px] h-[#576px] text-start  font-sans">
-      <h1 className="text-4xl md:ml-32 font-bold ml-10 text-black mb-4">
+      <h1 className="text-xl md:text-[44px] md:ml-32 font-semibold ml-10 text-black mb-4">
         Why Doelsoft?
       </h1>
-      <p className="text-lg text-black ml-10 md:ml-32 mb-10 max-w-3xl mx-auto">
+      <p className="text-lg text-black ml-10 md:ml-32 mb-10 font-inter max-w-3xl mx-auto">
         When it comes to recruitment, we don't just deliver candidates we deliver confidence.
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 md:ml-32 max-w-7xl mx-auto">
@@ -184,11 +180,11 @@ function TalentHub() {
     </section>
    
   <div className="p-6 sm:p-8 md:p-10 lg:p-12 ml-4 sm:ml-8 md:ml-20">
-  <h1 className="text-2xl sm:text-3xl md:text-3xl font-bold text-gray-800 mb-4 text-center md:text-left">
+  <h1 className="text-2xl sm:text-3xl md:text-[44px] font-semibold font-kumbh text-gray-800 mb-4 text-center md:text-left">
     Our Core Values at Doelsoft
   </h1>
 
-  <p className="text-black mb-6 text-sm sm:text-base text-center md:text-left">
+  <p className="text-black mb-6 text-sm sm:text-base font-inter text-center md:text-left">
     At Doelsoft, we don't just fill roles — we build partnerships that fuel growth. Every staffing solution we provide, whether
     contract, permanent, offshore, or nearshore, is anchored in our unwavering core values. These principles guide us in creating
     meaningful connections between businesses and talent, ensuring trust, success, and long-term impact.
@@ -197,7 +193,7 @@ function TalentHub() {
   <div className="space-y-6 ml-0 sm:ml-6 md:ml-14">
     {/* Trustworthy */}
     <div className="bg-white p-4 flex flex-col sm:flex-row items-start gap-4">
-      <img src={"./Result.svg"} className="w-14 h-14 mx-auto p-2 border border-black sm:mx-0" alt="Trustworthy" />
+      <img src={"./Result.svg"} className="w-20 h-20 mx-auto bg-white border border-white p-4  sm:mx-0" alt="Trustworthy" />
       <div>
         <h3 className="text-black text-lg font-semibold text-center sm:text-left">
           Trustworthy — Dependable in Every Step
@@ -212,7 +208,7 @@ function TalentHub() {
 
     {/* Stewardship */}
     <div className="bg-white p-4 flex flex-col sm:flex-row items-start gap-4">
-      <img  src={"./Trustworthy.svg"} className="w-14 h-14 mx-auto p-2 border border-black sm:mx-0" alt="Stewardship" />
+      <img  src={"./Trustworthy.svg"} className="w-20 h-20 mx-auto bg-white border border-white p-4  sm:mx-0" alt="Stewardship" />
       <div>
         <h3 className="text-black text-lg font-semibold text-center sm:text-left">
           Stewardship — Taking Responsibility, Driving Results
@@ -227,7 +223,7 @@ function TalentHub() {
 
     {/* Credibility */}
     <div className="bg-white p-4 flex flex-col sm:flex-row items-start gap-4">
-      <img  src={"./Stewardship.svg"} className="w-14 h-14 mx-auto p-2 border border-black sm:mx-0" alt="Credibility" />
+      <img  src={"./Stewardship.svg"} className="w-20 h-20 mx-auto bg-white border border-white p-4  sm:mx-0" alt="Credibility" />
       <div>
         <h3 className="text-black text-lg font-semibold text-center sm:text-left">
           Credibility — Trust Built on Action
@@ -242,7 +238,7 @@ function TalentHub() {
 
     {/* Respect */}
     <div className="bg-white p-4 flex flex-col sm:flex-row items-start gap-4">
-      <img src={"./Credibility.svg"}  className="w-14 h-14 mx-auto p-2 border border-black sm:mx-0" alt="Respect" />
+      <img src={"./Credibility.svg"}  className="w-20 h-20 mx-auto bg-white border border-white p-4 sm:mx-0" alt="Respect" />
       <div>
         <h3 className="text-black text-lg font-semibold text-center sm:text-left">
           Respect — People First, Always
@@ -257,7 +253,7 @@ function TalentHub() {
 
     {/* Result-Oriented */}
     <div className="bg-white p-4 flex flex-col sm:flex-row items-start gap-4">
-      <img src={"./Respect.svg"}className="w-14 h-14 mx-auto p-2 border border-black  sm:mx-0" alt="Result-Oriented" />
+      <img src={"./Respect.svg"}className="w-20 h-20 mx-auto bg-white border border-white p-4  sm:mx-0" alt="Result-Oriented" />
       <div>
         <h3 className="text-black text-lg font-semibold text-center sm:text-left">
           Result-Oriented — Excellence You Can Measure
@@ -280,49 +276,49 @@ function TalentHub() {
 </div>
 
  
-              <section
-             className="relative w-full  bg-cover bg-center text-center py-16   sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
-             style={{ backgroundImage: "url('/Background2.svg')",marginTop:"45px" } }
-           >
-             {/* Decorative Vectors */}
-             <img
-               src="/Vectors.svg"
-               alt="vector"
-               className="absolute left-6 sm:left-14 top-8 sm:top-10 h-20 sm:h-28 md:h-32 w-20 sm:w-28 md:w-32 object-contain opacity-70 z-30"
-             />
-             <img
-               src="/left.svg"
-               alt="left"
-               className="absolute left-10 sm:left-20 bottom-10 sm:top-72 w-3 sm:w-4 object-contain opacity-70 z-30"
-             />
-             <img
-               src="/right.svg"
-               alt="right"
-               className="absolute right-10 sm:right-40 lg:right-72 top-6 sm:top-12 w-10 sm:w-16 md:w-20 object-contain opacity-70 z-30"
-             />
-           
-             {/* Dark overlay */}
-             <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/80 to-black/90"></div>
-           
-             {/* Main Content */}
-             <div className="relative max-w-3xl mx-auto text-white z-10 flex flex-col items-center justify-center space-y-5 sm:space-y-7 md:space-y-8">
-               <h2 className="text-xl sm:text-2xl md:text-4xl font-kumbh font-light leading-snug px-2">
-                 Let's Build the Future Together
-               </h2>
-           
-               <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-200 leading-relaxed px-2">
-                 Tells Us your goals.We'll design the runaway then deliver it with AI,Could and Data.
-               </p>
-           
-               <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-4 text-sm sm:text-lg  shadow-lg transition-all duration-300 ease-in-out">
-                 Talk to an Expert{" "}
-                 <ArrowUpRight
-                   className="border border-white rounded-full p-1"
-                   size={24}
-                 />
-               </button>
-             </div>
-           </section>
+         <section
+                    className="relative w-full  bg-cover bg-center text-center py-16 md:h-[568px]   sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
+                    style={{ backgroundImage: "url('/Background2.svg')",marginTop:"45px" } }
+                  >
+                    {/* Decorative Vectors */}
+                    <img
+                      src="/Vectors.svg"
+                      alt="vector"
+                      className="absolute left-6 sm:left-14 top-8 sm:top-10 h-20 sm:h-28 md:h-32 w-20 sm:w-28 md:w-32 object-contain opacity-70 z-30"
+                    />
+                    <img
+                      src="/left.svg"
+                      alt="left"
+                      className="absolute left-10 sm:left-20 bottom-10 sm:top-70 w-3 sm:w-4 object-contain opacity-70 z-30"
+                    />
+                    <img
+                      src="/right.svg"
+                      alt="right"
+                      className="absolute right-10 sm:right-40 lg:right-72 top-6 sm:top-12 w-10 sm:w-16 md:w-20 object-contain opacity-70 z-30"
+                    />
+                  
+                    {/* Dark overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/80 to-black/90"></div>
+                  
+                    {/* Main Content */}
+                    <div className="relative max-w-3xl mx-auto md:mt-8 text-white z-10 flex flex-col items-center justify-center space-y-5 sm:space-y-7 md:space-y-8">
+                      <h2 className="text-xl md:text-[56px] font-manrope font-bold whitespace-nowrap leading-snug px-2">
+                        Let's Build the Future Together
+                      </h2>
+                  
+                      <p className="text-sm sm:text-[30px] font-inter text-gray-200 leading-relaxed px-2">
+                        Tells Us your goals.We'll design the runaway then deliver it with AI,Could and Data.
+                      </p>
+                  
+                      <button className="flex items-center gap-2  bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-6 text-sm sm:text-xl  shadow-lg transition-all duration-300 ease-in-out">
+                        Talk to an Expert{" "}
+                        <ArrowUpRight
+                          className="border border-white rounded-full p-1"
+                          size={24}
+                        />
+                      </button>
+                    </div>
+                  </section>
     </div>
   );
 }

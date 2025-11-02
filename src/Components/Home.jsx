@@ -45,7 +45,7 @@ function Home() {
   {
     h11: "Advance Universal Engagement with ",
     h22: "Accessibility & Inclusion",
-    img: "/businessman.svg",
+    img: "/a11y.svg",
     p: "From accessibility to true inclusion, we ensure every interaction empowers every user."
   }
 ];
@@ -313,8 +313,7 @@ useEffect(()=>{
     <img
       src={CursolDetails[cursol].img}
       alt={CursolDetails[cursol].h22}
-      className={`w-[85%] sm:w-[75%] md:w-[65%] lg:w-full h-auto max-h-[400px] sm:max-h-[450px] md:max-h-[550px] mx-auto md:ml-[45px] mb-8 lg:mb-24 object-contain ${
-        cursol === 0 ? "animate-moveOnce" : ""
+      className={`w-[85%] sm:w-[75%] md:w-[65%] lg:w-full h-auto max-h-[400px] sm:max-h-[450px] md:max-h-[550px] mx-auto md:ml-[45px] mb-8 lg:mb-24 object-contain 
       } z-50`}
     />
 

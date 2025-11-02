@@ -28,38 +28,43 @@ function ContactUs() {
   return (
     <div className="relative w-full font-kumbh bg-white">
       {/* Hero Section */}
-      <section
-        className="relative w-full min-h-[550px] flex flex-col md:flex-row items-center md:items-end justify-between px-6 md:px-12 lg:px-24 py-10 md:py-20 bg-cover bg-center"
-        style={{
-          backgroundImage: "url('/worldmap.svg')",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        {/* Text Content */}
-        <div className="relative z-10 flex-1 text-center mt-16 md:mt-2 md:mb-56 md:text-left space-y-6 max-w-full">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-red-600 leading-tight">
-            Let’s Build the <br />
-            <span className="block mt-2">Future Together</span>
-          </h2>
-        </div>
+         <section
+  className="relative w-full min-h-[550px] flex flex-col md:flex-row items-center justify-between overflow-hidden py-10 px-6 md:px-16 lg:px-28"
+  style={{
+    backgroundImage: "url('/worldmap.svg')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  }}
+>
+  {/* Left Content */}
+  <div className="relative z-10 flex-1 flex flex-col items-start justify-center text-center md:text-left">
+    <h2 className="text-3xl ml-[55px] sm:text-5xl md:text-6xl lg:text-[71.5PX] md:mt-14 md:-ml-2 font-semibold font-kumbh text-[#EF0E0E] leading-snug mb-8">
+      Let’s Build the  <br className="hidden sm:block" />
+      <span className="block mt-2">Future Together</span>
+    </h2>
 
-        {/* Image Right */}
-        <div className="mt-10 md:mt-0 flex justify-center md:justify-end flex-1 w-full">
-          <img
-            src="/Contact.svg"
-            alt="Team"
-            className="w-[260px] sm:w-[360px] md:w-[450px] lg:w-[520px] object-contain"
-          />
-        </div>
-      </section>
+    <button className="py-4 px-10   border border-black ml-[45px] md:-ml-1  text-black hover:bg-gray-200 transition-all duration-200">
+      Consult With Us <span className="ml-2">↗</span>
+    </button>
+  </div>
+
+  {/* Right Image */}
+  <div className="mt-10 md:mt-24 md:flex-1 flex justify-center md:justify-end relative z-0">
+    <img
+      src="/Contact.svg"
+      alt="Team"
+      className="w-72 sm:w-80 md:w-[420px] lg:w-[500px] h-auto object-contain"
+    />
+  </div>
+</section>
 
       {/* Form Section */}
       <section className="bg-[#F4F6FB] py-16 px-6 sm:px-10 lg:px-20">
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start gap-12">
+        <div className="max-w-7xl mx-auto md:ml-7 flex flex-col lg:flex-row items-start gap-12">
           {/* Form */}
           <div className="w-full lg:w-1/2">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+            <h2 className="text-3xl sm:text-[44px] font-normal mb-4">
               Get in <span className="text-red-600">Touch</span>
             </h2>
             <p className="text-gray-600 mb-8 text-sm sm:text-base">
@@ -77,7 +82,7 @@ function ContactUs() {
                 placeholder="Name *"
                 value={formData.name}
                 onChange={handleChange}
-                className="border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-red-500 w-full"
+                className="border border-gray-300  p-3 focus:outline-none focus:ring-2 focus:ring-red-500 w-full"
                 required
               />
               <input
@@ -86,7 +91,7 @@ function ContactUs() {
                 placeholder="Email"
                 value={formData.email}
                 onChange={handleChange}
-                className="border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-red-500 w-full"
+                className="border border-gray-300 p-3 focus:outline-none focus:ring-2 focus:ring-red-500 w-full"
               />
               <input
                 type="tel"
@@ -94,14 +99,14 @@ function ContactUs() {
                 placeholder="Phone number *"
                 value={formData.phone}
                 onChange={handleChange}
-                className="border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-red-500 w-full"
+                className="border border-gray-300  p-3 focus:outline-none focus:ring-2 focus:ring-red-500 w-full"
                 required
               />
               <select
                 name="source"
                 value={formData.source}
                 onChange={handleChange}
-                className="border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-red-500 w-full"
+                className="border border-gray-300  p-3 focus:outline-none focus:ring-2 focus:ring-red-500 w-full"
               >
                 <option value="">How did you find us?</option>
                 <option value="google">Google</option>
@@ -114,12 +119,12 @@ function ContactUs() {
                 placeholder="Tip Us."
                 value={formData.message}
                 onChange={handleChange}
-                className="border border-gray-300 rounded-md p-3 h-24 resize-none focus:outline-none focus:ring-2 focus:ring-red-500 w-full"
+                className="border border-gray-300  p-3 h-24 resize-none focus:outline-none focus:ring-2 focus:ring-red-500 w-full"
               ></textarea>
 
               <button
                 type="submit"
-                className="bg-red-600 text-white font-semibold py-3 rounded-md hover:bg-red-700 transition"
+                className="bg-red-600 text-white font-semibold py-3  hover:bg-red-700 transition"
               >
                 SEND
               </button>

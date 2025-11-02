@@ -13,21 +13,21 @@ function Header() {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-white p-[5px] shadow-none">
-      <div className="max-w-7xl mx-auto md:ml-3.5 flex  items-center justify-between h-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto md:ml-3.5 flex items-center justify-between h-16 px-3 sm:px-4 md:px-6 lg:px-8">
         {/* Logo */}
-        <div className="flex-shrink-0 flex items-center md:ml-8">
-          <Link to="/" className="flex items-center md:ml-8">
+        <div className="flex-shrink-0 flex items-center md:ml-4 lg:ml-14">
+          <Link to="/" className="flex items-center">
             <img
               src={logo}
               alt="Doelsoft"
-              className="w-[150px] sm:w-[160px] md:w-[178px] h-auto"
+              className="w-[120px] sm:w-[150px] md:w-[160px] lg:w-[178px] h-auto"
             />
           </Link>
         </div>
 
         {/* Desktop Nav */}
         <nav
-          className="hidden md:flex items-center ml-72 whitespace-nowrap justify-center space-x-8"
+          className="hidden md:flex items-center lg:ml-80 whitespace-nowrap justify-center space-x-4 lg:space-x-8"
           role="navigation"
         >
           {[
@@ -43,11 +43,11 @@ function Header() {
               key={item.name}
               to={item.path}
               onClick={() => handleLinkClick(item.name)}
-              className={`font-medium ${
+              className={`font-medium transition-colors ${
                 activeLink === item.name
                   ? "text-[#EF0E0E]"
                   : "text-[#000000] hover:text-[#EF0E0E]"
-              }`}
+              } text-sm lg:text-base`}
             >
               {item.name.charAt(0).toUpperCase() + item.name.slice(1).replace("us", " us")}
             </Link>
@@ -55,10 +55,10 @@ function Header() {
         </nav>
 
         {/* Social Icons (Desktop) */}
-        <div className="hidden md:flex ml-36 items-center space-x-5">
-          <a href="#"><FaInstagram className="text-xl text-gray-700 hover:text-red-600" /></a>
-          <a href="#"><FaDiscord className="text-xl text-gray-700 hover:text-red-600" /></a>
-          <a href="#"><FaGithub className="text-xl text-gray-700 hover:text-red-600" /></a>
+        <div className="hidden lg:flex ml-6 lg:ml-36 items-center space-x-4 lg:space-x-5">
+          <a href="#"><FaInstagram className="text-lg lg:text-xl text-gray-700 hover:text-red-600" /></a>
+          <a href="#"><FaDiscord className="text-lg lg:text-xl text-gray-700 hover:text-red-600" /></a>
+          <a href="#"><FaGithub className="text-lg lg:text-xl text-gray-700 hover:text-red-600" /></a>
         </div>
 
         {/* Mobile Hamburger */}
@@ -72,8 +72,8 @@ function Header() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white shadow-md">
-          <nav className="flex flex-col items-center space-y-4 py-6">
+        <div className="md:hidden bg-white shadow-md w-full">
+          <nav className="flex flex-col items-center space-y-4 py-6 text-center">
             {[
               { name: "home", path: "/" },
               { name: "solutions", path: "/solutions" },
@@ -87,7 +87,7 @@ function Header() {
                 key={item.name}
                 to={item.path}
                 onClick={() => setIsOpen(false)}
-                className="font-medium text-gray-700 hover:text-[#EF0E0E]"
+                className="font-medium text-gray-700 hover:text-[#EF0E0E] text-base"
               >
                 {item.name.charAt(0).toUpperCase() + item.name.slice(1).replace("us", " us")}
               </Link>
