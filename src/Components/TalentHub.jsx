@@ -19,11 +19,11 @@ function TalentHub() {
 ];
   return (
     <div>
-   <section className="relative w-full mt-32 py-20 flex flex-col items-center text-center overflow-hidden">
+   <section className="relative w-full  mt-28 py-20 flex flex-col items-center text-center overflow-hidden">
   {/* Background */}
   <div
-    className="absolute bg-cover bg-center inset-0"
-    style={{ backgroundImage: "url('/worldmap.svg')",width:"1440px",height:"576px" }}
+    className="absolute md:ml-48 md:top-[-80px] bg-cover bg-center  inset-0"
+    style={{ backgroundImage: "url('/worldmap.svg')",width:"1296px",height:"683px" }}
   ></div>
 
   {/* Headings */}
@@ -55,31 +55,31 @@ function TalentHub() {
     <img
       src="/img1.svg"
       alt="profile1"
-      className="absolute -top-[36rem] left-2 sm:-top-72 sm:left-8 md:-top-[26rem] md:-left-24 w-20 h-20 sm:w-24 sm:h-24 md:w-20 md:h-20 rounded-full object-cover"
+      className="absolute -top-[36rem] left-2 sm:-top-72  sm:left-8 md:-top-[28rem]  lg:-top-[24rem] md:left-20 lg:-left-24 w-20 h-20 md:w-24 md:h-24 lg:w-24 lg:h-24 rounded-full object-cover"
     />
     {/* Middle Left */}
     <img
       src="/img3.svg"
       alt="profile2"
-      className="absolute top-0 left-4 sm:-top-8 sm:-left-4 md:-top-12 md:-left-36 w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 rounded-full object-cover"
+      className="absolute top-0 left-2 sm:-top-8 sm:-left-4 md:-top-12 md:left-4 lg:-left-36 w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full object-cover"
     />
     {/* Top Right */}
     <img
       src="/img2.svg"
       alt="profile3"
-      className="absolute -top-[36rem] right-2 sm:-top-72 sm:right-8 md:-top-[28rem] md:-right-24 w-24 h-24 sm:w-24 sm:h-24 md:w-36 md:h-36 rounded-full object-cover"
+      className="absolute -top-[36rem] right-2 sm:-top-72 md:-top-[30rem] sm:right-8 lg:-top-[26rem] lg:-right-36 w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:36 lg:w-40 lg:h-40 rounded-full object-cover"
     />
     {/* Bottom Right */}
     <img
       src="/img4.svg"
       alt="profile4"
-      className="absolute -bottom-20 right-4 sm:-top-4 md:-top-16 md:-right-24 w-29 h-20 sm:w-24 sm:h-24 md:w-[8rem] md:h-[8rem] rounded-full object-cover"
+      className="absolute -bottom-20 right-4 sm:-top-4 md:-top-24 lg:-top-20 lg:-right-36 w-20 h-20 sm:w-24 sm:h-36 md:w-36 md:h-40 rounded-full object-cover"
     />
     {/* Bottom Center */}
     <img
       src="/img5.svg"
       alt="profile5"
-      className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 w-16 h-16 sm:w-20 sm:h-20 md:w-20 md:h-20 rounded-full object-cover"
+      className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full object-cover"
     />
   </div>
 </section>
@@ -90,115 +90,136 @@ function TalentHub() {
         <h2 className="text-3xl md:text-[44px] font-semibold font-kumbh text-gray-900">
           Recruitment & Staffing Services
         </h2>
-        <p className="text-gray-600 font-inter mt-4">
+        <p className="text-gray-600 text-xl font-normal font-inter mt-4">
           At Doelsoft, we believe that recruitment is more than filling vacancies
           it’s about creating partnerships that shape the future of businesses.
           We combine deep industry knowledge, advanced hiring practices, and a
           powerful talent network to deliver people who not only meet
           requirements but also inspire growth.
         </p>
-        <p className="font-semibold font-inter mt-4">
+        <p className="font-semibold font-inter text-xl mt-4">
           With us, you don’t just hire resources. You hire results.
         </p>
       </div>
 
       {/* Services Grid */}
-      <div className="md:ml-56 grid grid-cols-1 gap-6 md:flex flex-row md:space-x-12 items-center md:mr-7 justify-items-center">
+      <div className="hidden lg:ml-28 lg:flex flex-row lg:space-x-10  items-center md:mr-7 justify-items-center">
         {services.slice(0,3).map((service) => (
           <div
             key={service.id}
-            className="w-full sm:w-[280px] md:w-[320px] bg-black text-white shadow-lg  overflow-hidden"
+            className="w-full sm:w-[280px] md:w-[380px]  bg-black text-white shadow-lg  overflow-hidden"
           >
             <img
               src={service.image}
               alt={service.title}
-              className="w-full h-90 object-cover"
+              className="w-[28rem] h-96 object-cover"
             />
             <div className="p-4 text-center"><Link to={service.link} >
-              <h3 className="text-lg font-semibold">{service.title}</h3></Link>
+              <h3 className="text-lg font-semibold font-kumbh md:text-2xl whitespace-nowrap">{service.title}</h3></Link>
             </div>
           </div>
         ))}
 
         
       </div>
-      <div className="md:ml-[26rem]  grid grid-cols-1 gap-6 md:flex flex-row md:space-x-12  md:mr-52 py-8 md:py-14">
+      <div className="hidden lg:ml-[20rem]    items-center justify-items-center  lg:flex flex-row lg:space-x-10 lg:mr-52 py-8 lg:py-14">
         {services.slice(3).map((service) => (
           <div
             key={service.id}
-            className="w-full sm:w-[280px] md:w-[320px] bg-black text-white shadow-lg  overflow-hidden"
-          >
+            className="w-full sm:w-[280px] md:w-[380px] bg-black text-white shadow-lg  overflow-hidden"
+          ><Link to={service.link} >
            <img
               src={service.image}
               alt={service.title}
               className="w-full h-90 object-cover"
-            />
+            /></Link>
             <div className="p-4 text-center"><Link to={service.link} >
-              <h3 className="text-lg font-semibold">{service.title}</h3></Link>
+              <h3 className="text-lg font-semibold font-kumbh md:text-2xl whitespace-nowrap">{service.title}</h3></Link>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="lg:hidden grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 px-4 sm:px-6 ">
+        {services.map((service) => (
+          <div
+            key={service.id}
+            className="w-full sm:w-[280px] md:w-[320px] bg-black text-white shadow-lg  overflow-hidden"
+          ><Link to={service.link} >
+           <img
+              src={service.image}
+              alt={service.title}
+              className="w-full h-90 object-cover"
+            /></Link>
+            <div className="p-4 text-center"><Link to={service.link} >
+              <h3 className="text-lg font-semibold font-kumbh md:text-2xl whitespace-nowrap">{service.title}</h3></Link>
             </div>
           </div>
         ))}
       </div>
       </section>
-      <section className="py-10 bg-[#F3F3F3] w-[#1440px] h-[#576px] text-start  font-sans">
-      <h1 className="text-xl md:text-[44px] md:ml-32 font-semibold ml-10 text-black mb-4">
-        Why Doelsoft?
-      </h1>
-      <p className="text-lg text-black ml-10 md:ml-32 mb-10 font-inter max-w-3xl mx-auto">
-        When it comes to recruitment, we don't just deliver candidates we deliver confidence.
-      </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 md:ml-32 max-w-7xl mx-auto">
-        <div className="border border-black p-10 mx-10  md:mx-auto md:w-[#294px] h-[#255px]  text-left">
-          <img src={"./Tailored.svg"} className="w-10 h-10 mb-4" />{/* Replace with actual icon, e.g., from react-icons */}
-          <h3 className="text-lg font-bold mb-2">
-            Tailored Approach
-          </h3>
-          <p>Every solution is designed to match your unique challenges.</p>
-        </div>
-        <div className="border border-black mx-10  md:mx-auto p-10 w-[#294px] h-[#255px] text-left">
-           <img src={"./Unmatched.svg"} className="w-10 h-10 mb-4" /> {/* Replace with checkmark icon */}
-          <h3 className="text-lg  font-bold mb-2">
-            Unmatched Quality
-          </h3>
-          <p>Strict screening ensures only the best reach you.</p>
-        </div>
-        <div className="border border-black mx-10  md:mx-auto  p-10 w-[#294px] h-[#255px] text-left">
-            <img src={"./Precision.svg"} className="w-10 h-10 mb-4" />{/* Replace with target icon */}
-          <h3 className="text-lg font-bold mb-2">
-            Speed with Precision
-          </h3>
-          <p>Fast closures without compromising fit.</p>
-        </div>
-        <div className="border border-black mx-10 md:mx-auto p-10 w-[#294px] h-[#255px]  text-left">
-           <img src={"./Partnership.svg"} className="w-10 h-10 mb-4" /> {/* Replace with handshake icon */}
-          <h3 className="text-lg font-bold mb-2">
-            Long-Term Partnership
-          </h3>
-          <p>More than a vendor, we are your hiring ally.</p>
-        </div>
+      <section className="py-20 bg-[#F3F3F3] w-full max-w-full text-start font-sans overflow-x-hidden ">
+  <h1 className="text-xl sm:text-2xl md:text-[44px] font-semibold ml-4 sm:ml-10 lg:ml-28 text-black mb-4">
+    Why Doelsoft?
+  </h1>
+  <p className="text-base md:text-xl font-inter font-normal text-black ml-4 sm:ml-10 lg:ml-[7.5rem] mb-10 font-inter max-w-full sm:max-w-2xl md:max-w-3xl">
+    When it comes to recruitment, we don't just deliver candidates — we deliver confidence.
+  </p>
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10 ml-4 sm:ml-10 lg:ml-20 max-w-full lg:max-w-7xl">
+    {[
+      {
+        icon: "./Tailored.svg",
+        title: "Tailored Approach",
+        desc: "Every solution is designed to match your unique challenges.",
+      },
+      {
+        icon: "./Unmatched.svg",
+        title: "Unmatched Quality",
+        desc: "Strict screening ensures only the best reach you.",
+      },
+      {
+        icon: "./Precision.svg",
+        title: "Speed with Precision",
+        desc: "Fast closures without compromising fit.",
+      },
+      {
+        icon: "./Partnership.svg",
+        title: "Long-Term Partnership",
+        desc: "More than a vendor, we are your hiring ally.",
+      },
+    ].map((item, idx) => (
+      <div
+        key={idx}
+        className="border border-black p-2 sm:p-4 md:p-6 md:py-10 mx-4 sm:mx-6 md:mx-10 w-96 sm:w-[280px] md:w-72 h-auto md:h-64 text-left"
+      >
+        <img src={item.icon} className="w-14 h-14 mb-4" alt={item.title} />
+        <h3 className="text-lg md:text-xl mt-2 whitespace-nowrap font-extralight font-kumbh mb-2">{item.title}</h3>
+        <p className="text-zinc-800 mt-6  text-base font-normal font-inter leading-6">{item.desc}</p>
       </div>
-    </section>
+    ))}
+  </div>
+</section>
+
    
-  <div className="p-6 sm:p-8 md:p-10 lg:p-12 ml-4 sm:ml-8 md:ml-20">
-  <h1 className="text-2xl sm:text-3xl md:text-[44px] font-semibold font-kumbh text-gray-800 mb-4 text-center md:text-left">
+  <div className="p-9 sm:p-8 md:p-10 lg:p-12 ml-4 sm:ml-8 md:ml-16">
+  <h1 className="text-2xl sm:text-3xl md:text-[44px] font-semibold leading-[66px] font-kumbh text-gray-800 mb-4 text-center md:text-left">
     Our Core Values at Doelsoft
   </h1>
 
-  <p className="text-black mb-6 text-sm sm:text-base font-inter text-center md:text-left">
+  <p className="text-black mb-6 text-base sm:text-xl font-normal font-inter leading-8 text-center md:text-left">
     At Doelsoft, we don't just fill roles — we build partnerships that fuel growth. Every staffing solution we provide, whether
     contract, permanent, offshore, or nearshore, is anchored in our unwavering core values. These principles guide us in creating
     meaningful connections between businesses and talent, ensuring trust, success, and long-term impact.
   </p>
 
-  <div className="space-y-6 ml-0 sm:ml-6 md:ml-14">
+  <div className="space-y-6 ml-0 sm:ml-2 md:ml-4 md:mr-28">
     {/* Trustworthy */}
     <div className="bg-white p-4 flex flex-col sm:flex-row items-start gap-4">
-      <img src={"./Result.svg"} className="w-20 h-20 mx-auto bg-white border border-white p-4  sm:mx-0" alt="Trustworthy" />
+      <img src={"./Result.svg"} className="w-24  h-24 mx-auto bg-white border border-white p-4  sm:mx-0" alt="Trustworthy" />
       <div>
-        <h3 className="text-black text-lg font-semibold text-center sm:text-left">
+        <h3 className="text-black text-xl font-semibold font-kumbh leading-8 text-center sm:text-left">
           Trustworthy — Dependable in Every Step
         </h3>
-        <p className="text-black text-sm sm:text-base text-center sm:text-left">
+        <p className="text-black text-sm sm:text-base md:text-[17px] font-normal font-inter leading-10 text-center sm:text-left">
           Your trust is our greatest responsibility. At Doelsoft, a promise is never taken lightly — we deliver on time, every
           time. From urgent contract needs to building long-term teams, our clients rely on us because we consistently keep our
           word and stand by our commitments.
@@ -208,12 +229,12 @@ function TalentHub() {
 
     {/* Stewardship */}
     <div className="bg-white p-4 flex flex-col sm:flex-row items-start gap-4">
-      <img  src={"./Trustworthy.svg"} className="w-20 h-20 mx-auto bg-white border border-white p-4  sm:mx-0" alt="Stewardship" />
+      <img  src={"./Trustworthy.svg"} className="w-24 h-24 mx-auto bg-white border border-white p-4  sm:mx-0" alt="Stewardship" />
       <div>
-        <h3 className="text-black text-lg font-semibold text-center sm:text-left">
+        <h3 className="text-black text-xl font-semibold font-kumbh leading-8  text-center sm:text-left">
           Stewardship — Taking Responsibility, Driving Results
         </h3>
-        <p className="text-black text-sm sm:text-base text-center sm:text-left">
+        <p className="text-black text-sm sm:text-base md:text-[17px]  font-normal font-inter leading-7 text-center sm:text-left">
           We see ourselves as stewards of your vision. That means taking ownership of every process and outcome — whether sourcing
           exceptional permanent hires or managing offshore teams. Through proactive solutions and transparent communication, we
           safeguard your goals as if they were our own.
@@ -223,12 +244,12 @@ function TalentHub() {
 
     {/* Credibility */}
     <div className="bg-white p-4 flex flex-col sm:flex-row items-start gap-4">
-      <img  src={"./Stewardship.svg"} className="w-20 h-20 mx-auto bg-white border border-white p-4  sm:mx-0" alt="Credibility" />
+      <img  src={"./Stewardship.svg"} className="w-24 h-24 mx-auto bg-white border border-white p-4  sm:mx-0" alt="Credibility" />
       <div>
-        <h3 className="text-black text-lg font-semibold text-center sm:text-left">
+        <h3 className="text-black text-xl font-semibold font-kumbh leading-8 text-center sm:text-left">
           Credibility — Trust Built on Action
         </h3>
-        <p className="text-black text-sm sm:text-base text-center sm:text-left">
+        <p className="text-black text-sm sm:text-base md:text-[17px]  font-normal font-inter leading-7 text-center sm:text-left">
           In today's competitive staffing landscape, credibility is everything. At Doelsoft, we back our words with consistent
           action. Every decision, placement, and engagement is grounded in honesty, fairness, and reliability — so you can count on
           us to be a partner you trust, time after time.
@@ -238,12 +259,12 @@ function TalentHub() {
 
     {/* Respect */}
     <div className="bg-white p-4 flex flex-col sm:flex-row items-start gap-4">
-      <img src={"./Credibility.svg"}  className="w-20 h-20 mx-auto bg-white border border-white p-4 sm:mx-0" alt="Respect" />
+      <img src={"./Credibility.svg"}  className="w-24 h-24 mx-auto bg-white border border-white p-4 sm:mx-0" alt="Respect" />
       <div>
-        <h3 className="text-black text-lg font-semibold text-center sm:text-left">
+        <h3 className="text-black text-xl font-semibold font-kumbh leading-8 text-center sm:text-left">
           Respect — People First, Always
         </h3>
-        <p className="text-black text-sm sm:text-base text-center sm:text-left">
+        <p className="text-black text-sm sm:text-base font-normal md:text-[17px] font-inter leading-7  text-center sm:text-left">
           Behind every role is a person, and behind every business is a vision. We honor both. With humility and empathy, we treat
           every candidate and client as partners in success. Our respectful approach creates inclusive environments where diverse
           talent thrives and collaboration flourishes.
@@ -253,12 +274,12 @@ function TalentHub() {
 
     {/* Result-Oriented */}
     <div className="bg-white p-4 flex flex-col sm:flex-row items-start gap-4">
-      <img src={"./Respect.svg"}className="w-20 h-20 mx-auto bg-white border border-white p-4  sm:mx-0" alt="Result-Oriented" />
+      <img src={"./Respect.svg"}className="w-24 h-24 mx-auto bg-white border border-white p-4  sm:mx-0" alt="Result-Oriented" />
       <div>
-        <h3 className="text-black text-lg font-semibold text-center sm:text-left">
+        <h3 className="text-blacktext-xl font-semibold font-kumbh leading-8 text-center sm:text-left">
           Result-Oriented — Excellence You Can Measure
         </h3>
-        <p className="text-black text-sm sm:text-base text-center sm:text-left">
+        <p className="text-black text-sm sm:text-base font-normal md:text-[17px] font-inter leading-7   text-center sm:text-left">
           We don't just promise results — we deliver them. With strong processes, proven methodologies, and decades of experience,
           we provide reliable outcomes that give you a competitive edge. Every staffing solution is designed to add measurable
           value to your business.
@@ -267,9 +288,9 @@ function TalentHub() {
     </div>
   </div>
 
-  <div className="mt-6 p-6 sm:p-8 bg-red-600 text-white text-center ">
-    <p className="text-sm sm:text-base leading-relaxed">
-      At Doelsoft, our values are not just words — they are the foundation of every decision, every interaction, and every success
+  <div className="mt-6 p-6 sm:p-14 bg-red-600 text-white text-center ">
+    <p className="text-sm sm:text-xl md:text-3xl font-kumbh font-medium leading-9">
+      At  Doelsoft, our values are not just words — they are the foundation of every decision, every interaction, and every success
       story we help create. Partner with us, and let's build not just your team, but your future.
     </p>
   </div>
@@ -319,6 +340,9 @@ function TalentHub() {
                       </button>
                     </div>
                   </section>
+
+     
+
     </div>
   );
 }
