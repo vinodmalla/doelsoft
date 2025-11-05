@@ -39,7 +39,7 @@ const coreValues = [
     icon: <img src='/core1.svg' className="w-14 h-14 text-red-600" />,
     title: "Excellence",
     desc: "Delivering the highest quality in every project.",
-    bg: "bg-[#E2E7F1]",
+    bg: "bg-[#E2E7F1] border border-black",
   },
   {
     icon:  <img src='/core2.svg' className="w-14 h-14 text-red-600" />,
@@ -51,7 +51,7 @@ const coreValues = [
     icon:  <img src='/core3.svg' className="w-14 h-14 text-red-600" />,
     title: "Integrity",
     desc: "Transparent, honest, and ethical business practices.",
-    bg: "bg-[#E2E7F1]",
+    bg: "bg-[#E2E7F1] border border-black",
   },
   {
     icon:  <img src='/core4.svg' className="w-14 h-14 text-red-600" />,
@@ -63,15 +63,15 @@ const coreValues = [
     icon: <img src='/core5.svg' className="w-14 h-14 text-red-600" />,
     title: "Customer Focus",
     desc: "Ensuring every solution is aligned with client goals and adds real value.",
-    bg:"bg-[#E2E7F1]",
+    bg:"bg-[#E2E7F1] border border-black",
   },
 ];
 return (
-    <div className="w-full min-h-screen font-kumbh space-y-6 mt-16 flex flex-col justify-end">
+    <div className="w-full min-h-screen font-kumbh space-y-6 mt-16 flex flex-col overflow-hidden justify-end">
         
         
            <section
-  className="relative w-full min-h-[550px] flex flex-col md:flex-row items-center justify-between overflow-hidden py-10 px-6 md:px-16 lg:px-28"
+   className="relative w-screen min-h-[100vh] sm:min-h-[550px] flex flex-col md:flex-row items-center justify-between bg-cover bg-center bg-no-repeat overflow-hidden py-10 px-6 md:px-16 lg:px-28"
   style={{
     backgroundImage: "url('/worldmap.svg')",
     backgroundSize: "cover",
@@ -92,7 +92,7 @@ return (
   </div>
 
   {/* Right Image */}
-  <div className="mt-10 md:mt-14 md:flex-1 flex justify-center md:justify-end relative z-0">
+  <div className="mt-10 md:mt-24 md:flex-1 flex justify-center md:justify-end relative z-0">
     <img
       src="/Choose1.svg"
       alt="Team"
@@ -100,44 +100,52 @@ return (
     />
   </div>
 </section>
-        <section className="w-full py-12 bg-[#F3F3F3]">
+        <section className="w-screen h-auto lg:h-[657px] bg-[#F3F3F3] ">
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 max-w-7xl mx-auto">
                 <div className="flex-1 space-y-8 mt-8">
-                    <h2 className="text-2xl md:text-[44px] md:whitespace-nowrap font-medium font-kumbh text-black mt-4 ml-10 md:ml-2">
+                    <h2 className="text-2xl md:text-[44px] md:whitespace-nowrap font-semibold font-kumbh text-black mt-8 ml-10 lg:-ml-5">
                       Doelsoft – Innovating Technology,
 
                     </h2>
-                    <h2 className="text-2xl md:text-[44px] whitespace-nowrap font-medium font-kumbh text-black -mt-2 ml-10 md:ml-2">Empowering Businesses</h2>
-                    <p className="text-start font-normal text-black mt-12 ml-10 md:ml-2">
-                        Doelsoft is a leading software development and business consulting<br/> company, with a strong presence in India and the USA, delivering<br/> innovative solutions that help businesses stand out in a competitive<br/> global landscape. We specialize in software development, digital<br/> transformation, consulting, and tailor-made solutions that drive <br/> growth, efficiency, and long-term success.
-                        <br /><br />
-                        At Doelsoft, we turn challenges into opportunities. Our<br/> team works closely with clients to resolve complex <br/> issues, scale operations efficiently, and implement <br/> innovative strategies that accelerate business growth. We <br/> aim to transform every business vision into reality,<br/> leveraging technologically advanced solutions, expert<br/> professionals, and a commitment to excellence.
+                    <h2 className="text-2xl md:text-[44px] whitespace-nowrap font-semibold font-kumbh text-black -mt-2 ml-10 lg:-ml-5">Empowering Businesses</h2>
+                    <p className="text-start md:w-[501px] md:h-40 text-base leading-6 font-normal text-black mt-12 ml-10 lg:-ml-5">
+                        Doelsoft is a leading software development and business consulting company, with a strong presence in India and the USA, delivering innovative solutions that help businesses stand out in a competitive global landscape. We specialize in software development, digital transformation, consulting, and tailor-made solutions that drive  growth, efficiency, and long-term success.</p>
+                        
+                       <p className="text-start md:w-[501px] md:h-40 text-base leading-6 font-normal text-black mt-12 ml-10 lg:-ml-5"> At Doelsoft, we turn challenges into opportunities. Our team works closely with clients to resolve complex  issues, scale operations efficiently, and implement innovative strategies that accelerate business growth. We  aim to transform every business vision into reality, leveraging technologically advanced solutions, expert professionals, and a commitment to excellence.
                     </p>
                 </div>
-                <div className="flex-1 flex items-end md:mt-44 max-h-full mb-[45px] md:mb-[-48px] ">
-                    <img src="/choosee1.svg" alt="ITStaffing" className="w-auto h-auto "/>
-                </div>
+                <div className="flex-1 flex items-end  lg::mt-0 lg:-mb-28" >
+  <div className="w-[800px] h-[30rem] flex items-center justify-center bg-transparent" >
+    <img
+      src="/choosee1.svg"
+      alt="ITStaffing"
+      className="object-contain h-full lg:mr-[440px] " 
+     
+    />
+  </div>
+</div>
+
             </div>
         </section>
      <section className="w-full overflow-hidden">
   <div className="p-6 sm:p-8 md:p-10 md:ml-10 relative max-w-7xl mx-auto">
-    <h1 className="text-2xl sm:text-[44px] font-medium text-gray-800 mb-6 md:ml-14 text-center md:text-left">
+    <h1 className="text-2xl sm:text-[44px] font-semibold text-gray-800 mb-6 md:ml-14 lg:ml-7 text-center md:text-left">
       Key Benefits We Deliver
     </h1>
 
-    <div className="space-y-6 md:ml-14">
+    <div className="space-y-6 md:ml-14 lg:ml-7">
       {/* Card 1 */}
-      <div className="bg-white p-4 flex flex-col sm:flex-row items-start sm:items-center gap-4 rounded-lg shadow-sm">
+      <div className="bg-white p-4 flex flex-col sm:flex-row items-start sm:items-center gap-4 rounded-lg ">
         <img
           src="./key1.svg"
           className="w-20 h-20 mx-auto p-3 border bg-white sm:mx-0"
           alt="Client-Centric Approach"
         />
         <div className="text-center sm:text-left">
-          <h3 className="text-black text-lg font-medium font-kumbh">
+          <h3 className="text-black text-xl font-semibold leading-6 font-kumbh">
             Client-Centric Approach
           </h3>
-          <p className="text-black text-sm sm:text-base">
+          <p className="text-base text-zinc-800 font-normal font-inter sm:text-lg leading-7 ">
             We collaborate deeply with each client to understand their unique
             requirements and deliver solutions that drive measurable results.
           </p>
@@ -145,17 +153,17 @@ return (
       </div>
 
       {/* Card 2 */}
-      <div className="bg-white p-4 flex flex-col sm:flex-row items-start sm:items-center gap-4 rounded-lg shadow-sm">
+      <div className="bg-white p-4 flex flex-col sm:flex-row items-start sm:items-center gap-4 rounded-lg ">
         <img
           src="./key2.svg"
           className="w-20 h-20 mx-auto p-3 border bg-white sm:mx-0"
           alt="Stewardship"
         />
         <div className="text-center sm:text-left">
-          <h3 className="text-black text-lg font-kumbh font-medium">
+          <h3 className="text-black text-xl font-semibold leading-6 font-kumbh ">
             Stewardship Taking Responsibility, Driving Results
           </h3>
-          <p className="text-black text-sm font-inter sm:text-base">
+          <p className="text-base text-zinc-800 font-normal font-inter sm:text-lg leading-7 ">
             Leveraging the latest technologies to provide scalable, secure, and
             high-quality services.
           </p>
@@ -163,17 +171,17 @@ return (
       </div>
 
       {/* Card 3 */}
-      <div className="bg-white p-4 flex flex-col sm:flex-row items-start sm:items-center gap-4 rounded-lg shadow-sm relative">
+      <div className="bg-white p-4 flex flex-col sm:flex-row items-start sm:items-center gap-4 rounded-lg relative">
         <img
           src="./key3.svg"
           className="w-20 h-20 mx-auto p-3 border bg-white sm:mx-0"
           alt="Dedicated Expert Team"
         />
         <div className="text-center sm:text-left">
-          <h3 className="text-black text-lg font-kumbh font-medium">
+          <h3 className="text-black text-xl font-semibold leading-6 font-kumbh ">
             Dedicated Expert Team
           </h3>
-          <p className="text-black text-sm font-inter sm:text-base">
+          <p className="text-base text-zinc-800 font-normal font-inter sm:text-lg leading-7 ">
             In today’s competitive staffing landscape, credibility is everything.
             At Doelsoft, we back our words with consistent action. <br />
             Every decision, every placement, and every engagement is grounded in
@@ -184,15 +192,15 @@ return (
       </div>
 
       {/* Card 4 */}
-      <div className="bg-white p-4 flex flex-col sm:flex-row items-start sm:items-center gap-4 rounded-lg shadow-sm relative">
+      <div className="bg-white p-4 flex flex-col sm:flex-row items-start sm:items-center gap-4 rounded-lg  relative">
         <img
           src="./key4.svg"
     className="w-20 h-20 mx-auto p-3 border bg-white sm:mx-0"
           alt="Global Delivery"
         />
         <div className="text-center sm:text-left">
-          <h3 className="text-black text-lg font-kumbh font-medium">Global Delivery</h3>
-          <p className="text-black text-sm font-inter sm:text-base">
+          <h3 className="text-black text-xl font-semibold leading-6 font-kumbh ">Global Delivery</h3>
+          <p className="text-base text-zinc-800 font-normal font-inter sm:text-lg leading-7 ">
             Serving clients across India, the USA, and worldwide, with flexible
             engagement models.
           </p>
@@ -200,24 +208,24 @@ return (
         <img
           src="/Choose3.svg"
           alt="Expert Team"
-          className="absolute md:right-[-20px] right-0 top-[50%] -translate-y-1/2 w-40  md:w-80 object-contain hidden md:block"
+          className="absolute md:-right-20 right-0 top-36 -translate-y-1/2 w-40  md:w-96 h-96 object-contain hidden md:block"
         />
       </div>
 
       {/* Card 5 */}
-      <div className="bg-white p-4 flex flex-col sm:flex-row items-start sm:items-center gap-4 rounded-lg shadow-sm">
+      <div className="bg-white p-4 flex flex-col sm:flex-row items-start sm:items-center gap-4 rounded-lg ">
         <img
           src="./key5.svg"
           className="w-20 h-20 mx-auto p-3 border bg-white sm:mx-0"
           alt="Holistic Business Growth"
         />
         <div className="text-center sm:text-left">
-          <h3 className="text-black text-lg font-kumbh font-medium">
+          <h3 className="text-black text-xl font-semibold leading-6 font-kumbh ">
             Holistic Business Growth
           </h3>
-          <p className="text-black text-sm font-inter sm:text-base">
+          <p className=" text-base text-zinc-800 font-normal font-inter sm:text-lg leading-7 ">
             Strategies and solutions designed to enhance efficiency,
-            productivity, and market competitiveness.
+            productivity, and market<br/> competitiveness.
           </p>
         </div>
       </div>
@@ -227,9 +235,9 @@ return (
 
 
         <section className="w-full bg-[#F4F6FB] py-10 " style={{marginTop:"0px"}}>
-            <div className="max-w-7xl mx-auto px-6">
+            <div className="max-w-7xl mx-auto lg:ml-20 px-6">
                 {/* Heading */}
-                <h2 className="text-2xl md:text-[44px] font-medium  font-kumbh  mb-12">
+                <h2 className="text-2xl md:text-[44px] font-semibold  font-kumbh  mb-12">
                     Why Doelsoft is Your Trusted Partner
                 </h2>
 
@@ -246,15 +254,15 @@ return (
                                 
                             </div>
                             {/* Description below */}
-                            <h3 className="text-lg font-medium font-kumbh">{item.title}</h3>
-                            <p className="text-gray-600 text-sm font-inter mt-1">{item.desc}</p>
+                            <h3 className="text-xl font-semibold leading-9 font-kumbh">{item.title}</h3>
+                            <p className="text-zinc-800 text-base leading-6 font-inter mt-1">{item.desc}</p>
                         </div>
                     ))}
                 </div>
             </div>
         </section>
          <section className="w-full  py-12">
-      <div className="max-w-7xl mx-auto px-6" style={{marginTop:"0px"}}>
+      <div className="max-w-7xl mx-auto6 lg:ml-20 px-6" style={{marginTop:"0px"}}>
         {/* Heading */}
         <h2 className="text-3xl md:text-[44px] font-medium mb-12">Our Core Values</h2>
 
@@ -268,8 +276,8 @@ return (
                         className={`p-10 flex flex-col gap-3 ${item.bg}`}
                     >
                         {item.icon}
-                        <h3 className="text-lg font-semibold">{item.title}</h3>
-                        <p className="text-gray-600 text-sm">{item.desc}</p>
+                        <h3 className="text-xl font-kumbh text-zinc-950 font-semibold">{item.title}</h3>
+                        <p className="text-zinc-950  text-lg leading-6 font-inter">{item.desc}</p>
                     </div>
                 ))}
             </div>
@@ -281,8 +289,8 @@ return (
                         className={`p-10 flex flex-col gap-3 ${item.bg}`}
                     >
                         {item.icon}
-                        <h3 className="text-lg font-semibold">{item.title}</h3>
-                        <p className="text-gray-600 text-sm">{item.desc}</p>
+                        <h3 className="text-xl font-kumbh text-zinc-950 font-semibold">{item.title}</h3>
+                        <p className="text-zinc-950  text-lg leading-6 font-inter">{item.desc}</p>
                     </div>
                 ))}
                 {/* Image in the third column */}
@@ -291,7 +299,7 @@ return (
                 </div>
             </div>
         </div>
-        <p className="text-black text-lg font-kumbh mt-8 leading-relaxed">
+        <p className="text-black text-lg font-inter mt-8 leading-6">
           At Doelsoft, we don’t just provide services, we empower businesses to
           grow, innovate, and thrive globally. With our expertise, dedication,
           and innovative approach, we ensure that every client is one step ahead
@@ -300,7 +308,7 @@ return (
 
         {/* CTA Section */}
         <div className="bg-red-600 text-white mt-10  p-10 flex flex-col md:flex-row items-center justify-between gap-6">
-          <h3 className="text-lg md:text-xl font-light text-center md:text-left">
+          <h3 className="text-lg md:text-xl font-light text-center font-kumbh md:text-left">
             Get in touch <span className="font-bold">with Doelsoft today</span>{" "}
             and discover how we can accelerate your business success globally.
           </h3>

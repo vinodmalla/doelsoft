@@ -9,7 +9,7 @@ function Header() {
 
   const handleLinkClick = (link) => {
     setActiveLink(link);
-    setIsOpen(false); // Close mobile menu on link click
+    setIsOpen(false);
   };
 
   return (
@@ -28,7 +28,8 @@ function Header() {
 
         {/* Desktop & Tablet Nav */}
         <nav
-          className="hidden md:flex items-center ml-auto lg:ml-80 whitespace-nowrap justify-center md:space-x-4 lg:space-x-8"
+          className="hidden md:flex items-center justify-center 
+          md:space-x-4 lg:space-x-8 xl:ml-80 whitespace-nowrap "
           role="navigation"
         >
           {[
@@ -50,13 +51,14 @@ function Header() {
                   : "text-[#000000] hover:text-[#EF0E0E]"
               } text-sm lg:text-base`}
             >
-              {item.name.charAt(0).toUpperCase() + item.name.slice(1).replace("us", " us")}
+              {item.name.charAt(0).toUpperCase() +
+                item.name.slice(1).replace("us", " us")}
             </Link>
           ))}
         </nav>
 
         {/* Social Icons (Tablet & Desktop) */}
-        <div className="hidden md:flex ml-4 md:ml-6 lg:ml-36 items-center space-x-4 lg:space-x-5">
+        <div className="hidden md:flex items-center space-x-4 lg:space-x-5 xl:ml-36 ">
           <a href="#" className="p-2">
             <FaInstagram className="text-lg md:text-xl text-gray-700 hover:text-red-600" />
           </a>
@@ -105,7 +107,8 @@ function Header() {
                   : "text-gray-700 hover:text-[#EF0E0E]"
               }`}
             >
-              {item.name.charAt(0).toUpperCase() + item.name.slice(1).replace("us", " us")}
+              {item.name.charAt(0).toUpperCase() +
+                item.name.slice(1).replace("us", " us")}
             </Link>
           ))}
 

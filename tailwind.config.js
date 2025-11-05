@@ -4,9 +4,18 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    // ✅ Place custom screens here (not inside extend)
+    screens: {
+      xs: "475px",   // custom small breakpoint
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
+    },
     extend: {
       fontFamily: {
-        kumbh: ['Kumbh Sans', 'sans-serif',"'Inter'", "system-ui", "sans-serif"],
+        kumbh: ['Kumbh Sans', 'sans-serif', "'Inter'", "system-ui", "sans-serif"],
         inter: ["'Inter'", "system-ui", "sans-serif"],
         manrope: ["'Manrope'", "ui-sans-serif", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica Neue", "Arial"],
       },
