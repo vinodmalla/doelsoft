@@ -42,7 +42,7 @@ function Rpo() {
       <section className="w-full bg-white py-12 px-4 sm:px-6 md:px-10">
         <div className="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto gap-10">
           {/* Text Content */}
-          <div className="w-full md:w-1/2 ml-14 lg:-mt-32">
+          <div className="w-full md:w-1/2 ml-10 md:-ml-5 lg:-mt-32">
             <h1 className="text-2xl sm:text-3xl lg:text-4xl whitespace-normal lg:whitespace-nowrap font-semibold font-kumbh text-black leading-snug">
               RPO (Recruitment Process Outsourcing)
               <br />
@@ -80,10 +80,10 @@ function Rpo() {
             </ul>
 
             {/* CTA Button */}
-            <div className="mt-8">
+            <div className="mt-8 w-[23rem] md:w-auto">
               <a
                 href="#"
-                className="inline-block bg-[#E10000] text-white font-medium text-base sm:text-lg px-5 sm:px-6 py-3 hover:bg-red-600 transition"
+                className="inline-block bg-[#E10000] text-white font-medium text-base sm:text-lg px-4 sm:px-6 py-3 hover:bg-red-600 transition"
               >
                 Outsource the process. Keep the control. With Doelsoft RPO.
                 <span className="ml-2">↗</span>
@@ -104,14 +104,14 @@ function Rpo() {
 
       {/* WHY DOELESOFT */}
       <section className="py-10 bg-white text-start font-sans px-4 sm:px-8">
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold font-kumbh text-black leading-snug mb-4 text-center md:text-left md:ml-[6.5rem]">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold font-kumbh text-black leading-snug mb-4 text-center md:text-left md:ml-[5rem]">
           Why Doelsoft?
         </h1>
-        <p className="text-base sm:text-lg md:text-xl font-normal font-inter text-black mb-10 max-w-3xl mx-auto md:ml-[6.5rem] text-center md:text-left">
+        <p className="text-base sm:text-lg md:text-xl font-normal font-inter text-black mb-10 max-w-3xl mx-auto md:ml-[5rem] text-center md:text-left">
           When it comes to recruitment, we don’t just deliver candidates — we
           deliver confidence.
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto md:ml-[4rem]">
           {[
             {
               img: './Tailored.svg',

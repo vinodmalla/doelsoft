@@ -44,17 +44,17 @@ function MuleSoftSolutions() {
                 }}
             >
                 <div className="relative z-10 flex-1 flex flex-col space-y-6 items-start justify-center text-center md:text-left">
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl md:ml-9 font-semibold text-red-600 leading-snug mb-6">
+                    <h2 className="text-3xl mt-6 md:mt-0 sm:text-4xl md:text-6xl lg:text-[71.5px] font-semibold text-[#EF0E0E] leading-snug mb-6">
                         Doelsoft <br className="hidden sm:block" />
                         <span className="block mt-2">MuleSoft Solutions</span>
                     </h2>
 
-                    <button className="py-2 px-5 border border-black ml-[45px] md:ml-9 text-black hover:bg-gray-200 transition-all duration-200 ">
+                    <button className=" px-5 py-4 md:px-7 border border-black text-black hover:bg-gray-200 transition-all duration-200">
                         Consult With Us <span className="ml-2">↗</span>
                     </button>
                 </div>
 
-                <div className="mt-10 md:mt-0 md:flex-1 flex justify-center md:justify-end relative z-0">
+                <div className="mt-10 md:mt-16 md:flex-1 flex justify-center md:justify-end relative z-0">
                     <img
                         src="/MuleSoftHero.svg"
                         alt="MuleSoft"
@@ -64,14 +64,14 @@ function MuleSoftSolutions() {
             </section>
              <section className="mx-auto px-6 sm:px-12 md:px-24 py-16 bg-[#F4F6FB] grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <div className="space-y-6 text-center md:text-left">
-          <h2 className="text-2xl md:text-4xl font-bold md:whitespace-nowrap md:ml-12 text-black">
+          <h2 className="text-2xl sm:text-3xl justify-start whitespace-nowrap md:text-4xl md:ml-3 font-semibold font-kumbh leading-[57.20px] text-black">
            Transform Your Business with Doelsoft <br /> MuleSoft Solutions
           </h2>
-          <p className="text-black text-base sm:text-lg md:ml-12 leading-relaxed">
+          <p className="text-black justify-start text-lg md:ml-4 sm:text-xl  font-inter font-normal leading-8">
              In today’s digital ecosystem, businesses run on multiple applications, systems, and data sources.
               Integrating and connecting these efficiently is the key to digital transformation success.
           </p>
-          <p className="text-black text-base sm:text-lg md:ml-12 leading-relaxed">
+          <p className="text-black justify-start text-lg md:ml-4 sm:text-xl  font-inter font-normal leading-8">
              At Doelsoft, we integrate MuleSoft to unify disparate systems, automate workflows, 
              and deliver seamless digital experiences with speed, security, and efficiency.
           </p>
@@ -100,7 +100,7 @@ function MuleSoftSolutions() {
 
         {/* Right Content */}
         <div className="space-y-8">
-          <h2 className="text-3xl sm:text-4xl font-bold text-black leading-tight text-center md:text-left">
+          <h2 className="text-2xl sm:text-3xl md:whitespace-nowrap md:text-4xl font-kumbh font-semibold text-black leading-[57.20px]">
             🌟 Our MuleSoft Services
           </h2>
 
@@ -154,10 +154,10 @@ function MuleSoftSolutions() {
                   />
                 </div>
                 <div className="text-center sm:text-left">
-                  <h3 className="text-lg sm:text-xl font-semibold text-black">
+                  <h3 className="text-lg sm:text-xl font-semibold text-black font-kumbh leading-8">
                     {item.title}
                   </h3>
-                  <p className="text-gray-600 text-base sm:text-lg">
+                  <p  className="text-zinc-800 text-base sm:text-lg font-inter font-normal leading-7  whitespace-pre-line">
                     {item.desc}
                   </p>
                 </div>
@@ -167,16 +167,16 @@ function MuleSoftSolutions() {
         </div>
       </section>
             <section className="bg-[#F4F6FB] py-10">
-        <div className="px-6 sm:px-12 md:px-20 text-center md:text-left space-y-4">
-          <h1 className="text-3xl sm:text-4xl md:ml-16 font-bold">
+        <div className="px-6 sm:px-12  md:ml-6 md:px-20 text-center md:text-left space-y-4">
+          <h1 className="text-3xl sm:text-4xl font-bold">
             🏭 Industries We Serve
           </h1>
-          <p className="text-gray-600 md:ml-16">
+          <p className="text-gray-600 md:ml-2">
             Doelsoft delivers Microsoft-based solutions to diverse industries:
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2  md:ml-16 py-10 px-6 sm:px-12 md:px-20 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2  md:ml-8 py-10 px-6 sm:px-12 md:px-20 gap-6">
           {[
             { src: "/ecommerce.svg", title: "E-Commerce & Retail", desc: "Seamless customer engagement and omnichannel management." },
             { src: "/lifecare.svg", title: "Healthcare & Life Sciences", desc: "HIPAA-compliant workflows, data analytics, and automation." },
@@ -196,10 +196,10 @@ function MuleSoftSolutions() {
                 className="w-full h-40 object-cover"
               />
               <div className="sm:pl-4 mt-4 sm:mt-0 border border-black h-40 p-4 sm:p-8 text-center sm:text-left">
-                <h3 className="font-semibold text-lg text-gray-900">
+                <h3 className="font-semibold text-lg text-zinc-950 capitalize leading-6">
                   {item.title}
                 </h3>
-                <p className="text-gray-600 text-sm mt-1">{item.desc}</p>
+                <p className="text-zinc-800 text-base sm:text-lg font-inter font-normal leading-7  whitespace-pre-line">{item.desc}</p>
               </div>
             </div>
           ))}
@@ -207,8 +207,8 @@ function MuleSoftSolutions() {
       </section>
 
             <section className="bg-white py-12">
-        <div className="px-6 md:ml-12 sm:px-10 md:px-20 mb-10">
-          <h1 className="text-3xl sm:text-4xl font-bold mb-4">
+        <div className="px-6 md:ml-6 sm:px-10 md:px-20 mb-10">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-kumbh font-semibold mb-4 leading-[66px]">
            👨‍💻 Doelsoft MuleSoft Talent Pool
 
           </h1>
@@ -218,7 +218,7 @@ function MuleSoftSolutions() {
           </p>
         </div>
 
-        <div className="container md:ml-14 mx-auto px-6 sm:px-10 md:px-20 grid gap-16 max-w-7xl sm:grid-cols-2">
+        <div className="container md:ml-8 mx-auto px-6 sm:px-10 md:px-20 grid gap-16 max-w-7xl sm:grid-cols-2">
           {[
             { src: "/t1.svg", desc: "Certified MuleSoft Developers building robust APIs and integrations" },
             { src: "/t2.svg", desc: "Support & Maintenance Engineers ensuring smooth operations post-deployment." },
@@ -232,10 +232,10 @@ function MuleSoftSolutions() {
             >
               <img
                 src={item.src}
-                alt=""
+                alt={item.desc}
                 className="w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0 mx-auto sm:mx-0"
               />
-              <p className="text-gray-800 text-base sm:text-lg text-center sm:text-left">
+              <p className="text-back justify-start font-medium text-base sm:text-lg font-kumbh leading-6">
                 {item.desc}
               </p>
             </div>
@@ -248,11 +248,11 @@ function MuleSoftSolutions() {
             <section className="bg-[#F4F6FB] py-12 px-6 sm:px-10 lg:px-20 font-sans" style={{marginBottom:"-44px"}}>
         <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-10">
           <div className="flex-1 space-y-6">
-            <h1 className="text-2xl sm:text-3xl font-bold md:whitespace-nowrap mb-6 text-center md:text-left">
+            <h1 className="text-2xl sm:text-3xl md:ml-[-35px] md:text-4xl  justify-start md:whitespace-nowrap font-kumbh font-semibold mb-8 leading-[57.20px]">
               💡 Why Choose Doelsoft for MuleSoft Services?
             </h1>
 
-            <div className="space-y-6">
+            <div className="space-y-6 md:-ml-5">
               {features.map((feature, index) => (
                 <div
                   key={index}
@@ -266,10 +266,10 @@ function MuleSoftSolutions() {
                     />
                   </div>
                   <div className="text-center sm:text-left">
-                    <h4 className="text-lg sm:text-xl font-semibold text-black">
+                    <h4 className="text-lg justify-start sm:text-xl font-semibold font-kumbh text-black leading-8">
                       {feature.title}
                     </h4>
-                    <p className="text-gray-600 text-sm sm:text-base">
+                    <p className="text-zinc-900 text-sm sm:text-base font-inter leading-7">
                       {feature.description}
                     </p>
                   </div>
@@ -279,60 +279,60 @@ function MuleSoftSolutions() {
           </div>
 
           {/* Right Image */}
-          <div className="flex-1 flex justify-center">
+          <div className="flex-1 flex justify-center md:-mb-80">
             <img
               src="/MulesofMan.svg"
               alt="Mulesoft Professional"
-              className="w-full max-w-sm sm:max-w-md md:max-w-lg object-cover"
+              className="w-full max-w-sm sm:max-w-md md:max-w-2xl  md:h-max object-cover"
             />
           </div>
         </div>
       </section>
 
             {/* CTA Section */}
-          <section
-                          className="relative w-full  bg-cover bg-center text-center py-16   sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
-                          style={{ backgroundImage: "url('/Background2.svg')",marginTop:"45px" } }
-                        >
-                          {/* Decorative Vectors */}
-                          <img
-                            src="/Vectors.svg"
-                            alt="vector"
-                            className="absolute left-6 sm:left-14 top-8 sm:top-10 h-20 sm:h-28 md:h-32 w-20 sm:w-28 md:w-32 object-contain opacity-70 z-30"
-                          />
-                          <img
-                            src="/left.svg"
-                            alt="left"
-                            className="absolute left-10 sm:left-20 bottom-10 sm:top-72 w-3 sm:w-4 object-contain opacity-70 z-30"
-                          />
-                          <img
-                            src="/right.svg"
-                            alt="right"
-                            className="absolute right-10 sm:right-40 lg:right-72 top-6 sm:top-12 w-10 sm:w-16 md:w-20 object-contain opacity-70 z-30"
-                          />
-                        
-                          {/* Dark overlay */}
-                          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/80 to-black/90"></div>
-                        
-                          {/* Main Content */}
-                          <div className="relative max-w-3xl mx-auto text-white z-10 flex flex-col items-center justify-center space-y-5 sm:space-y-7 md:space-y-8">
-                            <h2 className="text-xl sm:text-2xl md:text-4xl font-kumbh font-light leading-snug px-2">
-                             🌍  Accelerate Digital Transformation with Doelsoft MuleSoft Services
-                            </h2>
-                        
-                            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-200 leading-relaxed px-2">
-                              👉Partner with Doelsoft – Your trusted MuleSoft consulting and integration partner in the USA & India.
-                            </p>
-                        
-                            <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-4 text-sm sm:text-lg  shadow-lg transition-all duration-300 ease-in-out">
-                              Talk to an Expert{" "}
-                              <ArrowUpRight
-                                className="border border-white rounded-full p-1"
-                                size={24}
-                              />
-                            </button>
-                          </div>
-                        </section>
+             <section
+                       className="relative w-full bg-cover bg-center text-center py-16 md:h-[568px] sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
+                       style={{
+                         backgroundImage: "url('/Background2.svg')",
+                         marginTop: "45px",
+                       }}
+                     >
+                       {/* Decorative Vectors */}
+                       <img
+                         src="/Vectors.svg"
+                         alt="vector"
+                         className="absolute left-6 sm:left-14 top-8 sm:top-10 h-20 sm:h-28 md:h-32 w-20 sm:w-28 md:w-32 object-contain opacity-70 z-30"
+                       />
+                       <img
+                         src="/left.svg"
+                         alt="left"
+                         className="absolute left-10 sm:left-20 bottom-10 sm:top-70 w-3 sm:w-4 object-contain opacity-70 z-30"
+                       />
+                       <img
+                         src="/right.svg"
+                         alt="right"
+                         className="absolute right-10 sm:right-40 lg:right-72 top-6 sm:top-12 w-10 sm:w-16 md:w-20 object-contain opacity-70 z-30"
+                       />
+               
+                       {/* Dark Overlay */}
+                       <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/80 to-black/90"></div>
+               
+                       {/* Content */}
+                       <div className="relative max-w-3xl mx-auto md:mt-8 text-white z-10 flex flex-col items-center justify-center space-y-5 sm:space-y-7 md:space-y-8">
+                         <h2 className="text-xl md:text-[56px] font-manrope font-bold whitespace-nowrap leading-snug px-2">
+                           Let's Build the Future Together
+                         </h2>
+               
+                         <p className="text-sm sm:text-[30px] font-inter text-gray-200 leading-relaxed px-2">
+                           Tells Us your goals. We'll design the runway then deliver it with AI, Cloud, and Data.
+                         </p>
+               
+                         <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-6 text-sm sm:text-xl shadow-lg transition-all duration-300 ease-in-out">
+                           Talk to an Expert{" "}
+                           <ArrowUpRight className="border border-white rounded-full p-1" size={24} />
+                         </button>
+                       </div>
+                     </section>
         </div>
     )
 }

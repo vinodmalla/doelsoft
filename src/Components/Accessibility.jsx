@@ -163,7 +163,7 @@ export default function Accessibility() {
     <div className="relative w-full mx-auto font-kumbh bg-white mt-8">
       {/* Hero Section */}
       <section
-        className="relative w-full min-h-[550px] flex flex-col md:flex-row items-center justify-between overflow-hidden py-10 px-6 md:px-16 lg:px-28"
+        className="relative w-full min-h-[550px] flex flex-col md:mt-20 md:flex-row items-center justify-between overflow-hidden py-10 px-6 md:px-16 lg:px-28"
         style={{
           backgroundImage: "url('/worldmap.svg')",
           backgroundSize: "cover",
@@ -172,15 +172,15 @@ export default function Accessibility() {
         }}
       >
         <div className="relative z-10 flex-1 flex flex-col space-y-6 items-start justify-center text-center md:text-left">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl md:ml-9 font-semibold text-red-600 leading-snug mb-6">
+          <h2 className="text-3xl mt-6 md:mt-0 sm:text-4xl md:text-6xl lg:text-[71.5px] font-semibold text-[#EF0E0E] leading-snug mb-6">
             Doelsoft <br />
             <span className="block mt-4">Digital Accessibility</span>
           </h2>
-         <button className="py-2 px-5 border border-black ml-[45px] md:ml-9  text-black hover:bg-gray-200 transition-all duration-200 ">
+         <button className=" px-5 py-4 md:px-7 border border-black text-black hover:bg-gray-200 transition-all duration-200">
       Consult With Us <span className="ml-2">↗</span>
     </button>
         </div>
-        <div className="mt-10 md:mt-0 md:flex-1 flex justify-center md:justify-end relative z-0">
+        <div className="mt-10 md:mt-16 md:flex-1 flex justify-center md:justify-end relative z-0">
           <img
             src="/Digitalaccessibility.svg"
             alt="Team"
@@ -190,25 +190,29 @@ export default function Accessibility() {
       </section>
 
       {/* Intro Section */}
-      <section className="w-full bg-[#F4F6FB] flex items-center py-12 px-6 md:px-16 lg:px-28 mt-10">
+      <section className="w-full bg-[#F4F6FB] flex items-center py-20 px-6 md:px-16 lg:px-28 mt-10">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
           <div className="lg:col-span-2">
-            <h2 className="text-2xl md:text-4xl md:ml-10 font-semibold mt-10 text-gray-900">
+            <h2 className="text-2xl sm:text-3xl justify-start whitespace-nowrap md:text-4xl md:-ml-1 font-semibold font-kumbh leading-[57.20px] text-black">
               Inclusive Digital Accessibility Solutions <br/> Powered by Human Expertise & AI
 
             </h2>
-            <p className="text-black text-base md:ml-12 sm:text-lg mt-8 leading-relaxed">
+            <br/>
+            <p className="text-black justify-start text-lg md:-ml-1 sm:text-xl  font-inter font-normal leading-8 ">
               Fostering Equitable, Real-World Digital Experiences for All
             </p>
-            <p className="text-black text-base  md:ml-12 sm:text-lg mt-8 leading-relaxed">
-              At Doelsoft, we believe accessibility is more than compliance it’s about inclusion, equity, and empowerment. Our mission is to bridge the digital divide by combining cutting-edge AI technology with deep human expertise including people with lived experiences of disability, professional accessibility testers, and real users from diverse backgrounds.
+            <br/>
+            <p className="text-black justify-start text-lg md:-ml-1 sm:text-xl  font-inter font-normal leading-8 ">
+              At Doelsoft, we believe accessibility is more than compliance it’s about <br/> inclusion, equity, and empowerment. Our mission is to bridge the digital divide <br/>by combining <b>cutting-edge AI technology with deep human expertise</b> <br/> including people with lived experiences of disability, professional accessibility <br/>  testers, and real users from diverse backgrounds.
             </p>
-            <p className="text-black text-base  md:ml-12 sm:text-lg mt-8 leading-relaxed">
-              Our holistic, collaborative approach ensures your websites, mobile apps, documents, multimedia, and enterprise systems are not only fully accessible and compliant with global standards (WCAG 2.1/2.2, ADA, Section 508, AODA, EN 301 549, EAA, PDF/UA), but also optimized for real-world usability tested, validated, and shaped by the people who rely on these tools every day.
+            <br/>
+            <p className="text-black justify-start text-lg md:-ml-1 sm:text-xl  font-inter font-normal leading-8 ">
+              Our holistic, collaborative approach ensures your websites, mobile apps,<br/> documents, multimedia, and enterprise systems are not only fully accessible <br/> and compliant with global standards<b> (WCAG 2.1/2.2, ADA, Section 508, AODA, EN 301 549, EAA, PDF/UA),</b>  but also optimized for real-world usability tested,<br/> validated, and shaped by the people who rely on these tools every day.
             </p>
-            <p className="text-black text-base  md:ml-12 sm:text-lg mt-6 leading-relaxed">
+            <br/>
+            <p className="text-black justify-start text-lg md:-ml-1 sm:text-xl  font-inter font-normal leading-8 ">
              
-We go beyond fixing issues. We help you future-proof your digital platforms, build inclusive workflows, and unlock new opportunities by embracing the needs of the 1+ billion people with disabilities worldwide. Our work is co-created with disability communities, ensuring that our solutions are grounded in real experiences, not just theory.
+We go beyond fixing issues. We help you future-proof your digital platforms,<br/> build inclusive workflows, and unlock new opportunities by embracing the <br/> needs of the <b> 1+ billion people with disabilities worldwide. Our work is co-<br/>created with disability communities,</b>  ensuring that our solutions are grounded <br/> in real experiences, not just theory.
 
             </p>
           </div>
@@ -225,11 +229,11 @@ We go beyond fixing issues. We help you future-proof your digital platforms, bui
       {/* AI + Human + Real-User Section */}
       <section className="w-full bg-white py-16 px-6 md:px-16 lg:px-28">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center md:mb-20 justify-center">
             <img
               src="/Accessibility_target.svg"
               alt="Accessibility Target Illustration"
-              className="w-72 sm:w-80 md:w-[300px]  lg:w-[360px] h-auto object-contain"
+              className="w-72 sm:w-80 md:w-[300px]  lg:w-[360px] z-50 mb-[-62px] h-auto object-contain"
             />
             <div className="bg-red-600 text-white text-center p-10 max-w-md mt-6">
               <p className="text-sm sm:text-base leading-relaxed">
@@ -242,11 +246,11 @@ We go beyond fixing issues. We help you future-proof your digital platforms, bui
             </div>
           </div>
           <div>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-900 mb-4">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl justify-start font-semibold text-black font-kumbh leading-[57.20px] mb-4">
               Why Accessibility + AI + Human + Real-User Expertise?
             </h2>
-            <p className="text-gray-700 text-base sm:text-lg mb-8 leading-relaxed">
-              Accessibility is evolving rapidly...
+            <p className="text-black text-lg sm:text-xl mb-8 font-normal font-inter leading-8">
+             Accessibility is evolving rapidly. Traditional manual testing is thorough but slow; pure automation lacks empathy and insight. Our AI + Human + Real-User Hybrid Model bridges the gap:
             </p>
             <ul className="space-y-5">
               {items.map((item) => (
@@ -255,10 +259,10 @@ We go beyond fixing issues. We help you future-proof your digital platforms, bui
                     {item.num}
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 text-base sm:text-lg">
+                    <h3 className="font-semibold text-black text-xl font-kumbh sm:text-xl leading-8">
                       {item.title}
                     </h3>
-                    <p className="text-gray-700 text-sm sm:text-base mt-1">{item.desc}</p>
+                    <p className="text-black text-sm sm:text-base leading-6 font-inter font-normal mt-1">{item.desc}</p>
                   </div>
                 </li>
               ))}
@@ -267,13 +271,13 @@ We go beyond fixing issues. We help you future-proof your digital platforms, bui
         </div>
       </section>
       <section className="px-6 py-12 md:px-16 lg:px-24 bg-white text-gray-800 space-y-20">
-        <h1 className="text-black md:ml-60 text-2xl md:text-3xl">🛠️ Comprehensive Accessibility & Inclusion Services</h1>
+        <h1 className="text-black text-center text-2xl font-semibold font-kumbh  sm:text-3xl md:text-4xl leading-[57.20px]">🛠️ Comprehensive Accessibility & Inclusion Services</h1>
       {sections.map((section, index) => {
         const isEven = index % 2 === 1;
         return (
           <div
             key={index}
-            className={`grid md:grid-cols-2 gap-10 md:ml-16 items-center ${
+            className={`grid md:grid-cols-2 gap-10 md:ml-4 items-center ${
               !isEven ? "md:flex-row-reverse" : ""
             }`}
           >
@@ -314,11 +318,11 @@ We go beyond fixing issues. We help you future-proof your digital platforms, bui
     </section>
       <section className='bg-[#F4F6FB] py-10'>
             <div className='px-16 md:px-20 space-y-4'>
-                <h1 className='font-kumbh md:ml-14 font-extralight text-4xl '>🏢 Industries We Serve</h1>
-                <p className='text-gray-600 md:ml-20'>Doelsoft has deep expertise in industry-specific mobile apps:</p>
+                <h1 className=' md:ml-6 font-semibold font-kumbh text-4xl leading-[66px] '>🏢 Industries We Serve</h1>
+                <p className='text-black leading-9 font-inter font-normal text-lg md:text-xl md:ml-7'>Doelsoft delivers accessibility across industries—co-created and validated by real users:</p>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 md:ml-20 py-10 px-16 md:px-20 gap-6'>
-                {[{src:"/ecommerce.svg", title:"E-commerce & Retail" ,desc:"Accessible shopping carts, product images, checkout lows"},
+            <div className='grid grid-cols-1 md:grid-cols-2 md:ml-9 py-10 px-16 md:px-20 gap-6'>
+                {[{src:"/ecommerce.svg", title:"E-commerce & Retail" ,desc:"Accessible shopping carts, product images, checkout flows"},
                     {src:"/health_care.svg",title:"Healthcare & Telemedicine",desc:"Patient portals, telehealth apps"},
                     {src:"/finance.svg",title:"Banking & Finance",desc:"Mobile apps, online banking, disclosures, ATMs"},
                     {src:"/education.svg",title:"Education & E-Learning",desc:"LMS platforms, eBooks, assessments"},
@@ -355,23 +359,23 @@ We go beyond fixing issues. We help you future-proof your digital platforms, bui
         </section>
 
       {/* Why Choose Doelsoft Section */}
-      <section className="w-full bg-[#F4F6FB] py-10 md:mb-[-46px]">
+      <section className="w-full bg-[#F4F6FA] py-10 md:mb-[-46px]">
         <div className="flex flex-col md:flex-row justify-center items-center max-w-7xl mx-auto px-4 gap-10">
-          <div className="flex-1">
-            <h1 className="font-kumbh text-2xl md:text-4xl font-bold text-black">💡 Why Choose Doelsoft?</h1>
-            <ul className="space-y-4 mt-6">
+          <div className="flex-1 ml-0 md:-ml-7">
+            <h1 className="font-kumbh text-2xl md:text-4xl font-semibold justify-start text-black leading-[57.20px">🎯 Why Choose Doelsoft?</h1>
+            <ul className="space-y-4 mt-6 ml-4">
               {whyChoose.map((item, idx) => (
                 <li key={idx} className="flex items-start space-x-3">
                   <img src="/logo4.svg" alt="" className="h-6 w-6 mt-1" />
                   <div className="text-black whitespace-nowrap">
-                    <span className="font-bold">{item.title} </span>
+                    <span className="font-semibold font-inter leading-8">{item.title} </span>
                     {item.desc}
                   </div>
                 </li>
               ))}
             </ul>
           </div>
-          <div className="flex-1 md:ml-20 mt-10 md:mt-0">
+          <div className="flex-1 md:ml-20 mt-10 md:mt-8 md:-mb-20">
             <img
               src="/Whychooseus.svg"
               alt="Why Choose Us"
@@ -380,50 +384,53 @@ We go beyond fixing issues. We help you future-proof your digital platforms, bui
           </div>
         </div>
       </section>
-       <section
-                     className="relative w-full  bg-cover bg-center text-center py-16   sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
-                     style={{ backgroundImage: "url('/Background2.svg')",marginTop:"45px" } }
-                   >
-                     {/* Decorative Vectors */}
-                     <img
-                       src="/Vectors.svg"
-                       alt="vector"
-                       className="absolute left-6 sm:left-14 top-8 sm:top-10 h-20 sm:h-28 md:h-32 w-20 sm:w-28 md:w-32 object-contain opacity-70 z-30"
-                     />
-                     <img
-                       src="/left.svg"
-                       alt="left"
-                       className="absolute left-10 sm:left-20 bottom-10 sm:top-72 w-3 sm:w-4 object-contain opacity-70 z-30"
-                     />
-                     <img
-                       src="/right.svg"
-                       alt="right"
-                       className="absolute right-10 sm:right-40 lg:right-72 top-6 sm:top-12 w-10 sm:w-16 md:w-20 object-contain opacity-70 z-30"
-                     />
-                   
-                     {/* Dark overlay */}
-                     <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/80 to-black/90"></div>
-                   
-                     {/* Main Content */}
-                     <div className="relative max-w-3xl mx-auto text-white z-10 flex flex-col items-center justify-center space-y-5 sm:space-y-7 md:space-y-8">
-                       <h2 className="text-xl sm:text-2xl md:text-4xl font-kumbh font-light leading-snug px-2">
-                         🚀 Accessibility + AI + Mobile + Inclusion = The Future of Digital
-                       </h2>
-                   
-                       <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-200 leading-relaxed px-2">
-                       <span className="font-bold">Start Your Inclusion Journey Today:</span>  <br/> 
+      
+                    <section
+                                className="relative w-full bg-cover bg-center text-center py-16 md:h-[568px] sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
+                                style={{
+                                  backgroundImage: "url('/Background2.svg')",
+                                  marginTop: "45px",
+                                }}
+                              >
+                                {/* Decorative Vectors */}
+                                <img
+                                  src="/Vectors.svg"
+                                  alt="vector"
+                                  className="absolute left-6 sm:left-14 top-8 sm:top-10 h-20 sm:h-28 md:h-32 w-20 sm:w-28 md:w-32 object-contain opacity-70 z-30"
+                                />
+                                <img
+                                  src="/left.svg"
+                                  alt="left"
+                                  className="absolute left-10 sm:left-20 bottom-10 sm:top-70 w-3 sm:w-4 object-contain opacity-70 z-30"
+                                />
+                                <img
+                                  src="/right.svg"
+                                  alt="right"
+                                  className="absolute right-10 sm:right-40 lg:right-72 top-6 sm:top-12 w-10 sm:w-16 md:w-20 object-contain opacity-70 z-30"
+                                />
+                        
+                                {/* Dark Overlay */}
+                                <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/80 to-black/90"></div>
+                        
+                                {/* Content */}
+                                <div className="relative max-w-3xl mx-auto md:mt-8 text-white z-10 flex flex-col items-center justify-center space-y-5 sm:space-y-7 md:space-y-8">
+                                  <h2 className="text-xl md:text-4xl font-manrope font-bold whitespace-nowrap leading-snug px-2">
+                                     🚀 Accessibility + AI + Mobile + Inclusion = The Future of Digital
+                                  </h2>
+                        
+                                  <p className="text-sm sm:text-[30px] font-inter text-gray-200 leading-relaxed px-2">
+                                   Start Your Inclusion Journey Today: <br/> 
 Request a free consultation or AI-driven accessibility scan validated by real users.
-                       </p>
-                   
-                       <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-4 text-sm sm:text-lg  shadow-lg transition-all duration-300 ease-in-out">
-                         Talk to an Expert{" "}
-                         <ArrowUpRight
-                           className="border border-white rounded-full p-1"
-                           size={24}
-                         />
-                       </button>
-                     </div>
-                   </section>
+                                  </p>
+                        
+                                  <button className="flex items-center gap-2 bg-red-600 hover:bg-gray-600 text-white font-medium px-5 sm:px-8 py-3 sm:py-6 text-sm sm:text-xl shadow-lg transition-all duration-300 ease-in-out">
+                                    Talk to an Expert{" "}
+                                    <ArrowUpRight className="border border-white rounded-full p-1" size={24} />
+                                  </button>
+                                </div>
+                              </section>
+
+                    
     </div>
   );
 }

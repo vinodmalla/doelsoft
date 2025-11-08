@@ -80,7 +80,7 @@ function Solutions() {
             <span className="block mt-2">AI-Powered</span>
             <span className="block mt-2">Services</span>
           </h2>
-          <button className="py-2 px-5 border border-black text-black hover:bg-gray-200 transition-all duration-200">
+          <button className=" px-5 py-4 md:px-7 border border-black text-black hover:bg-gray-200 transition-all duration-200">
             Consult With Us <span className="ml-2">↗</span>
           </button>
         </div>
