@@ -231,10 +231,10 @@ useEffect(()=>{
       />
     ))}
   </div>
-<section className="w-full min-h-lvh max-w-[95vw] md:max-w-[90vw] xl:max-w-[85vw] mx-auto md:mx-[80px] relative flex flex-col lg:flex-row justify-between items-center bg-white px-4 sm:px-6 lg:px-8 py-20 sm:py-20 gap-8 lg:gap-12 overflow-hidden">
+<section className="w-full min-h-lvh max-w-[95vw] md:max-w-[90vw] xl:max-w-[85vw] mx-auto md:mx-[80px] relative flex flex-row md:flex-col lg:flex-row justify-between items-center bg-white px-4 sm:px-6 lg:px-8 py-20 sm:py-20 gap-8 lg:gap-12 overflow-hidden">
 
   {/* LEFT CONTENT */}
-  <div className="w-full lg:w-1/2 space-y-6 flex flex-col gap-6 md:gap-8 text-center lg:text-left md:mt-36">
+  <div className="w-full lg:w-1/2 space-y-6 flex  lg:flex-col gap-6 md:gap-8 text-center lg:text-left md:mt-36">
     {CursolDetails.map((details, index) => (
       <div
         key={index}
@@ -243,11 +243,11 @@ useEffect(()=>{
         } w-full `}
       >
         {index==0 && <p className={`font-inter  `}>Target Tomorrow with AI</p> }
-        <h1 className="text-xl font-kumbh md:text-[40px] font-semibold leading-tight whitespace-nowrap">
+        <h1 className="text-xl font-kumbh sm:text-xl md:text-[30px] lg:text-[40px] font-semibold leading-tight lg:whitespace-nowrap">
           {details.h11}
           </h1>
       
-          <h2 className="text-red-600 font-kumbh block mt-2 text-xl md:whitespace-nowrap  md:text-[70px] leading-tight font-semibold">
+          <h2 className="text-red-600 font-kumbh block mt-2 text-4xl md:whitespace-nowrap md:text-[60px]  lg:text-[70px] leading-tight font-semibold">
             {details.h22}
        
         </h2>
@@ -272,12 +272,12 @@ useEffect(()=>{
         </div>
 
         {/* Logos */}
-        <div className="mt-6 lg:mt-8">
-          <div className="flex gap-0 animate-marquee whitespace-nowrap overflow-x-auto no-scrollbar py-2">
+        <div className="mt-6 lg:mt-8 ">
+          <div className="flex gap-0 animate-marquee whitespace-nowrap overflow-x-auto no-scrollbar  py-4">
             {[spring, wipro, zingo, mevatron, menlo, tech].map((logo, i) => (
               <div
                 key={i}
-                className="w-14 sm:w-16 md:w-20 lg:w-28 h-10 sm:h-12 md:h-16 lg:h-24 flex items-center justify-center flex-shrink-0"
+                className="w-14 sm:w-16  md:w-20 lg:w-28 h-10 sm:h-12 md:h-16 lg:h-24 flex items-center justify-center flex-shrink-0"
               >
                 <img
                   src={logo}
@@ -380,14 +380,16 @@ useEffect(()=>{
 
 
 
+
+
       {/* Industries Section - Responsive grid */}
-  <section className="relative w-full h-[725px] bg-[#080808] overflow-hidden">
+  <section className="relative w-full  h-[725px] bg-[#080808] overflow-hidden">
   {/* Background Image + Overlay */}
   <div className="absolute inset-0 bg-cover bg-center bg-[#080808]" style={{ backgroundImage: "url('/11122436.svg')" }}></div>
   <div className="absolute inset-0 bg-[#080808]/10"></div>
 
   {/* Content */}
-  <div className="relative z-10 md:ml-20 max-w-7xl mt-8 md:mt-16 mx-auto px-4 sm:px-6 lg:px-8">
+  <div className="relative z-10 md:ml-20 max-w-7xl mt-8 lg:mt-16 mx-auto px-4 sm:px-6 lg:px-8">
     {/* Heading */}
     <div className="flex justify-center items-start px-2 py-1 gap-2 bg-[#333333] rounded-md w-fit">
   <p className="text-white font-inter font-medium text-[16px] leading-[150%] tracking-[-0.03em]">
@@ -396,7 +398,7 @@ useEffect(()=>{
 </div>
 
     {/* Subheading + Paragraph */}
-    <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 sm:gap-6 mb-8 md:mt-2 sm:mb-12 text-center lg:text-left">
+    <div className="flex flex-col md:flex-col lg:flex-row lg:items-center lg:justify-between gap-4 sm:gap-6 mb-8 md:mt-2 sm:mb-12 text-center lg:text-left">
       <h2 className="text-white font-[500] text-[44px] leading-[130%] tracking-[-0.03em] font-kumbh">
         AI for Every Industry
       </h2>
@@ -408,7 +410,7 @@ useEffect(()=>{
     </div>
 
     {/* Services Grid */}
-    <div className="grid grid-cols-2 md:flex flex-row md:mt-32  gap-4 sm:gap-4 px-2 sm:px-2   max-w-7xl ">
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:flex  flex-row mt-4 lg:mt-32  gap-4 sm:gap-4 px-2 sm:px-2   max-w-7xl  md:justify-center lg:justify-normal">
       {services.map((service, i) => (
         <div
           key={i}
@@ -429,12 +431,12 @@ useEffect(()=>{
 </section>
 
       {/* Core Services Section - Responsive flex */}
-    <section className="w-full bg-white px-4 sm:px-6 lg:px-8 py-10 mx-auto md:-ml-3 sm:py-16 lg:py-20 overflow-hidden">
+    <section className="w-full bg-white px-4 sm:px-6 lg:px-8 py-10 mx-auto md:-ml-5 sm:py-16 lg:py-20 overflow-hidden">
   <div className="flex flex-col lg:flex-row gap-10 lg:gap-12 max-w-7xl mx-auto">
     
     {/* LEFT SECTION */}
     <div className="flex-1 space-y-6 lg:space-y-8 text-center lg:text-left">
-      <h1 className="font-medium text-xl md:text-[44px] font-kumbh leading-tight">
+      <h1 className="font-semibold text-xl md:text-[44px] font-kumbh leading-10">
         Doelsoft
         <br />
         Core Services
@@ -450,7 +452,7 @@ useEffect(()=>{
       <img
         src="Robot2.svg"
         alt="robot2"
-         className=" w-[550px] h-[658px] -left-[117px] -top-[23px]  object-contain animate-moveOnce"
+         className=" w-[550px] h-[658px] mx-auto  md:-left-[117px] -top-[23px]  object-contain animate-moveOnce"
       />
     
 
@@ -467,83 +469,88 @@ useEffect(()=>{
     </div>
 
     {/* RIGHT SECTION: Services Grid */}
-    <div className="grid grid-cols-1 sm:grid-cols-2  gap-6 lg:gap-8 ml-7 md:ml-4 w-72 lg:w-1/2">
-      {[
-        {
-          icon: AI,
-          title: "AI Strategy & Consulting",
-          list: [
-            "Gen-AI features & Copilots",
-            "Microservices & API, Integrations",
-            "Performance, security, observability",
-          ],
-        },
-        {
-          icon: cloud,
-          title: "Cloud & AI Infrastructure",
-          list: [
-            "Cloud migrations & Modernization",
-            "MLOPs Platforms, model serving",
-            "Cost, reliability & security baselines",
-          ],
-        },
-        {
-          icon: data,
-          title: "Data Science & Analytics",
-          list: [
-            "Data engineering & Governance",
-            "ML modeling & evaluation",
-            "BI dashboards & decision intelligence",
-          ],
-        },
-        {
-          icon: Intelligent,
-          title: "Intelligent Software Dev",
-          list: [
-            "Gen-AI features & copilots",
-            "Microservices & APIs, integrations",
-            "Performance, security, observability",
-          ],
-        },
-        {
-          icon: CyberSecurity,
-          title: "AI-Enhanced CyberSecurity",
-          list: [
-            "Anomaly & fraud detection",
-            "Identity, access & zero-trust",
-            "Compliance hardening & monitoring",
-          ],
-        },
-        {
-          icon: Accessibility,
-          title: "Accessibility Inclusive Design",
-          list: [
-            "Accessibility audits & remediation",
-            "Inclusive UX writing & patterns",
-            "Continuous accessibility in CI/CD",
-          ],
-        },
-      ].map((service, i) => (
-        <div
-          key={i}
-          className="border border-gray-600 px-2 sm:px-6  py-6 hover:shadow-lg transition duration-300"
-        >
-          <img
-            src={service.icon}
-            alt={service.title}
-            className="w-8 sm:w-16 h-auto mb-4 mx-auto sm:mx-0"
-          />
-          <h3 className="text-black font-semibold  font-kumbh text-base sm:text-lg md:text-xl mb-3 sm:mb-4 text-center sm:text-left">
-            {service.title}
-          </h3>
-          <ul className="list-disc list-inside text-gray-600 font-normal  space-y-1 sm:space-y-2 text-center font-normal  md:text-left">
-            {service.list.map((item, j) => (
-              <li className=' text-sm font-inter' key={j}>{item}</li>
-            ))}
-          </ul>
-        </div>
-      ))}
+    <div
+  className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 mx-auto gap-6 md:gap-8 w-full max-w-7xl px-4 sm:px-6 md:px-8"
+>
+  {[
+    {
+      icon: AI,
+      title: "AI Strategy & Consulting",
+      list: [
+        "Gen-AI features & Copilots",
+        "Microservices & API, Integrations",
+        "Performance, security, observability",
+      ],
+    },
+    {
+      icon: cloud,
+      title: "Cloud & AI Infrastructure",
+      list: [
+        "Cloud migrations & Modernization",
+        "MLOPs Platforms, model serving",
+        "Cost, reliability & security baselines",
+      ],
+    },
+    {
+      icon: data,
+      title: "Data Science & Analytics",
+      list: [
+        "Data engineering & Governance",
+        "ML modeling & evaluation",
+        "BI dashboards & decision intelligence",
+      ],
+    },
+    {
+      icon: Intelligent,
+      title: "Intelligent Software Dev",
+      list: [
+        "Gen-AI features & copilots",
+        "Microservices & APIs, integrations",
+        "Performance, security, observability",
+      ],
+    },
+    {
+      icon: CyberSecurity,
+      title: "AI-Enhanced CyberSecurity",
+      list: [
+        "Anomaly & fraud detection",
+        "Identity, access & zero-trust",
+        "Compliance hardening & monitoring",
+      ],
+    },
+    {
+      icon: Accessibility,
+      title: "Accessibility Inclusive Design",
+      list: [
+        "Accessibility audits & remediation",
+        "Inclusive UX writing & patterns",
+        "Continuous accessibility in CI/CD",
+      ],
+    },
+  ].map((service, i) => (
+    <div
+      key={i}
+      className="border border-gray-600 p-6 px-2 sm:px-6 py-6 md:py-4 bg-white hover:scale-[1.02] transition-transform duration-300"
+    >
+      <img
+        src={service.icon}
+        alt={service.title}
+        className="w-10 sm:w-14 md:w-16 h-auto mb-4 mx-auto sm:mx-0"
+      />
+      <h3 className="text-black font-semibold font-kumbh text-base sm:text-lg md:text-xl mb-3 sm:mb-4 text-center sm:text-left">
+        {service.title}
+      </h3>
+      <ul className="list-disc list-inside text-gray-600 space-y-1 sm:space-y-2 text-center font-normal md:text-left">
+        {service.list.map((item, j) => (
+          <li className="text-sm font-inter" key={j}>
+            {item}
+          </li>
+        ))}
+      </ul>
     </div>
+  ))}
+</div>
+
   </div>
 </section>
 
@@ -576,7 +583,7 @@ useEffect(()=>{
                     →
                   </button>
                 </div>
-                <p className="text-sm mb-6 mt-2 font-inter whitespace-nowrap leading-relaxed">{step.desc}</p>
+                <p className="text-sm mb-6 mt-2 font-inter whitespace-normal xl:whitespace-nowrap leading-relaxed">{step.desc}</p>
                
               </div>
             ))}
@@ -585,68 +592,85 @@ useEffect(()=>{
       </section>
 
       {/* Why Doelsoft Section - Responsive flex */}
-      <section className='w-full bg-white px-4 sm:px-6 lg:px-8 py-12 md:py-20 '>
-        <div className='flex flex-col lg:flex-row gap-8 lg:gap-12 max-w-7xl mx-6auto md:ml-'>
-          <div className='flex-1 relative flex flex-col items-center justify-center lg:justify-start'>
-            <div className=" hidden md:flex absolute  right-8 top-10 z-50">
-              
-          <img
-            src="/logo4.svg" 
-            alt="logo"
-            className="w-24 h-auto"
-          />
+      <section className="w-full bg-white px-4 sm:px-6 lg:px-8 py-12 md:py-20 overflow-hidden">
+  <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 max-w-7xl mx-auto">
+    
+    {/* LEFT SIDE */}
+    <div className="flex-1 relative flex flex-col items-center justify-center lg:justify-start">
+      
+      {/* Floating logo */}
+      <div className="hidden xl:flex absolute right-4 sm:right-8 top-6 sm:top-10 z-50">
+        <img src="/logo4.svg" alt="logo" className="w-20 sm:w-24 h-auto" />
       </div>
-            <img src={Background} alt='background' className='absolute inset-0 w-[400px] h-[580px] left-[146px] top-[72px]  bg-[#F8F9FD] bg-cover' />
-            <img 
-              src="/Girl.svg"
-              alt="Girl" 
-              className="w-[390px] max-w-md h-auto z-10 animate-none relative" 
-            />
 
+      {/* Background */}
+      <img
+        src={Background}
+        alt="background"
+        className="absolute inset-0 w-[300px] sm:w-[380px] md:w-[400px] h-[400px] sm:h-[520px] md:h-[580px] left-[70px] sm:left-[120px] md:left-[146px] top-[50px] sm:top-[60px] md:top-[72px] bg-[#F8F9FD] bg-cover"
+      />
 
-            {/* Testimonials */}
-            <div className="flex flex-col items-end gap-2 mt-[1px] absolute top-[380px] md:top-[500px] right-0  lg:mt-0">
-              {Testimonial.map((item, index) =>(
-                <div c className={`bg-white z-50 shadow-xl  p-3 sm:p-4 w-48 md:w-48 h-48 transition-opacity duration-1000 ${index === testimonialIndex ? "opacity-100 block" : "opacity-0 hidden" }`} key={index}>
-                  <p className="text-sm italic text-gray-600 leading-relaxed">
-                      "{item.quote}"
-                  </p>
-                  <div className="flex items-center mt-6 gap-2">
-                    <RxAvatar size={24} />
-                    <div>
-                      <p className="text-sm font-inter font-semibold">{item.name}</p>
-                      <p className="text-xs font-inter text-gray-500">Founder @ {item.company}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
+      {/* Girl Image */}
+      <img
+        src="/Girl.svg"
+        alt="Girl"
+        className="w-[280px] sm:w-[340px] md:w-[390px] max-w-md h-auto z-10 relative"
+      />
+
+      {/* Testimonials */}
+      <div className="flex flex-col items-end gap-2 mt-auto absolute top-[340px] sm:top-[420px] md:top-[500px] right-2 sm:right-4 md:right-0">
+        {Testimonial.map((item, index) => (
+          <div
+            key={index}
+            className={`bg-white z-50 shadow-xl p-3 sm:p-4 w-44 sm:w-48 h-auto min-h-[160px] transition-opacity duration-1000 ${
+              index === testimonialIndex ? "opacity-100 block" : "opacity-0 hidden"
+            }`}
+          >
+            <p className="text-xs sm:text-sm italic text-gray-600 leading-relaxed">
+              "{item.quote}"
+            </p>
+            <div className="flex items-center mt-4 sm:mt-6 gap-2">
+              <RxAvatar size={22} />
+              <div>
+                <p className="text-xs sm:text-sm font-inter font-semibold">{item.name}</p>
+                <p className="text-[10px] sm:text-xs font-inter text-gray-500">
+                  Founder @ {item.company}
+                </p>
+              </div>
             </div>
           </div>
+        ))}
+      </div>
+    </div>
 
-          <div className='flex-1 space-y-6 lg:space-y-8 py-8 lg:py-10'>
-            <h1 className="font-medium text-2xl sm:text-[40px] lg:text-[44px] font-kumbh">Why Doelsoft</h1>
-            <p className='py-4 text-lg font-inter leading-relaxed'>We turn AI, Cloud & Data into measurable outcomes shipping production systems with governance, security, and accessibility built in.</p>
-            <h2 className='font-semibold text-xl font-inter sm:text-2xl lg:text-3xl'>Proof points</h2>
-            <ul className='list-disc list-inside font-inter text-black mt-4 space-y-2 text-base'>
-              <li>Agile transformation</li>
-              <li>Cost Reduction</li>
-              <li>Focusing on customers centric goals</li>
-              <li>Tailor-made engagement models as per Client requirement</li>
-              <li>Top class quality services</li>
-              <li>Offshoring</li>
-              <li>Cost-effective solutions</li>
-              <li>Resource Optimization</li>
-              <li>Customized solutions as per client requirement</li>
-            </ul>
-          </div>
-        </div>
-       {/* <div className=' hidden md:flex ' >
-        <button className="w-10 h-10    flex items-center rounded-full justify-center border border-black hover:bg-white hover:text-red-600 ">
-        <ArrowUpRight size={18} />
-      </button>
-    </div> */}
-       
-      </section>
+    {/* RIGHT SIDE */}
+    <div className="flex-1 space-y-6 lg:space-y-8 py-8 lg:py-10 text-center sm:text-left">
+      <h1 className="font-semibold leading-6 text-2xl sm:text-[36px] md:text-[40px] lg:text-[44px] font-kumbh">
+        Why Doelsoft
+      </h1>
+      <p className="py-4 text-base sm:text-lg font-inter leading-relaxed max-w-[95%] mx-auto sm:mx-0">
+        We turn AI, Cloud & Data into measurable outcomes shipping production systems with governance,
+        security, and accessibility built in.
+      </p>
+
+      <h2 className="font-semibold text-lg sm:text-xl md:text-2xl lg:text-3xl font-inter">
+        Proof points
+      </h2>
+      <ul className="list-disc list-inside font-inter text-black mt-4 space-y-2 text-sm sm:text-base leading-relaxed max-w-[95%] mx-auto sm:mx-0">
+        <li>Agile transformation</li>
+        <li>Cost Reduction</li>
+        <li>Focusing on customers centric goals</li>
+        <li>Tailor-made engagement models as per Client requirement</li>
+        <li>Top class quality services</li>
+        <li>Offshoring</li>
+        <li>Cost-effective solutions</li>
+        <li>Resource Optimization</li>
+        <li>Customized solutions as per client requirement</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
 
       {/* Frames Section */}
      <section className="relative bg-white py-8 sm:py-12 px-4 sm:px-6 lg:px-48">
@@ -671,10 +695,10 @@ useEffect(()=>{
     ))}
       
     
-    <div className='hidden md:flex py-6 '>
+    <div className='hidden xl:flex py-6 '>
     <img
       src="/Highlight1.svg"
-      className=" absolute w-20 z-30 mt-9 lg:left-[390px] top-[-100px]"
+      className=" absolute w-20 z-30 mt-9 lg:left-[460px] top-[-100px]"
       alt="highlight"
     />
 
@@ -813,7 +837,7 @@ useEffect(()=>{
       {/* Heading + CTA */}
       <div className="  flex flex-col lg:flex-row lg:items-center lg:justify-between mb-12 max-w-7xl mx-auto">
         <div className="flex-1 mb-6 space-y-4 lg:mb-0">
-          <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-kumbh md:-ml-3 font-medium  leading-tight tracking-[-0.03em] text-black ">
+          <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-kumbh md:-ml-3 font-semibold  leading-tight tracking-[-0.03em] text-black ">
             Doelsoft Insights &  Thought Leadership
           </h2>
           <p className="text-gray-800 mt-4 md:-ml-3 max-w-2xl text-base sm:text-lg leading-relaxed font-inter">
@@ -869,74 +893,77 @@ useEffect(()=>{
     </section>
 
       {/* Featured Solutions Section */}
-<section className="bg-white py-12">
-  <div className="flex flex-col lg:flex-row items-center md:ml-16 justify-between gap-10 px-4 sm:px-8">
+<section className="bg-white py-12 px-4 sm:px-8">
+  <div className="flex flex-col lg:flex-row items-center md:ml-14 justify-between gap-10">
     {/* Text + First Card Column */}
     <div className="w-full lg:w-1/2 py-8">
-      <h2 className="text-4xl md:text-[44px] md:ml-5  font-medium font-kumbh text-gray-900 mb-2">
+      <h2 className="text-4xl md:text-[44px] md:ml-5 font-semibold font-kumbh text-gray-900 mb-2 break-words">
         Featured Solutions
       </h2>
 
-      <p className="text-gray-600 md:ml-6 font-inter text-base mt-6 sm:text-lg max-w-2xl">
+      <p className="text-gray-600 md:ml-6 font-inter text-base mt-6 sm:text-lg max-w-2xl break-words">
         Opinionated, production-ready solutions that turn <br /> AI, Cloud & Data into outcomes fast.
       </p>
 
       {solutions.slice(0, 1).map((item, i) => (
         <div
           key={i}
-          className={`p-10 max-w-96 h-56 md:ml-6  mt-14 shadow-sm transition hover:shadow-md ${
+          className={`p-10 max-w-96 w-full h-56 md:ml-6 mx-auto mt-14 shadow-sm transition hover:shadow-md ${
             item.type === "bg"
               ? "bg-gray-100"
               : "border border-red-500 bg-white"
           }`}
         >
           <img src={item.icon} alt={item.title} className="h-10 w-10 mb-4 object-contain" />
-          <h3 className="font-semibold font-kumbh text-base sm:text-lg text-gray-900 mb-2">
+          <h3 className="font-semibold font-kumbh text-base sm:text-lg text-gray-900 mb-2 break-words">
             {item.title}
           </h3>
-          <p className="text-gray-600 font-inter text-sm leading-relaxed">{item.desc}</p>
+          <p className="text-gray-600 font-inter text-sm leading-relaxed break-words">{item.desc}</p>
         </div>
       ))}
     </div>
 
     {/* Image Column */}
-    <div className="w-96 lg:w-1/2  flex justify-center">
+    <div className="w-96 max-w-full lg:w-1/2 flex justify-center">
       <img
         src="/Solution.svg"
         alt="Solution Graphic"
-        className="w-full max-w-md sm:h-[487px] sm:max-w-xl lg:max-w-2xl object-contain"
+        className="w-full h-auto max-h-[487px] max-w-md sm:max-w-xl lg:max-w-2xl object-contain"
       />
     </div>
   </div>
 
   {/* Cards Grid */}
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 md:ml-14 mt-16 md:mt-6 px-4 sm:px-8">
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10 md:ml-6  mt-16 md:mt-1 px-4 sm:px-8">
     {solutions.slice(1).map((item, i) => (
       <div
         key={i}
-        className={`p-10 max-w-96 h-56 mx-auto shadow-sm transition hover:shadow-md ${
+        className={`p-10 max-w-96 w-full h-56 mx-auto shadow-sm transition hover:shadow-md ${
           item.type === "bg"
             ? "bg-gray-100"
             : "border border-red-500 bg-white"
         }`}
       >
         <img src={item.icon} alt={item.title} className="h-10 w-10 mb-4 object-contain" />
-        <h3 className="font-medium text-base sm:text-lg text-gray-900 mb-2">
+        <h3 className="font-medium text-base sm:text-lg text-gray-900 mb-2 break-words">
           {item.title}
         </h3>
-        <p className="text-gray-600 font-normal text-sm leading-relaxed">{item.desc}</p>
+        <p className="text-gray-600 font-normal text-sm leading-relaxed break-words">{item.desc}</p>
       </div>
     ))}
 
     {/* CTA Card */}
-    <div className="bg-red-600 hover:bg-gray-600 text-white whitespace-nowrap flex flex-col p-10  w-80   md:w-[383px]  h-56 mx-auto justify-between sm:col-span-2 lg:col-span-1">
-      <h3 className="font-semibold font-inter mt-8 items-center sm:text-2xl mb-2">Talk to an Expert<br/><button className="w-10 h-10 mt-3 flex items-center rounded-full justify-center border border-white hover:bg-white hover:text-red-600 transition">
-        <ArrowUpRight size={18} />
-      </button> </h3>
-  
+    <div className="bg-red-600 hover:bg-gray-600 text-white whitespace-nowrap flex flex-col p-10 max-w-96 w-full h-56 mx-auto justify-between sm:col-span-2 lg:col-span-1">
+      <h3 className="font-semibold font-inter mt-8 items-center sm:text-2xl mb-2 break-words">
+        Talk to an Expert<br/>
+        <button className="w-10 h-10 mt-3 flex items-center rounded-full justify-center border border-white hover:bg-white hover:text-red-600 transition">
+          <ArrowUpRight size={18} />
+        </button>
+      </h3>
     </div>
   </div>
 </section>
+
 
 
       {/* Final CTA Section */}
