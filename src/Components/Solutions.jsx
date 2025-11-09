@@ -1,17 +1,16 @@
 import React, { useState } from "react";
 import {
-  FaQuoteRight,
+ 
   FaStar,
   FaStarHalfAlt,
-  FaChevronLeft,
-  FaChevronRight,
+ 
 } from "react-icons/fa";
 import { ArrowUpRight } from "lucide-react";
 import ClientReviews from "./ClentReviews";
 import { Link } from "react-router";
 
 function Solutions() {
-  const [coursol, setCoursol] = useState(0);
+  //const [coursol, setCoursol] = useState(0);
 
   const services = [
     { title: "CUSTOM SOFTWARE DEVELOPMENT", img: "/servicescustom.svg", link: "/softwareDevelopment", color: "red" },

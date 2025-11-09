@@ -1,5 +1,5 @@
 import React from 'react'
-import { ArrowUpRight, DollarSign, Target, Box, Award, Globe } from "lucide-react";
+import { ArrowUpRight} from "lucide-react";
 
 function Choose() {
     const features = [
