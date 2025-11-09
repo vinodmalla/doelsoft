@@ -4,63 +4,63 @@ import { ArrowUpRight} from "lucide-react";
 function Choose() {
     const features = [
   {
-    icon: <img src="/feature1.svg" className="w-14 h-14 text-red-600" />,
+    icon: <img src="/feature1.svg" alt='Agile Transformation' className="w-14 h-14 text-red-600" />,
     title: "Agile Transformation",
     desc: "Modernizing business processes for flexibility and speed.",
   },
   {
-    icon: <img src="/feature2.svg" className="w-14 h-14 text-black" />,
+    icon: <img src="/feature2.svg"  alt='Cost Reduction & Resource Optimization' className="w-14 h-14 text-black" />,
     title: "Cost Reduction & Resource Optimization",
     desc: "Delivering value-driven solutions while maximizing efficiency.",
   },
   {
-    icon: <img src="/feature3.svg" className="w-14 h-14 text-red-600" />,
+    icon: <img src="/feature3.svg"  alt='Customer–Centric Solutions' className="w-14 h-14 text-red-600" />,
     title: "Customer–Centric Solutions",
     desc: "Tailored strategies focused on achieving your business goals.",
   },
   {
-    icon: <img src="/feature4.svg" className="w-14 h-14 text-red-600" />,
+    icon: <img src="/feature4.svg"  alt='Customized Engagement Models' className="w-14 h-14 text-red-600" />,
     title: "Customized Engagement Models",
     desc: "Flexible frameworks aligned to your unique needs.",
   },
   {
-    icon: <img src="/feature5.svg" className="w-14 h-14 text-red-600" />,
+    icon: <img src="/feature5.svg"  alt='Top–Class Quality Services' className="w-14 h-14 text-red-600" />,
     title: "Top–Class Quality Services",
     desc: "Excellence in every service we provide.",
   },
   {
-    icon: <img src="/feature6.svg" className="w-14 h-14 text-black" />,
+    icon: <img src="/feature6.svg"  alt='Offshoring & Cost–Effective Solutions' className="w-14 h-14 text-black" />,
     title: "Offshoring & Cost–Effective Solutions",
     desc: "Leveraging global talent to deliver high-quality outcomes.",
   },
 ];
 const coreValues = [
   {
-    icon: <img src='/core1.svg' className="w-14 h-14 text-red-600" />,
+    icon: <img src='/core1.svg' alt="Excellence" className="w-14 h-14 text-red-600" />,
     title: "Excellence",
     desc: "Delivering the highest quality in every project.",
     bg: "bg-[#E2E7F1] border border-black",
   },
   {
-    icon:  <img src='/core2.svg' className="w-14 h-14 text-red-600" />,
+    icon:  <img src='/core2.svg' alt="Innovation" className="w-14 h-14 text-red-600" />,
     title: "Innovation",
     desc: "Continuously adopting advanced technologies and creative solutions.",
     bg: "border border-red-600",
   },
   {
-    icon:  <img src='/core3.svg' className="w-14 h-14 text-red-600" />,
+    icon:  <img src='/core3.svg' alt="Integrity" className="w-14 h-14 text-red-600" />,
     title: "Integrity",
     desc: "Transparent, honest, and ethical business practices.",
     bg: "bg-[#E2E7F1] border border-black",
   },
   {
-    icon:  <img src='/core4.svg' className="w-14 h-14 text-red-600" />,
+    icon:  <img src='/core4.svg' alt="Collaboration" className="w-14 h-14 text-red-600" />,
     title: "Collaboration",
     desc: "Building strong partnerships with clients for long-term success.",
     bg: "border border-red-600",
   },
   {
-    icon: <img src='/core5.svg' className="w-14 h-14 text-red-600" />,
+    icon: <img src='/core5.svg' alt="Customer Focus" className="w-14 h-14 text-red-600" />,
     title: "Customer Focus",
     desc: "Ensuring every solution is aligned with client goals and adds real value.",
     bg:"bg-[#E2E7F1] border border-black",

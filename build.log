@@ -53,11 +53,6 @@ src\Components\Header.jsx
   Line 120:13:  The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
   Line 123:13:  The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
 
-src\Components\Home.jsx
-  Line 245:15:  Expected '===' and instead saw '=='  eqeqeq
-  Line 747:67:  Expected '===' and instead saw '=='  eqeqeq
-  Line 747:75:  Expected '===' and instead saw '=='  eqeqeq
-
 src\Components\Permanent.jsx
   Line 84:15:  The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
 
@@ -78,9 +73,9 @@ To ignore, add // eslint-disable-next-line to the line before.
 
 File sizes after gzip:
 
-  136.45 kB  build\static\js\main.c5bb6ab6.js
-  9.56 kB    build\static\css\main.576258ce.css
-  1.77 kB    build\static\js\453.f314daf6.chunk.js
+  136.45 kB (+1 B)  build\static\js\main.984b2f03.js
+  9.56 kB           build\static\css\main.576258ce.css
+  1.77 kB           build\static\js\453.f314daf6.chunk.js
 
 The project was built assuming it is hosted at /.
 You can control this with the homepage field in your package.json.

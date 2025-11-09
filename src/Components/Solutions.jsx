@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import {
  
@@ -5,12 +6,16 @@ import {
   FaStarHalfAlt,
  
 } from "react-icons/fa";
+
+import React from "react";
+
+
 import { ArrowUpRight } from "lucide-react";
 import ClientReviews from "./ClentReviews";
 import { Link } from "react-router";
 
 function Solutions() {
-  //const [coursol, setCoursol] = useState(0);
+
 
   const services = [
     { title: "CUSTOM SOFTWARE DEVELOPMENT", img: "/servicescustom.svg", link: "/softwareDevelopment", color: "red" },
@@ -27,42 +32,8 @@ function Solutions() {
     { title: "AI SERVICES", img: "/servicesai.svg", link: "/servicesai", color: "black" },
   ];
 
-  const reviews = [
-    {
-      name: "Davit Millar",
-      role: "CEO, PParkview Int, Ltd",
-      img: "/reviews/client1.jpg",
-      rating: 4.5,
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit nisl, tincidunt commodo sit. Et, purus lectus odio cursus placerat leo, non etiam. Neque at leo risus orci.",
-    },
-    {
-      name: "Sarah Johnson",
-      role: "CTO, Cloudverse Solutions",
-      img: "/reviews/client2.jpg",
-      rating: 5,
-      text: "Working with the team was an absolute pleasure. Their commitment, quality of work, and expertise truly exceeded our expectations!",
-    },
-    {
-      name: "Michael Adams",
-      role: "Founder, TechFlow Labs",
-      img: "/reviews/client3.jpg",
-      rating: 4,
-      text: "They provided excellent service and delivered our project ahead of schedule. Highly recommended for software development needs!",
-    },
-  ];
-
-  const renderStars = (rating) => {
-    const fullStars = Math.floor(rating);
-    const halfStar = rating % 1 !== 0;
-    return (
-      <div className="flex items-center text-yellow-400 mb-3">
-        {[...Array(fullStars)].map((_, i) => (
-          <FaStar key={i} />
-        ))}
-        {halfStar && <FaStarHalfAlt />}
-      </div>
-    );
-  };
+ 
+  
 
   return (
     <div className="w-full min-h-screen font-kumbh space-y-6 mt-16 flex flex-col justify-end overflow-hidden">
