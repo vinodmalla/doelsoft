@@ -5,7 +5,7 @@ import { ArrowUpRight } from "lucide-react";
 
 const SoftwareDevelopment = () => {
   return (
-    <div className="w-full font-kumbh bg-white mt-8">
+    <div className="w-full font-kumbh bg-white mt-8 overflow-hidden">
           <section
   className="relative w-full min-h-[550px] flex flex-col md:mt-20 md:flex-row items-center justify-between overflow-hidden py-10 px-6 md:px-16 lg:px-28"
   style={{
@@ -41,8 +41,8 @@ const SoftwareDevelopment = () => {
       {/* Description Section */}
      <section className="mx-auto px-4 sm:px-8 md:px-16 lg:px-24 mt-4 py-20 bg-[#F4F6FB] grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
   {/* Left Text Content */}
-  <div className="space-y-6">
-    <h2 className="text-2xl sm:text-3xl justify-start whitespace-nowrap md:text-4xl md:ml-3 font-semibold font-kumbh leading-[57.20px] text-black">
+  <div className="space-y-3 lg:space-y-6">
+    <h2 className="text-2xl sm:text-3xl justify-start  text-start  md:whitespace-nowrap md:text-4xl md:ml-3 font-semibold font-kumbh leading-[57.20px] text-black">
       Custom Software Development <br /> Crafted Around Your Business Needs
     </h2>
     <p className="text-black justify-start text-lg md:ml-4 sm:text-xl  font-inter font-normal leading-8">
@@ -84,8 +84,8 @@ const SoftwareDevelopment = () => {
   </div>
 
   {/* Right Text Content */}
-   <div className="space-y-8 md:-ml-32 mr-16">
-    <h2 className="text-2xl sm:text-3xl md:text-4xl font-kumbh font-semibold text-black leading-[57.20px]">
+   <div className="space-y-8  md:-ml-32 mr-16">
+    <h2 className="text-2xl sm:text-3xl md:text-4xl text-center md:text-start font-kumbh font-semibold text-black leading-[57.20px]">
       Why Partner with Doelsoft?
 
     </h2>
@@ -119,13 +119,13 @@ const SoftwareDevelopment = () => {
         },
      
       ].map((item, idx) => (
-        <div key={idx} className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-start">
+        <div key={idx} className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-center md:items-start ">
           <div className="flex-shrink-0 bg-white border border-gray-300 p-4  flex items-center justify-center w-20 h-20 sm:w-24 sm:h-24">
             <img src={item.src} alt={item.title} className="w-10 h-10 sm:w-12 sm:h-12 object-contain" />
           </div>
           <div>
-            <h3 className="text-lg sm:text-xl font-semibold text-black font-kumbh leading-8">{item.title}</h3>
-            <p className="text-zinc-800 text-base sm:text-lg font-inter font-normal leading-7  whitespace-pre-line">{item.desc}</p>
+            <h3 className="text-lg sm:text-xl font-semibold text-black font-kumbh leading-8 text-center md:text-start ">{item.title}</h3>
+            <p className="text-zinc-800 text-base sm:text-lg font-inter font-normal leading-7 text-center md:text-start  whitespace-pre-line">{item.desc}</p>
           </div>
         </div>
       ))}

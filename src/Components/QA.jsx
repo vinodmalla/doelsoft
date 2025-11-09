@@ -42,7 +42,7 @@ function QA() {
   ];
 
   return (
-    <div className="w-full font-kumbh bg-white mt-8">
+    <div className="w-full font-kumbh bg-white mt-8 overflow-hidden">
       {/* 🧠 Hero Section */}
       <section
         className="relative w-full min-h-[550px] md:mt-20 flex flex-col md:flex-row items-center justify-between overflow-hidden py-10 px-6 md:px-16 lg:px-28"
@@ -78,7 +78,7 @@ function QA() {
       {/* 🧩 About Section */}
       <section className="mx-auto px-6 sm:px-12 md:px-24 py-16 bg-[#F4F6FB] grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <div className="space-y-6 text-center md:text-left">
-          <h2 className="text-2xl sm:text-3xl justify-start whitespace-nowrap md:text-4xl md:ml-3 font-semibold font-kumbh leading-[57.20px] text-black">
+          <h2 className="text-2xl sm:text-3xl justify-start lg:whitespace-nowrap md:text-4xl md:ml-3 font-semibold font-kumbh leading-[57.20px] text-black">
             Deliver Flawless Software with Doelsoft 
             <br />
             QA Services
@@ -182,16 +182,13 @@ function QA() {
       </section>
 
       {/* 🏢 Industries Section */}
-      <section className="bg-[#F4F6FB] py-10">
-        <div className="px-6 sm:px-12 md:px-20 text-center md:ml-6 md:text-left space-y-4">
-          <h1 className="text-3xl sm:text-4xl font-bold">
-            🏢 Industries We Serve
-          </h1>
-          <p className="text-gray-600 md:ml-2">
-            Doelsoft delivers embedded technology solutions across multiple sectors, enabling smart, connected, and efficient systems:
-          </p>
+    
+       <section className="bg-[#F4F6FB] py-10">
+        <div className="px-6 sm:px-12 md:ml-6 md:px-20 text-center md:text-left space-y-4">
+          <h1 className="text-3xl sm:text-4xl font-bold">🏢 Industries We Serve</h1>
+          <p className="text-gray-600 md:ml-2">  Doelsoft delivers embedded technology solutions across multiple sectors, enabling smart, connected, and efficient systems:</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 py-12 px-6 md:ml-8 sm:px-12 md:px-20 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 md:ml-8 py-10 px-6 sm:px-12 md:px-20 gap-6">
           {[
             {
               src: "/QA1.svg",
@@ -232,19 +229,12 @@ function QA() {
           ].map((item, idx) => (
             <div
               key={idx}
-              className="grid grid-cols-1 sm:grid-cols-2 items-center hover:shadow-md transition"
+              className="grid grid-cols-1 lg:grid-cols-2 items-center hover:shadow-md transition"
             >
-              <img
-                loading="lazy"
-                src={item.src}
-                alt={item.title}
-                className="w-full h-40 object-cover"
-              />
+              <img src={item.src} alt={item.title} className="w-full h-40 object-cover" />
               <div className="sm:pl-4 mt-4 sm:mt-0 border border-black h-40 p-4 sm:p-8 text-center sm:text-left">
-                <h3  className="font-semibold text-lg text-zinc-950 capitalize leading-6">
-                  {item.title}
-                </h3>
-                <p className="text-zinc-800 text-base sm:text-lg font-inter font-normal leading-7  whitespace-pre-line">{item.desc}</p>
+                <h3 className="font-semibold text-lg text-zinc-950 capitalize leading-6">{item.title}</h3>
+                <p className="text-zinc-950 text-base  font-normal font-inter leading-6 mt-1">{item.desc}</p>
               </div>
             </div>
           ))}

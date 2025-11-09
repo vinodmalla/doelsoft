@@ -97,7 +97,7 @@ return (
         <img
           src="/Contract1.svg"
           alt="Contract"
-          className="w-full sm:w-3/4 md:w-1/2 lg:w-3/4 h-auto object-contain md:object-cover md:h-80 ml-0 "
+          className="w-full sm:w-auto md:w-auto lg:w-3/4 h-auto object-contain md:object-cover md:h-80 ml-0 "
         />
       </div>
     </div>

@@ -67,7 +67,7 @@ function WebDevelopment() {
       {/* Crafting Websites Section */}
       <section className="mx-auto px-6 sm:px-12 md:px-24 py-10 bg-[#F4F6FB] grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <div className="space-y-6 text-center md:text-left">
-          <h2 className="text-2xl sm:text-3xl justify-start whitespace-nowrap md:text-4xl md:ml-3 font-semibold font-kumbh leading-[57.20px] text-black">
+          <h2 className="text-2xl sm:text-3xl justify-start lg:whitespace-nowrap md:text-4xl md:ml-3 font-semibold font-kumbh leading-[57.20px] text-black">
             🚀 Doelsoft Web Development <br /> Crafting Websites That <br/> Drive Growth
           </h2>
           <p className="text-black justify-start text-lg md:ml-4 sm:text-xl  font-inter font-normal leading-8">

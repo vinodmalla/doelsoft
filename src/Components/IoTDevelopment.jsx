@@ -36,7 +36,7 @@ function IoTDevelopment() {
       ];
   
       return (
-          <div className="w-full font-kumbh bg-white mt-8">
+          <div className="w-full font-kumbh bg-white mt-8 overflow-hidden">
               
               {/* Hero Section */}
               <section
@@ -70,7 +70,7 @@ function IoTDevelopment() {
   
           <section className="mx-auto px-6 sm:px-12 md:px-24 py-16 bg-[#F4F6FB] grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <div className="space-y-6 text-center md:text-left">
-          <h2 className="text-2xl sm:text-3xl justify-start whitespace-nowrap md:text-4xl md:ml-3 font-semibold font-kumbh leading-[57.20px] text-black">
+          <h2 className="text-2xl sm:text-3xl justify-start lg:whitespace-nowrap md:text-4xl md:ml-3 font-semibold font-kumbh leading-[57.20px] text-black">
            🚀 Transform Your Business with <br/>Doelsoft IoT Solutions
           </h2>
           <p className="text-black justify-start text-lg md:ml-4 sm:text-xl  font-inter font-normal leading-8">
@@ -174,13 +174,14 @@ function IoTDevelopment() {
           </div>
           
         </section>
-                <section className="bg-[#F4F6FB] py-10">
-          <div className="px-6 sm:px-12 md:px-20 md:ml-6 text-center md:text-left space-y-4">
-            <h1 className="text-3xl sm:text-4xl font-bold">🏢 Industries We Serve</h1>
-            <p className="text-gray-600 md:ml-2">Doelsoft provides UI/UX design services for diverse industries, tailoring experiences to specific user needs:</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 py-10 px-6 md:ml-8 sm:px-12 md:px-20 gap-6">
-            {[
+              
+          <section className="bg-[#F4F6FB] py-10">
+        <div className="px-6 sm:px-12 md:ml-6 md:px-20 text-center md:text-left space-y-4">
+          <h1 className="text-3xl sm:text-4xl font-bold">🏢 Industries We Serve</h1>
+          <p className="text-gray-600 md:ml-2">Doelsoft provides IOT design services for diverse industries, tailoring experiences to specific user needs:</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 md:ml-8 py-10 px-6 sm:px-12 md:px-20 gap-6">
+          {[
               { src: '/ecommerce.svg', title: 'E-Commerce & Retail', desc: 'Engaging shopping journeys, personalized interfaces, and smooth checkout processes.' },
               { src: '/health_care.svg', title: 'Healthcare & Life Sciences', desc: 'Patient portals, telehealth platforms, and intuitive wellness apps.' },
               { src: '/finance.svg', title: 'Banking & FinTech', desc: 'Secure, user-friendly dashboards, transaction flows, and customer interfaces.' },
@@ -190,19 +191,19 @@ function IoTDevelopment() {
               { src: '/realestate.svg', title: 'Real Estate', desc: 'Virtual tours, property searches, and interactive listing experiences.' },
               {src:"/enterprise.svg",title:"Enterprisce Software",desc:"Dashboards, analytics tools, and productivity platforms with intuitive navigation."},
             ].map((item, idx) => (
-              <div
-                key={idx}
-                className="grid grid-cols-1 sm:grid-cols-2 items-center hover:shadow-md transition"
-              >
-                <img src={item.src} alt={item.title} className="w-full h-40 object-cover" />
-                <div className="sm:pl-4 mt-4 sm:mt-0 border border-black h-40 p-4 sm:p-8 text-center sm:text-left">
-                  <h3 className="font-semibold text-lg text-zinc-950 capitalize leading-6">{item.title}</h3>
-                  <p className="text-zinc-800 text-base sm:text-lg font-inter font-normal leading-7  whitespace-pre-line">{item.desc}</p>
-                </div>
+            <div
+              key={idx}
+              className="grid grid-cols-1 lg:grid-cols-2 items-center hover:shadow-md transition"
+            >
+              <img src={item.src} alt={item.title} className="w-full h-40 object-cover" />
+              <div className="sm:pl-4 mt-4 sm:mt-0 border border-black h-40 p-4 sm:p-8 text-center sm:text-left">
+                <h3 className="font-semibold text-lg text-zinc-950 capitalize leading-6">{item.title}</h3>
+                <p className="text-zinc-950 text-base  font-normal font-inter leading-6 mt-1">{item.desc}</p>
               </div>
-            ))}
-          </div>
-        </section>
+            </div>
+          ))}
+        </div>
+      </section>
   
               <section className="bg-white py-12">
           <div className="md:ml-6 px-6 sm:px-10 md:px-20 mb-10">

@@ -160,7 +160,7 @@ export default function Accessibility() {
 ];
 
   return (
-    <div className="relative w-full mx-auto font-kumbh bg-white mt-8">
+    <div className="relative w-full mx-auto font-kumbh bg-white mt-8 overflow-hidden">
       {/* Hero Section */}
       <section
         className="relative w-full min-h-[550px] flex flex-col md:mt-20 md:flex-row items-center justify-between overflow-hidden py-10 px-6 md:px-16 lg:px-28"
@@ -316,13 +316,14 @@ We go beyond fixing issues. We help you future-proof your digital platforms,<br/
         );
       })}
     </section>
-      <section className='bg-[#F4F6FB] py-10'>
-            <div className='px-16 md:px-20 space-y-4'>
-                <h1 className=' md:ml-6 font-semibold font-kumbh text-4xl leading-[66px] '>🏢 Industries We Serve</h1>
-                <p className='text-black leading-9 font-inter font-normal text-lg md:text-xl md:ml-7'>Doelsoft delivers accessibility across industries—co-created and validated by real users:</p>
-            </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 md:ml-9 py-10 px-16 md:px-20 gap-6'>
-                {[{src:"/ecommerce.svg", title:"E-commerce & Retail" ,desc:"Accessible shopping carts, product images, checkout flows"},
+      
+        <section className="bg-[#F4F6FB] py-10">
+        <div className="px-6 sm:px-12 md:ml-6 md:px-20 text-center md:text-left space-y-4">
+          <h1 className="text-3xl sm:text-4xl font-bold">🏢 Industries We Serve</h1>
+          <p className="text-gray-600 md:ml-2">Doelsoft delivers accessibility across industries—co-created and validated by real users:</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 md:ml-8 py-10 px-6 sm:px-12 md:px-20 gap-6">
+          {[{src:"/ecommerce.svg", title:"E-commerce & Retail" ,desc:"Accessible shopping carts, product images, checkout flows"},
                     {src:"/health_care.svg",title:"Healthcare & Telemedicine",desc:"Patient portals, telehealth apps"},
                     {src:"/finance.svg",title:"Banking & Finance",desc:"Mobile apps, online banking, disclosures, ATMs"},
                     {src:"/education.svg",title:"Education & E-Learning",desc:"LMS platforms, eBooks, assessments"},
@@ -338,36 +339,31 @@ We go beyond fixing issues. We help you future-proof your digital platforms,<br/
                    
 
 
-                ].map((item, idx) => (<div
-            key={idx}
-            className="grid grid-cols-1 sm:grid-cols-2 items-center    hover:shadow-md transition"
-          >
-            <img
-              src={item.src}
-              alt={item.title}
-              className="w-full h-40 object-cover"
-            />
-            <div className="sm:pl-4 mt-4 sm:mt-0 border border-black h-40 p-8">
-              <h3 className="font-semibold text-lg text-gray-900">
-                {item.title}
-              </h3>
-              <p className="text-gray-600 text-sm mt-1">{item.desc}</p>
+                ].map((item, idx) => (
+            <div
+              key={idx}
+              className="grid grid-cols-1 lg:grid-cols-2 items-center hover:shadow-md transition"
+            >
+              <img src={item.src} alt={item.title} className="w-full h-40 object-cover" />
+              <div className="sm:pl-4 mt-4 sm:mt-0 border border-black h-40 p-4 sm:p-8 text-center sm:text-left">
+                <h3 className="font-semibold text-lg text-zinc-950 capitalize leading-6">{item.title}</h3>
+                <p className="text-zinc-950 text-base  font-normal font-inter leading-6 mt-1">{item.desc}</p>
+              </div>
             </div>
-          </div> ))}
-            </div>
-
-        </section>
+          ))}
+        </div>
+      </section>
 
       {/* Why Choose Doelsoft Section */}
       <section className="w-full bg-[#F4F6FA] py-10 md:mb-[-46px]">
         <div className="flex flex-col md:flex-row justify-center items-center max-w-7xl mx-auto px-4 gap-10">
-          <div className="flex-1 ml-0 md:-ml-7">
+          <div className="flex-1 md:ml-8 lg:-ml-7">
             <h1 className="font-kumbh text-2xl md:text-4xl font-semibold justify-start text-black leading-[57.20px">🎯 Why Choose Doelsoft?</h1>
             <ul className="space-y-4 mt-6 ml-4">
               {whyChoose.map((item, idx) => (
                 <li key={idx} className="flex items-start space-x-3">
                   <img src="/logo4.svg" alt="" className="h-6 w-6 mt-1" />
-                  <div className="text-black whitespace-nowrap">
+                  <div className="text-black lg:whitespace-nowrap">
                     <span className="font-semibold font-inter leading-8">{item.title} </span>
                     {item.desc}
                   </div>

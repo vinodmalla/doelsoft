@@ -31,7 +31,7 @@ function MuleSoftSolutions() {
     ];
 
     return (
-        <div className="w-full font-kumbh bg-white mt-8">
+        <div className="w-full font-kumbh bg-white mt-8 overflow-hidden">
             
             {/* Hero Section */}
             <section
@@ -64,7 +64,7 @@ function MuleSoftSolutions() {
             </section>
              <section className="mx-auto px-6 sm:px-12 md:px-24 py-16 bg-[#F4F6FB] grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <div className="space-y-6 text-center md:text-left">
-          <h2 className="text-2xl sm:text-3xl justify-start whitespace-nowrap md:text-4xl md:ml-3 font-semibold font-kumbh leading-[57.20px] text-black">
+          <h2 className="text-2xl sm:text-3xl justify-start lg:whitespace-nowrap md:text-4xl md:ml-3 font-semibold font-kumbh leading-[57.20px] text-black">
            Transform Your Business with Doelsoft <br /> MuleSoft Solutions
           </h2>
           <p className="text-black justify-start text-lg md:ml-4 sm:text-xl  font-inter font-normal leading-8">
@@ -166,17 +166,18 @@ function MuleSoftSolutions() {
           </div>
         </div>
       </section>
-            <section className="bg-[#F4F6FB] py-10">
-        <div className="px-6 sm:px-12  md:ml-6 md:px-20 text-center md:text-left space-y-4">
-          <h1 className="text-3xl sm:text-4xl font-bold">
+           
+      <section className="bg-[#F4F6FB] py-10">
+        <div className="px-6 sm:px-12 md:px-20 text-center md:text-left md:ml-6 space-y-4">
+          <h1  className="text-3xl sm:text-4xl font-bold">
             🏭 Industries We Serve
           </h1>
           <p className="text-gray-600 md:ml-2">
-            Doelsoft delivers Microsoft-based solutions to diverse industries:
+            Doelsoft delivers MuleSoft-based solutions to diverse industries:
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2  md:ml-8 py-10 px-6 sm:px-12 md:px-20 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 py-10 px-6 md:ml-8 sm:px-12 md:px-20 gap-6">
           {[
             { src: "/ecommerce.svg", title: "E-Commerce & Retail", desc: "Seamless customer engagement and omnichannel management." },
             { src: "/lifecare.svg", title: "Healthcare & Life Sciences", desc: "HIPAA-compliant workflows, data analytics, and automation." },

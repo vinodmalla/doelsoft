@@ -3,7 +3,7 @@ import { ArrowUpRight } from 'lucide-react'
 
 function Rpo() {
   return (
-    <div className="w-full min-h-screen font-kumbh space-y-6 mt-16 flex flex-col justify-end">
+    <div className="w-full min-h-screen font-kumbh space-y-6 mt-16 flex flex-col justify-end overflow-hidden">
       {/* HERO SECTION */}
       <section
         className="relative w-full min-h-[550px] md:mt-2 flex flex-col md:flex-row items-center justify-between overflow-hidden py-10 px-4 sm:px-8 md:px-16 lg:px-28"
@@ -31,7 +31,7 @@ function Rpo() {
         {/* Right Image */}
         <div className="mt-10 md:mt-0 md:flex-1 flex justify-center md:justify-end relative z-0">
           <img
-            src="/rpo.svg"
+            src="/Rpo.svg"
             alt="Team"
             className="w-60 sm:w-72 md:w-[420px] lg:w-[500px] h-auto object-contain"
           />
@@ -42,7 +42,7 @@ function Rpo() {
       <section className="w-full bg-white py-12 px-4 sm:px-6 md:px-10">
         <div className="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto gap-10">
           {/* Text Content */}
-          <div className="w-full md:w-1/2 ml-10 md:-ml-5 lg:-mt-32">
+          <div className="w-full md:w-1/2 ml-10 lg:-ml-5 lg:-mt-32">
             <h1 className="text-2xl sm:text-3xl lg:text-4xl whitespace-normal lg:whitespace-nowrap font-semibold font-kumbh text-black leading-snug">
               RPO (Recruitment Process Outsourcing)
               <br />
@@ -80,10 +80,10 @@ function Rpo() {
             </ul>
 
             {/* CTA Button */}
-            <div className="mt-8 w-[23rem] md:w-auto">
+            <div className="mt-8 w-72 md:w-auto">
               <a
                 href="#"
-                className="inline-block bg-[#E10000] text-white font-medium text-base sm:text-lg px-4 sm:px-6 py-3 hover:bg-red-600 transition"
+                className="inline-block bg-[#E10000] text-white font-medium text-base sm:text-lg px-4 sm:px-6 py-3 "
               >
                 Outsource the process. Keep the control. With Doelsoft RPO.
                 <span className="ml-2">↗</span>

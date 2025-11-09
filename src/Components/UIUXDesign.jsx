@@ -71,85 +71,79 @@ function UIUXDesign() {
         
 
             {/* Services Section */}
-           <section className="container mx-auto px-6 sm:px-10 lg:px-20 py-12 grid gap-10 md:grid-cols-2 items-center">
-        {/* Left Image */}
-       
+           <section className="container mx-auto px-6 sm:px-10 lg:px-20 py-12 grid gap-8 md:grid-cols-2 items-center">
+  {/* Left Image (placed first for stable layout on tablets) */}
+  <div className="flex justify-center md:justify-start">
+    <img
+      src="/UIUXmen.svg"
+      alt="UIUX Developer"
+      className="w-full max-w-xs sm:max-w-sm md:max-w-md object-contain"
+    />
+  </div>
 
-        {/* Right Content */}
-        <div className="space-y-8 md:ml-5">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-kumbh font-semibold text-black leading-[57.20px]">
-            🌟 Our UI/UX Design Services
-          </h2>
+  {/* Right Content */}
+  <div className="space-y-8 lg:ml-5 md:pl-6">
+    <h2 className="text-2xl sm:text-3xl md:text-4xl font-kumbh font-semibold text-black leading-[57.20px]">
+      🌟 Our UI/UX Design Services
+    </h2>
 
-          <div className="space-y-6 ml-10 md:ml-16">
-            {[
-              {
-                src: "/m1.svg",
-                title: "MuleSoft Consulting",
-                desc: "Strategy, architecture, and roadmap for enterprise integration.",
-              },
-              {
-                src: "/m2.svg",
-                title: "API Design & Development",
-                desc: "Building secure, reusable, and scalable APIs.",
-              },
-              {
-                src: "/m3.svg",
-                title: "MuleSoft Implementation",
-                desc: "End-to-end deployment of MuleSoft Anypoint solutions.",
-              },
-              {
-                src: "/m4.svg",
-                title: "System Integration",
-                desc: "Connect ERP, CRM, databases, cloud platforms, and SaaS applications.",
-              },
-              {
-                src: "/m5.svg",
-                title: "MuleSoft Migration",
-                desc: "Move from legacy integration solutions to modern MuleSoft architecture.",
-              },
-              {
-                src: "/m6.svg",
-                title: "Support & Maintenance",
-                desc: "Continuous monitoring, optimization, and issue resolution.",
-              },
-              {
-                src: "/m4.svg",
-                title: "Custom Connectors & Extensions",
-                desc: "Build connectors tailored to your unique business systems.",
-              },
-            ].map((item, idx) => (
-              <div
-                key={idx}
-                className="flex flex-col sm:flex-row gap-4 items-start"
-              >
-                <div className="flex-shrink-0 bg-white border border-gray-300 p-4 flex items-center justify-center w-20 h-20 sm:w-24 sm:h-24 mx-auto sm:mx-0">
-                  <img
-                    src={item.src}
-                    alt={item.title}
-                    className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
-                  />
-                </div>
-                <div className="text-center sm:text-left">
-                  <h3 className="text-lg sm:text-xl font-semibold text-black">
-                    {item.title}
-                  </h3>
-                  <p className="text-gray-600 text-base sm:text-lg">
-                    {item.desc}
-                  </p>
-                </div>
-              </div>
-            ))}
+    <div className="space-y-6">
+      {[
+        {
+          src: "/m1.svg",
+          title: "MuleSoft Consulting",
+          desc: "Strategy, architecture, and roadmap for enterprise integration.",
+        },
+        {
+          src: "/m2.svg",
+          title: "API Design & Development",
+          desc: "Building secure, reusable, and scalable APIs.",
+        },
+        {
+          src: "/m3.svg",
+          title: "MuleSoft Implementation",
+          desc: "End-to-end deployment of MuleSoft Anypoint solutions.",
+        },
+        {
+          src: "/m4.svg",
+          title: "System Integration",
+          desc: "Connect ERP, CRM, databases, cloud platforms, and SaaS applications.",
+        },
+        {
+          src: "/m5.svg",
+          title: "MuleSoft Migration",
+          desc: "Move from legacy integration solutions to modern MuleSoft architecture.",
+        },
+        {
+          src: "/m6.svg",
+          title: "Support & Maintenance",
+          desc: "Continuous monitoring, optimization, and issue resolution.",
+        },
+        {
+          src: "/m4.svg",
+          title: "Custom Connectors & Extensions",
+          desc: "Build connectors tailored to your unique business systems.",
+        },
+      ].map((item, idx) => (
+        <div key={idx} className="flex flex-col sm:flex-row gap-4 items-start px-2 sm:px-0">
+          <div className="flex-shrink-0 bg-white border border-gray-300 p-3 flex items-center justify-center w-14 h-14 sm:w-20 sm:h-20 mx-auto sm:mx-0">
+            <img
+              src={item.src}
+              alt={item.title}
+              className="w-9 h-9 sm:w-12 sm:h-12 object-contain"
+            />
+          </div>
+
+          <div className="text-center sm:text-left">
+            <h3 className="text-lg sm:text-xl font-semibold text-black">{item.title}</h3>
+            <p className="text-gray-600 text-base sm:text-lg">{item.desc}</p>
           </div>
         </div>
-         <div className="flex justify-center md:justify-start">
-          <img
-            src="/UIUXmen.svg"
-            alt="UIUX Developer"
-            className="w-full max-w-xs sm:max-w-sm md:max-w-md"
-          />
-        </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
               <section className="bg-[#F4F6FB] py-10">
         <div className="px-6 sm:px-12 md:ml-6 md:px-20 text-center md:text-left space-y-4">
           <h1 className="text-3xl sm:text-4xl font-bold">🏢 Industries We Serve</h1>
