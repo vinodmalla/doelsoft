@@ -242,7 +242,7 @@ useEffect(()=>{
           cursol === index ? "opacity-100 relative" : "opacity-0 absolute"
         } w-full `}
       >
-        {index==0 && <p className={`font-inter  `}>Target Tomorrow with AI</p> }
+        {index===0 && <p className={`font-inter  `}>Target Tomorrow with AI</p> }
         <h1 className="text-xl font-kumbh sm:text-xl md:text-[30px] lg:text-[40px] font-semibold leading-tight lg:whitespace-nowrap">
           {details.h11}
           </h1>
@@ -744,7 +744,7 @@ useEffect(()=>{
     {cards.slice(0, 4).map((card, i) => (
       <div
         key={i}
-        className={`relative overflow-hidden shadow-lg  h-auto ${i==0 || i==3 ? "h-[200px] " : " h-[300px"} ${
+        className={`relative overflow-hidden shadow-lg  h-auto ${i===0 || i===3 ? "h-[200px] " : " h-[300px"} ${
           card.type === "solid" ? `${card.bg} flex items-center justify-center p-6 sm:p-8` : ""
         }`}
       >
